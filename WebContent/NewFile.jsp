@@ -10,6 +10,8 @@
 <title>Insert title here</title>
 </head>
 <body>
-<%=str %>
+<p>
+	<%=str %>
+</p>
 </body>
 </html>
