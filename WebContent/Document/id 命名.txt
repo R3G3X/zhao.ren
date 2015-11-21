@@ -1,0 +1,21 @@
+框架{
+  导航栏{
+    #login: 登陆标签;
+    #user-info: 用户信息标签;
+    #avatar: 用户头像;
+  }
+
+  模态框相关{
+    #modal-login: 登陆模态框; 
+    #project-add: 创建项目按钮;
+    #modal-add: 创建项目模态框;
+  }
+
+  内容{
+    #container-content: 内容容器;
+  }
+
+  底栏{
+    #bottom: 底栏容器;
+  }
+}

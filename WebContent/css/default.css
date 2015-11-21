@@ -1,0 +1,62 @@
+/*
+* @Author: Ed_Strickland
+* @Date:   2015-11-21 22:38:32
+* @Last Modified by:   Ed_Strickland
+* @Last Modified time: 2015-11-22 01:03:48
+*/
+/*NAVBAR*/
+#avatar{height:50px;}
+/*END-OF-NAVBAR*/
+
+/*PROJECT-ADD*/
+#project-add{
+  position: fixed;
+  margin: auto;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  width:35px;
+  height:120px;
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+  background-color:#000;
+  box-shadow: #000 3px 3px 5px;
+  font-size:18px;
+  line-height:30px;
+  text-align:center;
+  vertical-align:center;
+}
+#project-add>a{
+  display:block;
+  color:#9d9d9d;
+}
+#project-add>a:hover{
+  color:#fff;
+  text-decoration:none;
+}
+#project-add>a:focus{
+  text-decoration:none;
+}
+#project-add>a:active{
+  text-decoration:none;
+}
+#project-add>a:visited{
+  text-decoration:none;
+}
+/*END-0F-PROJECT-ADD*/
+
+/*CONTENT*/
+#container-content{
+  border-bottom: 0.3em solid #000;
+  margin-top:4em;
+}
+/*END-OF-CONTENT*/
+
+/*BOTTOM*/
+#bottom {text-align:center;}
+#bottom>ul{padding:0;}
+#bottom li{
+  display:inline;
+  text-decoration:none;
+}
+/*END-OF-BOTTOM*/
