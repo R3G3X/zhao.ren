@@ -2,17 +2,19 @@
 * @Author: Ed_Strickland
 * @Date:   2015-11-21 22:38:32
 * @Last Modified by:   Ed_Strickland
-* @Last Modified time: 2015-11-22 01:03:48
+* @Last Modified time: 2016-02-18 11:13:22
 */
 /*NAVBAR*/
 #avatar{height:50px;}
+.navbar-fixed-top{border:0px;}
 /*END-OF-NAVBAR*/
 
 /*PROJECT-ADD*/
-#project-add{
-  position: fixed;
+#project-add{list-style:none;}
+#project-add>li{float:right;}
+#add-block{
+  position: relative;
   margin: auto;
-  right: 0;
   top: 0;
   bottom: 0;
   width:35px;
@@ -20,43 +22,205 @@
   border-top-left-radius: 5px;
   border-bottom-left-radius: 5px;
   background-color:#000;
-  box-shadow: #000 3px 3px 5px;
+  box-shadow: #9d9d9d 3px 3px 5px;
   font-size:18px;
   line-height:30px;
   text-align:center;
   vertical-align:center;
 }
-#project-add>a{
+#add{
   display:block;
   color:#9d9d9d;
 }
-#project-add>a:hover{
+#add:hover{
   color:#fff;
   text-decoration:none;
 }
-#project-add>a:focus{
+#add:focus{
   text-decoration:none;
 }
-#project-add>a:active{
+#add:active{
   text-decoration:none;
 }
-#project-add>a:visited{
+#add:visited{
   text-decoration:none;
 }
 /*END-0F-PROJECT-ADD*/
 
 /*CONTENT*/
 #container-content{
-  border-bottom: 0.3em solid #000;
-  margin-top:4em;
+  margin-top:30px;
+}
+#content{
+  margin:0px;
+  margin-left:55px;
+  padding:0px;
+  padding-bottom:25px;
+}
+.content-item{
+  width:300px;
+  height:200px;
+  margin-left:30px;
+  margin-top:30px;
+  border:1px solid #D1D1D1;
+  float:left;
+  display:block;
+}
+.content-item:hover{
+  border-color:#8D8D8D;
+}
+.text:hover{
+  cursor:pointer;
+}
+.text{
+  padding:15px;
+  height:145px;
+  padding-bottom:0px;
+}
+.btn-container{
+  float:left;
+  width:50px;
+  margin-bottom:15px;
+  margin-left:15px;
+  margin-top:0px;
+}
+.result{
+  padding-top:20px;
+  color:#A9A9A9;
+  float:right;
+  margin-bottom:15px;
+  margin-right:15px;
+  margin-top:0px;
+}
+.btn-select{
+  background-color:#868686;
+  line-height:40px;
+  padding:10px;
+  color:#D3D3D3;
+  text-decoration:none;
+}
+.btn-select:hover{
+  background-color:#CBCBCB;
+  color:#fff;
+  text-decoration:none;
+  cursor:pointer;
+}
+.btn-select:visited{
+  text-decoration:none;
+}
+.btn-select:active{
+  background-color:#5E5E5E;
+  color:#898989;
+  text-decoration:none;
+}
+.btn-select:focus{
+  background-color:#CBCBCB;
+  color:#fff;
+  text-decoration:none;
 }
 /*END-OF-CONTENT*/
 
 /*BOTTOM*/
-#bottom {text-align:center;}
+#bottom {
+  text-align:center;
+  color:#B3B3B3;
+}
+
 #bottom>ul{padding:0;}
 #bottom li{
   display:inline;
   text-decoration:none;
 }
 /*END-OF-BOTTOM*/
+/*COLOR*/
+.grey-0{background-color:#3D3D3D;}
+.grey-1{background-color:#868686;}
+.grey-2{background-color:#DCDCDC;}
+.grey-3{background-color:#E7E7E7;}
+.grey-4{background-color:#E8E8E8;}
+.white{background-color: #fff;}
+.shadow{box-shadow:0px 0px 10px #6B6B6B;}
+/*END-OF-COLOR*/
+
+/*FLOAT*/
+#clearfix{
+  *zoom:1;
+}
+
+.clearfix:before,
+.clearfix:after{
+  display:table;
+  line-height:0;
+  content:"";
+}
+
+.clearfix:after{
+  clear:both;
+}
+/*END-OF-FLOAT*/
+
+#title{
+  margin-top:30px;
+  height:50px;
+  color:#fff;
+  text-shadow:2px 2px 10px #5D5D5D;
+}
+
+/*VOTE*/
+#vote-link{
+  float:right;
+  margin-right:70px;
+  margin-bottom:25px;
+  color:#A9A9A9;
+  text-decoration:none;
+}
+#vote-link:hover{
+  color:#CBCBCB;
+  text-decoration:none;
+}
+#vote-link:visited{
+  color:#A9A9A9;
+  text-decoration:none;
+}
+#vote-link:active{
+  color:#5E5E5E;
+  text-decoration:none;
+}
+#vote-link:focus{
+  color:#CBCBCB;
+  text-decoration:none;
+}
+/*END-OF-VOTE*/
+
+#login-btn:hover{
+  cursor:pointer;
+}
+
+#showcase{
+  margin-top: -30px;
+  height:360px;
+  padding-bottom: 0px;
+  box-shadow: #000 1px 1px 5px;
+  color: #fff;
+  text-align: center;
+  text-shadow: #595353 2px 2px 6px;
+}
+#showcase > h1{
+  padding-top: 50px;
+  padding-bottom: 30px;
+  font-size: 70px;
+}
+#showcase > h2{
+}
+#showcase > p{
+  padding:50px;
+}
+#find-project{
+  color: #fff;
+  padding:7px;
+  font-size: 50px;
+  text-decoration: none;
+  line-height: 25px;
+  border: 5px solid #fff;
+  box-shadow: #595353 1px 1px 5px inset, #595353 1px 1px 5px;
+}

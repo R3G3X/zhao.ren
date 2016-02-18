@@ -1,0 +1,148 @@
+/*
+* @Author: Ed_Strickland
+* @Date:   2016-01-06 20:40:31
+* @Last Modified by:   Ed_Strickland
+* @Last Modified time: 2016-02-18 11:47:38
+*/
+#mod-body{
+  height:300px;
+  width:400px;
+  margin:0 auto;
+  position:absolute;
+  left:0;
+  right:0;
+  top:30%;
+  border:1px solid #BFBFBF;
+  box-shadow: 0px 0px 7px #4A4A4A;
+}
+
+#mod-border{
+  height:270px;
+  width:370px;
+  margin:0 auto;
+  position:absolute;
+  left:0;
+  right:0;
+  top:5%;
+  bottom:0;
+  border:1px solid #BFBFBF;
+  color:#6A6A6A;
+  text-align:center;
+}
+
+.vote-border>h3{
+  margin-top:80px;
+  margin-bottom:30px;
+}
+#btn-for{
+  margin-left:30px;
+  margin-right:25px;
+}
+#btn-post{
+  margin-left:30px;
+  margin-right:25px;
+}
+#submit-box{
+  width:315px;
+  margin:auto;
+  position:absolute;
+  left:0;
+  top:15%;
+  right:0;
+}
+.input-box{
+  width:320px;
+  line-height:30px;
+  margin-left:-2px;
+}
+#username{
+  padding-left:15px;
+}
+#password{
+  padding-left:15px;
+  margin-top:20px;
+}
+#username1{
+  padding-left:15px;
+}
+#password1{
+  padding-left:15px;
+  margin-top:20px;
+}
+
+#login-submit{
+  width:320px;
+  padding-top:5px;
+  padding-bottom:5px;
+  padding-right:60px;
+  padding-left:60px;
+  position:absolute;
+  left:0;
+  right:0;
+  margin:auto;
+  bottom:15%;
+  font-size:25px;
+  background-color:#A8A8A8;
+  color:#CCCCCC;
+}
+#login-submit:hover{
+  color:#fff;
+  text-decoration:none;
+  cursor:pointer;
+}
+#login-submit:active{
+  color:#8B8B8B;
+  background-color:#4B4B4B;
+  text-decoration:none;
+  cursor:pointer;
+}
+#register{
+  font-size:12px;
+  position:absolute;
+  right:5px;
+  bottom:1px;
+  margin:auto;
+}
+#register:hover{
+  cursor:pointer;
+}
+#find-pass{
+  font-size:12px;
+  position:absolute;
+  left:5px;
+  bottom:1px;
+  margin:auto;
+}
+#check-status{
+  position:absolute;
+  right:0;
+  left:0;
+  top:-27px;
+  margin:auto;
+}
+#register-submit{
+  width:320px;
+  padding-top:5px;
+  padding-bottom:5px;
+  padding-right:60px;
+  padding-left:60px;
+  position:absolute;
+  left:0;
+  right:0;
+  margin:auto;
+  bottom:15%;
+  font-size:25px;
+  background-color:#A8A8A8;
+  color:#CCCCCC;
+}
+#register-submit:hover{
+  color:#fff;
+  text-decoration:none;
+  cursor:pointer;
+}
+#register-submit:active{
+  color:#8B8B8B;
+  background-color:#4B4B4B;
+  text-decoration:none;
+  cursor:pointer;
+}

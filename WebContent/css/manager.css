@@ -1,0 +1,57 @@
+/*
+* @Author: Ed_Strickland
+* @Date:   2016-01-07 06:24:27
+* @Last Modified by:   Ed_Strickland
+* @Last Modified time: 2016-01-07 06:58:53
+*/
+.delete-btn{
+  background-color:#CB0404;
+}
+.delete-btn:hover{
+  background-color:#8E0101;
+}
+
+#class-submit{
+  padding-left:5px;
+  width:120px;
+  margin-left:5px;
+  margin-right:5px;
+}
+#teacher-submit{
+  padding-left:5px;
+  width:120px;
+  margin-left:5px;
+  margin-right:5px;
+}
+#describe-submit{
+  margin-top:15px;
+  width:254px;
+  resize:none;
+}
+
+#course-submit{
+  width:254px;
+  padding-top:5px;
+  padding-bottom:5px;
+  padding-right:30px;
+  padding-left:30px;
+  position:absolute;
+  left:0;
+  right:0;
+  margin:auto;
+  bottom:15%;
+  font-size:25px;
+  background-color:#A8A8A8;
+  color:#CCCCCC;
+}
+#course-submit:hover{
+  color:#fff;
+  text-decoration:none;
+  cursor:pointer;
+}
+#course-submit:active{
+  color:#8B8B8B;
+  background-color:#4B4B4B;
+  text-decoration:none;
+  cursor:pointer;
+}

@@ -1,0 +1,111 @@
+/*
+* @Author: Ed_Strickland
+* @Date:   2015-11-21 22:38:32
+* @Last Modified by:   Ed_Strickland
+* @Last Modified time: 2016-01-07 07:29:38
+*/
+.big-avatar{
+  margin-top:30px;
+  height:150px;
+  width:150px;
+  box-shadow:0px 0px 10px #6B6B6B;
+  border:2px solid #fff;
+}
+#user-box{
+  width:300px;
+  margin-left:250px;
+  margin-bottom:50px;
+  text-shadow:2px 2px 5px #000000;
+  float:left;
+}
+#comment{
+  width:300px;
+  color:#fff;
+  text-shadow:2px 2px 5px #000000;
+  margin-top:30px;
+  margin-right:250px;
+  float:right;
+}
+
+#score{
+  color:#fff;
+  text-decoration:none;
+}
+#score:hover{
+  color:#fff;
+  text-decoration:none;
+}
+#comment-text{
+  float:left;
+  width:450px;
+  min-height:450px;
+  margin:10px;
+  margin-bottom:30px;
+  margin-left:130px;
+  margin-top:20px;
+}
+#recommend{
+  float:right;
+  width:350px;
+  margin:0px;
+  margin-top:10px;
+  margin-right:130px;
+  margin-bottom:100px;
+}
+.recommend-item{
+  margin-bottom:7px;
+}
+.score{
+  color:#000;
+  text-decoration:none;
+}
+.score:hover{
+  color:#000;
+  text-decoration:none;
+}
+
+.username{
+  float:left;
+  color:#7D7D7D;
+}
+.time{
+  float:right;
+  color:#7D7D7D;
+}
+
+.recommend-name{float:left;}
+.recommend-score{
+  float:right;
+  margin:0px;
+}
+
+.comment-content{
+  margin-top:15px;
+  margin-bottom:15px;
+}
+.comment-item{
+  margin-bottom:20px;
+  border-bottom:1px solid #DDDDDD;
+}
+.thumbs{
+  float:right;
+  margin-left:20px;
+}
+.thumbs:hover{
+  cursor:pointer;
+}
+#comment-context{
+  width:450px;
+  height:120px;
+  resize:none;
+}
+#comment-submit{
+  float:right;
+  margin-top:10px;
+}
+#comment-submit:hover{
+  cursor:pointer;
+}
+#width{
+  min-height:500px;
+}

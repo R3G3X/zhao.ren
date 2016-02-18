@@ -1,0 +1,47 @@
+/*
+* @Author: Ed_Strickland
+* @Date:   2016-01-03 01:56:11
+* @Last Modified by:   Ed_Strickland
+* @Last Modified time: 2016-01-07 06:11:07
+*/
+/*CONTENT*/
+.content-item{
+  width:230px;
+  height:255px;
+  margin-left:30px;
+  margin-top:30px;
+  border:1px solid #D1D1D1;
+  float:left;
+  display:block;
+}
+#content-width{
+  min-height:600px;
+  width:780px;
+  float:left;
+}
+.text{
+  height:205px;
+}
+#content-list{
+  margin-top:30px;
+  float:right;
+  width:250px;
+}
+/*END-OF-CONTENT*/
+
+/*LIST*/
+#list{
+  width:820px;
+  float:left;
+  text-align:center;
+}
+#list>ul{
+  padding-top:15px;
+  padding-left:0px;
+  list-style:none;
+  font-size:17px;
+}
+#list>ul>li{
+   display:inline;
+}
+/*END-OF-LIST*/
