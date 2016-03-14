@@ -155,46 +155,9 @@
 				</div>
 			</div>
 			<!-- END-OF-CONTENT -->
-			<div class="grey-3">
-				<div class="clearfix">
-					<div class="white clearfix">
-						<div id="content" class="clearfix">
-							<div class="content-item">
-								<div class="text">
-									<h3>竞赛项目</h3>
-									<input type="hidden" value="14" class="name">
-									<p>华东师范大学的参赛项目</p>
-								</div>
-								<p class="btn-container">
-									<a class="btn-select select-btn" data-toggle="modal"
-										data-target="#modal-vote">Join</a>
-								</p>
-								<p class="result">
-									<a href="#">0</a> people at this project
-								</p>
-							</div>
-							<div class="content-item">
-								<div class="text">
-									<h3>;lkj</h3>
-									<input type="hidden" value="15" class="name">
-									<p>;likj</p>
-								</div>
-								<p class="btn-container">
-									<a class="btn-select select-btn" data-toggle="modal"
-										data-target="#modal-vote">Join</a>
-								</p>
-								<p class="result">
-									<a href="#">0</a> people at this project
-								</p>
-							</div>
-						</div>
-						<a id="vote-link" href="#">&gt;&gt;&gt;我要投票</a> <input
-							type="hidden" id="target-course">
-					</div>
-				</div>
-			</div>
+			<jsp:include page="/jsp/index_project.jsp"></jsp:include>
 			<!-- PUT-YOUR-CODE-ABOVE -->
-			<jsp:include page="/html/frame/frame_bottom.jsp"></jsp:include>
+			
 		</div>
 	</div>
 
