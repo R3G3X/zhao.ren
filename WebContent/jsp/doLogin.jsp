@@ -9,7 +9,7 @@
 	db_connector db = new db_connector();
 	String username = request.getParameter("username");
 	String passwd = request.getParameter("password");
-	if (db.register(username, passwd)) {
+	if (db.login(username, passwd)) {
 		Cookie cookie = new Cookie("zhao_ren_token", db.whois(username));
 		cookie.setMaxAge(3600);
 		cookie.setPath("/");

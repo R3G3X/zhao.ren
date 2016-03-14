@@ -4,16 +4,8 @@
 <html lang="en">
 <head>
 <meta charset="utf-8">
-<script src="js/jquery/2.0.0/jquery.min.js"></script>
-<script type="text/javascript" src="js/jquery/jquery-latest.js"></script>
-<script src="js/bootstrap/3.0.3/bootstrap.min.js"></script>
+<jsp:include page="/html/frame/frame_head.jsp"></jsp:include>
 <script src="js/index.js"></script>
-<script type="text/javascript" src="js/jquery/jquery.cookie.js"></script>
-<script type="text/javascript" src="js/login.js"></script>
-
-<link href="css/bootstrap.min.css" rel="stylesheet" />
-<link href="css/default.css" rel="stylesheet" />
-<link href="css/modal.css" rel="stylesheet" />
 <script type="text/javascript" charset="utf-8">
 //   $(document).ready(function(){
 <%--     var inner = '<%=innerHtml%>'; --%>
@@ -32,7 +24,7 @@
 <jsp:include page="/jsp/frame.jsp"></jsp:include>
 <!-- <script type="text/javascript" src="js/login1.js"></script> -->
 <script type="text/javascript" src="js/voteClick.js"></script>
-<script type="text/javascript" src="js/register.js"></script>
+
 </head>
 
 <body>

@@ -74,8 +74,8 @@
         <div id="submit-box">
           <div id="user-check"></div>
           <div id="check-status"></div>
-          <input id="username" class="input-box" type="text" placeholder="USERNAME">
-          <input id="password" class="input-box" type="password" placeholder="PASSWORD">
+          <input id="usernameR" class="input-box" type="text" placeholder="USERNAME">
+          <input id="passwordR" class="input-box" type="password" placeholder="PASSWORD">
         </div>
         <a id="register-submit">注册</a>
         <!-- <a id="register">没有账号？</a> -->
