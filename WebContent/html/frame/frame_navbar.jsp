@@ -12,7 +12,7 @@
          <span class="icon-bar"></span>
       </button>
       <!-- END-OF-FOR-SMALLER -->
-      <a class="navbar-brand" href="../../index.jsp">ZHAO.REN</a>
+      <a class="navbar-brand" href="<%=request.getContextPath()%>/index.jsp">ZHAO.REN</a>
     </div>
     <!-- END-OF-NAVBAR-HEADER -->
 

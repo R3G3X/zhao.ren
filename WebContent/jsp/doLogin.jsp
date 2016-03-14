@@ -6,14 +6,16 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <%
+	db_connector db = new db_connector();
 	String username = request.getParameter("username");
 	String passwd = request.getParameter("password");
 	if (db.login(username, passwd)) {
-		response.setStatus(200);
-		logined = true;
-		Cookie cookie = new Cookie("zhao_ren_token",);
+		Cookie cookie = new Cookie("zhao_ren_token", db.whois(username));
+		cookie.setMaxAge(3600);
+		cookie.setPath("/");
 		response.addCookie(cookie);
-		id = db.whois(username);
+		session.setAttribute("zhao_ren_token", db.whois(username));
+		response.setStatus(200);
 	} else {
 		response.setStatus(400);
 	}

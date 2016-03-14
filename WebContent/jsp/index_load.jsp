@@ -24,9 +24,9 @@
     ResultSet rs_1;
     Class.forName("com.mysql.jdbc.Driver");
     DriverManager.registerDriver(new com.mysql.jdbc.Driver());
-    String dbUrl = "jdbc:mysql://127.0.0.1:3306/eval_db";
+    String dbUrl = "jdbc:mysql://127.0.0.1:3306/zhao_ren";
     String dbUser = "root";
-    String dbPwd = "0000";
+    String dbPwd = "zhao.ren.admin";
     con = java.sql.DriverManager.getConnection(dbUrl, dbUser, dbPwd);
     stmt = con.createStatement();
     rs = stmt

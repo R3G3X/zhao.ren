@@ -4,11 +4,22 @@
 * @Last Modified by:   Ed_Strickland
 * @Last Modified time: 2016-02-18 12:20:18
 */
+function getRootPath(){
+    //获取当前网址，如： http://localhost:8083/uimcardprj/share/meun.jsp
+    var curWwwPath=window.document.location.href;
+    //获取主机地址之后的目录，如： uimcardprj/share/meun.jsp
+    var pathName=window.document.location.pathname;
+    var pos=curWwwPath.indexOf(pathName);
+    //获取主机地址，如： http://localhost:8083
+    var localhostPaht=curWwwPath.substring(0,pos);
+    //获取带"/"的项目名，如：/uimcardprj
+    var projectName=pathName.substring(0,pathName.substr(1).indexOf('/')+1);
+    return(localhostPaht+projectName);
+}
 
 $(document).ready(function(){
     //登陆状态判断
-    loginId();
-    var username=$.cookie("userid");
+    var username=$.cookie("zhao_ren_token");
     if (username != null && username != ""){
         $("#login").addClass("hidden");
         $(".dropdown").removeClass("hidden").text(username);
@@ -17,7 +28,6 @@ $(document).ready(function(){
             $("#manage").removeClass("hidden");
         }
     }
-
     $("#login-submit").attr("disabled",true);
     // $("#project-add > a").click(function(){
     //         // alert(" ");
@@ -57,37 +67,26 @@ $(document).ready(function(){
 // LOGIN-POST
     $("#login-submit").click(function(){
         // alert("a");
-        $.post("jsp/login.jsp",
+        $.post(getRootPath()+"/jsp/doLogin.jsp",
             {"username":$("#username").val(),
             "password":$("#password").val()},
             function(data, status, xhr){
-                alert("成功登陆");
+                //alert("成功登陆");
                 $("#check-status").html("");
                 $("#login").addClass("hidden");
                 $(".dropdown").removeClass("hidden");
                 $("#avatar").removeClass("hidden");
                 // alert("a");
-                $.cookie("userid",$("#username").val(),{expire:60*60,path:"/"});
+                //$.cookie("userid",$("#username").val(),{expire:60*60,path:"/"});
                 $("#password").val("");
                 $("#username").val("");
                 loginId();
                 location.reload();
             })
         .error(function(data,status,e){
-            if(data.status == 400){
-                $("#check-status").html("<font color='red'>密码错误</font>");
-            }
-            else if(data.status == 401){
-                $("#check-status").html("<font color='red'>用户名不存在</font>");
-            }
+        	$("#check-status").html("<font color='red'>用户名或密码错误</font>");
         })
     })
-
-    function loginId(){
-        var userid=$.cookie("userid");
-        // alert(userid);
-    }
-
 
     // $("#change-save").click(function(){
     //             function(data){
@@ -99,16 +98,17 @@ $(document).ready(function(){
     //             "brief":$("#brief").val()},
     //                 else{
     //                     alert("0");
-    //                 }
-    //             })
-    // })
+	    //                 }
+	//             })
+	// })
 
-    $("#exit").click(function(){
-            // alert("b");
-            $(".dropdown").addClass("hidden");
-            $("#avatar").addClass("hidden");
-            $("#login").removeClass("hidden");
-            $.cookie("userid","",{path:"/"});
-            location.reload();
-    })
+	$("#exit").click(function() {
+		$.post(getRootPath()+"/jsp/doLogOut.jsp", function(data, status, xhr) {
+			alert("登出成功");
+		})
+		$(".dropdown").addClass("hidden");
+		$("#avatar").addClass("hidden");
+		$("#login").removeClass("hidden");
+		location.reload();
+	})
 })
