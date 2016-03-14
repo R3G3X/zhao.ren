@@ -31,7 +31,7 @@
           </a>
           <ul class="dropdown-menu">
             <li><a id="manage" class="hidden" href="../manager/manager.jsp">管理系统</a></li>
-            <li><a id="user" href="../user/user.jsp">我的主页</a></li>
+            <li><a id="user" href="<%=request.getContextPath()%>/html/user/user.jsp">我的主页</a></li>
             <li class="divider"></li>
             <li><a href="#" id ="exit">退出登录</a></li>
           </ul>

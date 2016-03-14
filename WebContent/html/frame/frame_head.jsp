@@ -14,3 +14,4 @@
 <link href="../../css/bootstrap.min.css" rel="stylesheet" />
 <link href="../../css/default.css" rel="stylesheet" />
 <link href="../../css/modal.css" rel="stylesheet" />
+<script type="text/javascript" src="<%=request.getContextPath()%>/js/login.js"></script>
