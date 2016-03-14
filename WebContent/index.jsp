@@ -10,6 +10,7 @@
 <script src="js/index.js"></script>
 <script type="text/javascript" src="js/jquery/jquery.cookie.js"></script>
 <script type="text/javascript" src="js/login.js"></script>
+
 <link href="css/bootstrap.min.css" rel="stylesheet" />
 <link href="css/default.css" rel="stylesheet" />
 <link href="css/modal.css" rel="stylesheet" />
