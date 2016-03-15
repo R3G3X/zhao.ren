@@ -14,6 +14,7 @@ $(document).ready(function() {
 			alert("注册成功！");
 			location.reload();
 		}).error(function(data, status, e) {
+			$("#check-status").html("<font color='red'>用户名已存在或密码为空</font>");
 		})
 		return;
 	})

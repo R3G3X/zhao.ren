@@ -6,7 +6,7 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <%-- <base href="${pageContext.request.scheme}://${pageContext.request.serverName}:${pageContext.request.serverPort}${pageContext.request.contextPath}/"> --%>
-<%!db_connector	db		= new db_connector();
+<%  db_connector	db		= new db_connector();
 	boolean			logined	= false;
 	int				id		= -1;
 %>

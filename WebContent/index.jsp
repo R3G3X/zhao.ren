@@ -5,7 +5,8 @@
 <head>
 <meta charset="utf-8">
 <jsp:include page="/html/frame/frame_head.jsp"></jsp:include>
-<jsp:include page="/jsp/frame.jsp"></jsp:include>
+
+<%@ include file="jsp/frame.jsp" %>
 <script type="text/javascript" src="js/voteClick.js"></script>
 <script type="text/javascript" src="js/index.js"></script>
 
@@ -59,8 +60,7 @@
 					</div>
 				</div>
 			</div>
-			<jsp:include page="/jsp/index_project.jsp"></jsp:include>
-
+			<%@ include file="jsp/index_project.jsp" %>
 			<!-- PUT-YOUR-CODE-ABOVE -->
 			
 		</div>
@@ -68,7 +68,7 @@
 	<!-- END-OF-CONTENT -->
 
 	<!-- BOTTOM -->
-	<jsp:include page="/html/frame/frame_bottom.jsp"></jsp:include>
+<%-- 	<jsp:include page="/html/frame/frame_bottom.jsp"></jsp:include> --%>
 	<!-- END-OF-BOTTOM -->
 </body>
 </html>

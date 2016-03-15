@@ -84,9 +84,7 @@ $(document).ready(function(){
             	$("#check-status").html("<font color='red'>用户名或密码错误</font>");
             })
     }
-    
-    
-    
+
     $('#modal-login').keydown(function(e){
 		if(e.keyCode==13){
 		   loginPost();
@@ -109,7 +107,7 @@ $(document).ready(function(){
     //             "brief":$("#brief").val()},
     //                 else{
     //                     alert("0");
-	    //                 }
+	//                 }
 	//             })
 	// })
 
