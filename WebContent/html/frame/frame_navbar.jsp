@@ -19,7 +19,7 @@
     <div class="collapse navbar-collapse" id="example-navbar-collapse">
       <!-- NAVBAR-LEFT -->
       <ul class="nav navbar-nav navbar-left">
-         <li><a href="../courses/courses.jsp">所有项目</a></li>
+         <li><a href="<%=request.getContextPath()%>/html/courses/courses.jsp">所有项目</a></li>
       </ul>
       <!-- END-OF-NAVBAR-LEFT -->
 
@@ -30,13 +30,13 @@
           <a href="#" class="dropdown-toggle dropdown hidden" data-toggle="dropdown">机制汇<b class="caret"></b>
           </a>
           <ul class="dropdown-menu">
-            <li><a id="manage" class="hidden" href="../manager/manager.jsp">管理系统</a></li>
+            <li><a id="manage" class="hidden" href="<%=request.getContextPath()%>/html/manager/manager.jsp">管理系统</a></li>
             <li><a id="user" href="<%=request.getContextPath()%>/html/user/user.jsp">我的主页</a></li>
             <li class="divider"></li>
             <li><a href="#" id ="exit">退出登录</a></li>
           </ul>
         </li>
-        <li><img id="avatar" class="img-circle hidden-xs hidden" src="../../img/avatar3.jpg"></li>
+        <li><img id="avatar" class="img-circle hidden-xs hidden" src="<%=request.getContextPath()%>/img/avatar3.jpg"></li>
       </ul>
       <!-- END-OF-NAVBAR-RIGHT -->
     </div>
@@ -48,7 +48,7 @@
 <div id="modal-login" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
   <div class="modal-body">
     <div id="mod-body" class="white">
-      <h4 style="margin-left:15px;margin-top:13px;color:#6A6A6A">登陆到ZHAO.REN</h4>
+      <h4 style="margin-left:15px;margin-top:13px;color:#6A6A6A" id="login-header">登陆到ZHAO.REN</h4>
       <div id="mod-border" style="height:230px;top:15%;">
         <div id="submit-box">
           <div id="user-check"></div>
@@ -57,35 +57,13 @@
           <input id="password" class="input-box" type="password" placeholder="PASSWORD">
         </div>
         <a id="login-submit">登陆</a>
-        <a id="register" data-target="#modal-register" data-toggle="modal">没有账号？</a>
+        <a id="registerBtn" class ="register">没有账号？</a>
         <!-- <a id="find-pass">找回密码</a> -->
       </div>
     </div>
   </div>
 </div>
 <!-- END-OF-MODAL-LOGIN -->
-
-<!-- MODAL-LOGIN -->
-<div id="modal-register" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
-  <div class="modal-body">
-    <div id="mod-body" class="white">
-      <h4 style="margin-left:15px;margin-top:13px;color:#6A6A6A">注册到ZHAO.REN</h4>
-      <div id="mod-border" style="height:230px;top:15%;">
-        <div id="submit-box">
-          <div id="user-check"></div>
-          <div id="check-status"></div>
-          <input id="usernameR" class="input-box" type="text" placeholder="USERNAME">
-          <input id="passwordR" class="input-box" type="password" placeholder="PASSWORD">
-        </div>
-        <a id="register-submit">注册</a>
-        <!-- <a id="register">没有账号？</a> -->
-        <!-- <a id="find-pass">找回密码</a> -->
-      </div>
-    </div>
-  </div>
-</div>
-<!-- END-OF-MODAL-LOGIN -->
-
 
 <!-- PROJECT-ADD -->
 <div id="modal-add" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">

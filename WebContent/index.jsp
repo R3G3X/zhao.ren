@@ -5,25 +5,9 @@
 <head>
 <meta charset="utf-8">
 <jsp:include page="/html/frame/frame_head.jsp"></jsp:include>
-<script src="js/index.js"></script>
-<script type="text/javascript" charset="utf-8">
-//   $(document).ready(function(){
-<%--     var inner = '<%=innerHtml%>'; --%>
-//     $("#content").html(inner);
-//     $(".text").click(function(){
-//       location.href ="html/project/project.jsp?courseId="+$(this).children("input").val();
-//     })
-//     $(".select-btn").click(function(){
-//       $("#target-course").val($(this).parent().prev().children("input").val());
-//       // alert($("#target-course").val());
-//       var title = "为"+ $(this).parent().prev().children("h3").text() +"投票";
-//       $("#vote-border").children("h3").text(title);
-//     })
-//   })
-</script>
 <jsp:include page="/jsp/frame.jsp"></jsp:include>
-<!-- <script type="text/javascript" src="js/login1.js"></script> -->
 <script type="text/javascript" src="js/voteClick.js"></script>
+<script type="text/javascript" src="js/index.js"></script>
 
 </head>
 
@@ -31,76 +15,6 @@
 	<!-- NAVBAR -->
 	<jsp:include page="/html/frame/frame_navbar.jsp"></jsp:include>
 	<!-- END-OF-NAVBAR -->
-
-
-
-	<!-- PROJECT-ADD -->
-
-	<!-- MODAL-PROJECT -->
-	<div id="modal-add" class="modal fade" tabindex="-1" role="dialog"
-		aria-labelledby="myModalLabel">
-		<div class="modal-dialog" role="document">
-			<div class="modal-content">
-				<!-- MODAL-HEADER -->
-				<div class="modal-header">
-					<button type="button" class="close" data-dismiss="modal"
-						aria-label="Close">
-						<span aria-hidden="true">&times;</span>
-					</button>
-					<h4 class="modal-title" id="myModalLabel">创建新项目</h4>
-				</div>
-				<!-- END-OF-MODAL-HEADER -->
-
-				<!-- MODAL-CONTENT -->
-				<div class="modal-body">
-					<form id="box-projectadd">
-						<div class="add-right">
-							<div>项目简介：</div>
-							<textarea id="brief"></textarea>
-						</div>
-						<div class="add-left">
-							<div>项目名称：</div>
-							<input type="text" id="project-name" />
-						</div>
-						<div class="add-left">
-							<div class="project-adding">创建人：</div>
-							<input type="text" id="founder-name" />
-						</div>
-					</form>
-				</div>
-				<!-- END-OF-MODAL-CONTENT -->
-
-				<!-- MODAL-FOOTER -->
-				<div class="modal-footer">
-					<button type="button" class="btn btn-default" data-dismiss="modal">关闭</button>
-					<button type="button" class="btn btn-primary" id="change-save">提交</button>
-				</div>
-				<!-- END-OF-MODAL-FOOTER -->
-			</div>
-		</div>
-	</div>
-	<!-- END-OF-MODAL-PROJECT -->
-	<!-- END-OF-PROJECT-ADD -->
-
-	<!-- MODAL-VOTE -->
-	<div id="modal-vote" class="modal fade" tabindex="-1" role="dialog"
-		aria-labelledby="myModalLabel">
-		<div class="modal-dialog" role="document">
-			<div class="modal-content">
-				<!-- MODAL-CONTENT -->
-				<div id="mod-body" class="white">
-					<div id="mod-border" class="vote-border">
-						<h3>现在加入这个项目？</h3>
-						<a id="btn-for" class="btn-select">是的，我现在就想开始</a> <a id="btn-post"
-							class="btn-select">不，等等再说</a>
-					</div>
-				</div>
-				<!-- END-OF-MODAL-CONTENT -->
-			</div>
-		</div>
-	</div>
-	<!-- END-OF-MODAL-VOTE -->
-
 
 	<!-- CONTENT -->
 
@@ -111,8 +25,6 @@
 			<div class="grey-3">
 				<div class="white shadow clearfix">
 					<p style="height: 65px; text-align: center;">
-						<!-- <img id="title" src="img/icon.png" alt=""> -->
-						<!-- <h2 id="title">ZHAO.REN</h2> -->
 					</p>
 				</div>
 			</div>
@@ -147,12 +59,13 @@
 					</div>
 				</div>
 			</div>
-			<!-- END-OF-CONTENT -->
 			<jsp:include page="/jsp/index_project.jsp"></jsp:include>
+
 			<!-- PUT-YOUR-CODE-ABOVE -->
 			
 		</div>
 	</div>
+	<!-- END-OF-CONTENT -->
 
 	<!-- BOTTOM -->
 	<jsp:include page="/html/frame/frame_bottom.jsp"></jsp:include>
