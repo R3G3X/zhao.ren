@@ -1,18 +1,32 @@
 $(document).ready(function(){
-	$("#registerBtn").click(function(){
-		$("#login-header").text("注册到ZHAO.REN");
-		$("#login-submit").text("注册").attr("id","register-submit");
-		$("#registerBtn").attr("id","loginBtn").text("我有账号？");
-		$("#check-status").html("");
-		$("#username").attr("id","usernameR");
-		$("#password").attr("id","passwordR");
+	
+	$("#login-btn2").click(function(){
+		$("#modal-login2").load();
 	})
 	
-	$("#loginBtn").click(function(){
-		$("#login-header").text("登录到ZHAO.REN");
-		$("#login-submit").text("登录").attr("id","login-submit");
-		$("#loginBtn").attr("id","registerBtn").text("没有账号？");
-		$("#usernameR").attr("id","username");
-		$("#passwordR").attr("id","password");
+	
+	$("#registerBtn").click(function(){
+		$("#login-header").addClass("hidden");
+		$("#register-header").removeClass("hidden");
+		$("#login-submit").addClass("hidden");
+		$("#register-submit").removeClass("hidden");
+		$("#registerBtn").addClass("hidden");
+		$("#loginBtn").removeClass("hidden");
+		$("#check-status").html("");
 	})
+	$("#loginBtn").click(function(){
+		$("#login-header").removeClass("hidden");
+		$("#register-header").addClass("hidden");
+		$("#login-submit").removeClass("hidden");
+		$("#register-submit").addClass("hidden");
+		$("#registerBtn").removeClass("hidden");
+		$("#loginBtn").addClass("hidden");
+		$("#check-status").html("");
+	})
+	$("#modal-login").on("hidden.bs.modal",function(e){
+		$("#username").val("");
+		$("#password").val("");
+		$("#user-check").html("");
+		$("#check-status").html("");
+	});
 })

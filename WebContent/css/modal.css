@@ -57,19 +57,13 @@
 }
 #username{
   padding-left:15px;
+  padding-right:15px;
 }
 #password{
   padding-left:15px;
+  padding-right:15px;
   margin-top:20px;
 }
-#usernameR{
-  padding-left:15px;
-}
-#passwordR{
-  padding-left:15px;
-  margin-top:20px;
-}
-
 #login-submit{
   width:320px;
   padding-top:5px;

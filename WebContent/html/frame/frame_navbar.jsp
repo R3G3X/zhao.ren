@@ -49,6 +49,7 @@
   <div class="modal-body">
     <div id="mod-body" class="white">
       <h4 style="margin-left:15px;margin-top:13px;color:#6A6A6A" id="login-header">登陆到ZHAO.REN</h4>
+      <h4 style="margin-left:15px;margin-top:13px;color:#6A6A6A" id="register-header" class="hidden">注册到ZHAO.REN</h4>
       <div id="mod-border" style="height:230px;top:15%;">
         <div id="submit-box">
           <div id="user-check"></div>
@@ -57,8 +58,10 @@
           <input id="password" class="input-box" type="password" placeholder="PASSWORD">
         </div>
         <a id="login-submit">登陆</a>
+        <a id="register-submit" class = "hidden">注册</a>
         <a id="registerBtn" class ="register">没有账号？</a>
-        <!-- <a id="find-pass">找回密码</a> -->
+        <a id="loginBtn" class ="register hidden">已有账号？</a>
+<!--         <a id="find-pass">找回密码</a> -->
       </div>
     </div>
   </div>

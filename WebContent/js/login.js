@@ -65,27 +65,41 @@ $(document).ready(function(){
     })
 
 // LOGIN-POST
+    
+    function loginPost(){
+    	$.post(getRootPath()+"/jsp/doLogin.jsp",
+                {"username":$("#username").val(),
+                "password":$("#password").val()},
+                function(data, status, xhr){
+                    //alert("成功登陆");
+                    $("#check-status").html("");
+                    $("#login").addClass("hidden");
+                    $(".dropdown").removeClass("hidden");
+                    $("#avatar").removeClass("hidden");
+                    // alert("a");
+                    //$.cookie("userid",$("#username").val(),{expire:60*60,path:"/"});
+                    $("#password").val("");
+                    $("#username").val("");
+                    loginId();
+                    location.reload();
+                })
+            .error(function(data,status,e){
+            	$("#check-status").html("<font color='red'>用户名或密码错误</font>");
+            })
+    }
+    
+    
+    
+    $('#modal-login').keydown(function(e){
+		if(e.keyCode==13){
+		   loginPost();
+		   alert("asdf")
+		}
+	}); 
+    
     $("#login-submit").click(function(){
         // alert("a");
-        $.post(getRootPath()+"/jsp/doLogin.jsp",
-            {"username":$("#username").val(),
-            "password":$("#password").val()},
-            function(data, status, xhr){
-                //alert("成功登陆");
-                $("#check-status").html("");
-                $("#login").addClass("hidden");
-                $(".dropdown").removeClass("hidden");
-                $("#avatar").removeClass("hidden");
-                // alert("a");
-                //$.cookie("userid",$("#username").val(),{expire:60*60,path:"/"});
-                $("#password").val("");
-                $("#username").val("");
-                loginId();
-                location.reload();
-            })
-        .error(function(data,status,e){
-        	$("#check-status").html("<font color='red'>用户名或密码错误</font>");
-        })
+    	loginPost();
     })
 
     // $("#change-save").click(function(){
