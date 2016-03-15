@@ -8,8 +8,8 @@
 $(document).ready(function() {
 	$("#register-submit").click(function() {
 		$.post(getRootPath() + "/jsp/doRegister.jsp", {
-			"username" : $("#usernameR").val(),
-			"password" : $("#passwordR").val()
+			"username" : $("#username").val(),
+			"password" : $("#password").val()
 		}, function(data, status, xhr) {
 			alert("注册成功！");
 			location.reload();

@@ -40,33 +40,30 @@ $(document).ready(function(){
 
 // LOGIN-CHECK
     $("#password").on('input',function(){
-        if($("#username").val().length==0){
-            $("#check-status").html("<font color='red'>用户名不能为空</font>");
-            $("#user-login").attr("disabled",true);
-        }
-        else{
-            $("#user-check").html("");
-            if($("#password").val().length!=0){
-                $("#login-submit").removeAttr("disabled");
-            }
+        $("#user-check").html("");
+        if($("#password").val().length!=0){
+            $("#login-submit").removeAttr("disabled");
         }
     })
     $("#username").on('input',function(){
-        if($("#password").val().length==0){
-            $("#check-status").html("<font color='red'>密码不能为空</font>");
-            $("#user-login").attr("disabled",true);
-        }
-        else{
             $("#pass-check").html("");
-            if($("#username").val().length!=0){
-                $("#user-login").removeAttr("disabled");
-            }
+        if($("#username").val().length!=0){
+            $("#user-login").removeAttr("disabled");
         }
     })
 
 // LOGIN-POST
     
     function loginPost(){
+    	if($("#username").val().length==0){
+            $("#check-status").html("<font color='red'>用户名为空</font>");
+            $("#user-login").attr("disabled",true);
+            return;
+        }
+    	if($("#password").val().length==0){
+            $("#check-status").html("<font color='red'>密码为空</font>");
+            $("#user-login").attr("disabled",true);
+        }
     	$.post(getRootPath()+"/jsp/doLogin.jsp",
                 {"username":$("#username").val(),
                 "password":$("#password").val()},
