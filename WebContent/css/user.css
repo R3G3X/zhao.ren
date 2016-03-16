@@ -2,28 +2,38 @@
 * @Author: Ed_Strickland
 * @Date:   2015-11-21 22:38:32
 * @Last Modified by:   Ed_Strickland
-* @Last Modified time: 2016-01-07 07:29:38
+* @Last Modified time: 2016-03-17 01:50:19
 */
 .big-avatar{
-  margin-top:30px;
+  margin-top:60px;
   height:150px;
   width:150px;
   box-shadow:0px 0px 10px #6B6B6B;
   border:2px solid #fff;
 }
 #user-box{
-  width:300px;
-  margin-left:250px;
-  margin-bottom:50px;
+  width:150px;
+  margin-left:150px;
+  text-align:center;
   text-shadow:2px 2px 5px #000000;
   float:left;
+}
+#user-edit{
+  line-height:40px;
+  font-size:15px;
+  color:#ddd;
+}
+#user-edit:hover{
+  color:#fff;
+  cursor:pointer;
+  text-decoration:none;
 }
 #comment{
   width:300px;
   color:#fff;
   text-shadow:2px 2px 5px #000000;
-  margin-top:30px;
-  margin-right:250px;
+  margin-top:70px;
+  margin-right:100px;
   float:right;
 }
 
@@ -35,25 +45,32 @@
   color:#fff;
   text-decoration:none;
 }
-#comment-text{
+#left-content{
   float:left;
-  width:450px;
+  width:480px;
   min-height:450px;
   margin:10px;
   margin-bottom:30px;
-  margin-left:130px;
-  margin-top:20px;
+  margin-left:40px;
 }
-#recommend{
+#right-content{
   float:right;
-  width:350px;
+  width:270px;
   margin:0px;
-  margin-top:10px;
-  margin-right:130px;
+  margin-top:30px;
+  margin-right:40px;
   margin-bottom:100px;
 }
 .recommend-item{
   margin-bottom:7px;
+  margin-top:10px;
+  padding-left:0px;
+}
+.recommend-item{
+   list-style:none;
+}
+.recommend-item>li{
+   line-height:25px;
 }
 .score{
   color:#000;
@@ -73,7 +90,22 @@
   color:#7D7D7D;
 }
 
-.recommend-name{float:left;}
+.recommend-name{
+  font-weight:bold;
+  color:#8C8B8B;
+}
+.recommend-name:hover{
+  color:#000000;
+}
+.recommend-status{
+  color:#868686;
+  float:right;
+}
+.recommend-status:hover{
+  color:#868686;
+  text-decoration:none;
+  cursor:text;
+}
 .recommend-score{
   float:right;
   margin:0px;
@@ -84,28 +116,145 @@
   margin-bottom:15px;
 }
 .comment-item{
-  margin-bottom:20px;
-  border-bottom:1px solid #DDDDDD;
+  margin-bottom:0px;
+  border-bottom:1px solid #ADADAD;
 }
 .thumbs{
   float:right;
   margin-left:20px;
+  margin-bottom:5px;
+  color:#8D8D8D;
+}
+.thumbs:hover{
+  color:#555555;
+  text-decoration:none;
 }
 .thumbs:hover{
   cursor:pointer;
 }
 #comment-context{
-  width:450px;
+  width:480px;
   height:120px;
+  margin-top:30px;
   resize:none;
 }
 #comment-submit{
-  float:right;
   margin-top:10px;
+  color:#fff;
 }
 #comment-submit:hover{
   cursor:pointer;
 }
+#comment-btn{
+  float:right;
+  margin-top:10px;
+  height:30px;
+  width:50px;
+  padding-top:5px;
+  text-align:center;
+  background-color:#B3B3B3;
+}
 #width{
   min-height:500px;
 }
+
+#pic-edit:hover{cursor:pointer}
+
+
+#counter{
+  text-align:center;
+  background-color:#EDEDED;
+}
+.count-number{
+  font-weight:bold;
+  font-size:20px;
+  line-height:7px;
+}
+.count-item{
+  float:left;
+  width:200px;
+}
+
+#test{
+  margin-left:145px;
+  width:600px;
+}
+
+#recent-move{
+  margin-bottom:30px;
+}
+.recent-move-content{
+  margin-bottom:20px;
+  border:1px solid #A9A9A9;
+  padding:10px;
+}
+.recent-move-content:hover{
+  border:1px solid #555555;
+  cursor:pointer;
+}
+.move-title{
+  width:300px;
+}
+.move-title-detail{color:#575757;margin-bottom:0px;}
+.move-title-title{
+  color:#454444;
+  font-size:1.5em;
+}
+.move-title-title:hover{
+  color:#000;
+  text-decoration:none;
+}
+.move-detail{
+  width:458px;
+  height:3em;
+  text-align:right;
+}
+.move-detail-duration{
+  width:458px;
+  float:right;
+  color:#575757;
+}
+.move-detail-duration:hover{
+  color:#575757;
+  text-decoration:none;
+}
+.move-detail-time{
+  width:458px;
+  float:right;
+  color:#575757;
+}
+.move-detail-time:hover{
+  color:#575757;
+  text-decoration:none;
+}
+.detail-box{margin-bottom:20px;}
+.detail-title{
+  width:350px;
+  height:40px;
+  margin-bottom:20px;
+  display:inline;
+  vertical-align:bottom;
+}
+.detail-title-title{
+  height:40px;
+  width:40px;
+  margin-right:10px;
+  display:inline;
+  font-size:20px;
+  line-height:1em;
+  font-weight:bold;
+  color:#000;
+}
+.detail-title-title:hover{
+  color:#000;
+  text-decoration:none;
+}
+.detail-title-count{
+  height:40px;
+  width:40px;
+  display:inline;
+  font-size:30px;
+  line-height:1em;
+  color:#868686;
+}
+.detail-content{}

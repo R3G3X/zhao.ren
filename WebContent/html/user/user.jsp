@@ -1,87 +1,224 @@
-<%@ page language="java" pageEncoding="UTF-8"%>
+<!DOCTYPE html>
 <html lang="en">
 <head>
-<jsp:include page="/html/frame/frame_head.jsp"></jsp:include>
-<jsp:include page="/jsp/frame.jsp"></jsp:include>
-<link href="../../css/user.css" rel="stylesheet" />
-<script type="text/javascript" src="../../js/agreeClick.js"></script>
-<script type="text/javascript" src="../../js/commentClick.js"></script>
-<script type="text/javascript" src="../../js/register1.js"></script>
+    <meta charset="utf-8">
+  <jsp:include page="/html/frame/frame_head.jsp"></jsp:include>
+  <%@ include file="jsp/frame.jsp" %>
+    <link href="../../css/user.css" rel="stylesheet" />
 </head>
 <body>
-	<jsp:include page="/html/frame/frame_navbar.jsp"></jsp:include>
-	<div id="container-content">
-		<!-- BASICS -->
-		<div class="grey-2">
-			<div class="container">
-				<div class="white shadow">
-					<div class="clearfix"
-						style="background: url(../../img/background-img.jpg) no-repeat fixed center center/cover;">
-						<div id="user-box">
-							<img src="../../img/wang.png" class="img-circle big-avatar" />
-						</div>
-						<div id="comment">
-							<input id="courseId" type="hidden" value="courseId" />
-							<h2 style="padding-bottom: 3px; border-bottom: 1px solid #fff;">
-								projectName</h2>
-							<h4>creatorName</h4>
-							<p>describe</p>
-							<p style="float: right">
-								EVAL评分为：<a id="score">evalVal </a>分
-							</p>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-		<!-- END-OF-BASICS -->
+<!-- NAVBAR -->
+<jsp:include page="/html/frame/frame_navbar.jsp"></jsp:include>
+<!-- END-OF-NAVBAR -->
 
-		<!-- COMMENT -->
-		<div class="grey-3">
-			<div class="container">
-				<div id="width" class="white shadow clearfix">
-					<div id="comment-text">
+<!-- CONTENT -->
+<div id="container-content">
+  <!-- PUT-YOUR-CODE-BELOW -->
+    <!-- BASICS -->
+    <div class="grey-2">
+      <div class="contain">
+        <div class="white shadow">
+          <div class="clearfix"
+            style="background: url(../../img/background-img.jpg) no-repeat fixed center center/cover;">
+            <div id="user-box">
+              <a id="pic-edit" href="#"><img src="../../img/wang.png" class="img-circle big-avatar" /></a>
+              <a id="user-edit">编辑</a>
+            </div>
+            <div id="comment">
+              <input id="courseId" type="hidden" value="courseId" />
+              <h2 style="padding-bottom: 3px; border-bottom: 1px solid #fff;">
+                UserName</h2>
+              <h4>region</h4>
+              <p>describe</p>
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- END-OF-BASICS -->
 
-						<div class="comment-item">
-							<div class="comment-title clearfix">
-								<h5 class="username">user_name</h5>
-								<h5 class="time">date</h5>
-							</div>
-							<p class="comment-content">content</p>
-							<div class="clearfix">
-								<input type="hidden" id="commentId" value="commentId" /> <a
-									class="thumbs da-btn">踩(disagree)</a> <input type="hidden"
-									id="disagreei" value="" /> <a class="thumbs ag-btn">赞(agree)</a>
-								<input type="hidden" id="agreei" value="" />
-							</div>
-						</div>
-						<script type="text/javascript" charset="utf-8" async defer>
-							$(document).ready(function() {
-								$("#agree").val("agree");
-								$("#disagree").val("disagree");
-							})
-						</script>
-						<input id="target-comment" type="hidden" value="" />
-						<div>
-							<textarea id="comment-context"></textarea>
-							<a id="comment-submit">评论</a>
-						</div>
-					</div>
-					<div id="recommend">
-						<h3 style="margin-bottom: 30px">这个老师还上过</h3>
-						<div class="recommend-item clearfix">
-							<a class="recommend-name" href="user.jsp?courseId=id">className</a>
-							<h5 class="recommend-score">
-								EVAL评分为：<a class="score">eval</a> 分
-							</h5>
-						</div>
+    <!-- COMMENT -->
+    <div class="grey-3">
+      <div class="contain">
+        <div id="width" class="white shadow clearfix">
+          <div id="counter" style="border-top:1px solid #BDBCBC;border-bottom:1px solid #BDBCBC;">
+            <div id="test" class="clearfix">
+              <div class="count-item" style="font-size:10px;border-right:1px solid #BDBCBC;padding-top:5px;">
+                <p>已经完成的项目</p>
+                <p class="count-number">23</p>
+              </div>
+              <div class="count-item" style="font-size:10px;border-right:1px solid #BDBCBC;padding-top:5px;">
+                <p>正在进行的项目</p>
+                <p class="count-number">2</p>
+              </div>
+              <div class="count-item" style="font-size:10px;padding-top:5px;">
+                <p>申请中的项目</p>
+                <p class="count-number">5</p>
+              </div>
+            </div>
 
-					</div>
-				</div>
-			</div>
-		</div>
-		<!-- COMMENT -->
-	</div>
-	<jsp:include page="/html/frame/frame_bottom.jsp"></jsp:include>
+          </div>
+          <div id="left-content">
+
+            <div>
+
+            </div>
+
+            <h3 style="font-weight:bold;">最近动态</h3>
+            <div id="recent-move">
+              <div class="recent-move-content">
+                <a class="move-title-title">Project Name</a>
+                <div class="move-title">
+                  <p class="move-title-detail">project details</p>
+                </div>
+                <div class="move-detail">
+                  <a class="move-detail-duration">28小时</a>
+                  <a class="move-detail-time">加入时间：2016-01-01</a>
+                </div>
+              </div>
+              <div class="recent-move-content">
+                <a class="move-title-title">Project Name</a>
+                <div class="move-title">
+                  <p class="move-title-detail">project details</p>
+                </div>
+                <div class="move-detail">
+                  <a class="move-detail-duration">28小时</a>
+                  <a class="move-detail-time">加入时间：2016-01-01</a>
+                </div>
+              </div>
+              <div class="recent-move-content">
+                <a class="move-title-title">Project Name</a>
+                <div class="move-title">
+                  <p class="move-title-detail">project details</p>
+                </div>
+                <div class="move-detail">
+                  <a class="move-detail-duration">28小时</a>
+                  <a class="move-detail-time">加入时间：2016-01-01</a>
+                </div>
+              </div>
+            </div>
+
+            <div id="comment-area">
+              <h3 style="font-weight:bold">留言区</h3>
+              <div class="comment-item">
+                <div class="comment-title clearfix">
+                  <h5 class="username">user_name</h5>
+                  <h5 class="time">date</h5>
+                </div>
+                <p class="comment-content">content</p>
+                <div class="clearfix">
+                  <input type="hidden" id="commentId" value="commentId" /> <a
+                    class="thumbs da-btn">踩(disagree)</a> <input type="hidden"
+                    id="disagreei" value="" /> <a class="thumbs ag-btn">赞(agree)</a>
+                  <input type="hidden" id="agreei" value="" />
+                </div>
+              </div>
+              <div class="comment-item">
+                <div class="comment-title clearfix">
+                  <h5 class="username">user_name</h5>
+                  <h5 class="time">date</h5>
+                </div>
+                <p class="comment-content">content</p>
+                <div class="clearfix">
+                  <input type="hidden" id="commentId" value="commentId" /> <a
+                    class="thumbs da-btn">踩(disagree)</a> <input type="hidden"
+                    id="disagreei" value="" /> <a class="thumbs ag-btn">赞(agree)</a>
+                  <input type="hidden" id="agreei" value="" />
+                </div>
+              </div>
+              <div class="comment-item">
+                <div class="comment-title clearfix">
+                  <h5 class="username">user_name</h5>
+                  <h5 class="time">date</h5>
+                </div>
+                <p class="comment-content">content</p>
+                <div class="clearfix">
+                  <input type="hidden" id="commentId" value="commentId" /> <a
+                    class="thumbs da-btn">踩(disagree)</a> <input type="hidden"
+                    id="disagreei" value="" /> <a class="thumbs ag-btn">赞(agree)</a>
+                  <input type="hidden" id="agreei" value="" />
+                </div>
+              </div>
+              <input id="target-comment" type="hidden" value="" />
+              <div>
+                <textarea id="comment-context"></textarea>
+                <div id="comment-btn">
+                  <a id="comment-submit">评论</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div id="right-content">
+            <div class="detail-box">
+              <div class="detail-title clearfix">
+                <a class="detail-title-title" href="#">项目</a>
+                <p class="detail-title-count">25</p>
+              </div>
+              <ul class="recommend-item">
+                <li>
+                  <a class="recommend-name" href="user.jsp?courseId=id">华师大项目</a>
+                  <a class="recommend-status" href="user.jsp?courseId=id">他发起的</a>
+                </li>
+                <li>
+                  <a class="recommend-name" href="user.jsp?courseId=id">Regex项目</a>
+                  <a class="recommend-status" href="user.jsp?courseId=id">他发起的</a>
+                </li>
+                <li>
+                  <a class="recommend-name" href="user.jsp?courseId=id">微软项目</a>
+                  <a class="recommend-status" href="user.jsp?courseId=id">他加入的</a>
+                </li>
+                <li>
+                  <a class="recommend-name" href="user.jsp?courseId=id">建站计划</a>
+                  <a class="recommend-status" href="user.jsp?courseId=id">他加入的</a>
+                </li>
+              </ul>
+            </div>
+
+            <div class="detail-box">
+              <div class="detail-title clearfix">
+                <p class="detail-title-title">小组</p>
+                <p class="detail-title-count">4</p>
+              </div>
+              <div class="recommend-item">
+                <div class="clearfix">
+                  <img src="../../img/bilibili.jpg" style="float:left;" width="60px">
+                  <ul style="float:left;list-style:none;padding-left:20px">
+                    <li><a>嗶哩嗶哩 - ( ゜- ゜)つロ 乾杯~</a></li>
+                    <li><a>125名成员</a></li>
+                  </ul>
+                </div>
+              </div>
+              <div class="recommend-item">
+                <div class="clearfix">
+                  <img src="../../img/bilibili.jpg" style="float:left;" width="60px">
+                  <ul style="float:left;list-style:none;padding-left:20px">
+                    <li><a>嗶哩嗶哩 - ( ゜- ゜)つロ 乾杯~</a></li>
+                    <li><a>125名成员</a></li>
+                  </ul>
+                </div>
+              </div>
+              <div class="recommend-item">
+                <div class="clearfix">
+                  <img src="../../img/bilibili.jpg" style="float:left;" width="60px">
+                  <ul style="float:left;list-style:none;padding-left:20px">
+                    <li><a>嗶哩嗶哩 - ( ゜- ゜)つロ 乾杯~</a></li>
+                    <li><a>125名成员</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- COMMENT -->
+  <!-- PUT-YOUR-CODE-ABOVE -->
+</div>
+<!-- END-OF-CONTENT -->
+
+<!-- BOTTOM -->
+<jsp:include page="../../html/frame/frame_bottom.jsp"></jsp:include>
+<!-- END-OF-BOTTOM -->
 </body>
 </html>

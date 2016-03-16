@@ -1,7 +1,7 @@
 <%@ page language="java" pageEncoding="UTF-8"%>
 <html lang="en">
 <head>
-<%@ include file="../frame/frame_head.jsp"%>
+<%@ include file="<%=request.getContextPath()%>/html/frame/frame_head.jsp"%>
 <link href="../../css/courses.css" rel="stylesheet" />
 <%@ include file="../../jsp/course_load.jsp"%>
 <script type="text/javascript" charset="utf-8">

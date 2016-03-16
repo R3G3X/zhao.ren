@@ -62,13 +62,13 @@
 			</div>
 			<%@ include file="jsp/index_project.jsp" %>
 			<!-- PUT-YOUR-CODE-ABOVE -->
-			
+
 		</div>
 	</div>
 	<!-- END-OF-CONTENT -->
 
 	<!-- BOTTOM -->
-<%-- 	<jsp:include page="/html/frame/frame_bottom.jsp"></jsp:include> --%>
+	<jsp:include page="/html/frame/frame_bottom.jsp"></jsp:include>
 	<!-- END-OF-BOTTOM -->
 </body>
 </html>
