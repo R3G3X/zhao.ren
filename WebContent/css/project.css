@@ -1,0 +1,79 @@
+/*
+* @Author: Ed_Strickland
+* @Date:   2016-03-17 13:10:49
+* @Last Modified by:   Ed_Strickland
+* @Last Modified time: 2016-03-17 14:54:50
+*/
+.project-title-box{
+  padding-left:30px;
+  padding-right:30px;
+  padding-top:50px;
+  padding-bottom:30px;
+}
+.project-title-title{
+  float:left;
+  margin:0px;
+  font-weight:bold;
+  text-shadow:3px 3px 0 #D0D0D0;
+}
+.project-title-status{
+  float:right;
+  font-weight:bold;
+  color:#9E9E9E;
+}
+.project-title-status:hover{
+  float:right;
+  font-weight:bold;
+  color:#9E9E9E;
+  text-decoration:none;
+  cursor:default;
+}
+.project-title-require{
+  float:left;
+  margin-left:-5px;
+  margin-right:0px;
+  margin-top:20px;
+  width:100%;
+}
+.project-title-require-item:hover{
+  padding-right:5px;
+  padding-left:5px;
+  color:#000;
+  cursor:default;
+}
+.project-title-require-item{
+  padding-right:5px;
+  padding-left:5px;
+  color:#000;
+}
+.with-right-border{
+  border-right:1px solid #DBDBDB;
+}
+.project-title-join{
+  float:right;
+  padding:5px;
+  background-color:#6D6D6D;
+}
+.project-title-join>a{
+  color:#fff;
+}
+.project-title-join>a:hover{
+  color:#E5E5E5;
+  text-decoration:none;
+}
+.shadow-top{
+  box-shadow:2px 0 5px #5D5D5D,
+            -2px 0 5px #5D5D5D;
+}
+.shadow-bottom{
+  box-shadow:2px 0px 5px #5D5D5D,
+            -2px 0px 5px #5D5D5D;
+}
+.box-border-top{
+  border:1px solid #AEAEAE;
+}
+.box-border-bottom{
+  border-bottom:1px solid #AEAEAE;
+  border-left:1px solid #AEAEAE;
+  border-right:1px solid #AEAEAE;
+}
