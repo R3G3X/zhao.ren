@@ -7,8 +7,8 @@
 	if (logined) {
 		ResultSet navSet = db.userInfo(id);
 		navSet.next();
-		nav_username=navSet.getString("username");
-		avatar=navSet.getString("avatar");
+		nav_username = navSet.getString("username");
+		avatar = navSet.getString("avatar");
 	}
 %>
 <nav class="navbar navbar-inverse navbar-fixed-top grey-0"
@@ -48,11 +48,18 @@
 							href="<%=request.getContextPath()%>/html/manager/manager.jsp">管理系统</a></li>
 						<li><a id="user"
 							href="<%=request.getContextPath()%>/html/user/user.jsp">我的主页</a></li>
+						<li><a id="user"
+							href="<%=request.getContextPath()%>/html/user/user.jsp">个人中心</a></li>
 						<li class="divider"></li>
 						<li><a href="#" id="exit">退出登录</a></li>
 					</ul></li>
 				<li><img id="avatar" class="img-circle hidden-xs hidden"
 					src="<%=request.getContextPath()%>/avatar/<%=avatar%>"></li>
+			</ul>
+
+			<ul class="nav navbar-nav navbar-right">
+				<li><a
+					href="<%=request.getContextPath()%>/html/user/message.jsp">我的消息</a></li>
 			</ul>
 			<!-- END-OF-NAVBAR-RIGHT -->
 		</div>

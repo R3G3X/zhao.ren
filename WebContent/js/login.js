@@ -74,7 +74,7 @@ $(document).ready(function(){
                     //$.cookie("userid",$("#username").val(),{expire:60*60,path:"/"});
                     $("#password").val("");
                     $("#username").val("");
-                    loginId();
+                    //loginId();
                     location.reload();
                 })
             .error(function(data,status,e){
