@@ -6,7 +6,6 @@
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <%@ include file="/html/frame/frame_head.jsp"%>
 <link href="../../css/projectlist.css" rel="stylesheet" />
-<script type="text/javascript" src="../../js/pagination.js"></script>
 <%@ include file="/jsp/frame.jsp"%>
 <title>全部项目</title>
 </head>
@@ -52,94 +51,8 @@
 						</div>
 
 						<div id="content-width" class="clearfix">
-
-							<div class="project-list-box">
-								<div class="project-list-img">
-									<img src="../../img/bg.jpg">
-								</div>
-								<div class="project-list-info">
-									<h3>华师大创业</h3>
-									<p>哈哈哈哈哈哈哈哈哈哈哈哈哈哈</p>
-									<div class="project-list-skill clearfix">
-										<a href=""><span class="require label label-default">C/C++</span></a>
-										<a href=""><span class="require label label-primary">Java</span></a>
-									</div>
-								</div>
-								<div class="project-list-creator clearfix">
-									<img class="project-list-creator-avatar img-circle"
-										src="../../img/avatar3.jpg"> <a
-										class="project-list-creator-username" href="">机制汇</a> <a
-										class="project-list-creator-count" href="">&nbsp;10</a> <img
-										class="project-list-creator-number" src="../../img/person.png">
-									<h6 class="project-list-date">2016-03-17</h6>
-								</div>
-							</div>
-
-							<div class="project-list-box">
-								<div class="project-list-img">
-									<img src="../../img/bg.jpg">
-								</div>
-								<div class="project-list-info">
-									<h3>华师大创业</h3>
-									<p>哈哈哈哈哈哈哈哈哈哈哈哈哈哈</p>
-									<div class="project-list-skill clearfix">
-										<a href=""><span class="require label label-default">C/C++</span></a>
-										<a href=""><span class="require label label-primary">Java</span></a>
-									</div>
-								</div>
-								<div class="project-list-creator clearfix">
-									<img class="project-list-creator-avatar img-circle"
-										src="../../img/avatar3.jpg"> <a
-										class="project-list-creator-username" href="">机制汇</a> <a
-										class="project-list-creator-count" href="">&nbsp;10</a> <img
-										class="project-list-creator-number" src="../../img/person.png">
-									<h6 class="project-list-date">2016-03-17</h6>
-								</div>
-							</div>
-
-							<div class="project-list-box">
-								<div class="project-list-img">
-									<img src="../../img/bg.jpg">
-								</div>
-								<div class="project-list-info">
-									<h3>华师大创业</h3>
-									<p>哈哈哈哈哈哈哈哈哈哈哈哈哈哈</p>
-									<div class="project-list-skill clearfix">
-										<a href=""><span class="require label label-default">C/C++</span></a>
-										<a href=""><span class="require label label-primary">Java</span></a>
-									</div>
-								</div>
-								<div class="project-list-creator clearfix">
-									<img class="project-list-creator-avatar img-circle"
-										src="../../img/avatar3.jpg"> <a
-										class="project-list-creator-username" href="">机制汇</a> <a
-										class="project-list-creator-count" href="">&nbsp;10</a> <img
-										class="project-list-creator-number" src="../../img/person.png">
-									<h6 class="project-list-date">2016-03-17</h6>
-								</div>
-							</div>
-
-							<div class="project-list-box">
-								<div class="project-list-img">
-									<img src="../../img/bg.jpg">
-								</div>
-								<div class="project-list-info">
-									<h3>华师大创业</h3>
-									<p>哈哈哈哈哈哈哈哈哈哈哈哈哈哈</p>
-									<div class="project-list-skill clearfix">
-										<a href=""><span class="require label label-default">C/C++</span></a>
-										<a href=""><span class="require label label-primary">Java</span></a>
-									</div>
-								</div>
-								<div class="project-list-creator clearfix">
-									<img class="project-list-creator-avatar img-circle"
-										src="../../img/avatar3.jpg"> <a
-										class="project-list-creator-username" href="">机制汇</a> <a
-										class="project-list-creator-count" href="">&nbsp;10</a> <img
-										class="project-list-creator-number" src="../../img/person.png">
-									<h6 class="project-list-date">2016-03-17</h6>
-								</div>
-							</div>
+							<%@ include file="/jsp/project_list.jsp"%>
+							
 						</div>
 						<!-- END-OF-CONTENT -->
 
