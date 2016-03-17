@@ -20,7 +20,7 @@
 		<!-- PUT-YOUR-CODE-BELOW -->
 		<!-- BASICS -->
 		<div class="grey-2">
-			<div class="contain">
+			<div class="container">
 				<div class="white shadow">
 					<div class="clearfix"
 						style="background: url(../../img/background-img.jpg) no-repeat fixed center center/cover;">
@@ -52,7 +52,7 @@
 
 		<!-- COMMENT -->
 		<div class="grey-3">
-			<div class="contain">
+			<div class="container">
 				<div id="width" class="white shadow clearfix">
 					<div id="counter"
 						style="border-top: 1px solid #BDBCBC; border-bottom: 1px solid #BDBCBC;">

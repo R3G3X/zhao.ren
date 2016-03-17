@@ -176,9 +176,11 @@
 }
 
 #test{
-  margin-left:145px;
+  /* margin-left:145px; */
   width:600px;
+  margin: auto;
 }
+
 
 #recent-move{
   margin-bottom:30px;
