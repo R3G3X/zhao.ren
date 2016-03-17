@@ -11,12 +11,19 @@
 	int finish_count = 0;
 	int ongoing_count = 0;
 	int processing_count = 0;
+	int iid = -1;
 	if (logined) {
-		info = db.userInfo(id);
+		String siid = request.getParameter("id");
+		if (siid != null) {
+			iid = Integer.parseInt(siid);
+		} else {
+			iid = id;
+		}
+		info = db.userInfo(iid);
 		info.next();
-		finish_count = Integer.parseInt(db.finished_count(id));
-		ongoing_count = Integer.parseInt(db.ongoing_count(id));
-		processing_count = Integer.parseInt(db.processing_count(id));
+		finish_count = Integer.parseInt(db.finished_count(iid));
+		ongoing_count = Integer.parseInt(db.ongoing_count(iid));
+		processing_count = Integer.parseInt(db.processing_count(iid));
 	}
 %>
 </head>

@@ -14,7 +14,9 @@
 	<!-- NAVBAR -->
 	<%@ include file="/html/frame/frame_navbar.jsp"%>
 	<!-- END-OF-NAVBAR -->
-
+	<%
+		id = iid;
+	%>
 	<!-- CONTENT -->
 	<div id="container-content">
 		<!-- PUT-YOUR-CODE-BELOW -->
@@ -25,7 +27,8 @@
 					<div class="clearfix"
 						style="background: url(../../img/background-img.jpg) no-repeat fixed center center/cover;">
 						<div id="user-box">
-							<a id="pic-edit" href="#"><img src="<%=request.getContextPath()%>/avatar/<%=avatar%>"
+							<a id="pic-edit" href="#"><img
+								src="<%=request.getContextPath()%>/avatar/<%=info.getString("avatar")%>"
 								class="img-circle big-avatar" /></a> <a id="user-edit">编辑</a>
 						</div>
 						<div id="comment">
@@ -60,17 +63,17 @@
 							<div class="count-item"
 								style="font-size: 10px; border-right: 1px solid #BDBCBC; padding-top: 5px;">
 								<p>已经完成的项目</p>
-								<p class="count-number"><%=finish_count %></p>
+								<p class="count-number"><%=finish_count%></p>
 							</div>
 							<div class="count-item"
 								style="font-size: 10px; border-right: 1px solid #BDBCBC; padding-top: 5px;">
 								<p>正在进行的项目</p>
-								<p class="count-number"><%=ongoing_count %></p>
+								<p class="count-number"><%=ongoing_count%></p>
 							</div>
 							<div class="count-item"
 								style="font-size: 10px; padding-top: 5px;">
 								<p>申请中的项目</p>
-								<p class="count-number"><%=processing_count %></p>
+								<p class="count-number"><%=processing_count%></p>
 							</div>
 						</div>
 
@@ -167,7 +170,7 @@
 						<div class="detail-box">
 							<div class="detail-title clearfix">
 								<a class="detail-title-title" href="#">项目</a>
-								<p class="detail-title-count"><%=finish_count+ongoing_count %></p>
+								<p class="detail-title-count"><%=finish_count + ongoing_count%></p>
 							</div>
 							<ul class="recommend-item">
 								<%@ include file="/jsp/user_project.jsp"%>

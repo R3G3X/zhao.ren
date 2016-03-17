@@ -32,7 +32,7 @@
 			<!-- NAVBAR-LEFT -->
 			<ul class="nav navbar-nav navbar-left">
 				<li><a
-					href="<%=request.getContextPath()%>/html/courses/courses.jsp">所有项目</a></li>
+					href="<%=request.getContextPath()%>/html/projectlist/projectlist.jsp">所有项目</a></li>
 			</ul>
 			<!-- END-OF-NAVBAR-LEFT -->
 

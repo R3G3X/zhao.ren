@@ -9,6 +9,7 @@
 	int pid = Integer.parseInt(request.getParameter("id"));
 	ResultSet pret = db.project_info(pid);
 	pret.next();
+	db.add_visits(pid);
 %>
 </head>
 <body>
