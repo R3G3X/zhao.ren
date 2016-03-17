@@ -4,8 +4,10 @@
 <html lang="en">
 <head>
 <meta charset="utf-8">
-<jsp:include page="/html/frame/frame_head.jsp"></jsp:include>
-<%@ include file="/jsp/frame.jsp"%>
+<%@ include file="/html/frame/frame_head.jsp"%>
+<%@ include file="/jsp/doLogin_required.jsp"%>
+<%@ include file="/jsp/user_info.jsp"%>
+
 <link href="../../css/user.css" rel="stylesheet" />
 </head>
 <body>
@@ -29,9 +31,17 @@
 						<div id="comment">
 							<input id="courseId" type="hidden" value="courseId" />
 							<h2 style="padding-bottom: 3px; border-bottom: 1px solid #fff;">
-								UserName</h2>
-							<h4>region</h4>
-							<p>describe</p>
+								<%=info.getString("username")%>
+							</h2>
+							<h4>
+								<%=info.getString("userintro")%>
+							</h4>
+							<p>
+								专业:<%=info.getString("major")%>
+								| 邮箱:<%=info.getString("email")%>
+							</p>
+							<p>
+								<%=info.getString("tech_intro")%>
 							</p>
 						</div>
 					</div>
@@ -50,17 +60,17 @@
 							<div class="count-item"
 								style="font-size: 10px; border-right: 1px solid #BDBCBC; padding-top: 5px;">
 								<p>已经完成的项目</p>
-								<p class="count-number">23</p>
+								<p class="count-number"><%=finish_count %></p>
 							</div>
 							<div class="count-item"
 								style="font-size: 10px; border-right: 1px solid #BDBCBC; padding-top: 5px;">
 								<p>正在进行的项目</p>
-								<p class="count-number">2</p>
+								<p class="count-number"><%=ongoing_count %></p>
 							</div>
 							<div class="count-item"
 								style="font-size: 10px; padding-top: 5px;">
 								<p>申请中的项目</p>
-								<p class="count-number">5</p>
+								<p class="count-number"><%=processing_count %></p>
 							</div>
 						</div>
 
@@ -157,21 +167,10 @@
 						<div class="detail-box">
 							<div class="detail-title clearfix">
 								<a class="detail-title-title" href="#">项目</a>
-								<p class="detail-title-count">25</p>
+								<p class="detail-title-count"><%=finish_count+ongoing_count %></p>
 							</div>
 							<ul class="recommend-item">
-								<li><a class="recommend-name" href="user.jsp?courseId=id">华师大项目</a>
-									<a class="recommend-status" href="user.jsp?courseId=id">他发起的</a>
-								</li>
-								<li><a class="recommend-name" href="user.jsp?courseId=id">Regex项目</a>
-									<a class="recommend-status" href="user.jsp?courseId=id">他发起的</a>
-								</li>
-								<li><a class="recommend-name" href="user.jsp?courseId=id">微软项目</a>
-									<a class="recommend-status" href="user.jsp?courseId=id">他加入的</a>
-								</li>
-								<li><a class="recommend-name" href="user.jsp?courseId=id">建站计划</a>
-									<a class="recommend-status" href="user.jsp?courseId=id">他加入的</a>
-								</li>
+								<%@ include file="/jsp/user_project.jsp"%>
 							</ul>
 						</div>
 
@@ -219,7 +218,6 @@
 		<!-- PUT-YOUR-CODE-ABOVE -->
 	</div>
 	<!-- END-OF-CONTENT -->
-
 	<!-- BOTTOM -->
 	<jsp:include page="../../html/frame/frame_bottom.jsp"></jsp:include>
 	<!-- END-OF-BOTTOM -->

@@ -4,7 +4,7 @@
 <html lang="en">
 <head>
 <meta charset="utf-8">
-<jsp:include page="/html/frame/frame_head.jsp"></jsp:include>
+<%@ include file="/html/frame/frame_head.jsp"%>
 
 <%@ include file="jsp/frame.jsp" %>
 <script type="text/javascript" src="js/voteClick.js"></script>
@@ -66,7 +66,6 @@
 		</div>
 	</div>
 	<!-- END-OF-CONTENT -->
-
 	<!-- BOTTOM -->
 	<jsp:include page="/html/frame/frame_bottom.jsp"></jsp:include>
 	<!-- END-OF-BOTTOM -->

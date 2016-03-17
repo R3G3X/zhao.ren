@@ -15,7 +15,7 @@
 	if (myid != null) {
 		logined = true;
 		id = Integer.parseInt(myid);
-		out.print("<br/><br/><h1>you have logged in.</h1>");
+		//out.print("<br/><br/><h1>you have logged in.</h1>");
 	}
 %>
 

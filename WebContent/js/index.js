@@ -1,12 +1,6 @@
-/*
-* @Author: Ed_Strickland
-* @Date:   2016-01-06 16:51:08
-* @Last Modified by:   Ed_Strickland
-* @Last Modified time: 2016-01-06 16:55:44
-*/
   $(document).ready(function(){
     $(".text").click(function(){
-      location.href ="html/project/project.jsp?courseId="+$(this).children("input").val();
+      location.href ="html/project/project.jsp?id="+$(this).parent().attr("id");
     })
     $(".select-btn").click(function(){
       $("#target-course").val($(this).parent().prev().children("input").val());

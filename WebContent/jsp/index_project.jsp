@@ -13,7 +13,7 @@
 					ResultSet ret = db.index_project_qry();
 					while (ret.next()) {
 						String div = String.format(
-								"<div class=\"content-item\" id=\"%s\"><div class=\"text\"><h3>%s</h3><input type=\"hidden\" value=\"14\" class=\"name\"><p>%s</p></div><p class=\"btn-container\"><a class=\"btn-select select-btn\" data-toggle=\"modal\" data-target=\"#modal-vote\">Join</a></p><p class=\"result\"><a href=\"#\">%s</a> people at this project</p></div>",
+								"<div class=\"content-item\" id=\"%s\"><div class=\"text\"><h3>%s</h3><p>%s</p></div><p class=\"btn-container\"><a class=\"btn-select select-btn\" data-toggle=\"modal\" data-target=\"#modal-vote\">Join</a></p><p class=\"result\"><a href=\"#\">%s</a> people at this project</p></div>",
 								ret.getString("id"),ret.getString("name"), ret.getString("intro"), ret.getString("people"));
 						out.print(div);
 					}

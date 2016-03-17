@@ -88,7 +88,6 @@ $(document).ready(function(){
     $('#modal-login').keydown(function(e){
 		if(e.keyCode==13){
 		   loginPost();
-		   alert("asdf")
 		}
 	}); 
     
