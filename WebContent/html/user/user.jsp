@@ -12,7 +12,7 @@
 </head>
 <body>
 	<!-- NAVBAR -->
-	<jsp:include page="/html/frame/frame_navbar.jsp"></jsp:include>
+	<%@ include file="/html/frame/frame_navbar.jsp"%>
 	<!-- END-OF-NAVBAR -->
 
 	<!-- CONTENT -->
@@ -25,7 +25,7 @@
 					<div class="clearfix"
 						style="background: url(../../img/background-img.jpg) no-repeat fixed center center/cover;">
 						<div id="user-box">
-							<a id="pic-edit" href="#"><img src="../../img/wang.png"
+							<a id="pic-edit" href="#"><img src="<%=request.getContextPath()%>/avatar/<%=avatar%>"
 								class="img-circle big-avatar" /></a> <a id="user-edit">编辑</a>
 						</div>
 						<div id="comment">

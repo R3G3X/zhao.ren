@@ -14,7 +14,7 @@
 
 <body>
 	<!-- NAVBAR -->
-	<jsp:include page="/html/frame/frame_navbar.jsp"></jsp:include>
+	<%@ include file="/html/frame/frame_navbar.jsp"%>
 	<!-- END-OF-NAVBAR -->
 
 	<!-- CONTENT -->
@@ -51,15 +51,6 @@
 			<!-- END-OF-SLIDE -->
 
 			<!-- CONTENT -->
-			<div class="grey-3">
-				<div class="clearfix">
-					<div class="white clearfix">
-						<div id="content" class="clearfix"></div>
-						<a id="vote-link" href="#">>>>我要投票</a> <input type="hidden"
-							id="target-course" />
-					</div>
-				</div>
-			</div>
 			<%@ include file="jsp/index_project.jsp" %>
 			<!-- PUT-YOUR-CODE-ABOVE -->
 

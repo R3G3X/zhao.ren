@@ -22,11 +22,8 @@ $(document).ready(function(){
     var username=$.cookie("zhao_ren_token");
     if (username != null && username != ""){
         $("#login").addClass("hidden");
-        $(".dropdown").removeClass("hidden").text(username);
+        $(".dropdown").removeClass("hidden");
         $("#avatar").removeClass("hidden");
-        if(username == "admin"){
-            $("#manage").removeClass("hidden");
-        }
     }
     $("#login-submit").attr("disabled",true);
     // $("#project-add > a").click(function(){
