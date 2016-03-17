@@ -53,14 +53,21 @@
 
 						<div id="content-width" class="clearfix">
 							<%@ include file="/jsp/project_list.jsp"%>
-							
+
 						</div>
 						<!-- END-OF-CONTENT -->
 
 					</div>
+					<div style="text-align: center; padding-bottom: 10px">
+						<a type="button" class="btn btn-danger"
+							href="?pages=<%=pages - 1 > 0 ? pages - 1 : pages%>">上一页</a> <a
+							type="button" class="btn btn-success"
+							href="?pages=<%=pages + 1%>">下一页</a>
+					</div>
 				</div>
 			</div>
 		</div>
+
 	</div>
 
 	<!-- BOTTOM -->
