@@ -84,90 +84,39 @@
 
 						<h3 style="font-weight: bold;">最近动态</h3>
 						<div id="recent-move">
-							<div class="recent-move-content clearfix">
-								<div class="recent-move-content-avatar">
-									<img src="../../avatar/1.jpg">
+							<div class="recent-move-content">
+								<a class="move-title-title">Project Name</a>
+								<div class="move-title">
+									<p class="move-title-detail">project details</p>
 								</div>
-								<div class="recent-move-content-box">
-									<a class="move-title-title">机制汇</a>
-										<div class="move-title">
-											<p class="move-title-detail">加入了 <a href="	" title="">JSP项目</a></p>
-										</div>
-										<div class="move-detail">
-											<a class="move-detail-duration">28小时</a>
-											<a class="move-detail-time">加入时间：2016-01-01</a>
-										</div>
+								<div class="move-detail">
+									<a class="move-detail-duration">28小时</a> <a
+										class="move-detail-time">加入时间：2016-01-01</a>
 								</div>
 							</div>
-
-							<div class="recent-move-content clearfix">
-								<div class="recent-move-content-avatar">
-									<img src="../../avatar/1.jpg">
+							<div class="recent-move-content">
+								<a class="move-title-title">Project Name</a>
+								<div class="move-title">
+									<p class="move-title-detail">project details</p>
 								</div>
-								<div class="recent-move-content-box">
-									<a class="move-title-title">Project Name</a>
-										<div class="move-title">
-											<p class="move-title-detail">project details</p>
-										</div>
-										<div class="move-detail">
-											<a class="move-detail-duration">28小时</a>
-											<a class="move-detail-time">加入时间：2016-01-01</a>
-										</div>
+								<div class="move-detail">
+									<a class="move-detail-duration">28小时</a> <a
+										class="move-detail-time">加入时间：2016-01-01</a>
 								</div>
 							</div>
-
-							<div class="recent-move-content clearfix">
-								<div class="recent-move-content-avatar">
-									<img src="../../avatar/1.jpg">
+							<div class="recent-move-content">
+								<a class="move-title-title">Project Name</a>
+								<div class="move-title">
+									<p class="move-title-detail">project details</p>
 								</div>
-								<div class="recent-move-content-box">
-									<a class="move-title-title">Project Name</a>
-										<div class="move-title">
-											<p class="move-title-detail">project details</p>
-										</div>
-										<div class="move-detail">
-											<a class="move-detail-duration">28小时</a>
-											<a class="move-detail-time">加入时间：2016-01-01</a>
-										</div>
+								<div class="move-detail">
+									<a class="move-detail-duration">28小时</a> <a
+										class="move-detail-time">加入时间：2016-01-01</a>
 								</div>
 							</div>
-
-							<div class="recent-move-content clearfix">
-								<div class="recent-move-content-avatar">
-									<img src="../../avatar/1.jpg">
-								</div>
-								<div class="recent-move-content-box">
-									<a class="move-title-title">Project Name</a>
-										<div class="move-title">
-											<p class="move-title-detail">project details</p>
-										</div>
-										<div class="move-detail">
-											<a class="move-detail-duration">28小时</a>
-											<a class="move-detail-time">加入时间：2016-01-01</a>
-										</div>
-								</div>
-							</div>
-
-							<div class="recent-move-content clearfix">
-								<div class="recent-move-content-avatar">
-									<img src="../../avatar/1.jpg">
-								</div>
-								<div class="recent-move-content-box">
-									<a class="move-title-title">Project Name</a>
-										<div class="move-title">
-											<p class="move-title-detail">project details</p>
-										</div>
-										<div class="move-detail">
-											<a class="move-detail-duration">28小时</a>
-											<a class="move-detail-time">加入时间：2016-01-01</a>
-										</div>
-								</div>
-							</div>
-
-
 						</div>
 
-<!-- 						<div id="comment-area">
+						<div id="comment-area">
 							<h3 style="font-weight: bold">留言区</h3>
 							<div class="comment-item">
 								<div class="comment-title clearfix">
@@ -215,7 +164,7 @@
 									<a id="comment-submit">评论</a>
 								</div>
 							</div>
-						</div> -->
+						</div>
 					</div>
 					<div id="right-content">
 						<div class="detail-box">
@@ -223,7 +172,7 @@
 								<a class="detail-title-title" href="#">项目</a>
 								<p class="detail-title-count"><%=finish_count + ongoing_count%></p>
 							</div>
-							<ul class="recommend-item detail-group-box">
+							<ul class="recommend-item">
 								<%@ include file="/jsp/user_project.jsp"%>
 							</ul>
 						</div>
@@ -233,18 +182,6 @@
 								<p class="detail-title-title">小组</p>
 								<p class="detail-title-count">4</p>
 							</div>
-
-							<div class="detail-group-box">
-								<div class="recommend-item">
-								<div class="clearfix">
-									<img src="../../img/bilibili.jpg" style="float: left;"
-										width="60px">
-									<ul style="float: left; list-style: none; padding-left: 20px">
-										<li><a>嗶哩嗶哩 - ( ゜- ゜)つロ 乾杯~</a></li>
-										<li><a>125名成员</a></li>
-									</ul>
-								</div>
-							</div>
 							<div class="recommend-item">
 								<div class="clearfix">
 									<img src="../../img/bilibili.jpg" style="float: left;"
@@ -265,9 +202,16 @@
 									</ul>
 								</div>
 							</div>
+							<div class="recommend-item">
+								<div class="clearfix">
+									<img src="../../img/bilibili.jpg" style="float: left;"
+										width="60px">
+									<ul style="float: left; list-style: none; padding-left: 20px">
+										<li><a>嗶哩嗶哩 - ( ゜- ゜)つロ 乾杯~</a></li>
+										<li><a>125名成员</a></li>
+									</ul>
+								</div>
 							</div>
-
-
 						</div>
 					</div>
 				</div>
