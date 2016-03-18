@@ -58,8 +58,8 @@
 			</ul>
 
 			<ul class="nav navbar-nav navbar-right">
-				<li><a href="<%=request.getContextPath()%>/html/project/projectCreate.jsp">我要找人</a></li>
-				<li><a href="<%=request.getContextPath()%>/html/user/message.jsp">我的消息</a></li>
+				<li><a
+					href="<%=request.getContextPath()%>/html/user/message.jsp">我的消息</a></li>
 			</ul>
 			<!-- END-OF-NAVBAR-RIGHT -->
 		</div>
