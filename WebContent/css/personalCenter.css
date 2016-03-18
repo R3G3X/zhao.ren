@@ -2,7 +2,7 @@
 * @Author: Ed_Strickland
 * @Date:   2016-03-18 13:50:32
 * @Last Modified by:   Ed_Strickland
-* @Last Modified time: 2016-03-18 17:00:09
+* @Last Modified time: 2016-03-19 01:49:40
 */
 #content{
   margin-left:0px;
@@ -211,7 +211,7 @@
   width:240px;
   border:1px solid #C8C8C8;
   float:left;
-  margin-left:20px;
+  margin-left:25px;
   margin-bottom:30px;
 }
 .personal-center-project-developer-avatar-div{
@@ -264,4 +264,68 @@
   background-color:#7E7E7E;
   text-decoration:none;
 }
+
+.personal-center-message{
+  margin-left:auto;
+  margin-right:auto;
+  height:70px;
+  width:600px;
+  border:1px solid #C8C8C8;
+  margin-top:-1px;
+  margin-bottom:0px;
+}
+.personal-center-message-container{
+  padding:20px;
+}
+.personal-center-message-avatar{
+  height:70px;
+  width:70px;
+  padding:10px;
+  float:left;
+}
+.personal-center-message-avatar-img{
+  height:48px;
+  width:48px;
+}
+.personal-center-message-item{
+  float:left;
+  height:69px;
+  width:380px;
+  border-right:1px solid #C8C8C8;
+}
+.personal-center-message-message{
+  height:70px;
+  line-height:70px;
+  text-align:center;
+}
+.personal-center-message-agreement{
+  float:left;
+  width:148px;
+  height:70px;
+  line-height:70px;
+  text-align:center;
+}
+.personal-center-message-agree{
+  margin-right:10px;
+  color:#7C7B7B;
+}
+.personal-center-message-agree:hover{
+  margin-right:10px;
+  color:#5D5D5D;
+  text-decoration:none;
+}
+.personal-center-message-disagree{
+  margin-left:10px;
+  color:#C71818;
+}
+.personal-center-message-disagree:hover{
+  margin-left:10px;
+  color:#953333;
+  text-decoration:none;
+}
+
+
+
+
+
 

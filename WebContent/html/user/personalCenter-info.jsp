@@ -4,63 +4,16 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <!-- meta -->
-
 <title>项目发布平台</title>
-<link href="../../css/bootstrap.min.css" rel="stylesheet" />
-<link href="../../css/default.css" rel="stylesheet" />
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<%@ include file="/html/frame/frame_head.jsp"%>
+<link href="../../css/projectlist.css" rel="stylesheet" />
+<%@ include file="/jsp/frame.jsp"%>
 <link href="../../css/personalCenter.css" rel="stylesheet" />
-<script src="../../js/jquery/2.0.0/jquery.min.js"></script>
-<script src="../../js/jquery/jquery-latest.js"></script>
-<script src="../../js/bootstrap/3.0.3/bootstrap.min.js"></script>
-<script src="../../js/jquery/jquery.cookie.js"></script>
-<script src="../../js/modal.js"></script>
 </head>
 <body>
-  <nav class="navbar navbar-inverse navbar-fixed-top grey-1"
-    role="navigation">
-    <div class="container grey-0" style="width: 1140px;">
-      <!-- NAVBAR-HEADER -->
-      <div class="navbar-header">
-        <!-- FOR-SMALLER -->
-        <button type="button" class="navbar-toggle" data-toggle="collapse"
-          data-target="#example-navbar-collapse">
-          <span class="sr-only">切换导航</span> <span class="icon-bar"></span> <span
-            class="icon-bar"></span>
-        </button>
-        <!-- END-OF-FOR-SMALLER -->
-        <a class="navbar-brand" href="../../index.jsp">ZHAO.REN</a>
-      </div>
-      <!-- END-OF-NAVBAR-HEADER -->
-
-      <div class="collapse navbar-collapse" id="example-navbar-collapse">
-        <!-- NAVBAR-LEFT -->
-        <ul class="nav navbar-nav navbar-left">
-          <li><a href="../../html/courses/courses.jsp">所有项目</a></li>
-        </ul>
-        <!-- END-OF-NAVBAR-LEFT -->
-
-        <!-- NAVBAR-RIGHT -->
-        <ul class="nav navbar-nav navbar-right" style="margin-right: 10px;">
-          <li id="login"><a id="login-btn" type="button"
-            data-toggle="modal" data-target="#modal-login">登陆</a></li>
-          <li id="user-info"><a href="#"
-            class="dropdown-toggle dropdown hidden" data-toggle="dropdown">机制汇<b
-              class="caret"></b>
-          </a>
-            <ul class="dropdown-menu">
-              <li><a id="manage" class="hidden"
-                href="../../html/manager/manager.jsp">管理系统</a></li>
-              <li><a id="user" href="../../html/user/user.jsp">我的主页</a></li>
-              <li class="divider"></li>
-              <li><a href="#" id="exit">退出登录</a></li>
-            </ul></li>
-          <li><img id="avatar" class="img-circle hidden-xs hidden"
-            src="../../img/avatar3.jpg"></li>
-        </ul>
-        <!-- END-OF-NAVBAR-RIGHT -->
-      </div>
-    </div>
-  </nav>
+  <!-- NAVBAR -->
+  <%@ include file="../frame/frame_navbar.jsp"%>
   <!-- END-OF-NAVBAR -->
 
   <div id="container-content">
@@ -77,6 +30,7 @@
                 </div>
                 <div class="personal-center-control">
                   <ul class="personal-center-control-list">
+                    <li class="personal-center-control-item item-deactivated"><a href="">我的消息</a></li>
                     <li class="personal-center-control-item item-activated"><a href="">我的信息</a></li>
                     <li class="personal-center-control-item item-deactivated"><a href="">项目管理</a></li>
                     <li class="personal-center-control-item item-deactivated"><a href="">团队管理</a></li>
@@ -150,19 +104,8 @@
       </div>
     </div>
   </div>
-  <div class="grey-0">
-    <div class="container" style="width: 1140px;">
-      <div id="bottom" class="hidden-xs">
-        <p>
-          <br>ZHAO.REN Team. (139-169-59407)<br />中山北路 3663 号 华东师范大学<br />
-        </p>
-        <ul style="margin-bottom: 0px; padding-bottom: 20px">
-          <li class="contact-left">ZHAO.REN技术交流： <span>2499128545</span>
-          </li>
-          <li class="contact-right">新浪微博：@ZHAO.REN</li>
-        </ul>
-      </div>
-    </div>
-  </div>
+  <!-- BOTTOM -->
+  <jsp:include page="../../html/frame/frame_bottom.jsp"></jsp:include>
+  <!-- END-OF-BOTTOM -->
 </body>
 </html>
