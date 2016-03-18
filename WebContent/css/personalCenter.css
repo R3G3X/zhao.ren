@@ -1,0 +1,267 @@
+/*
+* @Author: Ed_Strickland
+* @Date:   2016-03-18 13:50:32
+* @Last Modified by:   Ed_Strickland
+* @Last Modified time: 2016-03-18 17:00:09
+*/
+#content{
+  margin-left:0px;
+}
+.personal-center{
+  border:1px solid #C8C8C8;
+  left:0;
+  right:0;
+  margin:auto;
+  width:800px;
+  height:680px;
+}
+.personal-center-left-content{
+  height:679px;
+  border-right:1px solid #C8C8C8;
+  float:left;
+}
+.personal-center-avatar{
+  width:140px;
+  height:140px;
+  padding-top:20px;
+  padding-left:25px;
+  padding-right:25px;
+  border-bottom:1px solid #C8C8C8;
+}
+#personal-center-avatar-img{
+  width:90px;
+  height:90px;
+}
+#personal-center-avatar-username{
+  margin-top:0px;
+  height:30px;
+  line-height:30px;
+  color:#666666;
+  text-align:center;
+}
+.personal-center-control{}
+.personal-center-control-list{
+  margin-top:10px;
+  list-style:none;
+  padding-left:0px;
+}
+.personal-center-control-item{
+  width:140px;
+  height:40px;
+  line-height:40px;
+  text-align:center;
+}
+.item-activated{
+  background-color:#666666;
+}
+.item-activated>a{
+  color:#fff;
+}
+.item-deactivated{
+  background-color:#E4E4E4;
+}
+.item-deactivated>a{
+  color:#666666;
+}
+.personal-center-right-content{
+  float:left;
+}
+.personal-center-right-title{
+  padding-left:15px;
+  width:657px;
+  height:50px;
+  border-bottom:1px solid #C8C8C8;
+  position:relative;
+}
+#title-line{
+  height:30px;
+  width:5px;
+  position:absolute;
+  top:0;
+  bottom:0;
+  margin:auto;
+  background-color:#727272;
+  display:inline-block;
+}
+.personal-center-right-title>p{
+  padding-left:15px;
+  height:50px;
+  line-height:49px;
+  display:inline-block;
+  color:#666666;
+}
+.personal-center-right-item{
+  width:657px;
+  padding-right:30px;
+}
+.personal-center-info{
+  list-style:none;
+}
+.personal-center-info-item{
+  color:#666666;
+  margin-top:30px;
+}
+.personal-center-info-item>p{
+  display:inline-block;
+}
+.personal-center-info-item>a{
+}
+.personal-center-info-item-title{
+  text-align:right;
+  width:6em;
+}
+.personal-center-info-item-item{
+  margin-left:40px;
+  width:170px;
+}
+.personal-center-info-item-item-tech{
+  margin-left:40px;
+  width:30px;
+}
+.personal-center-password-now{
+  margin-left:302px;
+}
+.personal-center-info-change{
+  padding-left:5px;
+  padding-right:5px;
+}
+.personal-center-info-item-item-tech-delete{
+  line-height:5px;
+  padding-left:5px;
+  padding-right:5px;
+  border-radius:10px 10px 10px 10px;
+  border:2px solid #fff;
+  color:#fff;
+  font-weight:bolder;
+  background-color:#C52020;
+}
+.personal-center-info-item-item-tech-delete:hover{
+  color:#F2F2F2;
+  background-color:#9E2D2D;
+  text-decoration:none;
+}
+.personal-info-item-save{
+  padding:10px;
+  background-color:#898989;
+  color:#fff;
+  float:right;
+}
+.personal-info-item-save:hover{
+  padding:10px;
+  background-color:#898989;
+  color:#E0DDDD;
+  float:right;
+}
+
+.personal-center-project-names{
+  margin-top:20px;
+  padding-bottom:20px;
+  border-bottom:1px solid #C8C8C8;
+  width:657px;
+  text-align:center;
+}
+.personal-center-project-tag{
+  padding:10px;
+
+}
+.tag-activated{
+  color:#E4E4E4;
+  background-color:#666666;
+}
+.tag-activated:hover{
+  color:#E4E4E4;
+  text-decoration:none;
+}
+
+.tag-deactivated{
+  background-color:#E4E4E4;
+  color:#666666;
+}
+.tag-deactivated:hover{
+  color:#666666;
+  text-decoration:none;
+}
+.personal-center-project-info{
+  border-bottom:1px solid #C8C8C8;
+  width:657px;
+  padding:20px;
+}
+.personal-center-project-info-list{
+  list-style:none;
+}
+.personal-center-project-info-list>li{
+}
+.personal-center-project-info-list>li>p{
+  display:inline-block;
+}
+.personal-center-project-info>h3{
+  margin-top:0px;
+  text-align:center;
+  font-weight:bold
+}
+.personal-center-project-edit{
+  float:right;
+}
+.personal-center-project-developers{
+  padding-left:50px;
+  padding-top:20px;
+}
+.personal-center-project-developer{
+  height:90px;
+  width:240px;
+  border:1px solid #C8C8C8;
+  float:left;
+  margin-left:20px;
+  margin-bottom:30px;
+}
+.personal-center-project-developer-avatar-div{
+  float:left;
+}
+.personal-center-project-developer-username-div{
+  width:150px;
+  height:70px;
+  margin:0px;
+  float:left;
+  padding:10px;
+}
+.personal-center-project-developer-avatar{
+  height:88px;
+  width:88px;
+  border-right:1px solid #C8C8C8;
+}
+.personal-center-project-developer-username{
+}
+.personal-center-project-devoloper-delete-div{
+  height:30px;
+  width:30px;
+  float:right;
+}
+.personal-center-project-devoloper-delete{
+  line-height:5px;
+  padding-left:5px;
+  padding-right:5px;
+  border-radius:10px 10px 10px 10px;
+  border:2px solid #fff;
+  color:#fff;
+  font-weight:bolder;
+  background-color:#C52020;
+  margin-top:50px;
+}
+.personal-center-project-devoloper-delete:hover{
+  color:#F2F2F2;
+  background-color:#9E2D2D;
+  text-decoration:none;
+}
+.next-page{
+  padding:10px;
+  color:#fff;
+  background-color:#B4B4B4;
+  float:right;
+  margin-bottom:20px;
+}
+.next-page:hover{
+  color:#B4B4B4;
+  background-color:#7E7E7E;
+  text-decoration:none;
+}
+
