@@ -29,15 +29,7 @@ $(document).ready(function(){
         $("#project-add-btn").removeClass("hidden");
     }
     $("#login-submit").attr("disabled",true);
-    // $("#project-add > a").click(function(){
-    //         // alert(" ");
-    //         $("#page-add").css("display", "block")
-    // })
-    // $("#page-add > a").click(function(){
-    //         // alert(" ");
-    //         $("#page-add").css("display", "none")
-    // })
-
+    
 // LOGIN-CHECK
     $("#password").on('input',function(){
         $("#user-check").html("");
@@ -70,17 +62,14 @@ $(document).ready(function(){
                 function(data, status, xhr){
                     //alert("成功登陆");
                     $("#check-status").html("");
-                    $("#login").addClass("hidden");
-                    $("#logout").removeClass("hidden");
-                    $("#user").removeClass("hidden");
-                    $("#personal-center-btn").removeClass("hidden");
-                    $("#avatar").removeClass("hidden");
-                    $("#project-add-btn").removeClass("hidden");
-                    // alert("a");
-                    //$.cookie("userid",$("#username").val(),{expire:60*60,path:"/"});
-                    $("#password").val("");
-                    $("#username").val("");
-                    //loginId();
+//                    $("#login").addClass("hidden");
+//                    $("#logout").removeClass("hidden");
+//                    $("#user").removeClass("hidden");
+//                    $("#personal-center-btn").removeClass("hidden");
+//                    $("#avatar").removeClass("hidden");
+//                    $("#project-add-btn").removeClass("hidden");
+//                    $("#password").val("");
+//                    $("#username").val("");
                     location.reload();
                 })
             .error(function(data,status,e){
@@ -99,19 +88,6 @@ $(document).ready(function(){
         loginPost();
     })
 
-    // $("#change-save").click(function(){
-    //             function(data){
-    //                 if (data==1){
-    //                     alert("0");
-    //                 }$.post("hellof.jsp",
-    //             {"project-name":$("#project-name").val(),
-    //             "founder-name":$("#founder-name").val(),
-    //             "brief":$("#brief").val()},
-    //                 else{
-    //                     alert("0");
-    //                 }
-    //             })
-    // })
 
     $("#logout").click(function() {
         $.post(getRootPath()+"/jsp/doLogOut.jsp", function(data, status, xhr) {

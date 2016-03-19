@@ -21,10 +21,9 @@
 		}
 		info = db.userInfo(iid);
 		info.next();
-		finish_count = Integer.parseInt(db.finished_count(iid));
-		ongoing_count = Integer.parseInt(db.ongoing_count(iid));
-		processing_count = Integer.parseInt(db.processing_count(iid));
 	}
+	String t1, t2, t3, t4;
+	t1 = t2 = t3 = t4 = "de";
 %>
 </head>
 <body>

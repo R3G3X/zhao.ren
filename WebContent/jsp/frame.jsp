@@ -6,9 +6,10 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <%-- <base href="${pageContext.request.scheme}://${pageContext.request.serverName}:${pageContext.request.serverPort}${pageContext.request.contextPath}/"> --%>
-<%  db_connector	db		= new db_connector();
-	boolean			logined	= false;
-	int				id		= -1;
+<%
+	db_connector db = new db_connector();
+	boolean logined = false;
+	int id = -1;
 %>
 <%
 	String myid = (String) session.getAttribute("zhao_ren_token");
@@ -16,6 +17,20 @@
 		logined = true;
 		id = Integer.parseInt(myid);
 		//out.print("<br/><br/><h1>you have logged in.</h1>");
+	} else {
+		Cookie cookie = null;
+		Cookie[] cookies = null;
+		cookies = request.getCookies();
+		if (cookies != null) {
+			for (int i = 0; i < cookies.length; i++) {
+				cookie = cookies[i];
+				if ((cookie.getName()).equals("zhao_ren_token")) {
+					cookie.setMaxAge(0);
+					cookie.setPath("/");
+					response.addCookie(cookie);
+				}
+			}
+		}
 	}
 %>
 

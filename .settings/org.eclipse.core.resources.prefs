@@ -1,9 +1,9 @@
 eclipse.preferences.version=1
-encoding//WebContent/NewFile.jsp=UTF-8
-encoding//WebContent/NewFile1.jsp=UTF-8
 encoding//WebContent/html/frame/modal/login-modal.jsp=UTF-8
 encoding//WebContent/html/frame/modal/register-modal.jsp=UTF-8
+encoding//WebContent/html/frame/personalCenter-right.jsp=UTF-8
 encoding//WebContent/html/project/projectCreate.jsp=UTF-8
+encoding//WebContent/html/user/personalCenter-info.jsp=UTF-8
 encoding//WebContent/html/user/personalCenter-message.jsp=UTF-8
 encoding//WebContent/html/user/personalCenter-project.jsp=UTF-8
 encoding//WebContent/html/user/personalCenter-team.jsp=UTF-8
