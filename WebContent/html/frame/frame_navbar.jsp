@@ -40,29 +40,19 @@
 			<!-- END-OF-NAVBAR-LEFT -->
 
 			<!-- NAVBAR-RIGHT -->
-			<ul class="nav navbar-nav navbar-right" style="margin-right: 10px;">
-				<li id="login"><a id="login-btn" type="button"
-					data-toggle="modal" data-target="#modal-login">登陆</a></li>
-				<li id="user-info"><a href="#"
-					class="dropdown-toggle dropdown hidden" data-toggle="dropdown"><%=nav_username%><b
-						class="caret"></b> </a>
-					<ul class="dropdown-menu">
-						<li><a id="user"
-							href="<%=request.getContextPath()%>/html/user/user.jsp">我的主页</a></li>
-						<li><a id="user"
-							href="<%=request.getContextPath()%>/html/user/user.jsp">个人中心</a></li>
-						<li class="divider"></li>
-						<li><a href="#" id="exit">退出登录</a></li>
-					</ul></li>
-				<li><img id="avatar" class="img-circle hidden-xs hidden"
-					src="<%=avatar_path%>"></li>
-			</ul>
 
 			<ul class="nav navbar-nav navbar-right">
-				<li><a
-					href="<%=request.getContextPath()%>/html/user/message.jsp">我的消息</a></li>
-				<li><a
+				<li><a id="project-add-btn hidden" class="hidden"
 					href="<%=request.getContextPath()%>/html/project/projectCreate.jsp">添加项目</a></li>
+				<li><a id="personal-center-btn" class="hidden"
+					href="<%=request.getContextPath()%>/html/user/personalCenter-info.jsp">个人中心</a></li>
+				<li><a id="user" class="hidden"
+							href="<%=request.getContextPath()%>/html/user/user.jsp"><%=nav_username%></a></li>
+				<li id="login"><a id="login-btn" type="button"
+					data-toggle="modal" data-target="#modal-login">登陆</a></li>
+				<li><img id="avatar" class="img-circle hidden-xs hidden"
+					src="<%=avatar_path%>"></li>
+				<li><a id="logout" href="#" class="hidden">退出登录</a></li>
 			</ul>
 			<!-- END-OF-NAVBAR-RIGHT -->
 		</div>

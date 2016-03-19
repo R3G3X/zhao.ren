@@ -2,7 +2,7 @@
 * @Author: Ed_Strickland
 * @Date:   2015-10-22 08:45:08
 * @Last Modified by:   Ed_Strickland
-* @Last Modified time: 2016-03-19 20:26:16
+* @Last Modified time: 2016-03-19 20:28:41
 */
 function getRootPath(){
     //获取当前网址，如： http://localhost:8083/uimcardprj/share/meun.jsp
@@ -55,16 +55,16 @@ $(document).ready(function(){
 // LOGIN-POST
 
     function loginPost(){
-    	if($("#username").val().length==0){
+        if($("#username").val().length==0){
             $("#check-status").html("<font color='red'>用户名为空</font>");
             $("#user-login").attr("disabled",true);
             return;
         }
-    	if($("#password").val().length==0){
+        if($("#password").val().length==0){
             $("#check-status").html("<font color='red'>密码为空</font>");
             $("#user-login").attr("disabled",true);
         }
-    	$.post(getRootPath()+"/jsp/doLogin.jsp",
+        $.post(getRootPath()+"/jsp/doLogin.jsp",
                 {"username":$("#username").val(),
                 "password":$("#password").val()},
                 function(data, status, xhr){
@@ -84,19 +84,19 @@ $(document).ready(function(){
                     location.reload();
                 })
             .error(function(data,status,e){
-            	$("#check-status").html("<font color='red'>用户名或密码错误</font>");
+                $("#check-status").html("<font color='red'>用户名或密码错误</font>");
             })
     }
 
     $('#modal-login').keydown(function(e){
-		if(e.keyCode==13){
-		   loginPost();
-		}
-	});
+        if(e.keyCode==13){
+           loginPost();
+        }
+    });
 
     $("#login-submit").click(function(){
         // alert("a");
-    	loginPost();
+        loginPost();
     })
 
     // $("#change-save").click(function(){
@@ -109,20 +109,20 @@ $(document).ready(function(){
     //             "brief":$("#brief").val()},
     //                 else{
     //                     alert("0");
-	//                 }
-	//             })
-	// })
+    //                 }
+    //             })
+    // })
 
-	$("#logout").click(function() {
-		$.post(getRootPath()+"/jsp/doLogOut.jsp", function(data, status, xhr) {
-			alert("登出成功");
-		})
-		$("#login").removeClass("hidden");
-    $("#logout").addClass("hidden");
-    $("#user").addClass("hidden");
-    $("#personal-center-btn").addClass("hidden");
-    $("#avatar").addClass("hidden");
-    $("#project-add-btn").addClass("hidden");
-		location.reload();
-	})
+    $("#logout").click(function() {
+        $.post(getRootPath()+"/jsp/doLogOut.jsp", function(data, status, xhr) {
+            alert("登出成功");
+        })
+        $("#login").removeClass("hidden");
+        $("#logout").addClass("hidden");
+        $("#user").addClass("hidden");
+        $("#personal-center-btn").addClass("hidden");
+        $("#avatar").addClass("hidden");
+        $("#project-add-btn").addClass("hidden");
+        location.reload();
+    })
 })
