@@ -4,11 +4,13 @@
 <%
 	String nav_username = "username";
 	String avatar = null;
+	String avatar_path = null;
 	if (logined) {
 		ResultSet navSet = db.userInfo(id);
 		navSet.next();
 		nav_username = navSet.getString("username");
 		avatar = navSet.getString("avatar");
+		avatar_path = request.getContextPath() + "/avatar/" + avatar;
 	}
 %>
 <nav class="navbar navbar-inverse navbar-fixed-top grey-0"
@@ -31,7 +33,7 @@
 		<div class="collapse navbar-collapse" id="example-navbar-collapse">
 			<!-- NAVBAR-LEFT -->
 			<ul class="nav navbar-nav navbar-left">
-				
+
 				<li><a
 					href="<%=request.getContextPath()%>/html/projectlist/projectlist.jsp">所有项目</a></li>
 			</ul>
@@ -53,13 +55,13 @@
 						<li><a href="#" id="exit">退出登录</a></li>
 					</ul></li>
 				<li><img id="avatar" class="img-circle hidden-xs hidden"
-					src="<%=request.getContextPath()%>/avatar/<%=avatar%>"></li>
+					src="<%=avatar_path%>"></li>
 			</ul>
 
 			<ul class="nav navbar-nav navbar-right">
 				<li><a
 					href="<%=request.getContextPath()%>/html/user/message.jsp">我的消息</a></li>
-			<li><a
+				<li><a
 					href="<%=request.getContextPath()%>/html/project/projectCreate.jsp">添加项目</a></li>
 			</ul>
 			<!-- END-OF-NAVBAR-RIGHT -->
