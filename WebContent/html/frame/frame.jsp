@@ -5,7 +5,7 @@
 <head>
 <meta charset="utf-8">
 <%@ include file="/html/frame/frame_head.jsp"%>
-<%@ include file="/jsp/doLogin_required.jsp"%>
+<%@ include file="/jsp/frame.jsp"%>
 </head>
 <body>
 	<!-- NAVBAR -->
