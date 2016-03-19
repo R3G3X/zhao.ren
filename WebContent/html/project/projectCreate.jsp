@@ -59,30 +59,27 @@
 						<p class="project-create-info">详细介绍预览</p>
 						<div id="preview"></div>
 						<script type="text/javascript">
-// 							function Editor(input, preview) {
-// 								this.update = function() {
-// 									preview.innerHTML = markdown
-// 											.toHTML(input.value);
-// 								};
-// 								input.editor = this;
-// 								this.update();
-// 							}
-// 							var $ = function(id) {
-// 								return document.getElementById(id);
-// 							};
-// 							new Editor($("text-input"), $("preview"));
+							function Editor(input, preview) {
+								this.update = function() {
+									preview.innerHTML = markdown
+											.toHTML(input.value);
+								};
+								input.editor = this;
+								this.update();
+							}
+							new Editor(document.getElementById("projectDescribeInDetails"),
+									document.getElementById("preview"));
 						</script>
 					</div>
 					<div class="project-create-btn-div">
 						<a class="project-create-btn" id="project-create-post" href="#">确认信息</a>
 					</div>
-					<a id = "check-project-status"></a>
+					<a id="check-project-status"></a>
 				</div>
 			</div>
 		</div>
 	</div>
 	<!-- PUT-YOUR-CODE-ABOVE -->
-	</div>
 	<!-- END-OF-CONTENT -->
 
 	<!-- BOTTOM -->
