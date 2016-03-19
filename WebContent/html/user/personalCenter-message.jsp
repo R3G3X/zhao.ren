@@ -33,7 +33,7 @@
                   <p>我的消息</p>
                 </div>
                 <div class="personal-center-message-container">
-
+                  <%@ include file="/jsp/personalMessage.jsp"%>
                   <div class="personal-center-message clearfix">
                     <div class="personal-center-message-avatar">
                       <img class="personal-center-message-avatar-img"
@@ -41,14 +41,13 @@
                     </div>
                     <div class="personal-center-message-item">
                       <p class="personal-center-message-message">
-                        <a>辣鸡汇 </a>想加入 <a>华师大创业</a>
+                        <a>辣鸡汇 </a>想加入 <a>华师大创业</a> at 2015-12-23 12:23:3456745457
                       </p>
                     </div>
                     <div class="personal-center-message-agreement">
-                      <a class="personal-center-message-agree" href=""
-                        title="">同意</a> <a
-                        class="personal-center-message-disagree" href=""
-                        title="">拒绝</a>
+                      <a class="personal-center-message-agree" href="">同意</a>
+                      <a class="personal-center-message-disagree"
+                        href="">拒绝</a>
                     </div>
                   </div>
 
@@ -63,10 +62,9 @@
                       </p>
                     </div>
                     <div class="personal-center-message-agreement">
-                      <a class="personal-center-message-agree" href=""
-                        title="">同意</a> <a
-                        class="personal-center-message-disagree" href=""
-                        title="">拒绝</a>
+                      <a class="personal-center-message-agree" href="">同意</a>
+                      <a class="personal-center-message-disagree"
+                        href="">拒绝</a>
                     </div>
                   </div>
 
@@ -81,10 +79,7 @@
                       </p>
                     </div>
                     <div class="personal-center-message-agreement">
-                      <a class="personal-center-message-agree" href=""
-                        title="">同意</a> <a
-                        class="personal-center-message-disagree" href=""
-                        title="">拒绝</a>
+                      <a class="personal-center-message-agree" href="">好</a>
                     </div>
                   </div>
 
