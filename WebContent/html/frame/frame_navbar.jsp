@@ -45,7 +45,7 @@
 				<li><a id="project-add-btn" class="hidden"
 					href="<%=request.getContextPath()%>/html/project/projectCreate.jsp">添加项目</a></li>
 				<li><a id="personal-center-btn" class="hidden"
-					href="<%=request.getContextPath()%>/html/user/personalCenter-info.jsp">个人中心</a></li>
+					href="<%=request.getContextPath()%>/html/user/personalCenter-message.jsp">个人中心</a></li>
 				<li><a id="user" class="hidden"
 							href="<%=request.getContextPath()%>/html/user/user.jsp"><%=nav_username%></a></li>
 				<li id="login"><a id="login-btn" type="button"
