@@ -2,8 +2,9 @@
 * @Author: Ed_Strickland
 * @Date:   2015-11-21 22:38:32
 * @Last Modified by:   Ed_Strickland
-* @Last Modified time: 2016-03-18 10:36:31
-*/
+* @Last Modified time: 2016-03-19 20:12:43
+*/dd
+.team-name:hover{cursor:pointer;}
 .big-avatar{
   margin-top:30px;
   height:150px;
@@ -169,6 +170,7 @@
   font-weight:bold;
   font-size:20px;
   line-height:7px;
+  cursor:default;
 }
 .count-item{
   float:left;
@@ -192,7 +194,7 @@
 }
 .recent-move-content:hover{
   border:1px solid #555555;
-  cursor:pointer;
+  cursor:default;
 }
 .move-title{
   width:300px;
@@ -206,6 +208,7 @@
 .move-title-title:hover{
   color:#000;
   text-decoration:none;
+  cursor:default;
 }
 .move-detail{
   width:431px;

@@ -107,7 +107,7 @@
 										<img src="../../img/bilibili.jpg" style="float: left;"
 											width="60px">
 										<ul style="float: left; list-style: none; padding-left: 20px">
-											<li><a>嗶哩嗶哩 - ( ゜- ゜)つロ 乾杯~</a></li>
+											<li><a class="team-name">嗶哩嗶哩 - ( ゜- ゜)つロ 乾杯~</a></li>
 											<li><a>125名成员</a></li>
 										</ul>
 									</div>
@@ -117,7 +117,7 @@
 										<img src="../../img/bilibili.jpg" style="float: left;"
 											width="60px">
 										<ul style="float: left; list-style: none; padding-left: 20px">
-											<li><a>嗶哩嗶哩 - ( ゜- ゜)つロ 乾杯~</a></li>
+											<li><a class="team-name">嗶哩嗶哩 - ( ゜- ゜)つロ 乾杯~</a></li>
 											<li><a>125名成员</a></li>
 										</ul>
 									</div>
@@ -127,7 +127,7 @@
 										<img src="../../img/bilibili.jpg" style="float: left;"
 											width="60px">
 										<ul style="float: left; list-style: none; padding-left: 20px">
-											<li><a>嗶哩嗶哩 - ( ゜- ゜)つロ 乾杯~</a></li>
+											<li><a class="team-name">嗶哩嗶哩 - ( ゜- ゜)つロ 乾杯~</a></li>
 											<li><a>125名成员</a></li>
 										</ul>
 									</div>

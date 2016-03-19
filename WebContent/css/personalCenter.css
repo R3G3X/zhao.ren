@@ -2,7 +2,7 @@
 * @Author: Ed_Strickland
 * @Date:   2016-03-18 13:50:32
 * @Last Modified by:   Ed_Strickland
-* @Last Modified time: 2016-03-19 01:49:40
+* @Last Modified time: 2016-03-19 20:02:52
 */
 #content{
   margin-left:0px;
@@ -91,13 +91,33 @@
   color:#666666;
 }
 .personal-center-right-item{
-  width:657px;
+  float:left;
+  width:330px;
+  height:510px;
+  padding-right:30px;
+}
+.personal-center-right-item-project{
+  float:left;
+  height:510px;
+  padding-right:0px;
+}
+.personal-center-right-item-right{
+  float:left;
+  width:325px;
   padding-right:30px;
 }
 .personal-center-info{
   list-style:none;
+  padding-left:0px;
 }
 .personal-center-info-item{
+  color:#666666;
+  margin-top:30px;
+  margin-left:30px;
+}
+.personal-center-info-item-tag{margin-top:30px;}
+.personal-center-info-item-right{
+  margin-left:30px;
   color:#666666;
   margin-top:30px;
 }
@@ -106,22 +126,23 @@
 }
 .personal-center-info-item>a{
 }
+.pass{margin-top:110px;}
 .personal-center-info-item-title{
   text-align:right;
   width:6em;
 }
 .personal-center-info-item-item{
   margin-left:40px;
-  width:170px;
+  width:100px;
 }
 .personal-center-info-item-item-tech{
   margin-left:40px;
-  width:30px;
 }
 .personal-center-password-now{
   margin-left:302px;
 }
 .personal-center-info-change{
+  height:30px;
   padding-left:5px;
   padding-right:5px;
 }
@@ -145,6 +166,7 @@
   background-color:#898989;
   color:#fff;
   float:right;
+  margin-right:30px;
 }
 .personal-info-item-save:hover{
   padding:10px;
@@ -205,6 +227,7 @@
 .personal-center-project-developers{
   padding-left:50px;
   padding-top:20px;
+  width:600px;
 }
 .personal-center-project-developer{
   height:90px;

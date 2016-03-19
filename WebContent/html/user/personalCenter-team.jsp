@@ -1,3 +1,5 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+  pageEncoding="UTF-8"%>
 <html lang="en">
 <head>
 <meta charset="UTF-8">
@@ -6,7 +8,6 @@
 <!-- meta -->
 
 <title>项目发布平台</title>
-<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <%@ include file="/html/frame/frame_head.jsp"%>
 <link href="../../css/projectlist.css" rel="stylesheet" />
 <%@ include file="/jsp/frame.jsp"%>
@@ -31,10 +32,10 @@
                 </div>
                 <div class="personal-center-control">
                   <ul class="personal-center-control-list">
-                  <li class="personal-center-control-item item-deactivated"><a href="">我的消息</a></li>
-                    <li class="personal-center-control-item item-deactivated"><a href="">我的信息</a></li>
-                    <li class="personal-center-control-item item-deactivated"><a href="">项目管理</a></li>
-                    <li class="personal-center-control-item item-activated"><a href="">团队管理</a></li>
+                    <li class="personal-center-control-item item-deactivated"><a href="personalCenter-message.jsp">我的消息</a></li>
+                    <li class="personal-center-control-item item-deactivated"><a href="personalCenter-info.jsp">个人信息</a></li>
+                    <li class="personal-center-control-item item-deactivated"><a href="personalCenter-project.jsp">项目管理</a></li>
+                    <li class="personal-center-control-item item-activated"><a href="personalCenter-team.jsp">团队管理</a></li>
                   </ul>
                 </div>
               </div>
