@@ -1,13 +1,17 @@
-$(document).ready(function(){
-	$("#project-create-post").click(function(){
+$(document).ready(function() {
+	$("#project-create-post").click(function() {
+		$("#check-project-status").html("<font color='red'>添加中...</font>");
 		$.post(getRootPath() + "/jsp/doCreateProject.jsp", {
-			"username" : $("#username").val(),
-			"password" : $("#password").val()
+			"name" : $("#projectname").val(),
+			"num" : $("#projectMenRequired").val(),
+			"time" : $("#projectDevelopTime").val(),
+			"intro" : $("#projectDescribe").val(),
+			"detail" : $("#projectDescribeInDetails").val(),
 		}, function(data, status, xhr) {
-			alert("注册成功！");
+			alert("添加成功");
 			location.reload();
 		}).error(function(data, status, e) {
-			$("#check-status").html("<font color='red'>用户名已存在或密码为空</font>");
+			$("#check-project-status").html("<font color='red'>添加失败！请检查信息是否有误</font>");
 		})
 	})
 })

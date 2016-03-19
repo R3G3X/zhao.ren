@@ -31,6 +31,7 @@
 		<div class="collapse navbar-collapse" id="example-navbar-collapse">
 			<!-- NAVBAR-LEFT -->
 			<ul class="nav navbar-nav navbar-left">
+				
 				<li><a
 					href="<%=request.getContextPath()%>/html/projectlist/projectlist.jsp">所有项目</a></li>
 			</ul>
@@ -44,8 +45,6 @@
 					class="dropdown-toggle dropdown hidden" data-toggle="dropdown"><%=nav_username%><b
 						class="caret"></b> </a>
 					<ul class="dropdown-menu">
-						<li><a id="manage" class="hidden"
-							href="<%=request.getContextPath()%>/html/manager/manager.jsp">管理系统</a></li>
 						<li><a id="user"
 							href="<%=request.getContextPath()%>/html/user/user.jsp">我的主页</a></li>
 						<li><a id="user"
@@ -60,6 +59,8 @@
 			<ul class="nav navbar-nav navbar-right">
 				<li><a
 					href="<%=request.getContextPath()%>/html/user/message.jsp">我的消息</a></li>
+			<li><a
+					href="<%=request.getContextPath()%>/html/project/projectCreate.jsp">添加项目</a></li>
 			</ul>
 			<!-- END-OF-NAVBAR-RIGHT -->
 		</div>
