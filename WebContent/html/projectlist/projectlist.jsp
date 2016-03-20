@@ -59,9 +59,9 @@
 					</div>
 					<div style="text-align: center; padding-bottom: 50px">
 						<a type="button" class="btn-page"
-							href="?pages=<%=pages - 1 > 0 ? pages - 1 : pages%>">上一页</a> <a
+							href="?s=<%=keyword %>&pages=<%=pages - 1 > 0 ? pages - 1 : pages%>">上一页</a> <a
 							type="button" class="btn-page"
-							href="?pages=<%=pages + 1%>">下一页</a>
+							href="?s=<%=keyword %>&pages=<%=pages + 1%>">下一页</a>
 					</div>
 				</div>
 			</div>

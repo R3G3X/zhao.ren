@@ -5,8 +5,9 @@
   pageEncoding="UTF-8"%>
 <%
 	int pages = 1;
+	String keyword;
 	String par = request.getParameter("pages");
-	String keyword = request.getParameter("s");
+	keyword = request.getParameter("s");
 	if (par != null) {
 		try {
 			pages = Integer.parseInt(par);
@@ -21,6 +22,7 @@
 		String decode = URLDecoder.decode(keyword, "UTF-8");
 		set = db.project_list(pages, decode);
 	} else {
+		keyword = "";
 		set = db.project_list(pages);
 	}
 	String base = request.getContextPath();
