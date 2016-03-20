@@ -4,6 +4,7 @@
 <%
 	int pages = 1;
 	String par = request.getParameter("pages");
+	String keyword = request.getParameter("s");
 	if (par != null) {
 		try {
 			pages = Integer.parseInt(par);
@@ -11,7 +12,12 @@
 
 		}
 	}
-	ResultSet set = db.project_list(pages);
+	ResultSet set;
+	if (keyword != null) {
+		set = db.project_list(pages, keyword);
+	} else {
+		set = db.project_list(pages);
+	}
 	String base = request.getContextPath();
 	while (set.next()) {
 		String div = "<div class=\"project-list-box\" id = \"" + set.getString("id") + "\">";
