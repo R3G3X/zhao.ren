@@ -2,7 +2,7 @@
 * @Author: Ed_Strickland
 * @Date:   2016-03-20 20:56:16
 * @Last Modified by:   Ed_Strickland
-* @Last Modified time: 2016-03-20 23:41:54
+* @Last Modified time: 2016-03-21 00:55:39
 */
 
 $(document).ready(function() {
@@ -24,6 +24,7 @@ $(document).ready(function() {
       "phone" : $("#phone-change").val(),
       "mail" : $("#mail-change").val(),
       "major" : $("#major-change").val(),
+      "tech-info":$("#tech-info-change").val()
     }, function(data, status, xhr) {
       alert("添加成功");
       location.reload();
