@@ -237,7 +237,6 @@
                           href="" title="">-</a>
                       </div>
                     </div>
-                    <a href="" class="next-page">下一页</a>
                   </div>
                   <%
                   	} else {

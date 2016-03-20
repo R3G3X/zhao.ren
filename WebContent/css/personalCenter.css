@@ -2,14 +2,14 @@
 * @Author: Ed_Strickland
 * @Date:   2016-03-18 13:50:32
 * @Last Modified by:   Ed_Strickland
-* @Last Modified time: 2016-03-20 21:15:52
+* @Last Modified time: 2016-03-20 23:12:52
 */
 
 #content{
   margin-left:0px;
 }
 
-p{
+.personal-center p{
   text-shadow:1px 1px 1px #A5A5A5;
 }
 
@@ -19,11 +19,9 @@ p{
   right:0;
   margin:auto;
   width:800px;
-  height:680px;
+  /*min-height:560px;*/
 }
 .personal-center-left-content{
-  height:679px;
-  border-right:1px solid #C8C8C8;
   float:left;
 }
 .personal-center-avatar{
@@ -70,6 +68,8 @@ p{
   color:#666666;
 }
 .personal-center-right-content{
+  min-height:600px;
+  border-left:1px solid #C8C8C8;
   float:left;
 }
 .personal-center-right-title{
@@ -98,18 +98,16 @@ p{
 }
 .personal-center-right-item{
   float:left;
-  width:330px;
-  height:510px;
+  width:390px;
   padding-right:30px;
 }
 .personal-center-right-item-project{
   float:left;
-  height:510px;
   padding-right:0px;
 }
 .personal-center-right-item-right{
   float:left;
-  width:325px;
+  width:230px;
   padding-right:30px;
 }
 .personal-center-info{
@@ -129,7 +127,7 @@ p{
   display:inline-block;
 }
 .personal-center-info-item>p{
-  display:inline-block;
+  float:left;
 }
 .personal-center-info-item>a{
 }
@@ -145,7 +143,7 @@ p{
 }
 .personal-center-info-item-item{
   margin-left:40px;
-  width:100px;
+  width:200px;
 }
 .personal-center-project-item-item{
   margin-left:40px;
@@ -154,10 +152,15 @@ p{
 .personal-center-info-item-item-tech{
   margin-left:40px;
 }
+.personal-center-info-item-item-tech:hover{
+  text-decoration:none;
+  cursor:pointer;
+}
 .personal-center-password-now{
   margin-left:302px;
 }
 .personal-center-info-change{
+  width:180px;
   height:30px;
   padding-left:5px;
   padding-right:5px;
@@ -166,6 +169,23 @@ p{
   background-color:#F3F3F3;
   border:1px solid#DEDEDE;
   box-shadow:0px 0px 5px #C7C7C7 inset;
+}
+.personal-center-info-change:focus{
+   background-color:#FFFFEA;
+}
+.personal-center-info-change-textarea{
+  width:180px;
+  height:90px;
+  resize:none;
+  padding-left:5px;
+  padding-right:5px;
+  display:inline-block;
+  background-color:#F3F3F3;
+  border:1px solid#DEDEDE;
+  box-shadow:0px 0px 5px #C7C7C7 inset;
+}
+.personal-center-info-change-textarea:focus{
+   background-color:#FFFFEA;
 }
 .personal-center-info-item-item-tech-delete{
   line-height:5px;
@@ -188,12 +208,15 @@ p{
   color:#fff;
   float:right;
   margin-right:30px;
+  margin-bottom:30px;
 }
 .personal-info-item-save:hover{
   padding:10px;
   background-color:#898989;
   color:#E0DDDD;
   float:right;
+  cursor:pointer;
+  text-decoration:none;
 }
 
 .personal-center-project-names{
@@ -205,7 +228,7 @@ p{
 }
 .personal-center-project-tag{
   padding:10px;
-  margin:right:10px;
+
 }
 .tag-activated{
   color:#E4E4E4;
