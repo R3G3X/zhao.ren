@@ -47,8 +47,89 @@
         content="<%=pret.getString("detail") %>";
       document.getElementById("markdown").innerHTML = markdown.toHTML(content);
     </script>
-    <div class="container grey-3 box-border-top project-title-box clearfix">
+    <div class="container grey-3 box-border-top project-title-box clearfix project-user">
       <h4 class="project-join-title">团队成员</h4>
+
+      <div class="project-join-user">
+        <img class="project-join-user-avatar img-circle" src="../../avatar/1.jpg">
+        <a class="project-join-user-username" href="">机制汇</a>
+      </div>
+
+      <div class="project-join-user">
+        <img class="project-join-user-avatar img-circle" src="../../avatar/1.jpg">
+        <a class="project-join-user-username" href="">机制汇</a>
+      </div>
+
+      <div class="project-join-user">
+        <img class="project-join-user-avatar img-circle" src="../../avatar/1.jpg">
+        <a class="project-join-user-username" href="">机制汇</a>
+      </div>
+
+      <div class="project-join-user">
+        <img class="project-join-user-avatar img-circle" src="../../avatar/1.jpg">
+        <a class="project-join-user-username" href="">机制汇</a>
+      </div>
+
+      <div class="project-join-user">
+        <img class="project-join-user-avatar img-circle" src="../../avatar/1.jpg">
+        <a class="project-join-user-username" href="">机制汇</a>
+      </div>
+
+      <div class="project-join-user">
+        <img class="project-join-user-avatar img-circle" src="../../avatar/1.jpg">
+        <a class="project-join-user-username" href="">机制汇</a>
+      </div>
+
+      <div class="project-join-user">
+        <img class="project-join-user-avatar img-circle" src="../../avatar/1.jpg">
+        <a class="project-join-user-username" href="">机制汇</a>
+      </div>
+
+      <div class="project-join-user">
+        <img class="project-join-user-avatar img-circle" src="../../avatar/1.jpg">
+        <a class="project-join-user-username" href="">机制汇</a>
+      </div>
+
+      <div class="project-join-user">
+        <img class="project-join-user-avatar img-circle" src="../../avatar/1.jpg">
+        <a class="project-join-user-username" href="">机制汇</a>
+      </div>
+
+      <div class="project-join-user">
+        <img class="project-join-user-avatar img-circle" src="../../avatar/1.jpg">
+        <a class="project-join-user-username" href="">机制汇</a>
+      </div>
+
+      <div class="project-join-user">
+        <img class="project-join-user-avatar img-circle" src="../../avatar/1.jpg">
+        <a class="project-join-user-username" href="">机制汇</a>
+      </div>
+
+      <div class="project-join-user">
+        <img class="project-join-user-avatar img-circle" src="../../avatar/1.jpg">
+        <a class="project-join-user-username" href="">机制汇</a>
+      </div>
+
+      <div class="project-join-user">
+        <img class="project-join-user-avatar img-circle" src="../../avatar/1.jpg">
+        <a class="project-join-user-username" href="">机制汇</a>
+      </div>
+
+      <div class="project-join-user">
+        <img class="project-join-user-avatar img-circle" src="../../avatar/1.jpg">
+        <a class="project-join-user-username" href="">机制汇</a>
+      </div>
+
+      <div class="project-join-user">
+        <img class="project-join-user-avatar img-circle" src="../../avatar/1.jpg">
+        <a class="project-join-user-username" href="">机制汇是艾斯比</a>
+      </div>
+
+      <div class="project-join-user">
+        <img class="project-join-user-avatar img-circle" src="../../avatar/1.jpg">
+        <a class="project-join-user-username" href="">机制汇</a>
+      </div>
+
       <div class="project-join-user">
         <img class="project-join-user-avatar img-circle" src="../../avatar/1.jpg">
         <a class="project-join-user-username" href="">机制汇</a>

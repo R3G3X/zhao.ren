@@ -2,7 +2,7 @@
 * @Author: Ed_Strickland
 * @Date:   2016-03-17 13:10:49
 * @Last Modified by:   Ed_Strickland
-* @Last Modified time: 2016-03-21 04:04:45
+* @Last Modified time: 2016-03-21 04:19:39
 */
 #markdown{
   min-height:420px;
@@ -115,17 +115,21 @@ h6{
   width:102px;
   float:left;
   padding:10px;
-  padding-bottom:0px;
   border:1px solid #BEBDBD;
-  margin-bottom:200px;
   margin-top:20px;
   background-color:#fff;
+  margin-left:21px;
+  margin-right:21px;
 }
 .project-join-user-avatar{
   width:70px;
 }
 .project-join-user-username{
+  margin-top:5px;
   margin:0px;
-  height:40px;
-  line-height:40px;
+  height:20px;
+  line-height:20px;
+}
+.project-user{
+  margin-bottom:200px;
 }
