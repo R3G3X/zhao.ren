@@ -75,9 +75,9 @@
                           id="major"><%=info.getString("major")%></p>
                       </li>
                       <li class="personal-center-info-item clearfix">
-                        <p class="personal-center-info-item-title">专业：</p>
+                        <p class="personal-center-info-item-title">技术介绍：</p>
                         <p class="personal-center-info-item-item"
-                        id="tech-info">我爱软件我爱软件我爱软件我爱软件我爱软件我爱软件我爱软件我爱软件我爱软件我爱软件</p>
+                        id="tech-info"><%=info.getString("tech_intro") %></p>
                     </li>
                     </ul>
                   </div>
