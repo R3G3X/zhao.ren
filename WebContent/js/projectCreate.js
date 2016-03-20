@@ -2,7 +2,6 @@ $(document).ready(function() {
 	var count = 0;
 	$("#project-create-post").click(function() {
 		$("#check-project-status").html("<font color='red'>添加中...</font>");
-		alert(count);
 		$.post(getRootPath() + "/jsp/doCreateProject.jsp", {
 			"name" : $("#projectname").val(),
 			"num" : $("#projectMenRequired").val(),

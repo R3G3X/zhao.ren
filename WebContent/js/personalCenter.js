@@ -14,7 +14,7 @@ $(document).ready(function() {
   }
   count = count/10;
   $("#info-save").click(function() {
-    alert(count);
+    //alert(count);
     $.post(getRootPath() + "/jsp/doSaveInfo.jsp", {
       "username" : $("#username-change").val(),
       "pre-pass" : $("#pre-password-change").val(),
