@@ -20,6 +20,7 @@
 			response.setStatus(400);
 		}
 	} catch (Exception e) {
+		e.printStackTrace();
 		response.setStatus(400);
 	}
 %>
