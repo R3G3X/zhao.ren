@@ -44,9 +44,16 @@
       <div class="container white box-border-bottom" id="markdown"></div>
     </div>
     <script type="text/javascript">
-      content="<%=pret.getString("detail") %>";
-    document.getElementById("markdown").innerHTML = markdown.toHTML(content);
-  </script>
+        content="<%=pret.getString("detail") %>";
+      document.getElementById("markdown").innerHTML = markdown.toHTML(content);
+    </script>
+    <div class="container grey-3 box-border-top project-title-box clearfix">
+      <h4 class="project-join-title">团队成员</h4>
+      <div class="project-join-user">
+        <img class="project-join-user-avatar" src="../../avatar/1.jpg">
+        <a class="project-join-user-username" href="">机制汇</a>
+      </div>
+    </div>
     <!-- PUT-YOUR-CODE-ABOVE -->
   </div>
   <!-- END-OF-CONTENT -->
