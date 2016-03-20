@@ -36,7 +36,7 @@
 					<div id="">
 						<div>
 							<div id="showcase"
-								style="background: url(img/background-img.jpg) no-repeat fixed center center/cover;">
+								style="background: url(<%=request.getContextPath()%>/img/background-img.jpg) no-repeat fixed center center/cover;">
 								<h1>"找点人"项目平台</h1>
 								<h2>想找项目做？想和其他人一起合作？欢迎使用"找点人"项目平台</h2>
 								<p>

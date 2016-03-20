@@ -24,19 +24,24 @@
       <div class="container grey-3 box-border-top project-title-box">
         <div class="project-title clearfix">
           <h2 class="project-title-title"><%=pret.getString("name")%></h2>
-          <a class="project-title-status">组队中</a>
+          <a class="project-title-status"><%=pret.getString("isFinshed").equals("0") ? "组队中" : "已完成"%></a>
         </div>
         <div class="clearfix project-title-require">
-          <p style="width:60%;">
-            <a class="project-title-require-item with-right-border">类型:
-            <%=pret.getString("intro")%></a> <a
-            class="project-title-require-item">周期: <%=pret.getString("round_time")%>
-            天
+          <p >
+            <a class="project-title-require-item with-right-border">项目简介:
+              <%=pret.getString("intro")%></a>
             </a>
           </p>
-
-          <div class="project-title-join">
-            <a href="<%=request.getContextPath() %>/jsp/doJoinProject.jsp?pid=<%=pret.getInt("id")%>">加入他们</a>
+          <p >
+            <a class="project-title-require-item with-right-border">创建时间:
+              <%=pret.getString("create_time")%></a> <a
+              class="project-title-require-item">周期: <%=pret.getString("round_time")%>
+              天
+            </a>
+          </p>
+          <div class="project-title-join  <%=pret.getString("isFinshed").equals("0") ? "" : "hidden"%>">
+            <a
+              href="<%=request.getContextPath()%>/jsp/doJoinProject.jsp?pid=<%=pret.getInt("id")%>">加入他们</a>
           </div>
         </div>
 
@@ -47,98 +52,18 @@
       <div class="container white box-border-bottom" id="markdown"></div>
     </div>
     <script type="text/javascript">
-        content="<%=pret.getString("detail") %>";
-      document.getElementById("markdown").innerHTML = markdown.toHTML(content);
-    </script>
-    <div class="container grey-3 box-border-top project-title-box clearfix project-user">
-      <h4 class="project-join-title">团队成员</h4>
+        content="<%=pret.getString("detail")%>";
+					document.getElementById("markdown").innerHTML = markdown
+							.toHTML(content);
+				</script>
+    <div
+      class="container grey-3 box-border-top project-title-box clearfix project-user">
+      <h4 class="project-join-title">团队成员[需要人数:<%=pret.getString("require_num")%>]</h4>
 
-      <div class="project-join-user">
-        <img class="project-join-user-avatar img-circle" src="../../avatar/1.jpg">
-        <a class="project-join-user-username" href="">机制汇</a>
-      </div>
-
-      <div class="project-join-user">
-        <img class="project-join-user-avatar img-circle" src="../../avatar/1.jpg">
-        <a class="project-join-user-username" href="">机制汇</a>
-      </div>
-
-      <div class="project-join-user">
-        <img class="project-join-user-avatar img-circle" src="../../avatar/1.jpg">
-        <a class="project-join-user-username" href="">机制汇</a>
-      </div>
-
-      <div class="project-join-user">
-        <img class="project-join-user-avatar img-circle" src="../../avatar/1.jpg">
-        <a class="project-join-user-username" href="">机制汇</a>
-      </div>
-
-      <div class="project-join-user">
-        <img class="project-join-user-avatar img-circle" src="../../avatar/1.jpg">
-        <a class="project-join-user-username" href="">机制汇</a>
-      </div>
-
-      <div class="project-join-user">
-        <img class="project-join-user-avatar img-circle" src="../../avatar/1.jpg">
-        <a class="project-join-user-username" href="">机制汇</a>
-      </div>
-
-      <div class="project-join-user">
-        <img class="project-join-user-avatar img-circle" src="../../avatar/1.jpg">
-        <a class="project-join-user-username" href="">机制汇</a>
-      </div>
-
-      <div class="project-join-user">
-        <img class="project-join-user-avatar img-circle" src="../../avatar/1.jpg">
-        <a class="project-join-user-username" href="">机制汇</a>
-      </div>
-
-      <div class="project-join-user">
-        <img class="project-join-user-avatar img-circle" src="../../avatar/1.jpg">
-        <a class="project-join-user-username" href="">机制汇</a>
-      </div>
-
-      <div class="project-join-user">
-        <img class="project-join-user-avatar img-circle" src="../../avatar/1.jpg">
-        <a class="project-join-user-username" href="">机制汇</a>
-      </div>
-
-      <div class="project-join-user">
-        <img class="project-join-user-avatar img-circle" src="../../avatar/1.jpg">
-        <a class="project-join-user-username" href="">机制汇</a>
-      </div>
-
-      <div class="project-join-user">
-        <img class="project-join-user-avatar img-circle" src="../../avatar/1.jpg">
-        <a class="project-join-user-username" href="">机制汇</a>
-      </div>
-
-      <div class="project-join-user">
-        <img class="project-join-user-avatar img-circle" src="../../avatar/1.jpg">
-        <a class="project-join-user-username" href="">机制汇</a>
-      </div>
-
-      <div class="project-join-user">
-        <img class="project-join-user-avatar img-circle" src="../../avatar/1.jpg">
-        <a class="project-join-user-username" href="">机制汇</a>
-      </div>
-
-      <div class="project-join-user">
-        <img class="project-join-user-avatar img-circle" src="../../avatar/1.jpg">
-        <a class="project-join-user-username" href="">机制汇是艾斯比</a>
-      </div>
-
-      <div class="project-join-user">
-        <img class="project-join-user-avatar img-circle" src="../../avatar/1.jpg">
-        <a class="project-join-user-username" href="">机制汇</a>
-      </div>
-
-      <div class="project-join-user">
-        <img class="project-join-user-avatar img-circle" src="../../avatar/1.jpg">
-        <a class="project-join-user-username" href="">机制汇</a>
-      </div>
+      <%@ include file="/jsp/project_info_member.jsp"%>
     </div>
-    <!-- PUT-YOUR-CODE-ABOVE -->
+  </div>
+  <!-- PUT-YOUR-CODE-ABOVE -->
   </div>
   <!-- END-OF-CONTENT -->
   <!-- BOTTOM -->
