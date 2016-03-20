@@ -8,14 +8,22 @@
 <%
 	ResultSet pset = db.project_of(id);
 	int cnt = 0;
+	int pid = 0;
 	while (pset.next()) {
 		cnt++;
-		String doc = "<a class=\"personal-center-project-tag tag-activated\" href=\"";
+		String doc = "<a class=\"personal-center-project-tag tag-" + (sid == cnt ? "" : "de")
+				+ "activated\" href=\"";
+		doc += "?sid=" + cnt;
 		doc += "\">";
+		if (sid == cnt) {
+			pid = pset.getInt("project_id");
+		}
 		doc += db.project_name(pset.getInt("project_id"));
 		doc += "</a>";
 		out.print(doc);
 	}
+	ResultSet pjset = db.project_info(pid);
+  pjset.next();
 %>
 </head>
 

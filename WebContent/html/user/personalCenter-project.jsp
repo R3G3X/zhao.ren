@@ -10,6 +10,7 @@
 <%@ include file="/html/frame/frame_head.jsp"%>
 <%@ include file="/jsp/doLogin_required.jsp"%>
 <%@ include file="/jsp/user_info.jsp"%>
+<%@ include file="/jsp/user_project_manage.jsp"%>
 <link href="../../css/personalCenter.css" rel="stylesheet" />
 </head>
 <body>
@@ -34,8 +35,7 @@
                 </div>
                 <div class="personal-center-right-item-project">
                   <div class="personal-center-project-names">
-                  <%@ include
-                      file="/jsp/project_manage.jsp"%>
+                    <%@ include file="/jsp/project_manage.jsp"%>
                     <a class="personal-center-project-tag tag-activated"
                       href="">华师大创业</a> <a
                       class="personal-center-project-tag tag-deactivated"
@@ -44,19 +44,28 @@
                       href="">php</a>
                   </div>
                   <div class="personal-center-project-info clearfix">
-                    <h3>华师大创业</h3>
+                    <%
+                    	if (pid > 0) {
+                    %>
+                    <h3><%=pjset.getString("name")%></h3>
                     <ul class="personal-center-project-info-list">
                       <li class="clearfix"><p
                           class="personal-center-project-item-title">周期:</p>
-                        <p class="personal-center-project-item-item">20</p></li>
+                        <p class="personal-center-project-item-item"><%=pjset.getString("round_time")%></p></li>
                       <li class="clearfix"><p
                           class="personal-center-project-item-title">人数:</p>
-                        <p class="personal-center-project-item-item">5</p></li>
+                        <p class="personal-center-project-item-item"><%=db.count_project_num(pjset.getInt("id")) + "/" + pjset.getString("require_num")%></p></li>
                       <li class="clearfix"><p
                           class="personal-center-project-item-title">简介:</p>
-                        <p class="personal-center-project-item-item">没什么可说的</p></li>
+                        <p class="personal-center-project-item-item"><%=pjset.getString("intro")%></p></li>
                     </ul>
+                    <%
+                    	if (pjset.getInt("founder_id") == id) {
+                    %>
                     <a class="personal-center-project-edit">编辑</a>
+                    <%
+                    	}
+                    %>
                   </div>
                   <div class="personal-center-right-title">
                     <div id="title-line"></div>
@@ -150,6 +159,11 @@
                     </div>
                     <a href="" class="next-page">下一页</a>
                   </div>
+                  <%
+                  	} else {
+                  		out.print("你没有加入任何项目!");
+                  	}
+                  %>
                 </div>
               </div>
             </div>
