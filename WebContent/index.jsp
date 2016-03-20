@@ -24,10 +24,10 @@
 		<div class="container shadow" style="padding: 0px; width: 1140px;">
 			<!-- TITLE -->
 			<div class="grey-3">
-				<div class="white shadow clearfix">
-					<p style="height: 65px; text-align: center;">
-					</p>
-				</div>
+<!-- 				<div class="white shadow clearfix"> -->
+<!-- 					<p style="height: 65px; text-align: center;"> -->
+<!-- 					</p> -->
+<!-- 				</div> -->
 			</div>
 			<!-- END-OF-TITLE -->
 			<!-- SLIDE -->
@@ -37,11 +37,11 @@
 						<div>
 							<div id="showcase"
 								style="background: url(img/background-img.jpg) no-repeat fixed center center/cover;">
-								<h1>REG | EX</h1>
-								<h2>想找实验室么？想找项目做？REG|EX 是您的最佳解决方案</h2>
+								<h1>"找点人"项目平台</h1>
+								<h2>想找项目做？想和其他人一起合作？欢迎使用"找点人"项目平台</h2>
 								<p>
 									<a id="find-project" role="button" target=""
-										href="html/project/projectlist.jsp">我要找项目</a>
+										href="html/projectlist/projectlist.jsp">我要找项目</a>
 								</p>
 							</div>
 						</div>

@@ -15,6 +15,9 @@
 	}
 	ResultSet set;
 	if (keyword != null) {
+		//java.net.URLDncoder.decode(keyword,"utf-8");
+		//keyword = keyword.replace("\\\\u", "\\u");
+		keyword = new String(keyword.getBytes(), "utf-8");
 		set = db.project_list(pages, keyword);
 	} else {
 		set = db.project_list(pages);

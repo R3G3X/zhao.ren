@@ -27,7 +27,7 @@ $(document).ready(function() {
 			alert("修改成功");
 			location.reload();
 		}).error(function(data, status, e) {
-			$("#check-project-status").html("<font color='red'>添加失败！请检查信息是否有误</font>");
+			$("#check-project-status").html("<font color='red'>修改失败！请检查信息是否有误</font>");
 		})
 	})
 	$(".lable").click(function(){
