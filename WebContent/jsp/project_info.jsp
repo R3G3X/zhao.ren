@@ -12,9 +12,10 @@
 	String intro = "";
 	String detail = "";
 	int pid = -1;
+	ResultSet pret = null;
 	pid = Integer.parseInt(request.getParameter("id"));
 	if (pid != -1) {
-		ResultSet pret = db.project_info(pid);
+		pret = db.project_info(pid);
 		pret.next();
 		name = pret.getString("name");
 		num = pret.getString("require_num");
