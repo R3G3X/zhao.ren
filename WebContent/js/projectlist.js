@@ -11,7 +11,8 @@ $(document).ready(function(){
         }
     });
     function Search(){
-        var loc ="projectlist.jsp?pages=1&s="+$('#search-box-input').val();
-        location.href = encodeURI(encodeURI(loc));
+    	var loc = encodeURIComponent(encodeURIComponent($('#search-box-input').val()));
+        var loc ="projectlist.jsp?pages=1&s="+loc;
+        location.href = loc
     }
 })
