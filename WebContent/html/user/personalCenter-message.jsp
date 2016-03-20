@@ -25,7 +25,7 @@
         <div class="white shadow">
           <div id="content" class="clearfix" style="padding-top: 20px">
             <!-- CONTENT -->
-            <div class="personal-center">
+            <div class="personal-center clearfix">
               <%@ include file="/html/frame/personalCenter-right.jsp"%>
               <div class="personal-center-right-content">
                 <div class="personal-center-right-title">
@@ -33,9 +33,7 @@
                   <p>我的消息</p>
                 </div>
                 <div class="personal-center-message-container">
-                
                   <%@ include file="/jsp/personalMessage.jsp"%>
-                  
                   <div class="personal-center-message clearfix">
                     <div class="personal-center-message-avatar">
                       <img class="personal-center-message-avatar-img"

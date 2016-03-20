@@ -2,13 +2,13 @@
 * @Author: Ed_Strickland
 * @Date:   2016-03-20 20:56:16
 * @Last Modified by:   Ed_Strickland
-* @Last Modified time: 2016-03-20 22:00:20
+* @Last Modified time: 2016-03-20 22:38:02
 */
 
 $(document).ready(function() {
   var count = 0;
   var n = 0;
-  for(var i = 0; i< $(".label").length - 1; i ++){
+  for(var i = 0; i < $(".label").length - 1; i ++){
     count=count+1;
     count = count*10;
   }
@@ -46,6 +46,7 @@ $(document).ready(function() {
     }
   })
   $("#info-change").click(function(){
+    $("#target").addClass("pass")
     $("#info-save").removeClass("hidden");
     $("#info-change").addClass("hidden");
     $(".personal-center-right-item-right").removeClass("hidden");

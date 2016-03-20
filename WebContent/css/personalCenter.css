@@ -2,14 +2,14 @@
 * @Author: Ed_Strickland
 * @Date:   2016-03-18 13:50:32
 * @Last Modified by:   Ed_Strickland
-* @Last Modified time: 2016-03-20 21:15:52
+* @Last Modified time: 2016-03-20 22:38:49
 */
 
 #content{
   margin-left:0px;
 }
 
-p{
+.personal-center p{
   text-shadow:1px 1px 1px #A5A5A5;
 }
 
@@ -19,11 +19,9 @@ p{
   right:0;
   margin:auto;
   width:800px;
-  height:680px;
+  /*min-height:560px;*/
 }
 .personal-center-left-content{
-  height:679px;
-  border-right:1px solid #C8C8C8;
   float:left;
 }
 .personal-center-avatar{
@@ -70,6 +68,8 @@ p{
   color:#666666;
 }
 .personal-center-right-content{
+  min-height:600px;
+  border-left:1px solid #C8C8C8;
   float:left;
 }
 .personal-center-right-title{
@@ -104,7 +104,6 @@ p{
 }
 .personal-center-right-item-project{
   float:left;
-  height:510px;
   padding-right:0px;
 }
 .personal-center-right-item-right{
@@ -154,6 +153,10 @@ p{
 .personal-center-info-item-item-tech{
   margin-left:40px;
 }
+.personal-center-info-item-item-tech:hover{
+  text-decoration:none;
+  cursor:pointer;
+}
 .personal-center-password-now{
   margin-left:302px;
 }
@@ -188,12 +191,15 @@ p{
   color:#fff;
   float:right;
   margin-right:30px;
+  margin-bottom:30px;
 }
 .personal-info-item-save:hover{
   padding:10px;
   background-color:#898989;
   color:#E0DDDD;
   float:right;
+  cursor:pointer;
+  text-decoration:none;
 }
 
 .personal-center-project-names{
@@ -205,7 +211,7 @@ p{
 }
 .personal-center-project-tag{
   padding:10px;
-  margin:right:10px;
+
 }
 .tag-activated{
   color:#E4E4E4;

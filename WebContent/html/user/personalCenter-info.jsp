@@ -28,7 +28,7 @@
         <div class="white shadow">
           <div id="content" class="clearfix" style="padding-top: 20px">
             <!-- CONTENT -->
-            <div class="personal-center">
+            <div class="personal-center clearfix">
               <%@ include file="/html/frame/personalCenter-right.jsp"%>
               <div class="personal-center-right-content">
                 <div class="personal-center-right-title">
@@ -48,7 +48,7 @@
                       <p class="personal-center-info-item-item"
                         id="password-input">******</p>
                     </li>
-                    <li class="personal-center-info-item pass">
+                    <li id="target" class="personal-center-info-item">
                       <p class="personal-center-info-item-title">真实姓名：</p>
                       <p class="personal-center-info-item-item"
                         id="name">黄汇</p>
@@ -105,31 +105,31 @@
                   </ul>
                 </div>
               </div>
-                <div class="personal-center-right-item-down">
-                  <ul class="personal-center-info">
-                    <li class="personal-center-info-item">
-                      <p class="personal-center-info-item-title">技术：</p>
-                      <a
-                      class="personal-center-info-item-item-tech" id="10000"><span
-                        id="1" class="require label label-primary">JAVA</span></a><a
+              <div class="personal-center-right-item-down">
+                <ul class="personal-center-info">
+                  <li class="personal-center-info-item">
+                    <p class="personal-center-info-item-title">技术：</p>
+                    <a
+                    class="personal-center-info-item-item-tech" id="10000"><span
+                      id="1" class="require label label-primary">JAVA</span></a><a
 
-                      class="personal-center-info-item-item-tech" id="1000"><span
-                        id="1" class="require label label-primary">C++</span></a>
-                      <a
-                      class="personal-center-info-item-item-tech" id="100"><span
-                        id="1" class="require label label-primary">J2EE</span></a>
-                      <a
-                      class="personal-center-info-item-item-tech" id="10"><span
-                        id="1" class="require label label-primary">PHP</span></a>
-                      <a
-                      class="personal-center-info-item-item-tech" id="1"><span
-                        id="1" class="require label label-default">...</span>
-                    </a>
-                    </li>
-                  </ul>
-                </div>
-                <a class="personal-info-item-save hidden" id="info-save">保存信息</a> <a
-                  class="personal-info-item-save" id="info-change">编辑信息</a>
+                    class="personal-center-info-item-item-tech" id="1000"><span
+                      id="1" class="require label label-primary">C++</span></a>
+                    <a
+                    class="personal-center-info-item-item-tech" id="100"><span
+                      id="1" class="require label label-primary">J2EE</span></a>
+                    <a
+                    class="personal-center-info-item-item-tech" id="10"><span
+                      id="1" class="require label label-primary">PHP</span></a>
+                    <a
+                    class="personal-center-info-item-item-tech" id="1"><span
+                      id="1" class="require label label-default">...</span>
+                  </a>
+                  </li>
+                </ul>
+              </div>
+              <a class="personal-info-item-save hidden" id="info-save">保存信息</a>
+              <a class="personal-info-item-save" id="info-change">编辑信息</a>
               </div>
             </div>
             <!-- END-OF-CONTENT -->
