@@ -2,7 +2,7 @@
 * @Author: Ed_Strickland
 * @Date:   2016-03-18 13:50:32
 * @Last Modified by:   Ed_Strickland
-* @Last Modified time: 2016-03-20 20:24:13
+* @Last Modified time: 2016-03-20 21:15:52
 */
 
 #content{
@@ -205,7 +205,7 @@ p{
 }
 .personal-center-project-tag{
   padding:10px;
-
+  margin:right:10px;
 }
 .tag-activated{
   color:#E4E4E4;
