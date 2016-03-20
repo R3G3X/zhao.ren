@@ -8,7 +8,6 @@
 <%@ include file="/jsp/doLogin_required.jsp"%>
 <%@ include file="/jsp/project_info.jsp"%>
 <link href="../../css/projectCreate.css" rel="stylesheet" />
-<script src="<%=request.getContextPath()%>/js/projectCreate.js"></script>
 <script src="<%=request.getContextPath()%>/js/markdown.js"></script>
 <script type="text/javascript">
 	var name="<%=name%>";
@@ -25,8 +24,10 @@
       detail != null && detail != ""
       ){
         $(".project-create-box>h3").text("修改项目信息");
+        $(".project-create-post").removeClass("project-create-post").addClass("project-save-post");
     }else{
       $(".project-create-box>h3").text("创建项目");
+      $(".project-create-post").removeClass("project-save-post").addClass("project-create-post");
     }
 		$("#projectname").val(name);
 		$("#projectMenRequired").val(numb);
@@ -35,6 +36,7 @@
 		$("#projectDescribeInDetails").val(detail);
 	})
 </script>
+<script src="<%=request.getContextPath()%>/js/projectCreate.js"></script>
 </head>
 <body>
   <!-- NAVBAR -->
@@ -110,7 +112,7 @@
 												</script>
           </div>
           <div class="project-create-btn-div">
-            <a class="project-create-btn" id="project-create-post"
+            <a class="project-create-btn project-create-post"
               href="#">确认信息</a>
           </div>
           <a id="check-project-status"></a>
