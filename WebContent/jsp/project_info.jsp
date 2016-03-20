@@ -13,7 +13,11 @@
 	String detail = "";
 	int pid = -1;
 	ResultSet pret = null;
-	pid = Integer.parseInt(request.getParameter("id"));
+	try {
+		pid = Integer.parseInt(request.getParameter("id"));
+	} catch (Exception e) {
+
+	}
 	if (pid != -1) {
 		pret = db.project_info(pid);
 		pret.next();

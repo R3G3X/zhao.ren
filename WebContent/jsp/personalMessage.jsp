@@ -17,7 +17,9 @@
 	}
 
 	ResultSet mset = db.user_message(id);
+	int cnt = 0;
 	while (mset.next()) {
+		cnt++;
 		int mid = mset.getInt("id");
 		String doc = "<div class=\"personal-center-message clearfix\"><div class=\"personal-center-message-avatar\"><img class=\"personal-center-message-avatar-img\"\r\n"
 				+ " src=\"" + request.getContextPath() + "/avatar/";
@@ -46,5 +48,8 @@
 		}
 		doc += "</div></div>";
 		out.print(doc);
+	}
+	if (cnt == 0) {
+		out.print("什么消息也没有啦╮(╯▽╰)╭ ");
 	}
 %>
