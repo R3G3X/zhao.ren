@@ -50,7 +50,7 @@
     <div class="container grey-3 box-border-top project-title-box clearfix">
       <h4 class="project-join-title">团队成员</h4>
       <div class="project-join-user">
-        <img class="project-join-user-avatar" src="../../avatar/1.jpg">
+        <img class="project-join-user-avatar img-circle" src="../../avatar/1.jpg">
         <a class="project-join-user-username" href="">机制汇</a>
       </div>
     </div>
