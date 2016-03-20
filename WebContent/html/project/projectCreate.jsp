@@ -9,12 +9,36 @@
 <link href="../../css/projectCreate.css" rel="stylesheet" />
 <script src="<%=request.getContextPath()%>/js/projectCreate.js"></script>
 <script src="<%=request.getContextPath()%>/js/markdown.js"></script>
-
+<script type="text/javascript">
+<%
+//
+%>
+	var name="asdf";
+	var tech="asdf";
+	var numb="asdf";
+	var time="asdf";
+	var intro="asdf";
+	var detail="asdf";
+$(document).ready(function(){
+	$("#projectname").val("name");
+  $("#projectMenRequired").val(numb);
+  $("#projectDevelopTime").val(time);
+  $("#projectDescribe").val(intro);
+  $("#projectDescribeInDetails").val(detail);
+})
+</script>
 </head>
 <body>
 	<!-- NAVBAR -->
 	<%@ include file="/html/frame/frame_navbar.jsp"%>
 	<!-- END-OF-NAVBAR -->
+<!-- 项目名称
+技术需求
+人数需求
+开发周期
+项目简介
+详细介绍 -->
+
 
 
 
@@ -30,8 +54,8 @@
 						<p class="project-create-info">*项目名称</p>
 						<input class="project-create-input-short" type="text"
 							id="projectname" value="" />
-						<p class="project-create-info">*技术需求</p>
-						<div>
+						<p class="project-create-info-grey">*技术需求（BETA中不提供此项选择）</p>
+<!-- 						<div>
 							<a href="#" class="project-create-info-skill"><span id="0"
 								class="require label label-default">JAVA</span></a> <a href="#"
 								class="project-create-info-skill"><span id="0"
@@ -42,7 +66,7 @@
 								class="require label label-default">PHP</span></a> <a href="#"
 								class="project-create-info-skill"><span id="0"
 								class="require label label-default">...</span></a>
-						</div>
+						</div> -->
 						<p class="project-create-info">*人数需求</p>
 						<input class="project-create-input-short" type="text"
 							id="projectMenRequired" value="" />
@@ -56,7 +80,7 @@
 						<textarea class="project-create-input-long"
 							oninput="this.editor.update()" id="projectDescribeInDetails"></textarea>
 
-						<p class="project-create-info">详细介绍预览</p>
+						<p class="project-create-info-view">详细介绍预览</p>
 						<div id="preview"></div>
 						<script type="text/javascript">
 							function Editor(input, preview) {
