@@ -26,7 +26,7 @@
         <div class="white shadow">
           <div id="content" class="clearfix" style="padding-top: 20px">
             <!-- CONTENT -->
-            <div class="personal-center">
+            <div class="personal-center clearfix">
               <%@ include file="/html/frame/personalCenter-right.jsp"%>
               <div class="personal-center-right-content">
                 <div class="personal-center-right-title">
@@ -137,6 +137,86 @@
                       </div>
                     </div>
 
+                    <div
+                      class="personal-center-project-developer clearfix">
+                      <div
+                        class="personal-center-project-developer-avatar-div">
+                        <img
+                          class="personal-center-project-developer-avatar"
+                          src="../../avatar/1.jpg" alt="">
+                      </div>
+                      <div
+                        class="personal-center-project-developer-username-div">
+                        <p
+                          class="personal-center-project-developer-username">机制汇</p>
+                      </div>
+                      <div
+                        class="personal-center-project-devoloper-delete-div">
+                        <a
+                          class="personal-center-project-devoloper-delete"
+                          href="" title="">-</a>
+                      </div>
+                    </div>
+                    <div
+                      class="personal-center-project-developer clearfix">
+                      <div
+                        class="personal-center-project-developer-avatar-div">
+                        <img
+                          class="personal-center-project-developer-avatar"
+                          src="../../avatar/1.jpg" alt="">
+                      </div>
+                      <div
+                        class="personal-center-project-developer-username-div">
+                        <p
+                          class="personal-center-project-developer-username">机制汇</p>
+                      </div>
+                      <div
+                        class="personal-center-project-devoloper-delete-div">
+                        <a
+                          class="personal-center-project-devoloper-delete"
+                          href="" title="">-</a>
+                      </div>
+                    </div>
+                    <div
+                      class="personal-center-project-developer clearfix">
+                      <div
+                        class="personal-center-project-developer-avatar-div">
+                        <img
+                          class="personal-center-project-developer-avatar"
+                          src="../../avatar/1.jpg" alt="">
+                      </div>
+                      <div
+                        class="personal-center-project-developer-username-div">
+                        <p
+                          class="personal-center-project-developer-username">机制汇</p>
+                      </div>
+                      <div
+                        class="personal-center-project-devoloper-delete-div">
+                        <a
+                          class="personal-center-project-devoloper-delete"
+                          href="" title="">-</a>
+                      </div>
+                    </div>
+                    <div
+                      class="personal-center-project-developer clearfix">
+                      <div
+                        class="personal-center-project-developer-avatar-div">
+                        <img
+                          class="personal-center-project-developer-avatar"
+                          src="../../avatar/1.jpg" alt="">
+                      </div>
+                      <div
+                        class="personal-center-project-developer-username-div">
+                        <p
+                          class="personal-center-project-developer-username">机制汇</p>
+                      </div>
+                      <div
+                        class="personal-center-project-devoloper-delete-div">
+                        <a
+                          class="personal-center-project-devoloper-delete"
+                          href="" title="">-</a>
+                      </div>
+                    </div>
                     <div
                       class="personal-center-project-developer clearfix">
                       <div
