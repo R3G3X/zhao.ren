@@ -12,6 +12,6 @@ $(document).ready(function(){
     });
     function Search(){
         var loc ="projectlist.jsp?pages=1&s="+$('#search-box-input').val();
-        location.href = encodeURI(loc);
+        location.href = encodeURI(encodeURI(loc));
     }
 })

@@ -1,3 +1,4 @@
+<%@page import="java.net.URLDecoder"%>
 <%@page import="zhao_ren_db.db_connector"%>
 <%@page import="java.sql.ResultSet"%>
 <%@ page language="java" contentType="text/html; charset=UTF-8"
@@ -17,8 +18,8 @@
 	if (keyword != null) {
 		//java.net.URLDncoder.decode(keyword,"utf-8");
 		//keyword = keyword.replace("\\\\u", "\\u");
-		keyword = new String(keyword.getBytes(), "utf-8");
-		set = db.project_list(pages, keyword);
+		String decode = URLDecoder.decode(keyword, "UTF-8");
+		set = db.project_list(pages, decode);
 	} else {
 		set = db.project_list(pages);
 	}
