@@ -46,13 +46,13 @@
                   <div class="personal-center-project-info clearfix">
                     <h3>华师大创业</h3>
                     <ul class="personal-center-project-info-list">
-                      <li><p
+                      <li class="clearfix"><p
                           class="personal-center-project-item-title">周期:</p>
                         <p class="personal-center-project-item-item">20</p></li>
-                      <li><p
+                      <li class="clearfix"><p
                           class="personal-center-project-item-title">人数:</p>
                         <p class="personal-center-project-item-item">5</p></li>
-                      <li><p
+                      <li class="clearfix"><p
                           class="personal-center-project-item-title">简介:</p>
                         <p class="personal-center-project-item-item">没什么可说的</p></li>
                     </ul>
