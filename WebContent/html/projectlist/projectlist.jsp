@@ -19,7 +19,7 @@
 		<div class="grey-3">
 			<div class="container clearfix">
 				<div class="white shadow">
-					<div id="content" class="clearfix" style="padding-top: 20px">
+					<div id="content" class="clearfix">
 						<!-- CONTENT -->
 						<input type="hidden" id="currentPage" /> <input type="hidden"
 							id="numPerPage" /> <input type="hidden" id="target-course" />
@@ -56,12 +56,11 @@
 
 						</div>
 						<!-- END-OF-CONTENT -->
-
 					</div>
-					<div style="text-align: center; padding-bottom: 10px">
-						<a type="button" class="btn btn-danger"
+					<div style="text-align: center; padding-bottom: 50px">
+						<a type="button" class="btn-page"
 							href="?pages=<%=pages - 1 > 0 ? pages - 1 : pages%>">上一页</a> <a
-							type="button" class="btn btn-success"
+							type="button" class="btn-page"
 							href="?pages=<%=pages + 1%>">下一页</a>
 					</div>
 				</div>

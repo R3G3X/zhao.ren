@@ -2,7 +2,7 @@
 * @Author: Ed_Strickland
 * @Date:   2016-03-18 13:50:32
 * @Last Modified by:   Ed_Strickland
-* @Last Modified time: 2016-03-20 23:34:15
+* @Last Modified time: 2016-03-21 00:06:33
 */
 
 #content{
@@ -68,7 +68,7 @@
   color:#666666;
 }
 .personal-center-right-content{
-  min-height:600px;
+  min-height:534px;
   border-left:1px solid #C8C8C8;
   float:left;
 }
