@@ -2,7 +2,7 @@
 * @Author: Ed_Strickland
 * @Date:   2015-11-21 22:38:32
 * @Last Modified by:   Ed_Strickland
-* @Last Modified time: 2016-03-20 22:33:12
+* @Last Modified time: 2016-03-20 23:38:04
 */
 /*NAVBAR*/
 #avatar{height:50px;}
@@ -50,7 +50,7 @@
 /*CONTENT*/
 #container-content{
   margin-top:50px;
-  min-height:600px;
+  min-height:400px;
 }
 #content{
   margin:0px;
@@ -127,7 +127,7 @@
   color:#B3B3B3;
 }
 
-#bottom>ul{padding:0;margin-bottom:0px;}
+#bottom>ul{padding:0;padding-bottom:10px;margin-bottom:0px;}
 #bottom li{
   display:inline;
   text-decoration:none;
