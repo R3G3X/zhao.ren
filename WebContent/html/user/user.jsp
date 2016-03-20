@@ -25,11 +25,11 @@
     <div class="grey-2">
       <div class="container">
         <div class="white shadow">
-          <div class="clearfix"
+          <div class="clearfix box"
             style="background: url(../../img/background-img.jpg) no-repeat fixed center center/cover;">
             <div id="user-box">
               <a id="pic-edit" href="#"><img src="<%=ava_path%>"
-                class="img-circle big-avatar" /></a> <a id="user-edit">编辑</a>
+                class="img-circle big-avatar" /></a>
             </div>
             <div id="comment">
               <input id="courseId" type="hidden" value="courseId" />
