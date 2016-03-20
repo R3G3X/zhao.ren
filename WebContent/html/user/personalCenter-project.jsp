@@ -34,6 +34,8 @@
                 </div>
                 <div class="personal-center-right-item-project">
                   <div class="personal-center-project-names">
+                  <%@ include
+                      file="/jsp/project_manage.jsp"%>
                     <a class="personal-center-project-tag tag-activated"
                       href="">华师大创业</a> <a
                       class="personal-center-project-tag tag-deactivated"
