@@ -12,7 +12,6 @@
 <script type="text/javascript">
 	var name="<%=name%>";
   var id = "<%=pid%>"
-  alert(id);
 	//var tech=;
 	var numb="<%=num%>";
 	var time="<%=time%>";
