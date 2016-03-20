@@ -2,7 +2,7 @@
 * @Author: Ed_Strickland
 * @Date:   2016-03-18 13:50:32
 * @Last Modified by:   Ed_Strickland
-* @Last Modified time: 2016-03-21 05:19:09
+* @Last Modified time: 2016-03-21 05:23:31
 */
 
 #content{
@@ -399,7 +399,8 @@
   font-weight:bold;
   color:#F4F4F4;
   text-shadow:1px 1px 2px #717171;
-  background-color:#E36464;
+  background-color:#FE4444;
+  border-radius:3px;
 }
 .personal-center-project-end:hover{
   text-decoration:none;
