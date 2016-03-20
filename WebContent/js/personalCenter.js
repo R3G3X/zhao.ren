@@ -24,11 +24,12 @@ $(document).ready(function() {
       "phone" : $("#phone-change").val(),
       "mail" : $("#mail-change").val(),
       "major" : $("#major-change").val(),
+      "tech-info":$("#tech-info-change").val(),
     }, function(data, status, xhr) {
-      alert("添加成功");
+      alert("修改成功");
       location.reload();
     }).error(function(data, status, e) {
-//
+    	alert("修改失败！可能的原因\n用户名重复\n密码错误\n数据不合法");
     })
   })
   $(".label").click(function(){
