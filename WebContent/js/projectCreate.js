@@ -18,6 +18,7 @@ $(document).ready(function() {
 	$(".project-save-post").click(function() {
 		$("#check-project-status").html("<font color='red'>添加中...</font>");
 		$.post(getRootPath() + "/jsp/doEditProject.jsp", {
+			"pid" : id,
 			"name" : $("#projectname").val(),
 			"num" : $("#projectMenRequired").val(),
 			"time" : $("#projectDevelopTime").val(),
