@@ -1,18 +1,16 @@
-$(document).ready(
-		function() {
-			$(".project-list-info").click(
-					function() {
-						location.href = "../../html/project/project.jsp?id="
-								+ $(this).parent().attr("id");
-					})
-			$("#search-box-btn").click(function() {
-				$.post(getRootPath() + "/jsp/project_list.jsp", {
-					"pages" : 1,
-					"s" : $("#psearch-box-input").val()
-				}, function(data, status, xhr) {
-					alert("search complete");
-				}).error(function(data, status, e) {
-					alert("search incomplete");
-				})
-			})
-		})
+$(document).ready(function(){
+	$(".project-list-info").click(function(){
+		location.href ="../../html/project/project.jsp?id="+$(this).parent().attr("id");
+	})
+  $("#search-box-btn").click(function(){
+    Search();
+  })
+    $('#search-box-input').keydown(function(e){
+        if(e.keyCode==13){
+           Search();
+        }
+    });
+    function Search(){
+        location.href ="projectlist.jsp?pages=1&s="+$('#search-box-input').val();
+    }
+})
