@@ -2,7 +2,7 @@
 * @Author: Ed_Strickland
 * @Date:   2016-03-18 13:50:32
 * @Last Modified by:   Ed_Strickland
-* @Last Modified time: 2016-03-21 04:49:49
+* @Last Modified time: 2016-03-21 05:19:09
 */
 
 #content{
@@ -393,8 +393,19 @@
   color:#953333;
   text-decoration:none;
 }
-
-
+.personal-center-project-end{
+  padding:10px;
+  word-spacing:10px;
+  font-weight:bold;
+  color:#F4F4F4;
+  text-shadow:1px 1px 2px #717171;
+  background-color:#E36464;
+}
+.personal-center-project-end:hover{
+  text-decoration:none;
+  color:#D2D2D2;
+  background-color:#B04242;
+}
 
 
 

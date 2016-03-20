@@ -56,6 +56,8 @@
                     <%
                     	if (pjset.getInt("founder_id") == id) {
                     %>
+                    <a class="personal-center-project-end"
+                      href="#">结束项目</a>
                     <a class="personal-center-project-edit"
                       href="../project/projectCreate.jsp?id=<%=pid%>">编辑</a>
                     <%
