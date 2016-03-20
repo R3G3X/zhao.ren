@@ -2,11 +2,17 @@
 * @Author: Ed_Strickland
 * @Date:   2016-03-18 13:50:32
 * @Last Modified by:   Ed_Strickland
-* @Last Modified time: 2016-03-19 20:02:52
+* @Last Modified time: 2016-03-20 20:24:13
 */
+
 #content{
   margin-left:0px;
 }
+
+p{
+  text-shadow:1px 1px 1px #A5A5A5;
+}
+
 .personal-center{
   border:1px solid #C8C8C8;
   left:0;
@@ -120,13 +126,19 @@
   margin-left:30px;
   color:#666666;
   margin-top:30px;
+  display:inline-block;
 }
 .personal-center-info-item>p{
   display:inline-block;
 }
 .personal-center-info-item>a{
 }
-.pass{margin-top:110px;}
+.personal-center-project-item>p{
+  display:inline-block;
+}
+.personal-center-project-item>a{
+}
+.pass{margin-top:120px;}
 .personal-center-info-item-title{
   text-align:right;
   width:6em;
@@ -134,6 +146,10 @@
 .personal-center-info-item-item{
   margin-left:40px;
   width:100px;
+}
+.personal-center-project-item-item{
+  margin-left:40px;
+  width:60%;
 }
 .personal-center-info-item-item-tech{
   margin-left:40px;
@@ -145,6 +161,11 @@
   height:30px;
   padding-left:5px;
   padding-right:5px;
+  display:inline-block;
+  line-height:30px;
+  background-color:#F3F3F3;
+  border:1px solid#DEDEDE;
+  box-shadow:0px 0px 5px #C7C7C7 inset;
 }
 .personal-center-info-item-item-tech-delete{
   line-height:5px;
@@ -214,7 +235,7 @@
 .personal-center-project-info-list>li{
 }
 .personal-center-project-info-list>li>p{
-  display:inline-block;
+  float:left;
 }
 .personal-center-project-info>h3{
   margin-top:0px;
