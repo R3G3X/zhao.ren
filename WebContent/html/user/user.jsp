@@ -96,11 +96,11 @@
               </ul>
             </div>
 
-            <div class="detail-box">
-              <div class="detail-title clearfix">
-                <p class="detail-title-title">小组</p>
-                <p class="detail-title-count">4</p>
-              </div>
+<!--             <div class="detail-box"> -->
+<!--               <div class="detail-title clearfix"> -->
+<!--                 <p class="detail-title-title">小组</p> -->
+<!--                 <p class="detail-title-count">4</p> -->
+<!--               </div> -->
 
 <!--               <div class="detail-group-box"> -->
 <!--                 <div class="recommend-item"> -->

@@ -29,27 +29,27 @@
 							<div id="search-box-btn" href="" title="">搜索</div>
 						</div>
 
-						<div>
-							<ul class="classify">
-								<li><a href="" title="">最多访问</a></li>
-								<li><a href="" title="">最近发布</a></li>
-								<li><a href="" title="">最多申请</a></li>
-							</ul>
-							<ul class="classify">
-								<li><a href="" title="">全部周期</a></li>
-								<li><a href="" title="">一周以内</a></li>
-								<li><a href="" title="">一个月以内</a></li>
-								<li><a href="" title="">半年以内</a></li>
-								<li><a href="" title="">半年以上</a></li>
-							</ul>
-							<ul class="classify">
-								<li><a href="" title="">全部技能</a></li>
-								<li><a href="" title="">PHP</a></li>
-								<li><a href="" title="">jee</a></li>
-								<li><a href="" title="">java</a></li>
-								<li><a href="" title="">C++/C</a></li>
-							</ul>
-						</div>
+<!-- 						<div> -->
+<!-- 							<ul class="classify"> -->
+<!-- 								<li><a href="" title="">最多访问</a></li> -->
+<!-- 								<li><a href="" title="">最近发布</a></li> -->
+<!-- 								<li><a href="" title="">最多申请</a></li> -->
+<!-- 							</ul> -->
+<!-- 							<ul class="classify"> -->
+<!-- 								<li><a href="" title="">全部周期</a></li> -->
+<!-- 								<li><a href="" title="">一周以内</a></li> -->
+<!-- 								<li><a href="" title="">一个月以内</a></li> -->
+<!-- 								<li><a href="" title="">半年以内</a></li> -->
+<!-- 								<li><a href="" title="">半年以上</a></li> -->
+<!-- 							</ul> -->
+<!-- 							<ul class="classify"> -->
+<!-- 								<li><a href="" title="">全部技能</a></li> -->
+<!-- 								<li><a href="" title="">PHP</a></li> -->
+<!-- 								<li><a href="" title="">jee</a></li> -->
+<!-- 								<li><a href="" title="">java</a></li> -->
+<!-- 								<li><a href="" title="">C++/C</a></li> -->
+<!-- 							</ul> -->
+<!-- 						</div> -->
 
 						<div id="content-width" class="clearfix">
 							<%@ include file="/jsp/project_list.jsp"%>

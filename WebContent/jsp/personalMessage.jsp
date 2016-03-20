@@ -7,6 +7,15 @@
 		return href;
 	}%>
 <%
+	boolean msg_process = true;
+	try {
+		int mmid = Integer.parseInt(request.getParameter("mid"));
+		int p = Integer.parseInt(request.getParameter("p"));
+		db.processing_msg(mmid, p, id);
+	} catch (Exception e) {
+		msg_process = false;
+	}
+
 	ResultSet mset = db.user_message(id);
 	while (mset.next()) {
 		int mid = mset.getInt("id");
@@ -22,7 +31,7 @@
 		doc += "\" alt=\"\">";
 		doc += "</div><div class=\"personal-center-message-item\"><p class=\"personal-center-message-message\">";
 		doc += mset.getString("message");
-        doc+=  "</p></div><div class=\"personal-center-message-agreement\">";
+		doc += "</p></div><div class=\"personal-center-message-agreement\">";
 		if (mset.getInt("needConfirm") == 1) {
 			doc += "<a class=\"personal-center-message-agree\" href=\"";
 			doc += btn(mid, 1) + "\">";

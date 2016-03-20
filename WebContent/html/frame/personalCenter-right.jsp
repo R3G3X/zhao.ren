@@ -13,8 +13,8 @@
 				href="personalCenter-info.jsp">个人信息</a></li>
 			<li class="personal-center-control-item item-<%=t3 %>activated"><a
 				href="personalCenter-project.jsp">项目管理</a></li>
-			<li class="personal-center-control-item item-<%=t4 %>activated"><a
-				href="personalCenter-team.jsp">团队管理</a></li>
+<%-- 			<li class="personal-center-control-item item-<%=t4 %>activated"><a --%>
+<!-- 				href="personalCenter-team.jsp">团队管理</a></li> -->
 		</ul>
 	</div>
 </div>

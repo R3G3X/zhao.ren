@@ -33,7 +33,7 @@
             天
           </a>
           <div class="project-title-join">
-            <a href="<%=request.getContextPath() %>/jsp/doJoinProject.jsp?pid=<%=pret.getInt("id")%>&id=<%=id%>">加入他们</a>
+            <a href="<%=request.getContextPath() %>/jsp/doJoinProject.jsp?pid=<%=pret.getInt("id")%>">加入他们</a>
           </div>
         </div>
 

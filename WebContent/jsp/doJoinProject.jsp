@@ -16,7 +16,7 @@
 	if (success) {
 		out.print("<script>alert(\"已发送申请\")</script>");
 	} else {
-		out.print("<script>alert('申请失败！可能的原因: \\n您已加入该项目\\n您已申请该项目')</script>");
+		out.print("<script>alert('申请失败！可能的原因: \\n您已加入该项目\\n您已申请该项目\\n您之前加入过该项目但已离开')</script>");
 	}
 %>
 <script language="JavaScript">
