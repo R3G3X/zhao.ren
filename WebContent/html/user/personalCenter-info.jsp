@@ -12,6 +12,8 @@
 <%@ include file="/jsp/user_info.jsp"%>
 
 <link href="../../css/personalCenter.css" rel="stylesheet" />
+<script type="text/javascript" src="../../js/personalCenter.js"></script>
+
 </head>
 <body>
   <!-- NAVBAR -->
@@ -33,12 +35,13 @@
                   <div id="title-line"></div>
                   <p>个人信息</p>
                 </div>
+              <div class="personal-center-right-item-top clearfix" style="width:655px;height:480px;">
                 <div class="personal-center-right-item">
                   <ul class="personal-center-info">
                     <li class="personal-center-info-item">
                       <p class="personal-center-info-item-title">用户名：</p>
                       <p class="personal-center-info-item-item"
-                        id="username">机制汇</p>
+                        id="username-info">机制汇</p>
                     </li>
                     <li class="personal-center-info-item">
                       <p class="personal-center-info-item-title">密码：</p>
@@ -72,17 +75,17 @@
                     </li>
                   </ul>
                 </div>
-                <div class="personal-center-right-item-right">
+                <div class="personal-center-right-item-right hidden">
                   <ul class="personal-center-info">
                     <li class="personal-center-info-item-right"><input
                       class="personal-center-info-change"
                       id="username-change" type="text" name="" value=""></li>
                     <li class="personal-center-info-item-right"><input
                       class="personal-center-info-change"
-                      type="password" name="" value="">
+                      type="password" name="" value="" id="pre-password-change">
                       <p class="">原密码</p> <input
                       class="personal-center-info-change"
-                      type="password" name="" value="">
+                      type="password" name="" value="" id="now-password-change">
                       <p class="">现密码</p></li>
                     <li class="personal-center-info-item-right"><input
                       class="personal-center-info-change"
@@ -101,31 +104,32 @@
                       id="major-change" type="text" name="" value=""></li>
                   </ul>
                 </div>
+              </div>
                 <div class="personal-center-right-item-down">
                   <ul class="personal-center-info">
                     <li class="personal-center-info-item">
                       <p class="personal-center-info-item-title">技术：</p>
-                      <a href="#"
-                      class="personal-center-info-item-item-tech"><span
-                        id="0" class="require label label-default">JAVA</span></a><a
-                      href="#"
-                      class="personal-center-info-item-item-tech"><span
-                        id="0" class="require label label-default">C++</span></a>
-                      <a href="#"
-                      class="personal-center-info-item-item-tech"><span
-                        id="0" class="require label label-default">J2EE</span></a>
-                      <a href="#"
-                      class="personal-center-info-item-item-tech"><span
-                        id="0" class="require label label-default">PHP</span></a>
-                      <a href="#"
-                      class="personal-center-info-item-item-tech"><span
-                        id="0" class="require label label-default">...</span>
+                      <a
+                      class="personal-center-info-item-item-tech" id="10000"><span
+                        id="1" class="require label label-primary">JAVA</span></a><a
+
+                      class="personal-center-info-item-item-tech" id="1000"><span
+                        id="1" class="require label label-primary">C++</span></a>
+                      <a
+                      class="personal-center-info-item-item-tech" id="100"><span
+                        id="1" class="require label label-primary">J2EE</span></a>
+                      <a
+                      class="personal-center-info-item-item-tech" id="10"><span
+                        id="1" class="require label label-primary">PHP</span></a>
+                      <a
+                      class="personal-center-info-item-item-tech" id="1"><span
+                        id="1" class="require label label-default">...</span>
                     </a>
                     </li>
                   </ul>
                 </div>
-                <a href="" class="personal-info-item-save">保存信息</a> <a
-                  href="" class="personal-info-item-save hidden">编辑信息</a>
+                <a class="personal-info-item-save hidden" id="info-save">保存信息</a> <a
+                  class="personal-info-item-save" id="info-change">编辑信息</a>
               </div>
             </div>
             <!-- END-OF-CONTENT -->
