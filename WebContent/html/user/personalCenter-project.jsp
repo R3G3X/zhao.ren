@@ -56,7 +56,7 @@
                     <%
                     	if (pjset.getInt("founder_id") == id) {
                     %>
-                    <a class="personal-center-project-edit">编辑</a>
+                    <a class="personal-center-project-edit" href="../project/projectCreate.jsp">编辑</a>
                     <%
                     	}
                     %>
@@ -67,7 +67,170 @@
                   </div>
                   <div
                     class="personal-center-project-developers clearfix">
-                    <%@ include file="/jsp/project_member.jsp"%>
+
+                    <div
+                      class="personal-center-project-developer clearfix">
+                      <div
+                        class="personal-center-project-developer-avatar-div">
+                        <img
+                          class="personal-center-project-developer-avatar"
+                          src="../../avatar/1.jpg" alt="">
+                      </div>
+                      <div
+                        class="personal-center-project-developer-username-div">
+                        <p
+                          class="personal-center-project-developer-username">机制汇</p>
+                      </div>
+                      <div
+                        class="personal-center-project-devoloper-delete-div">
+                        <a
+                          class="personal-center-project-devoloper-delete"
+                          href="" title="">-</a>
+                      </div>
+                    </div>
+
+                    <div
+                      class="personal-center-project-developer clearfix">
+                      <div
+                        class="personal-center-project-developer-avatar-div">
+                        <img
+                          class="personal-center-project-developer-avatar"
+                          src="../../avatar/1.jpg" alt="">
+                      </div>
+                      <div
+                        class="personal-center-project-developer-username-div">
+                        <p
+                          class="personal-center-project-developer-username">机制汇</p>
+                      </div>
+                      <div
+                        class="personal-center-project-devoloper-delete-div">
+                        <a
+                          class="personal-center-project-devoloper-delete"
+                          href="" title="">-</a>
+                      </div>
+                    </div>
+
+                    <div
+                      class="personal-center-project-developer clearfix">
+                      <div
+                        class="personal-center-project-developer-avatar-div">
+                        <img
+                          class="personal-center-project-developer-avatar"
+                          src="../../avatar/1.jpg" alt="">
+                      </div>
+                      <div
+                        class="personal-center-project-developer-username-div">
+                        <p
+                          class="personal-center-project-developer-username">机制汇</p>
+                      </div>
+                      <div
+                        class="personal-center-project-devoloper-delete-div">
+                        <a
+                          class="personal-center-project-devoloper-delete"
+                          href="" title="">-</a>
+                      </div>
+                    </div>
+
+                    <div
+                      class="personal-center-project-developer clearfix">
+                      <div
+                        class="personal-center-project-developer-avatar-div">
+                        <img
+                          class="personal-center-project-developer-avatar"
+                          src="../../avatar/1.jpg" alt="">
+                      </div>
+                      <div
+                        class="personal-center-project-developer-username-div">
+                        <p
+                          class="personal-center-project-developer-username">机制汇</p>
+                      </div>
+                      <div
+                        class="personal-center-project-devoloper-delete-div">
+                        <a
+                          class="personal-center-project-devoloper-delete"
+                          href="" title="">-</a>
+                      </div>
+                    </div>
+                    <div
+                      class="personal-center-project-developer clearfix">
+                      <div
+                        class="personal-center-project-developer-avatar-div">
+                        <img
+                          class="personal-center-project-developer-avatar"
+                          src="../../avatar/1.jpg" alt="">
+                      </div>
+                      <div
+                        class="personal-center-project-developer-username-div">
+                        <p
+                          class="personal-center-project-developer-username">机制汇</p>
+                      </div>
+                      <div
+                        class="personal-center-project-devoloper-delete-div">
+                        <a
+                          class="personal-center-project-devoloper-delete"
+                          href="" title="">-</a>
+                      </div>
+                    </div>
+                    <div
+                      class="personal-center-project-developer clearfix">
+                      <div
+                        class="personal-center-project-developer-avatar-div">
+                        <img
+                          class="personal-center-project-developer-avatar"
+                          src="../../avatar/1.jpg" alt="">
+                      </div>
+                      <div
+                        class="personal-center-project-developer-username-div">
+                        <p
+                          class="personal-center-project-developer-username">机制汇</p>
+                      </div>
+                      <div
+                        class="personal-center-project-devoloper-delete-div">
+                        <a
+                          class="personal-center-project-devoloper-delete"
+                          href="" title="">-</a>
+                      </div>
+                    </div>
+                    <div
+                      class="personal-center-project-developer clearfix">
+                      <div
+                        class="personal-center-project-developer-avatar-div">
+                        <img
+                          class="personal-center-project-developer-avatar"
+                          src="../../avatar/1.jpg" alt="">
+                      </div>
+                      <div
+                        class="personal-center-project-developer-username-div">
+                        <p
+                          class="personal-center-project-developer-username">机制汇</p>
+                      </div>
+                      <div
+                        class="personal-center-project-devoloper-delete-div">
+                        <a
+                          class="personal-center-project-devoloper-delete"
+                          href="" title="">-</a>
+                      </div>
+                    </div>
+                    <div
+                      class="personal-center-project-developer clearfix">
+                      <div
+                        class="personal-center-project-developer-avatar-div">
+                        <img
+                          class="personal-center-project-developer-avatar"
+                          src="../../avatar/1.jpg" alt="">
+                      </div>
+                      <div
+                        class="personal-center-project-developer-username-div">
+                        <p
+                          class="personal-center-project-developer-username">机制汇</p>
+                      </div>
+                      <div
+                        class="personal-center-project-devoloper-delete-div">
+                        <a
+                          class="personal-center-project-devoloper-delete"
+                          href="" title="">-</a>
+                      </div>
+                    </div>
                   </div>
                   <%
                   	} else {
