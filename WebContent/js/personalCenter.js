@@ -2,7 +2,7 @@
 * @Author: Ed_Strickland
 * @Date:   2016-03-20 20:56:16
 * @Last Modified by:   Ed_Strickland
-* @Last Modified time: 2016-03-20 22:38:02
+* @Last Modified time: 2016-03-20 23:41:54
 */
 
 $(document).ready(function() {
@@ -56,6 +56,7 @@ $(document).ready(function() {
     $("#phone-change").val($("#phone").text());
     $("#mail-change").val($("#mail").text());
     $("#major-change").val($("#major").text());
+    $("#tech-info-change").val($("#tech-info").text());
     $("#pre-password-change").val("");
     $("#now-password-change").val("");
     n = 1;
