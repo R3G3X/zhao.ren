@@ -102,44 +102,44 @@
                 <p class="detail-title-count">4</p>
               </div>
 
-              <div class="detail-group-box">
-                <div class="recommend-item">
-                  <div class="clearfix">
-                    <img src="../../img/bilibili.jpg"
-                      style="float: left;" width="60px">
-                    <ul
-                      style="float: left; list-style: none; padding-left: 20px">
-                      <li><a class="team-name">嗶哩嗶哩 - ( ゜- ゜)つロ
-                          乾杯~</a></li>
-                      <li><a>125名成员</a></li>
-                    </ul>
-                  </div>
-                </div>
-                <div class="recommend-item">
-                  <div class="clearfix">
-                    <img src="../../img/bilibili.jpg"
-                      style="float: left;" width="60px">
-                    <ul
-                      style="float: left; list-style: none; padding-left: 20px">
-                      <li><a class="team-name">嗶哩嗶哩 - ( ゜- ゜)つロ
-                          乾杯~</a></li>
-                      <li><a>125名成员</a></li>
-                    </ul>
-                  </div>
-                </div>
-                <div class="recommend-item">
-                  <div class="clearfix">
-                    <img src="../../img/bilibili.jpg"
-                      style="float: left;" width="60px">
-                    <ul
-                      style="float: left; list-style: none; padding-left: 20px">
-                      <li><a class="team-name">嗶哩嗶哩 - ( ゜- ゜)つロ
-                          乾杯~</a></li>
-                      <li><a>125名成员</a></li>
-                    </ul>
-                  </div>
-                </div>
-              </div>
+<!--               <div class="detail-group-box"> -->
+<!--                 <div class="recommend-item"> -->
+<!--                   <div class="clearfix"> -->
+<!--                     <img src="../../img/bilibili.jpg" -->
+<!--                       style="float: left;" width="60px"> -->
+<!--                     <ul -->
+<!--                       style="float: left; list-style: none; padding-left: 20px"> -->
+<!--                       <li><a class="team-name">嗶哩嗶哩 - ( ゜- ゜)つロ -->
+<!--                           乾杯~</a></li> -->
+<!--                       <li><a>125名成员</a></li> -->
+<!--                     </ul> -->
+<!--                   </div> -->
+<!--                 </div> -->
+<!--                 <div class="recommend-item"> -->
+<!--                   <div class="clearfix"> -->
+<!--                     <img src="../../img/bilibili.jpg" -->
+<!--                       style="float: left;" width="60px"> -->
+<!--                     <ul -->
+<!--                       style="float: left; list-style: none; padding-left: 20px"> -->
+<!--                       <li><a class="team-name">嗶哩嗶哩 - ( ゜- ゜)つロ -->
+<!--                           乾杯~</a></li> -->
+<!--                       <li><a>125名成员</a></li> -->
+<!--                     </ul> -->
+<!--                   </div> -->
+<!--                 </div> -->
+<!--                 <div class="recommend-item"> -->
+<!--                   <div class="clearfix"> -->
+<!--                     <img src="../../img/bilibili.jpg" -->
+<!--                       style="float: left;" width="60px"> -->
+<!--                     <ul -->
+<!--                       style="float: left; list-style: none; padding-left: 20px"> -->
+<!--                       <li><a class="team-name">嗶哩嗶哩 - ( ゜- ゜)つロ -->
+<!--                           乾杯~</a></li> -->
+<!--                       <li><a>125名成员</a></li> -->
+<!--                     </ul> -->
+<!--                   </div> -->
+<!--                 </div> -->
+<!--               </div> -->
 
 
             </div>

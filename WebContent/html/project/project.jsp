@@ -33,7 +33,7 @@
             天
           </a>
           <div class="project-title-join">
-            <a>加入他们</a>
+            <a href="<%=request.getContextPath() %>/jsp/doJoinProject.jsp?pid=<%=pret.getInt("id")%>&id=<%=id%>">加入他们</a>
           </div>
         </div>
 
@@ -41,9 +41,7 @@
     </div>
 
     <div class="grey-3">
-      <div class="container white box-border-bottom" id="markdown">
-
-      </div>
+      <div class="container white box-border-bottom" id="markdown"></div>
     </div>
     <script type="text/javascript">
       content="<%=pret.getString("detail") %>";
