@@ -9,10 +9,9 @@
 <%@ include file="/jsp/project_info.jsp"%>
 <link href="../../css/projectCreate.css" rel="stylesheet" />
 <script src="<%=request.getContextPath()%>/js/markdown.js"></script>
-<% int projectId = Integer.parseInt(request.getParameter("id")); %>
 <script type="text/javascript">
 	var name="<%=name%>";
-  var id="<%=projectId%>"
+  var id = "<%=pid%>"
   alert(id);
 	//var tech=;
 	var numb="<%=num%>";
