@@ -2,7 +2,7 @@
 * @Author: Ed_Strickland
 * @Date:   2016-03-18 13:50:32
 * @Last Modified by:   Ed_Strickland
-* @Last Modified time: 2016-03-21 02:00:00
+* @Last Modified time: 2016-03-21 04:49:49
 */
 
 #content{
@@ -221,16 +221,17 @@
 }
 
 .personal-center-project-names{
-  margin-top:20px;
-  padding-bottom:20px;
+  margin-top:10px;
   border-bottom:1px solid #C8C8C8;
   width:657px;
   text-align:center;
 }
 .personal-center-project-tag{
-  margin-right:5px;
+  margin-left:10px;
+  margin-right:10px;
   padding:10px;
-
+  float:left;
+  margin-bottom:10px;
 }
 .tag-activated{
   color:#E4E4E4;

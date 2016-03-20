@@ -34,7 +34,7 @@
                   <p>项目信息</p>
                 </div>
                 <div class="personal-center-right-item-project">
-                  <div class="personal-center-project-names">
+                  <div class="personal-center-project-names clearfix">
                     <%@ include file="/jsp/project_manage.jsp"%>
                   </div>
                   <div class="personal-center-project-info clearfix">
