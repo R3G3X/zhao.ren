@@ -20,7 +20,8 @@
 			doc += memset.getString("username");
 			doc += "</a></p></div><div class=\"personal-center-project-devoloper-delete-div\">";
 			doc += "<a class=\"personal-center-project-devoloper-delete "
-					+ (id == db.founder_of_project(pid) ? "" : "hidden") + "\"";
+					+ ((id == db.founder_of_project(pid) || id == memset.getInt("id")) ? "" : "hidden")
+					+ "\"";
 			doc += "href=\"../../jsp/doRemoveMember.jsp?pid=" + pid + "&member=" + memset.getString("id")
 					+ "\" >-</a>";
 			doc += "</div></div>";
