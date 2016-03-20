@@ -2,7 +2,7 @@
 * @Author: Ed_Strickland
 * @Date:   2016-03-18 13:50:32
 * @Last Modified by:   Ed_Strickland
-* @Last Modified time: 2016-03-20 23:12:52
+* @Last Modified time: 2016-03-20 23:27:41
 */
 
 #content{
@@ -227,6 +227,7 @@
   text-align:center;
 }
 .personal-center-project-tag{
+  margin-right:5px;
   padding:10px;
 
 }
