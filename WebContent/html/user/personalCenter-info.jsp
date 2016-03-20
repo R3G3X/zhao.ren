@@ -118,7 +118,7 @@
                     </ul>
                   </div>
                 </div>
-                <div class="personal-center-right-item-down">
+                <div class="personal-center-right-item-down hidden">
                   <ul class="personal-center-info">
                     <li class="personal-center-info-item">
                       <p class="personal-center-info-item-title">技术：</p>

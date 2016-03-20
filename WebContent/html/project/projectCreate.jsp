@@ -18,6 +18,16 @@
 	var intro="<%=intro%>";
 	var detail="<%=detail%>";
 	$(document).ready(function() {
+    if(name != null && name != "" &&
+      numb != null && numb != "" &&
+      time != null && time != "" &&
+      intro != null && intro != "" &&
+      detail != null && detail != ""
+      ){
+        $(".project-create-box>h3").text("修改项目信息");
+    }else{
+      $(".project-create-box>h3").text("创建项目");
+    }
 		$("#projectname").val(name);
 		$("#projectMenRequired").val(numb);
 		$("#projectDevelopTime").val(time);
