@@ -20,7 +20,7 @@
   <%@ include file="../frame/frame_navbar.jsp"%>
   <!-- END-OF-NAVBAR -->
   <%
-  	t2 = "";
+    t2 = "";
   %>
   <div id="container-content">
     <div class="grey-3">
@@ -36,44 +36,49 @@
                   <p>个人信息</p>
                 </div>
                 <div class="personal-center-right-item-top clearfix"
-                  style="width: 655px; height: 480px;">
+                  style="width: 655px;">
                   <div class="personal-center-right-item">
                     <ul class="personal-center-info">
-                      <li class="personal-center-info-item">
+                      <li class="personal-center-info-item clearfix">
                         <p class="personal-center-info-item-title">用户名：</p>
                         <p class="personal-center-info-item-item"
                           id="username-info"><%=info.getString("username")%></p>
                       </li>
-                      <li class="personal-center-info-item">
+                      <li class="personal-center-info-item clearfix">
                         <p class="personal-center-info-item-title">密码：</p>
                         <p class="personal-center-info-item-item"
                           id="password-input">******</p>
                       </li>
-                     <li id="target" class="personal-center-info-item">
+                     <li id="target" class="personal-center-info-item clearfix">
                         <p class="personal-center-info-item-title">真实姓名：</p>
                         <p class="personal-center-info-item-item"
                           id="name"><%=info.getString("realName")%></p>
                       </li>
-                      <li class="personal-center-info-item">
+                      <li class="personal-center-info-item clearfix">
                         <p class="personal-center-info-item-title">简介：</p>
                         <p class="personal-center-info-item-item"
                           id="describe"><%=info.getString("userintro")%></p>
                       </li>
-                      <li class="personal-center-info-item">
+                      <li class="personal-center-info-item clearfix">
                         <p class="personal-center-info-item-title">手机号：</p>
                         <p class="personal-center-info-item-item"
                           id="phone"><%=info.getString("phone")%></p>
                       </li>
-                      <li class="personal-center-info-item">
+                      <li class="personal-center-info-item clearfix">
                         <p class="personal-center-info-item-title">邮箱：</p>
                         <p class="personal-center-info-item-item"
                           id="mail"><%=info.getString("email")%></p>
                       </li>
-                      <li class="personal-center-info-item">
+                      <li class="personal-center-info-item clearfix">
                         <p class="personal-center-info-item-title">专业：</p>
                         <p class="personal-center-info-item-item"
                           id="major"><%=info.getString("major")%></p>
                       </li>
+                      <li class="personal-center-info-item clearfix">
+                        <p class="personal-center-info-item-title">专业：</p>
+                        <p class="personal-center-info-item-item"
+                        id="tech-info">我爱软件我爱软件我爱软件我爱软件我爱软件我爱软件我爱软件我爱软件我爱软件我爱软件</p>
+                    </li>
                     </ul>
                   </div>
                   <div class="personal-center-right-item-right hidden">
@@ -107,6 +112,9 @@
                       <li class="personal-center-info-item-right"><input
                         class="personal-center-info-change"
                         id="major-change" type="text" name="" value=""></li>
+                      <li class="personal-center-info-item-right"><textarea
+                        class="personal-center-info-change-textarea"
+                        id="tech-info-change" type="text" name="" value=""></textarea></li>
                     </ul>
                   </div>
                 </div>
