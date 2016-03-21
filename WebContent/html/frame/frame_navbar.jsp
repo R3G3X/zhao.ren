@@ -42,7 +42,7 @@
         <li><a id="project-list-btn"
           href="<%=request.getContextPath()%>/html/projectlist/projectlist.jsp"><span
             class="glyphicon glyphicon-search" aria-hidden="true">
-              所有项目</span></a></li>
+              </span></a></li>
       </ul>
       <!-- END-OF-NAVBAR-LEFT -->
 

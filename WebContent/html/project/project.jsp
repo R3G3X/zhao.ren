@@ -21,8 +21,8 @@
   <div id="container-content">
     <!-- PUT-YOUR-CODE-BELOW -->
     <div class="grey-2">
-      <div class="container grey-3 box-border-top project-title-box">
-        <div class="project-title clearfix">
+      <div class="container grey-3 box-border-top project-title-box" style="width:1140px">
+        <div class="project-title clearfix" style="padding-top:70px;">
           <h2 class="project-title-title"><%=pret.getString("name")%></h2>
           <a class="project-title-status"><%=pret.getString("isFinshed").equals("0") ? "组队中" : "已完成"%></a>
         </div>
@@ -49,7 +49,7 @@
     </div>
 
     <div class="grey-3">
-      <div class="container white box-border-bottom" id="markdown"></div>
+      <div class="container white box-border-bottom"  style="width:1140px" id="markdown"></div>
     </div>
     <script type="text/javascript">
         content="<%=pret.getString("detail")%>";
@@ -57,7 +57,7 @@
 							.toHTML(content);
 				</script>
     <div
-      class="container grey-3 box-border-top project-title-box clearfix project-user">
+      class="container grey-3 box-border-top project-title-box clearfix project-user" style="width:1140px">
       <h4 class="project-join-title">团队成员[需要人数:<%=pret.getString("require_num")%>]</h4>
 
       <%@ include file="/jsp/project_info_member.jsp"%>
