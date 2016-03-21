@@ -8,7 +8,8 @@
 <div class="grey-3">
 	<div class="clearfix">
 		<div class="white clearfix">
-			<div id="content" class="clearfix">
+			<div id="content" class="clearfix index-content">
+				<h3 id="title-title">热门项目</h3>
 				<%
 					ResultSet ret = db.index_project_qry();
 					while (ret.next()) {

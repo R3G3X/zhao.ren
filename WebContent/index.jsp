@@ -7,6 +7,7 @@
 <%@ include file="/html/frame/frame_head.jsp"%>
 
 <%@ include file="jsp/frame.jsp" %>
+<link href="css/index.css" rel="stylesheet" />
 <script type="text/javascript" src="js/voteClick.js"></script>
 <script type="text/javascript" src="js/index.js"></script>
 
@@ -33,18 +34,14 @@
 			<!-- SLIDE -->
 			<div class="white" style="height: 366px;">
 				<div class="shadow">
-					<div id="">
-						<div>
-							<div id="showcase"
-								style="background: url(<%=request.getContextPath()%>/img/background-img.jpg) no-repeat fixed center center/cover;">
-								<h1>"找点人"项目平台</h1>
-								<h2>想找项目做？想和其他人一起合作？欢迎使用"找点人"项目平台</h2>
-								<p>
-									<a id="find-project" role="button" target=""
-										href="html/projectlist/projectlist.jsp">我要找项目</a>
-								</p>
-							</div>
-						</div>
+					<div id="showcase"
+						style="background: url(<%=request.getContextPath()%>/img/background-img.jpg) no-repeat fixed center center/cover;">
+						<h1>"找点人"项目平台</h1>
+						<h2>想找项目做？想和其他人一起合作？欢迎使用"找点人"项目平台</h2>
+						<p>
+							<a id="find-project" role="button" target=""
+								href="html/projectlist/projectlist.jsp">我要找项目</a>
+						</p>
 					</div>
 				</div>
 			</div>

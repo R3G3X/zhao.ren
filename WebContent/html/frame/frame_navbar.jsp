@@ -14,11 +14,11 @@
 		avatar_path = request.getContextPath() + "/avatar/" + avatar;
 		int cnt = db.unread_message_count(id);
 		if (cnt > 0) {
-			new_msg = "[您有" + cnt + "条新消息]";
+			new_msg = "[" + cnt + "]";
 		}
 	}
 %>
-<nav class="navbar navbar-inverse navbar-fixed-top grey-0"
+<nav class="navbar navbar-inverse navbar-fixed-top grey-1"
   role="navigation">
   <div class="container grey-0" style="width: 1140px;">
     <!-- NAVBAR-HEADER -->
@@ -30,8 +30,8 @@
         <span class="icon-bar"></span>
       </button>
       <!-- END-OF-FOR-SMALLER -->
-      <a class="navbar-brand"
-        href="<%=request.getContextPath()%>/index.jsp">ZHAO.REN</a>
+      <a class="navbar-brand" id="logo"
+        href="<%=request.getContextPath()%>/index.jsp"><span>ZHAO.REN</span></a>
     </div>
     <!-- END-OF-NAVBAR-HEADER -->
 
@@ -39,8 +39,8 @@
       <!-- NAVBAR-LEFT -->
       <ul class="nav navbar-nav navbar-left">
 
-        <li><a
-          href="<%=request.getContextPath()%>/html/projectlist/projectlist.jsp">所有项目</a></li>
+        <li><a id="project-list-btn"
+          href="<%=request.getContextPath()%>/html/projectlist/projectlist.jsp"><span class="glyphicon glyphicon-search" aria-hidden="true"></a></li>
       </ul>
       <!-- END-OF-NAVBAR-LEFT -->
 
@@ -48,16 +48,14 @@
 
       <ul class="nav navbar-nav navbar-right">
         <li><a id="project-add-btn" class="hidden"
-          href="<%=request.getContextPath()%>/html/project/projectCreate.jsp">添加项目</a></li>
-        <li><a id="personal-center-btn" class="hidden"
-          href="<%=request.getContextPath()%>/html/user/personalCenter-message.jsp">个人中心<%=new_msg  %></a></li>
-        <li><a id="user" class="hidden"
-          href="<%=request.getContextPath()%>/html/user/user.jsp">我的主页</a></li>
+          href="<%=request.getContextPath()%>/html/project/projectCreate.jsp"><span class="glyphicon glyphicon-edit" aria-hidden="true"></span></a></li>
+        <li><a id="personal-center-btn" class="hidden" href="<%=request.getContextPath()%>/html/user/personalCenter-message.jsp"><span class="glyphicon glyphicon-user" aria-hidden="true"></span> <%=new_msg  %></a></li>
         <li id="login"><a id="login-btn" type="button"
-          data-toggle="modal" data-target="#modal-login">登陆</a></li>
-        <li><img id="avatar" class="img-circle hidden-xs hidden"
-          src="<%=avatar_path%>"></li>
-        <li><a id="logout" href="#" class="hidden">退出登录</a></li>
+          data-toggle="modal" data-target="#modal-login"><span class="glyphicon glyphicon-log-in" aria-hidden="true"></span></a></li>
+        <li><img id="avatar" class="img-circle hidden-xs hidden" src="<%=avatar_path%>"></li>
+
+
+        <li><a id="logout" href="#" class="hidden"><span class="glyphicon glyphicon-log-out" aria-hidden="true"></span></a></li>
       </ul>
       <!-- END-OF-NAVBAR-RIGHT -->
     </div>

@@ -57,7 +57,7 @@
   <div id="container-content">
     <!-- PUT-YOUR-CODE-BELOW -->
     <div class="grey-3" style="min-height: 830px;">
-      <div class="container white shadow" style="min-height: 830px;">
+      <div class="container white shadow" style="min-height: 830px;padding:70px;width:1140px;">
         <div class="project-create">
           <div class="project-create-box">
             <h3>创建项目</h3>

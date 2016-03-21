@@ -25,8 +25,7 @@
     <div class="grey-2">
       <div class="container">
         <div class="white shadow">
-          <div class="clearfix box"
-            style="background: url(../../img/background-img.jpg) no-repeat fixed center center/cover;">
+          <div class="clearfix box" style="background: url(../../img/background-img.jpg) no-repeat fixed center center/cover;padding-top:70px;">
             <div id="user-box">
               <a id="pic-edit" href="#"><img src="<%=ava_path%>"
                 class="img-circle big-avatar" /></a>
