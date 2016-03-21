@@ -55,11 +55,11 @@
               创建项目</span></a></li>
         <li><a id="personal-center-btn" class="hidden"
           href="<%=request.getContextPath()%>/html/user/personalCenter-message.jsp"><span
-            class="glyphicon glyphicon-user" aria-hidden="true">个人中心</span>
+            class="glyphicon glyphicon-user" aria-hidden="true"> 个人中心</span>
             <%=new_msg%></a></li>
         <li><a id="user-btn" class="hidden"
           href="<%=request.getContextPath()%>/html/user/user.jsp"><span
-            class="glyphicon glyphicon-edit" aria-hidden="true">
+            class="glyphicon glyphicon-home" aria-hidden="true">
               我的主页</span></a></li>
         <li id="login"><a id="login-btn" type="button"
           data-toggle="modal" data-target="#modal-login"><span
@@ -125,22 +125,3 @@
   </div>
 </div>
 <!-- END-OF-PROJECT-ADD -->
-
-<!-- MODAL-VOTE -->
-<div id="modal-vote" class="modal fade" tabindex="-1" role="dialog"
-  aria-labelledby="myModalLabel">
-  <div class="modal-dialog" role="document">
-    <!-- MODAL-CONTENT -->
-    <div class="modal-body">
-      <div id="mod-body" class="white">
-        <div id="mod-border" class="vote-border">
-          <h3>为这门课程投票？</h3>
-          <a id="btn-for" class="btn-select">赞</a> <a id="btn-post"
-            class="btn-select">踩</a>
-        </div>
-      </div>
-    </div>
-    <!-- END-OF-MODAL-CONTENT -->
-  </div>
-</div>
-<!-- END-OF-MODAL-VOTE -->
