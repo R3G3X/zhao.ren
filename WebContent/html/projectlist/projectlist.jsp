@@ -60,11 +60,12 @@
 					<div style="text-align: center; padding-bottom: 50px" id="htarget">
 					</div>
 					<script type="text/javascript">
-						var pages = <%=pages%>;
+						var pages = <%=pages%>
 						var allPages = <%=all_pages%>
+						var keyword = "";
 						var keyword = <%=keyword%>
-						keyword = encodeURIComponent(encodeURIComponent(keyword);
-        		location.href = loc
+						keyword = encodeURIComponent(encodeURIComponent(keyword));
+						// alert(keyword);
 						// alert(pages);
 						// alert(allPages);
 						$(document).ready(function(){
