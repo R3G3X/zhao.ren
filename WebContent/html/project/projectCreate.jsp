@@ -84,7 +84,7 @@
               id="projectMenRequired" value="" />
             <p class="project-create-info">*开发周期</p>
             <input class="project-create-input-short"
-              placeholder="请输入天数" type="text" id="projectDevelopTime"
+              placeholder="开发周期按天计算" type="text" id="projectDevelopTime"
               value="" />
             <p class="project-create-info">*项目简介</p>
             <input class="project-create-input-short" type="text"

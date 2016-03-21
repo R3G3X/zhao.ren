@@ -45,7 +45,7 @@
                     <ul class="personal-center-project-info-list">
                       <li class="clearfix"><p
                           class="personal-center-project-item-title">周期:</p>
-                        <p class="personal-center-project-item-item"><%=pjset.getString("round_time")%></p></li>
+                        <p class="personal-center-project-item-item"><%=pjset.getString("round_time")%>（天）</p></li>
                       <li class="clearfix"><p
                           class="personal-center-project-item-title">人数:</p>
                         <p class="personal-center-project-item-item"><%=db.count_project_num(pjset.getInt("id")) + "/" + pjset.getString("require_num")%></p></li>

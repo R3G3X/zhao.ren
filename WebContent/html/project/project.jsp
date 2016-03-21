@@ -59,7 +59,6 @@
     <div
       class="container grey-3 box-border-top project-title-box clearfix project-user" style="width:1140px">
       <h4 class="project-join-title">团队成员[需要人数:<%=pret.getString("require_num")%>]</h4>
-
       <%@ include file="/jsp/project_info_member.jsp"%>
     </div>
   </div>

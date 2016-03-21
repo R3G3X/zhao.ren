@@ -9,6 +9,7 @@
   content="text/html; charset=UTF-8">
 <%
 	if (pid != -1) {
+    int count = 0;
 		ResultSet ppset = db.member_of_project(pid);
 		while (ppset.next()) {
 			String doc = "<div class=\"project-join-user\">";
@@ -18,9 +19,13 @@
 			doc += memset.getString("avatar");
 			doc += "\"><a class=\"project-join-user-username\" href=\"../user/user.jsp?id=";
 			doc += ppset.getInt("user_id");
-			doc += "\">" + memset.getString("username");
-			doc += "</a></div>";
+      if (count == 0)
+			  doc += "\">" + "&nbsp;&nbsp;&nbsp;队长：" + memset.getString("username");
+			else
+        doc += "\">" + memset.getString("username");
+      doc += "</a></div>";
 			out.print(doc);
+      count++;
 		}
 	}
 %>
