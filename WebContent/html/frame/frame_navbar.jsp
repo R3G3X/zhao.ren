@@ -40,7 +40,7 @@
       <ul class="nav navbar-nav navbar-left">
 
         <li><a id="project-list-btn"
-          href="<%=request.getContextPath()%>/html/projectlist/projectlist.jsp"><span
+          href="<%=request.getContextPath()%>/html/projectlist/projectlist.jsp?pages=1&s="><span
             class="glyphicon glyphicon-search" aria-hidden="true">
               </span></a></li>
       </ul>
