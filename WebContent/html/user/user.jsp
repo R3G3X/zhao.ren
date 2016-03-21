@@ -87,7 +87,7 @@
           <div id="right-content">
             <div class="detail-box">
               <div class="detail-title clearfix">
-                <a class="detail-title-title" href="#">项目</a>
+                <a class="detail-title-title">项目</a>
                 <p class="detail-title-count"><%=finish_count + ongoing_count%></p>
               </div>
               <ul class="recommend-item detail-group-box">

@@ -2,7 +2,7 @@
 * @Author: Ed_Strickland
 * @Date:   2015-11-21 22:38:32
 * @Last Modified by:   Ed_Strickland
-* @Last Modified time: 2016-03-21 00:12:49
+* @Last Modified time: 2016-03-21 15:45:02
 */
 .box{padding-bottom:20px;}
 .team-name:hover{cursor:pointer;}
@@ -67,6 +67,7 @@
   margin-bottom:7px;
   margin-top:10px;
   padding-left:0px;
+  box-shadow:1px 1px 3px#AAAAAA;
 }
 .recommend-item{
    list-style:none;
@@ -192,6 +193,7 @@
   margin-bottom:20px;
   border:1px solid #A9A9A9;
   padding:10px;
+  box-shadow:1px 1px 3px#AAAAAA;
 }
 .recent-move-content:hover{
   border:1px solid #555555;

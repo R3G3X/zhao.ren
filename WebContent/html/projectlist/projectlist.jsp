@@ -71,7 +71,7 @@
 						$(document).ready(function(){
 							var innerHTML = '<a type="button" class="btn-page" id="pre" href="?s='+keyword+'&pages=<%=pages - 1 > 0 ? pages - 1 : pages%>">上一页</a>';
 							if (allPages-Math.floor(pages/10)>8){
-								for(var i = 1; i < 11;i++){
+								for(var i = 1; i <= 10;i++){
 									if (i==pages){
 										innerHTML += '<a type="button" class="btn-page activated" id='+ (Mathw.floor(pages/10) *10 + i) +' href="?pages='+ Math.floor(pages/10) *10 + i +'&s='+keyword+'">'+ Math.floor(pages/10) *10 + i+'</a>'
 									}else{
@@ -79,7 +79,7 @@
 									}
 								}
 							}else{
-								for(var i = 1; i < allPages-Math.floor(pages/10);i++){
+								for(var i = 1; i <= allPages-Math.floor(pages/10);i++){
 									if (i==pages){
 										innerHTML += '<a type="button" class="btn-page activated" id='+ (Math.floor(pages/10) *10 + i) +' href="?pages='+ Math.floor(pages/10) *10 + i +'&s='+keyword+'">'+ Math.floor(pages/10) *10 + i+'</a>'
 									}else{
@@ -89,7 +89,7 @@
 							}
 							innerHTML += '<a type="button" class="btn-page" id="next" href="?s='+keyword+'&pages=<%=pages + 1%>">下一页</a>'
 							$("#htarget").html(innerHTML);
-							if(pages>=allPages-1){
+							if(pages>=allPages){
 								$("#next").addClass("hidden");
 							}else{
 								$("#next").removeClass("hidden");

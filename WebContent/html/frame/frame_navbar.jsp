@@ -40,7 +40,7 @@
       <ul class="nav navbar-nav navbar-left">
 
         <li><a id="project-list-btn"
-          href="<%=request.getContextPath()%>/html/projectlist/projectlist.jsp"><span
+          href="<%=request.getContextPath()%>/html/projectlist/projectlist.jsp?pages=1&s="><span
             class="glyphicon glyphicon-search" aria-hidden="true">
               </span></a></li>
       </ul>
@@ -52,15 +52,15 @@
         <li><a id="project-add-btn" class="hidden"
           href="<%=request.getContextPath()%>/html/project/projectCreate.jsp"><span
             class="glyphicon glyphicon-edit" aria-hidden="true">
-              创建项目</span></a></li>
+              </span>创建项目</a></li>
         <li><a id="personal-center-btn" class="hidden"
           href="<%=request.getContextPath()%>/html/user/personalCenter-message.jsp"><span
-            class="glyphicon glyphicon-user" aria-hidden="true"> 个人中心</span>
+            class="glyphicon glyphicon-user" aria-hidden="true"> </span>个人中心
             <%=new_msg%></a></li>
         <li><a id="user-btn" class="hidden"
           href="<%=request.getContextPath()%>/html/user/user.jsp"><span
             class="glyphicon glyphicon-home" aria-hidden="true">
-              我的主页</span></a></li>
+              </span>我的主页</a></li>
         <li id="login"><a id="login-btn" type="button"
           data-toggle="modal" data-target="#modal-login"><span
             class="glyphicon glyphicon-log-in" aria-hidden="true"></span></a></li>
