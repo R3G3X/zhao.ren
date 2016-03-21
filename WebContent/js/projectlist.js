@@ -13,6 +13,6 @@ $(document).ready(function(){
     function Search(){
     	var loc = encodeURIComponent(encodeURIComponent($('#search-box-input').val()));
         var loc ="projectlist.jsp?pages=1&s="+loc;
-        location.href = loc
+        location.href = loc;
     }
 })

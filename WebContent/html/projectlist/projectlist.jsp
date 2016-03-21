@@ -63,11 +63,11 @@
 						var pages = <%=pages%>
 						var allPages = <%=all_pages%>
 						var keyword = "";
-						var keyword = <%=keyword%>
+						var keyword = "<%=keyword%>"
 						keyword = encodeURIComponent(encodeURIComponent(keyword));
-						// alert(keyword);
-						// alert(pages);
-						// alert(allPages);
+						alert(keyword);
+						alert(pages);
+						alert(allPages);
 						$(document).ready(function(){
 							var innerHTML = '<a type="button" class="btn-page" id="pre" href="?s='+keyword+'&pages=<%=pages - 1 > 0 ? pages - 1 : pages%>">上一页</a>';
 							if (allPages-Math.floor(pages/10)>8){
