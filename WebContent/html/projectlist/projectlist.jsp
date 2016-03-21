@@ -63,27 +63,27 @@
 						var pages = <%=pages%>
 						var allPages = <%=all_pages%>
 						var keyword = "";
-						var keyword = "<%=keyword%>"
-						keyword = encodeURIComponent(encodeURIComponent(keyword));
-						alert(keyword);
-						alert(pages);
-						alert(allPages);
+						var keyword = '<%=keyword%>';
+						keyword = encodeURIComponent(keyword);
+						// alert(keyword);
+						// alert(pages);
+						// alert(allPages);
 						$(document).ready(function(){
 							var innerHTML = '<a type="button" class="btn-page" id="pre" href="?s='+keyword+'&pages=<%=pages - 1 > 0 ? pages - 1 : pages%>">上一页</a>';
 							if (allPages-Math.floor(pages/10)>8){
 								for(var i = 1; i < 11;i++){
 									if (i==pages){
-										innerHTML += '<a type="button" class="btn-page activated" id='+ (Math.floor(pages/10) *10 + i) +' href="?s='+keyword+'&pages='+ Math.floor(pages/10) *10 + i +'">'+ Math.floor(pages/10) *10 + i+'</a>'
+										innerHTML += '<a type="button" class="btn-page activated" id='+ (Mathw.floor(pages/10) *10 + i) +' href="?pages='+ Math.floor(pages/10) *10 + i +'&s='+keyword+'">'+ Math.floor(pages/10) *10 + i+'</a>'
 									}else{
-										innerHTML += '<a type="button" class="btn-page" id='+ (Math.floor(pages/10) *10 + i) +' href="?s='+keyword+'&pages='+ Math.floor(pages/10) *10 + i +'">'+ Math.floor(pages/10) *10 + i+'</a>'
+										innerHTML += '<a type="button" class="btn-page" id='+ (Math.floor(pages/10) *10 + i) +' href="?pages='+ Math.floor(pages/10) *10 + i +'&s='+keyword+'">'+ Math.floor(pages/10) *10 + i+'</a>'
 									}
 								}
 							}else{
 								for(var i = 1; i < allPages-Math.floor(pages/10);i++){
 									if (i==pages){
-										innerHTML += '<a type="button" class="btn-page activated" id='+ (Math.floor(pages/10) *10 + i) +' href="?s='+keyword+'&pages='+ Math.floor(pages/10) *10 + i +'">'+ Math.floor(pages/10) *10 + i+'</a>'
+										innerHTML += '<a type="button" class="btn-page activated" id='+ (Math.floor(pages/10) *10 + i) +' href="?pages='+ Math.floor(pages/10) *10 + i +'&s='+keyword+'">'+ Math.floor(pages/10) *10 + i+'</a>'
 									}else{
-										innerHTML += '<a type="button" class="btn-page" id='+ (Math.floor(pages/10) *10 + i) +' href="?s='+keyword+'&pages='+ Math.floor(pages/10) *10 + i +'">'+ Math.floor(pages/10) *10 + i+'</a>'
+										innerHTML += '<a type="button" class="btn-page" id='+ (Math.floor(pages/10) *10 + i) +' href="?pages='+ Math.floor(pages/10) *10 + i +'&s='+keyword+'">'+ Math.floor(pages/10) *10 + i+'</a>'
 									}
 								}
 							}
