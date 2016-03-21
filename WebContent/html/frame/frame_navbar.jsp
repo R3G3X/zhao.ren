@@ -40,7 +40,9 @@
       <ul class="nav navbar-nav navbar-left">
 
         <li><a id="project-list-btn"
-          href="<%=request.getContextPath()%>/html/projectlist/projectlist.jsp"><span class="glyphicon glyphicon-search" aria-hidden="true"></a></li>
+          href="<%=request.getContextPath()%>/html/projectlist/projectlist.jsp"><span
+            class="glyphicon glyphicon-search" aria-hidden="true">
+              所有项目</span></a></li>
       </ul>
       <!-- END-OF-NAVBAR-LEFT -->
 
@@ -48,14 +50,26 @@
 
       <ul class="nav navbar-nav navbar-right">
         <li><a id="project-add-btn" class="hidden"
-          href="<%=request.getContextPath()%>/html/project/projectCreate.jsp"><span class="glyphicon glyphicon-edit" aria-hidden="true"></span></a></li>
-        <li><a id="personal-center-btn" class="hidden" href="<%=request.getContextPath()%>/html/user/personalCenter-message.jsp"><span class="glyphicon glyphicon-user" aria-hidden="true"></span> <%=new_msg  %></a></li>
+          href="<%=request.getContextPath()%>/html/project/projectCreate.jsp"><span
+            class="glyphicon glyphicon-edit" aria-hidden="true">
+              创建项目</span></a></li>
+        <li><a id="personal-center-btn" class="hidden"
+          href="<%=request.getContextPath()%>/html/user/personalCenter-message.jsp"><span
+            class="glyphicon glyphicon-user" aria-hidden="true">个人中心</span>
+            <%=new_msg%></a></li>
+        <li><a id="user-btn" class="hidden"
+          href="<%=request.getContextPath()%>/html/user/user.jsp"><span
+            class="glyphicon glyphicon-edit" aria-hidden="true">
+              我的主页</span></a></li>
         <li id="login"><a id="login-btn" type="button"
-          data-toggle="modal" data-target="#modal-login"><span class="glyphicon glyphicon-log-in" aria-hidden="true"></span></a></li>
-        <li><img id="avatar" class="img-circle hidden-xs hidden" src="<%=avatar_path%>"></li>
+          data-toggle="modal" data-target="#modal-login"><span
+            class="glyphicon glyphicon-log-in" aria-hidden="true"></span></a></li>
+        <li><img id="avatar" class="img-circle hidden-xs hidden"
+          src="<%=avatar_path%>"></li>
 
 
-        <li><a id="logout" href="#" class="hidden"><span class="glyphicon glyphicon-log-out" aria-hidden="true"></span></a></li>
+        <li><a id="logout" href="#" class="hidden"><span
+            class="glyphicon glyphicon-log-out" aria-hidden="true"></span></a></li>
       </ul>
       <!-- END-OF-NAVBAR-RIGHT -->
     </div>

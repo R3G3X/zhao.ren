@@ -27,6 +27,8 @@ $(document).ready(function(){
         $("#personal-center-btn").removeClass("hidden");
         $("#avatar").removeClass("hidden");
         $("#project-add-btn").removeClass("hidden");
+        $("#user-btn").removeClass("hidden");
+        
     }
     $("#login-submit").attr("disabled",true);
     
