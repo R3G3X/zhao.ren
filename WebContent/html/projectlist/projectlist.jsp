@@ -62,18 +62,23 @@
 					<script type="text/javascript">
 						var pages = <%=pages%>;
 						var allPages = <%=all_pages%>
+						var keyword = <%=keyword%>
+						keyword = encodeURIComponent(encodeURIComponent(keyword);
+        		location.href = loc
+						// alert(pages);
+						// alert(allPages);
 						$(document).ready(function(){
-							var innerHTML = '<a type="button" class="btn-page" id="pre" href="?s=<%=keyword %>&pages=<%=pages - 1 > 0 ? pages - 1 : pages%>">上一页</a>';
+							var innerHTML = '<a type="button" class="btn-page" id="pre" href="?s='+keyword+'&pages=<%=pages - 1 > 0 ? pages - 1 : pages%>">上一页</a>';
 							if (allPages-Math.floor(pages/10)>8){
 								for(var i = 1; i < 11;i++){
-								innerHTML += '<a type="button" class="btn-page" id='+ Math.floor(pages/10) *10 + i +' href="?s=<%=keyword %>&pages='+ Math.floor(pages/10) *10 + i +'">'+ Math.floor(pages/10) *10 + i+'</a>'
+								innerHTML += '<a type="button" class="btn-page" id='+ Math.floor(pages/10) *10 + i +' href="?s='+keyword+'&pages='+ Math.floor(pages/10) *10 + i +'">'+ Math.floor(pages/10) *10 + i+'</a>'
 								}
 							}else{
 								for(var i = 1; i < allPages-Math.floor(pages/10);i++){
-								innerHTML += '<a type="button" class="btn-page" id='+ (Math.floor(pages/10) *10 + i) +' href="?s=<%=keyword %>&pages='+ Math.floor(pages/10) *10 + i +'">'+ Math.floor(pages/10) *10 + i+'</a>'
+								innerHTML += '<a type="button" class="btn-page" id='+ (Math.floor(pages/10) *10 + i) +' href="?s='+keyword+'&pages='+ Math.floor(pages/10) *10 + i +'">'+ Math.floor(pages/10) *10 + i+'</a>'
 								}
 							}
-							innerHTML += '<a type="button" class="btn-page" id="next" href="?s=<%=keyword %>&pages=<%=pages + 1%>">下一页</a>'
+							innerHTML += '<a type="button" class="btn-page" id="next" href="?s='+keyword+'&pages=<%=pages + 1%>">下一页</a>'
 							$("#htarget").html(innerHTML);
 							if(pages>=allPages-1){
 								$("#next").addClass("hidden");
