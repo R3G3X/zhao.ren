@@ -10,7 +10,7 @@ $(document).ready(function() {
 			"detail" : $("#projectDescribeInDetails").val(),
 		}, function(data, status, xhr) {
 			alert("添加成功");
-			location.reload();
+			location.href="../user/personalCenter-project.jsp";
 		}).error(function(data, status, e) {
 			$("#check-project-status").html("<font color='red'>添加失败！请检查信息是否有误</font>");
 		})
@@ -26,7 +26,7 @@ $(document).ready(function() {
 			"detail" : $("#projectDescribeInDetails").val(),
 		}, function(data, status, xhr) {
 			alert("修改成功");
-			location.reload();
+			location.href="../user/personalCenter-project.jsp";
 		}).error(function(data, status, e) {
 			$("#check-project-status").html("<font color='red'>修改失败！请检查信息是否有误</font>");
 		})

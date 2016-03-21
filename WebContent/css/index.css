@@ -13,3 +13,6 @@
 .content-item h3{
   text-shadow:2px 2px 3px #A7A7A7;
 }
+#content{
+  padding-bottom:50px;
+}

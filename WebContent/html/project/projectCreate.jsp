@@ -35,6 +35,7 @@
 		$("#projectDevelopTime").val(time);
 		$("#projectDescribe").val(intro);
 		$("#projectDescribeInDetails").val(detail);
+    $("#preview").html(markdown.toHTML($("#projectDescribeInDetails").val()));
 	})
 </script>
 <script src="<%=request.getContextPath()%>/js/projectCreate.js"></script>

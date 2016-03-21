@@ -2,8 +2,36 @@
 * @Author: Ed_Strickland
 * @Date:   2016-03-18 10:55:41
 * @Last Modified by:   Ed_Strickland
-* @Last Modified time: 2016-03-21 01:04:08
+* @Last Modified time: 2016-03-21 08:46:42
 */
+
+#preview{
+  text-shadow:1px 1px 1px #A5A5A5;
+  border:1px solid #E7E7E7;
+  margin-bottom:60px;
+}
+#preview img{
+  width:100%;
+}
+h1{
+  font-weight:bold;
+}
+h2{
+  font-weight:bold;
+}
+h3{
+  font-weight:bold;
+}
+h4{
+  font-weight:bold;
+}
+h5{
+  font-weight:bold;
+}
+h6{
+  font-weight:bold;
+}
+
 .project-create{
   margin-top:40px;
   width:500px;
@@ -73,7 +101,15 @@
   color:#fff;
 }
 .project-create-btn:hover{
-  color:#D6D6D6;
+  color:#EAE9E9;
+  text-decoration:none;
+}
+.project-create-btn:visited{
+  color:#FFF;
+  text-decoration:none;
+}
+.project-create-btn:focus{
+  color:#EAE9E9;
   text-decoration:none;
 }
 .project-create-btn-div{

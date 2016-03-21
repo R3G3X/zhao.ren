@@ -75,7 +75,7 @@
                   </div>
                   <%
                   	} else {
-                  		out.print("你没有加入任何项目!");
+                  		out.print("你没有加入任何项目啊QAQ");
                   	}
                   %>
                 </div>
