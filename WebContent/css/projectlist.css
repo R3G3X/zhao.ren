@@ -2,9 +2,8 @@
 * @Author: Ed_Strickland
 * @Date:   2016-01-03 01:56:11
 * @Last Modified by:   Ed_Strickland
-* @Last Modified time: 2016-03-21 08:04:59
+* @Last Modified time: 2016-03-21 13:46:22
 */
-
 #content-width{
   padding-top:31px;
   margin-bottom:20px;
@@ -134,4 +133,13 @@
   color:#E4E4E4;
   background-color:#A8A8A8;
   text-decoration:none;
+}
+.activated{
+  background-color:#E4E4E4;
+  color:#A8A8A8;
+}
+.activated:hover{
+  background-color:#E4E4E4;
+  color:#A8A8A8;
+  border:1px solid #A8A8A8;
 }
