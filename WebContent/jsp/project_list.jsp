@@ -4,9 +4,8 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
   pageEncoding="UTF-8"%>
 <%
-	int all_pages = db.all_pages();
 	int pages = 1;
-	String keyword;
+	String keyword = "";
 	String par = request.getParameter("pages");
 	keyword = request.getParameter("s");
 	if (par != null) {
@@ -26,6 +25,7 @@
 		keyword = "";
 		set = db.project_list(pages);
 	}
+	int all_pages = db.all_pages(keyword);
 	String base = request.getContextPath();
 	while (set.next()) {
 		String div = "<div class=\"project-list-box\" id = \"" + set.getString("id") + "\">";
