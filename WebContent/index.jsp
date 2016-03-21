@@ -40,7 +40,7 @@
 						<h2>想找项目做？想和其他人一起合作？欢迎使用"找点人"项目平台</h2>
 						<p>
 							<a id="find-project" role="button" target=""
-								href="html/projectlist/projectlist.jsp">我要找项目</a>
+								href="<%=request.getContextPath()%>/html/projectlist/projectlist.jsp">我要找项目</a>
 						</p>
 					</div>
 				</div>
