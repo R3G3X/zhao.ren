@@ -16,16 +16,19 @@
 		}
 	}
 	ResultSet set;
+	int all_pages;
 	if (keyword != null) {
 		//java.net.URLDncoder.decode(keyword,"utf-8");
 		//keyword = keyword.replace("\\\\u", "\\u");
 		String decode = URLDecoder.decode(keyword, "UTF-8");
 		set = db.project_list(pages, decode);
+		all_pages = db.all_pages(decode);
 	} else {
 		keyword = "";
 		set = db.project_list(pages);
+		all_pages=db.all_pages();
 	}
-	int all_pages = db.all_pages(keyword);
+	//int all_pages = db.all_pages(keyword);
 	String base = request.getContextPath();
 	while (set.next()) {
 		String div = "<div class=\"project-list-box\" id = \"" + set.getString("id") + "\">";
