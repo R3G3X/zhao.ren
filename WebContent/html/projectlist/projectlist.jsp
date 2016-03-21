@@ -99,6 +99,7 @@
 							}else{
 								$("#pre").removeClass("hidden");
 							}
+							$("#search-box-input").val(decodeURIComponent(decodeURIComponent(keyword)));
 						})
 
 					</script>
