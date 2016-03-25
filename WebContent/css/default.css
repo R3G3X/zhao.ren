@@ -2,7 +2,7 @@
 * @Author: Ed_Strickland
 * @Date:   2015-11-21 22:38:32
 * @Last Modified by:   Ed_Strickland
-* @Last Modified time: 2016-03-21 15:55:50
+* @Last Modified time: 2016-03-26 01:20:38
 */
 /*NAVBAR*/
 #logo{
@@ -88,7 +88,6 @@
 /*CONTENT*/
 #container-content{
   padding-top:0px;
-  min-height:400px;
 }
 #content{
   margin:0px;

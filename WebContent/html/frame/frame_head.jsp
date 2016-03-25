@@ -22,6 +22,6 @@
 <script src="<%=request.getContextPath()%>/js/login.js"></script>
 <script src="<%=request.getContextPath()%>/js/register.js"></script>
 <script src="<%=request.getContextPath()%>/js/modal.js"></script>
-<script src="<%=request.getContextPath()%>/js/index.js"></script>
+<script src="<%=request.getContextPath()%>/js/pageLoad.js"></script>
 <%@ page errorPage="/index.jsp"%>
 <%@ page isErrorPage="true"%>
