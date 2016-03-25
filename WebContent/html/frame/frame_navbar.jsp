@@ -18,6 +18,11 @@
 		}
 	}
 %>
+
+<div id="img-load" class="hidden">
+  <img src="<%=request.getContextPath()%>/avatar/1.jpg" alt="">
+</div>
+
 <nav class="navbar navbar-inverse navbar-fixed-top grey-1"
   role="navigation">
   <div class="container grey-0" style="width: 1140px;">
