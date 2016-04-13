@@ -22,7 +22,7 @@
 
 	<div id="container-content" class="grey-3">
 		<!-- PUT-YOUR-CODE-BELOW -->
-		<div class="container shadow" style="padding: 0px; width: 1140px;">
+		<div class="container shadow">
 			<!-- TITLE -->
 			<div class="grey-3">
 <!-- 				<div class="white shadow clearfix"> -->
@@ -32,10 +32,9 @@
 			</div>
 			<!-- END-OF-TITLE -->
 			<!-- SLIDE -->
-			<div class="white" style="height: 366px;">
+			<div class="white">
 				<div class="shadow">
-					<div id="showcase"
-						style="background: url(<%=request.getContextPath()%>/img/background-img.jpg) no-repeat fixed center center/cover;">
+					<div id="showcase">
 						<h1>"找点人"项目平台</h1>
 						<h2>想找项目做？想和其他人一起合作？欢迎使用"找点人"项目平台</h2>
 						<p>
