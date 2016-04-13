@@ -7,7 +7,12 @@
 	</title>
 </head>
 <body>
+	<input id="username-to" type="text" />
+	<input id="username-from" type="text" />
 	<textarea id="message" cols="30" rows="10"></textarea>
-	<a id="btn-send" href="">send</a>
+	<a id="btn-send" >send</a>
+	<div id="target-message"></div>
 </body>
 </html>
+
+
