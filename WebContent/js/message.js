@@ -3,7 +3,7 @@ websocket = new WebSocket(socketServer);
 
 function start (client){
 	websocket.onopen = function(e){
-		console.log('login');
+		console.log('login2');
 		var msg = JSON.stringify({
 			cmd:"login",
 			clientId:client
@@ -17,15 +17,15 @@ function start (client){
 		var messageGet;
 		var time;
 		var json = JSON.parse(e.data);
-		if(json.data){
-			if(json.data.toClientId){
-				clientFrom = json.data.toClientId;
-				messageGet = json.data.msg;
-				time = json.data.timestamp;
+		if(json){
+			if(json.toClientId){
+				clientFrom = json.toClientId;
+				messageGet = json.msg;
+				time = json.timestamp;
 			}else{
-				clientFrom = json.data.toClientId;
-				messageGet = json.data.msg;
-				time = json.data.timestamp;
+				clientFrom = json.fromClientId;
+				messageGet = json.msg;
+				time = json.timestamp;
 			}
 		}
 		var innerhtml = "<p>"+clientFrom+"</p>"+"<p>"+messageGet+"</p>";
@@ -46,8 +46,10 @@ function send(fromClient, toClient, message){
 }
 
 $(document).ready(function(){
-	start($("#username-to").val());
+	var username=$.cookie("zhao_ren_token");
+	console.log($("#username-to").val());
+	start(username);
 	$("#btn-send").click(function(){
-		send($("#username-to").val(),$("#username-from").val(),$("#message").val());
+		send(username,$("#username-to").val(),$("#message").val());
 	})
 })

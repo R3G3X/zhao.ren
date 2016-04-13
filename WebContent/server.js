@@ -11,6 +11,7 @@ wss.on('connection', function(ws) {
 	ws.on('message', function(m){
 		console.log(m);
 		var data = JSON.parse(m);
+
 		if (!data.cmd) {
 			ws.send(JSON.stringify({
 				error: 'cmdError'
@@ -34,13 +35,21 @@ wss.on('connection', function(ws) {
 				if (clientList[clients[i]] == ws) {
 					fromClientId = clients[i];
 				}
+			w = clientList[fromClientId];
+			w.send(JSON.stringify({
+				toClientId: toClientId,
+				msg: data.msg,
+				timestamp: Date.parse(new Date())
+			}));
 			}
-			if (!clientList[toClientId]) {			
+			if (clientList[toClientId]) {
+				console.log('send msg to client');			
 				w.send(JSON.stringify({
 				fromClientId: fromClientId,
 				msg: data.msg,
 				timestamp: Date.parse(new Date()) 
 				}));
+
 			} else {
 				if (!offlineMsg[toClientId]) {
 					offlineMsg[toClientId] = [];
