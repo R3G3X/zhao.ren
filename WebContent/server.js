@@ -9,7 +9,8 @@ var offlineMsg = {};
 
 wss.on('connection', function(ws) {
 	ws.on('message', function(m){
-		var data = JSON.stringify(m);
+		var data = JSON.parse(m);
+		console.log(data);
 		if (!data.cmd) {
 			ws.send(JSON.stringify({
 				error: 'cmdError'
@@ -25,9 +26,15 @@ wss.on('connection', function(ws) {
 				offlineMsg[clientId] = null;
 			}
 		} else if (data.cmd == 'msg') {
-			var fromClientId = data.fromClientId;
 			var toClientId = data.toClientId;
 			var w = clientList[toClientId];
+			var clients = Object.keys(clientList);
+			var fromClientId = null;
+			for (var i=0;i<clients.length;i++) {
+				if (clientList[clients[i]] == ws) {
+					fromClientId = clients[i];
+				}
+			}
 			if (!clientList[toClientId]) {			
 				w.send(JSON.stringify({
 				fromClientId: fromClientId,
