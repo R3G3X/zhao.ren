@@ -46,8 +46,8 @@ function send(fromClient, toClient, message){
 }
 
 $(document).ready(function(){
-	start(client);
+	start($("#username-to").val());
 	$("#btn-send").click(function(){
-		send($("#username-to").val(),$("#username-from"),$("#message").val());
+		send($("#username-to").val(),$("#username-from").val(),$("#message").val());
 	})
 })
