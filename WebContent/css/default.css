@@ -2,7 +2,7 @@
 * @Author: Ed_Strickland
 * @Date:   2015-11-21 22:38:32
 * @Last Modified by:   Ed_Strickland
-* @Last Modified time: 2016-03-26 01:20:38
+* @Last Modified time: 2016-03-26 11:49:27
 */
 /*NAVBAR*/
 #logo{
@@ -188,7 +188,7 @@
 .grey-3{background-color:#E7E7E7;}
 .grey-4{background-color:#E8E8E8;}
 .white{
-  background-color: #FFF;
+  background-color: #fff;
   filter:alpha(opacity=100); /*支持 IE 浏览器*/
   -moz-opacity:1.00; /*支持 FireFox 浏览器*/
   opacity:1.00; /*支持 Chrome, Opera, Safari 等浏览器*/}

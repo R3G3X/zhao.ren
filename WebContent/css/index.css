@@ -16,6 +16,3 @@
 #content{
   padding-bottom:50px;
 }
-#showcase{
-	background: url(<%=request.getContextPath()%>/img/background-img.jpg) no-repeat fixed center center/cover;
-}
