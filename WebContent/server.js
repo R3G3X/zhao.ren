@@ -9,8 +9,8 @@ var offlineMsg = {};
 
 wss.on('connection', function(ws) {
 	ws.on('message', function(m){
+		console.log(m);
 		var data = JSON.parse(m);
-		console.log(data);
 		if (!data.cmd) {
 			ws.send(JSON.stringify({
 				error: 'cmdError'

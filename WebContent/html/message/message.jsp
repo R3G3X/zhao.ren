@@ -7,7 +7,7 @@
 	</title>
 </head>
 <body>
-	<textarea id="message" id="" cols="30" rows="10"></textarea>
+	<textarea id="message" cols="30" rows="10"></textarea>
 	<a id="btn-send" href="">send</a>
 </body>
 </html>
