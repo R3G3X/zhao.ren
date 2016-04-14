@@ -1,4 +1,4 @@
-var socketServer = "ws://kaitohh.com:8000";
+var socketServer = "ws://localhost:8000";
 websocket = new WebSocket(socketServer);
 
 function start (client){
@@ -32,6 +32,10 @@ function start (client){
 		$("#target-message").append(innerhtml);
 
 	};
+
+	websocket.onclose = function(e){
+		console.log('disconnect');
+	}
 }
 
 function send(fromClient, toClient, message){
@@ -43,6 +47,7 @@ function send(fromClient, toClient, message){
 			msg:message
 		})
 	);
+	console.log('send');
 }
 
 $(document).ready(function(){

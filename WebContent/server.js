@@ -18,7 +18,6 @@ wss.on('connection', function(ws) {
 			}));
 		} else if (data.cmd == 'login') {
 			var clientId = data.clientId;
-			//TODO: token
 			clientList[clientId] = ws;
 			if (offlineMsg[clientId]) {
 				for (var i=0;i<offlineMsg[clientId].length;i++) {
@@ -26,16 +25,21 @@ wss.on('connection', function(ws) {
 				}
 				offlineMsg[clientId] = null;
 			}
+			console.log(Object.keys(clientList));
 		} else if (data.cmd == 'msg') {
 			var toClientId = data.toClientId;
-			var w = clientList[toClientId];
 			var clients = Object.keys(clientList);
 			var fromClientId = null;
 			for (var i=0;i<clients.length;i++) {
 				if (clientList[clients[i]] == ws) {
 					fromClientId = clients[i];
 				}
-			w = clientList[fromClientId];
+//			var w = clientList[fromClientId];
+			var w = ws;
+			if (!w) {
+				console.log("ws empty");
+				return;
+			}
 			w.send(JSON.stringify({
 				toClientId: toClientId,
 				msg: data.msg,
@@ -43,7 +47,8 @@ wss.on('connection', function(ws) {
 			}));
 			}
 			if (clientList[toClientId]) {
-				console.log('send msg to client');			
+				console.log('send msg to client');	
+				w = clientList[toClientId];		
 				w.send(JSON.stringify({
 				fromClientId: fromClientId,
 				msg: data.msg,
@@ -64,13 +69,15 @@ wss.on('connection', function(ws) {
 		}
 	});
 
-	ws.on('close', function(ws) {
+	ws.on("close", function(e) {
 		var clients = Object.keys(clientList);
 		for (var i=0;i<clients.length;i++) {
 			if (clientList[clients[i]] == ws) {
-				clientList[clients] = null;
+				clientList[clients[i]] = null;
+				console.log(clients[i] + ' disconnect');
 			}
 		}
 	});
+
 });
 
