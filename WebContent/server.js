@@ -47,12 +47,12 @@ wss.on('connection', function(ws) {
 			}));
 			}
 			if (clientList[toClientId]) {
-				console.log('send msg to client');	
-				w = clientList[toClientId];		
+				console.log('send msg to client');
+				w = clientList[toClientId];
 				w.send(JSON.stringify({
 				fromClientId: fromClientId,
 				msg: data.msg,
-				timestamp: Date.parse(new Date()) 
+				timestamp: Date.parse(new Date())
 				}));
 
 			} else {
@@ -64,8 +64,7 @@ wss.on('connection', function(ws) {
 					msg: data.msg,
 					timestamp: Date.parse(new Date())
 				});
-			} 
-
+			}
 		}
 	});
 
