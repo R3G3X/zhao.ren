@@ -371,8 +371,8 @@
 }
 .personal-center-message-message{
   height:70px;
-  line-height:70px;
-  text-align:center;
+  padding-top: 22px;
+  padding-left: 23px;
 }
 .personal-center-message-agreement{
   float:left;
@@ -413,7 +413,13 @@
   color:#D2D2D2;
   background-color:#B04242;
 }
-
+.time_slot{
+  font-size: 10px;
+text-shadow: initial;
+text-align: left;
+color: #8b8d90;
+padding-top: 3px;
+}
 
 
 
