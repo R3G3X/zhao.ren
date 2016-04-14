@@ -1,0 +1,116 @@
+/*
+* @Author: Ed_Strickland
+* @Date:   2016-04-15 04:48:52
+* @Last Modified by:   Ed_Strickland
+* @Last Modified time: 2016-04-15 05:33:41
+*/
+/*
+* @Author: Ed_Strickland
+* @Date:   2016-04-14 19:07:33
+* @Last Modified by:   Ed_Strickland
+* @Last Modified time: 2016-04-15 03:27:36
+*/
+#btn-chat{
+  position:fixed;
+  right:100px;
+  bottom:20px;
+  height:40px;
+  line-height:40px;
+  width:6em;
+  border:1px solid #929292;
+  color:#929292;
+  text-align:center;
+}
+#chatroom{
+  position:fixed;
+  right:100px;
+  bottom:20px;
+  height:400px;
+  width:500px;
+  border:1px solid #CBCBCB;
+}
+#chatroom-left{
+  float:left;
+  height:100%;
+  width:34%;
+  border-right:1px solid #CBCBCB;
+}
+#chatroom-left-title{
+  padding-left:20px;
+  border-bottom:1px solid #CBCBCB;
+  height:40px;
+  line-height:40px;
+}
+#chatroom-left-title>p{
+  margin:0;
+}
+#chatroom-left-content{}
+#chatroom-left-userlist{
+  list-style:none;
+  padding:0;
+  margin:0;
+}
+.chatroom-left-userlist-item{
+  height:40px;
+  line-height:40px;
+  padding-left:20px;
+  border-bottom:1px solid #CBCBCB;
+}
+#chatroom-right{
+  float:left;
+  height:100%;
+  width:66%;
+}
+#chatroom-right-title{
+  padding-left:20px;
+  border-bottom:1px solid #CBCBCB;
+  height:40px;
+  line-height:40px;
+}
+#chatroom-right-title>p{
+  float:left;
+  margin:0px;
+  width:268px;
+}
+#btn-minimize{
+  text-align:center;
+  font-weight:bold;
+  float:left;
+  height:40px;
+  line-height:40px;
+  width:40px;
+}
+.target-message{
+  height:67%;
+  overflow-y:auto;
+  border-bottom:1px solid #CBCBCB;
+}
+#message-input{
+  width:100%;
+  height:15.6%;
+}
+#message{
+  width:100%;
+  resize:none;
+  border:0;
+  background-color:transparent;
+  height:100%;
+}
+#alert{
+  float:right;
+  margin-bottom:5px;
+  margin-right:5px;
+}
+#btn-send{
+  float:right;
+  margin-bottom:5px;
+  margin-right:5px;
+}
+#btn-send:hover{}
+.message-box{}
+.fromMessage{}
+.fromMessage>p{}
+.toMessage{}
+.toMessage>p{}
+#receive-time{}
+#receive-time>p{}
