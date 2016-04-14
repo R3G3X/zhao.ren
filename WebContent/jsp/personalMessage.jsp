@@ -31,9 +31,10 @@
 		p.next();
 		doc += p.getString("avatar");
 		doc += "\" alt=\"\">";
-		doc += "</div><div class=\"personal-center-message-item\"><p class=\"personal-center-message-message\">";
+		doc += "</div><div class=\"personal-center-message-item\"><div class=\"personal-center-message-message\">";
 		doc += mset.getString("message");
-		doc += "</p></div><div class=\"personal-center-message-agreement\">";
+        doc +="<div class=\"time_slot\">"+mset.getString("time").substring(0, 19)+"</div></div>";
+		doc += "</div><div class=\"personal-center-message-agreement\">";
 		if (mset.getInt("needConfirm") == 1) {
 			doc += "<a class=\"personal-center-message-agree\" href=\"";
 			doc += btn(mid, 1) + "\">";

@@ -34,7 +34,6 @@
                 </div>
                 <div class="personal-center-message-container">
                   <%@ include file="/jsp/personalMessage.jsp"%>
-                  <div class="time_slot">2015-12-23 14:23:34</div>//放在message下面
                 </div>
               </div>
             </div>
