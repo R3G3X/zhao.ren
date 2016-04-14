@@ -33,13 +33,17 @@
                   <div id="title-line"></div>
                   <p>正在与 2 进行对话</p>
                 </div>
-                <div id="target-message">
+                <div id="target-message-1" class="target-message">
+                </div>
+                <div id="target-message-2" class="target-message hidden">
+                </div>
+                <div id="target-message-9" class="target-message hidden">
                 </div>
                 <div id="message-input">
                   <textarea id="message"></textarea>
                 </div>
                 <a id="btn-send">发送</a>
-                <p id="alert">ctrl + enter 回车</p>
+                <p id="alert">ctrl + enter 发送</p>
               </div>
             </div>
             <!-- END-OF-CONTENT -->

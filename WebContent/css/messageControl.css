@@ -2,10 +2,10 @@
 * @Author: Ed_Strickland
 * @Date:   2016-04-14 19:07:33
 * @Last Modified by:   Ed_Strickland
-* @Last Modified time: 2016-04-14 22:00:28
+* @Last Modified time: 2016-04-15 03:27:36
 */
 
-#target-message{
+.target-message{
   padding:0px;
   height:350px;
   width:100%;
@@ -44,19 +44,51 @@
   color:#fff;
   float:right;
 }
+#btn-send:hover{
+  cursor:pointer;
+  text-decoration:none;
+  background-color:#5C5C5C
+}
 .message-box{
   width:100%;
-  min-height:80px;
+  /*min-height:80px;*/
 }
 .fromMessage{
+  padding:10px;
   float:left;
   margin-left:30px;
-  line-height:80px;
+  margin-top:13px;
+  margin-bottom:12px;
+  line-height:1em;
   max-width:200px;
+  color:#fff;
+  background-color:#4C4C4C;
+}
+.fromMessage>p{
+  line-height:1.5em;
+  margin:0px;
 }
 .toMessage{
+  padding:10px;
   float:right;
   margin-right:30px;
-  line-height:80px;
+  margin-top:13px;
+  margin-bottom:12px;
+  line-height:1em;
   max-width:200px;
+  color:#fff;
+  background-color:#C8C8C8;
+}
+.toMessage>p{
+  line-height:1.5em;
+  margin:0px;
+}
+#receive-time{
+  margin-top:10px;
+  width:100%;
+  text-align:center;
+}
+#receive-time>p{
+  color:#A8A8A8;
+  text-shadow:none;
 }

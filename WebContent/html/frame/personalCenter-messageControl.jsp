@@ -12,7 +12,7 @@
 			<li class="personal-center-control-item item-deactivated"><a
 				>2</a></li>
 			<li class="personal-center-control-item item-deactivated"><a
-				>dddddd</a></li>
+				>9</a></li>
 <%-- 			<li class="personal-center-control-item item-<%=t4 %>activated"><a --%>
 <!-- 				href="personalCenter-team.jsp">团队管理</a></li> -->
 		</ul>
