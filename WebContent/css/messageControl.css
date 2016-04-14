@@ -1,0 +1,62 @@
+/*
+* @Author: Ed_Strickland
+* @Date:   2016-04-14 19:07:33
+* @Last Modified by:   Ed_Strickland
+* @Last Modified time: 2016-04-14 22:00:28
+*/
+
+#target-message{
+  padding:0px;
+  height:350px;
+  width:100%;
+  border-bottom:1px solid #C8C8C8;
+
+  overflow-y :yes;
+  overflow-y :auto;
+}
+#message-input{
+  min-height:74px;
+}
+#message{
+  margin-top:30px;
+  margin-left:20px;
+  min-width:617px;
+  max-width:617px;
+}
+#alert{
+  text-shadow:none;
+  float:right;
+  color:#C8C8C8;
+  margin-top:15px;
+  margin-right:20px;
+  height:30px;
+  line-height:30px;
+}
+#btn-send{
+  width:70px;
+  height:30px;
+  line-height:30px;
+  margin-right:20px;
+  margin-top:15px;
+  margin-bottom:20px;
+  text-align:center;
+  background-color:#C8C8C8;
+  color:#fff;
+  float:right;
+}
+.message-box{
+  width:100%;
+  min-height:80px;
+}
+.fromMessage{
+  float:left;
+  margin-left:30px;
+  line-height:80px;
+  max-width:200px;
+}
+.toMessage{
+  float:right;
+  margin-right:30px;
+  line-height:80px;
+  max-width:200px;
+}

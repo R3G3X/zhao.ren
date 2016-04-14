@@ -2,7 +2,7 @@
 * @Author: Ed_Strickland
 * @Date:   2016-03-18 13:50:32
 * @Last Modified by:   Ed_Strickland
-* @Last Modified time: 2016-03-21 08:10:19
+* @Last Modified time: 2016-04-14 18:45:42
 */
 
 #content{
@@ -57,6 +57,9 @@
   height:40px;
   line-height:40px;
   text-align:center;
+}
+.personal-center-control-item>a:hover{
+  cursor:pointer;
 }
 .item-activated{
   background-color:#666666;

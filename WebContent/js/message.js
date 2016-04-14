@@ -1,4 +1,4 @@
-var socketServer = "ws://localhost:8000";
+var socketServer = "ws://kaitohh.com:8000";
 websocket = new WebSocket(socketServer);
 
 function start (client){
@@ -17,18 +17,28 @@ function start (client){
 		var messageGet;
 		var time;
 		var json = JSON.parse(e.data);
+		var innerhtml;
 		if(json){
 			if(json.toClientId){
 				clientFrom = json.toClientId;
 				messageGet = json.msg;
 				time = json.timestamp;
+				innerhtml = "<div class=\"message-box\">"+
+                    "<div class=\"toMessage\">"+
+                      messageGet+
+                    "</div>"+
+                  "</div>";
 			}else{
 				clientFrom = json.fromClientId;
 				messageGet = json.msg;
 				time = json.timestamp;
+				innerhtml = "<div class=\"message-box\">"+
+                    "<div class=\"fromMessage\">"+
+                      messageGet+
+                    "</div>"+
+                  "</div>";
 			}
 		}
-		var innerhtml = "<p>"+clientFrom+"</p>"+"<p>"+messageGet+"</p>";
 		$("#target-message").append(innerhtml);
 
 	};
@@ -52,9 +62,15 @@ function send(fromClient, toClient, message){
 
 $(document).ready(function(){
 	var username=$.cookie("zhao_ren_token");
-	console.log($("#username-to").val());
+	var target=$(".item-activated>a").text();
 	start(username);
 	$("#btn-send").click(function(){
-		send(username,$("#username-to").val(),$("#message").val());
+		send(username,target,$("#message").val());
+	})
+	$(".personal-center-control-item>a").click(function(){
+		$(".item-activated").removeClass("item-activated").addClass("item-deactivated");
+		$(this).parent().removeClass("item-deactivated").addClass("item-activated");
+		target=$(".item-activated>a").text();
+		$(".personal-center-right-title>p").text("正在与 "+target+" 进行对话");
 	})
 })
