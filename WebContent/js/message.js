@@ -146,6 +146,14 @@ $(document).ready(function(){
 			$("#toName").text("");
 			$("#target-message").removeClass("hidden");
 		}
+		$.post("../../jsp/doDeleteChatPerson.jsp",
+                {"target":$(this).prev("input")val()},
+                function(data, status, xhr){
+                	alert("a");
+                    // location.reload();
+                })
+    .error(function(data,status,e){
+    });
 		$(this).parent().remove();
 	})
 	$("#btn-chat").click(function(){
@@ -177,7 +185,6 @@ $(document).ready(function(){
                     // location.reload();
                 })
     .error(function(data,status,e){
-        $("#check-status").html("<font color='red'>用户名或密码错误</font>");
     });
 
 	})
