@@ -11,7 +11,7 @@
                     location.reload();
                 })
 	        .error(function(data,status,e){
-	        	alert("请先登录！");
+	        	alert("评论失败！可能的原因\n评论过短\n没有登录");
 	        })
  	})
  })

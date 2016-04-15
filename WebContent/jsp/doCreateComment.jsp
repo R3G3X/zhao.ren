@@ -11,15 +11,17 @@
 	try {
 		int pid = Integer.parseInt(request.getParameter("pid"));
 		String msg = request.getParameter("msg");
+		if (msg.equals("")) {
+			throw (new Exception());
+		}
 		int pre_id = 0;
-		Pattern p = Pattern.compile("回复[0,9]{1,10}楼:.*");
-		Matcher matcher = p.matcher(msg);
-		boolean b = matcher.matches();
-		if (b) {
+		try {
 			int begin = msg.indexOf("回复");
 			int end = msg.indexOf("楼");
 			String s = msg.substring(begin + 2, end);
 			pre_id = Integer.parseInt(s);
+		} catch (Exception e) {
+			pre_id = 0;
 		}
 		success = db.project_add_comment(id, pid, msg, pre_id);
 	} catch (Exception e) {
