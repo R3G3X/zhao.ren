@@ -127,7 +127,8 @@ $(document).ready(function(){
 	$("#user-Message>a").click(function(){
 		var to = $("#userID").val();
 		var flag = 0;
-		if($(".chatroom-left-userlist-item>input").val() == to)
+		var a = $(".userId[value='"+to+"']");
+		if(a)
 			flag = 1;
 		if(flag == 0){
 			var innerhtml = "";
@@ -161,6 +162,7 @@ $(document).ready(function(){
 			$("#target-message-"+target).removeClass("hidden");
 			$("#toName").text(target);
 		}
+		$("#btn-chat").addClass("hidden");
 		$("#chatroom").removeClass("hidden");
 	})
 

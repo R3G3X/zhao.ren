@@ -2,7 +2,7 @@
 * @Author: Ed_Strickland
 * @Date:   2015-11-21 22:38:32
 * @Last Modified by:   Ed_Strickland
-* @Last Modified time: 2016-04-16 04:11:12
+* @Last Modified time: 2016-04-16 06:49:32
 */
 .box{padding-bottom:20px;}
 .team-name:hover{cursor:pointer;}
@@ -30,11 +30,11 @@
   cursor:pointer;
   text-decoration:none;
 }
-#user-message{
+#user-Message{
   margin-top:20px;
   margin-bottom:20px;
 }
-#user-message>a{
+#user-Message>a{
   padding:10px;
   padding-left:20px;
   padding-right:20px;
@@ -43,7 +43,7 @@
   text-shadow:none;
   box-shadow:0px 0px 7px #5E5E5E;
 }
-#user-message>a:hover{
+#user-Message>a:hover{
   text-decoration:none;
   color:#BFBFBF;
   background-color:#6A6A6A;
