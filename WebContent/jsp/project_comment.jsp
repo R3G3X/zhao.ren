@@ -26,4 +26,7 @@
 		doc += "</p></div></div></div>";
 		out.print(doc);
 	}
+	if (ccid == 0) {
+		out.print("还没有评论哦╮(╯▽╰)╭快来抢沙发吧");
+	}
 %>
