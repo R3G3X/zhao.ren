@@ -27,6 +27,6 @@
 		out.print(doc);
 	}
 	if (ccid == 0) {
-		out.print("还没有评论哦╮(╯▽╰)╭快来抢沙发吧");
+		out.print("<p style=\"text-align:center;color:#A0A0A0;margin-top:20px;margin-bottom:100px\" >还没有评论哦╮(╯▽╰)╭快来抢沙发吧</p>");
 	}
 %>
