@@ -130,3 +130,5 @@
   </div>
 </div>
 <!-- END-OF-PROJECT-ADD -->
+
+<%@ include file="chatroom.jsp"%>

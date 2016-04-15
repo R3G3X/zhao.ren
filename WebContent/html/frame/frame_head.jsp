@@ -13,15 +13,19 @@
 	rel="stylesheet" />
 <link href="<%=request.getContextPath()%>/css/modal.css"
 	rel="stylesheet" />
-<script
-	src="<%=request.getContextPath()%>/js/jquery/2.0.0/jquery.min.js"></script>
+<link href="<%=request.getContextPath()%>/css/chatroom.css"
+  rel="stylesheet" />
+<link href="<%=request.getContextPath()%>/css/bootstrap.min.css"
+  rel="stylesheet" />
+
+<script src="<%=request.getContextPath()%>/js/jquery/2.0.0/jquery.min.js"></script>
 <script src="<%=request.getContextPath()%>/js/jquery/jquery-latest.js"></script>
-<script
-	src="<%=request.getContextPath()%>/js/bootstrap/3.0.3/bootstrap.min.js"></script>
+<script src="<%=request.getContextPath()%>/js/bootstrap/3.0.3/bootstrap.min.js"></script>
 <script src="<%=request.getContextPath()%>/js/jquery/jquery.cookie.js"></script>
 <script src="<%=request.getContextPath()%>/js/login.js"></script>
 <script src="<%=request.getContextPath()%>/js/register.js"></script>
 <script src="<%=request.getContextPath()%>/js/modal.js"></script>
 <script src="<%=request.getContextPath()%>/js/pageLoad.js"></script>
+<script src="<%=request.getContextPath()%>/js/message.js"></script>
 <%@ page errorPage="/index.jsp"%>
 <%@ page isErrorPage="true"%>

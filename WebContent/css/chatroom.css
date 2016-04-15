@@ -2,7 +2,7 @@
 * @Author: Ed_Strickland
 * @Date:   2016-04-15 04:48:52
 * @Last Modified by:   Ed_Strickland
-* @Last Modified time: 2016-04-15 06:35:14
+* @Last Modified time: 2016-04-15 18:46:01
 */
 /*
 * @Author: Ed_Strickland
@@ -20,6 +20,11 @@
   border:1px solid #929292;
   color:#929292;
   text-align:center;
+  background-color:#fff;
+}
+#btn-chat:hover{
+  text-decoration:none;
+  cursor:pointer;
 }
 #chatroom{
   position:fixed;
@@ -28,6 +33,7 @@
   height:400px;
   width:500px;
   border:1px solid #CBCBCB;
+  background-color:#fff;
 }
 #chatroom-left{
   float:left;
@@ -43,8 +49,11 @@
 }
 #chatroom-left-title>p{
   margin:0;
+  font-weight:bold;
 }
-#chatroom-left-content{}
+#chatroom-left-content{
+  overflow-y:auto;
+}
 #chatroom-left-userlist{
   list-style:none;
   padding:0;
@@ -53,9 +62,36 @@
 .chatroom-left-userlist-item{
   height:40px;
   line-height:40px;
-  padding-left:20px;
   border-bottom:1px solid #CBCBCB;
 }
+.id{
+  float:left;
+  display:block;
+  width:132px;
+  padding-left:20px;
+  color:#606060;
+  white-space:nowrap;
+  text-overflow:ellipsis;
+  overflow:hidden;
+}
+.id:hover{
+  color:#606060;
+  cursor:pointer;
+  text-decoration:none;
+}
+.btn-delete{
+  float:left;
+  margin-left:18px;
+  margin-right:10px;
+  color:#C8C8C8;
+}
+.btn-delete:hover{
+  color:#000;
+  text-decoration:none;
+  cursor:pointer;
+}
+.item-activated{background-color:#E7E7E7}
+.item-deactivated{}
 #chatroom-right{
   float:left;
   height:100%;
@@ -67,10 +103,32 @@
   height:40px;
   line-height:40px;
 }
-#chatroom-right-title>p{
+#chatroom-right-title-content{
+  float:left;
+  width:268px;
+  margin:0px;
+}
+#chatroom-right-title-content>p{
   float:left;
   margin:0px;
-  width:268px;
+  font-weight:bold;
+}
+#chatroom-right-title-content>p:hover{cursor:default;}
+#toName{
+  float:left;
+  display:block;
+  max-width:160px;
+  padding-left:5px;
+  padding-right:5px;
+  color:#606060;
+  white-space:nowrap;
+  text-overflow:ellipsis;
+  overflow:hidden;
+}
+#toName:hover{
+  color:#606060;
+  cursor:default;
+  text-decoration:none;
 }
 #btn-minimize{
   text-align:center;
@@ -80,41 +138,103 @@
   line-height:40px;
   width:40px;
   border-left:1px solid #CBCBCB;
+  color:#626262;
+}
+#btn-minimize:hover{
+  text-decoration:none;
+  cursor:pointer;
 }
 .target-message{
   height:67%;
   overflow-y:auto;
   border-bottom:1px solid #CBCBCB;
+  background-color:#E7E7E7;
+}
+#target-message{
+  background-color:#fff;
 }
 #message-input{
   width:100%;
-  height:15.6%;
+  height:23%;
 }
 #message{
   width:100%;
   resize:none;
   border:0;
   background-color:transparent;
-  height:100%;
+  height:69%;
 }
 #alert{
   float:right;
   margin-bottom:5px;
   margin-right:5px;
+  color:#7C7C7C;
+}
+#alert:hover{
+  cursor:default;
 }
 #btn-send{
   float:right;
   margin-bottom:5px;
   margin-right:5px;
+  color:#4E4E4E;
 }
-#btn-send:hover{}
-.message-box{}
-.fromMessage{}
-.fromMessage>p{}
-.toMessage{}
-.toMessage>p{}
-#receive-time{}
-#receive-time>p{}
+#btn-send:hover{
+  text-decoration:none;
+  cursor:pointer;
+  color:#000;
+}
+.message-box{
+  width:100%;
+  /*min-height:80px;*/
+}
+.fromMessage{
+  padding:5px;
+  padding-left:10px;
+  padding-right:10px;
+  float:left;
+  margin-left:15px;
+  margin-top:10px;
+  margin-bottom:0px;
+  line-height:1em;
+  max-width:200px;
+  color:#fff;
+  background-color:#4C4C4C;
+}
+.fromMessage>p{
+  line-height:1.5em;
+  margin:0px;
+  word-wrap:break-word;
+}
+.toMessage{
+  padding:5px;
+  padding-left:10px;
+  padding-right:10px;
+  float:right;
+  margin-right:15px;
+  margin-top:10px;
+  margin-bottom:0px;
+  line-height:1em;
+  max-width:200px;
+  color:#fff;
+  background-color:#C8C8C8;
+}
+.toMessage>p{
+  line-height:1.5em;
+  margin:0px;
+  word-wrap:break-word;
+}
+#receive-time{
+  margin-top:10px;
+  width:100%;
+  text-align:center;
+}
+#receive-time>p{
+  color:#A8A8A8;
+  text-shadow:none;
+}
+
+
 
 
 #msg-box{

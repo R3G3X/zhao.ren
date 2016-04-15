@@ -63,7 +63,7 @@ function start (client){
 			substr = substr.substring(substr.indexOf("\n")+1,substr.length);
 		}
 		$("."+i+":last").text(substr);
-		$(".message-box:last").height($(".message-box:last").children().outerHeight()+25);
+		$(".message-box:last").height($(".message-box:last").children().outerHeight()+10);
 
 		index = 0;
 		setTimeout("changeHight("+div+")",5);
@@ -88,9 +88,9 @@ function send(fromClient, toClient, message){
 
 $(document).ready(function(){
 	var username=$.cookie("zhao_ren_token");
-	var target=$(".item-activated>a").text();
+	var target=$(".item-activated>.id").text();
 	$("#target-message-"+target).removeClass("hidden");
-	$(".personal-center-right-title>p").text("正在与 "+target+" 进行对话");
+		$("#toName").text(target);
 	start(username);
 
 	$("#btn-send").click(function(){
@@ -114,23 +114,56 @@ $(document).ready(function(){
 		}
   });
 
-	$(".personal-center-control-item").click(function(){
+	$(".id").click(function(){
 		$(".item-activated").removeClass("item-activated").addClass("item-deactivated");
-		$(this).removeClass("item-deactivated").addClass("item-activated");
+		$(this).parent().removeClass("item-deactivated").addClass("item-activated");
 		$(".target-message").addClass("hidden");
 
-		target=$(".item-activated>a").text();
+		target=$(this).text();
 
 		$("#target-message-"+target).removeClass("hidden");
-		$(".personal-center-right-title>p").text("正在与 "+target+" 进行对话");
+		$("#toName").text(target);
 	})
+	$(".btn-delete").click(function(){
+		$(".item-activated").removeClass("item-activated").addClass("item-deactivated");
+		$(".target-message").addClass("hidden");
+		if($(this).parent().siblings().length != 0){
+			if($(this).parent().next().length != 0){
+				$(this).parent().next().removeClass("item-deactivated").addClass("item-activated");
+				target=$(this).parent().next().children(".id").text();
+			}else{
+				$(this).parent().prev().removeClass("item-deactivated").addClass("item-activated");
+				target=$(this).parent().prev().children(".id").text();
+			}
+			$("#target-message-"+target).removeClass("hidden");
+			$("#toName").text(target);
+		}else{
+			$("#chatroom-right-title-content>p").text("");
+			$("#chatroom-right-title-content>p").slice(1).text("您还没有发起聊天哦QAQ");
+			$("#toName").text("");
+			$("#target-message").removeClass("hidden");
+		}
+		$(this).parent().remove();
+	})
+	$("#btn-chat").click(function(){
+		$(this).addClass("hidden");
+		$("#chatroom").removeClass("hidden");
+	})
+	$("#btn-minimize").click(function(){
+		$("#btn-chat").removeClass("hidden");
+		$("#chatroom").addClass("hidden");
+	})
+
+
+
+
 	function msgSend(){
-	if($("#message").val() != "" && $("#message").val() != null)
-		send(username,target,$("#message").val());
-	else
-		$("#message").attr("placeholder","消息不能为空")
-	$("#message").val("");
-}
+		if($("#message").val() != "" && $("#message").val() != null)
+			send(username,target,$("#message").val());
+		else
+			$("#message").attr("placeholder","消息不能为空")
+		$("#message").val("");
+	}
 })
 
 function changeHight(targetDiv){
