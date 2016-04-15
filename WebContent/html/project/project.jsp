@@ -78,37 +78,20 @@
           <div id="project-comment-title">
             <p>评论</p>
           </div>
-          <%@ include file="/jsp/project_comment.jsp"%>
-
-          <div class="project-comment-item"
-            style="border: 1px solid #c8c8c8; margin-top: -1px" id="1">
-            <div class="clearfix">
-              <div class="project-comment-img">
-                <img src="../../avatar/3.jpg"> <a
-                  class="project-comment-username" href="#">payonxp</a>
+          <div id="project-comment-reply" name="comment">
+            <div id="project-comment-reply-title">
+              <p>文明上网理性发言</p>
+            </div>
+            <div id="project-comment-reply-box">
+              <div id="project-comment-reply-content">
+                <textarea></textarea>
               </div>
-              <div class="project-comment-content">
-                <div class="project-comment-comment">
-                  <p>我日这不是我的项目吗</p>
-                </div>
-                <a href="#comment" class="project-comment-content-reply">回复</a>
-                <p class="project-comment-content-time">2016-04-10</p>
+              <div id="project-comment-reply-btn" class="clearfix">
+                <a href="">评论</a>
               </div>
             </div>
           </div>
-
-          <div id="project-comment-reply" name="comment">
-          	<div id="project-comment-reply-title">
-          		<p>发表回复</p>
-          	</div>
-          	<div id="project-comment-reply-content">
-          		<textarea></textarea>
-          	</div>
-          	<div id="project-comment-reply-btn">
-          		<a href="">评论</a>
-          	</div>
-          </div>
-
+          <%@ include file="/jsp/project_comment.jsp"%>
         </div>
 
       </div>
