@@ -2,7 +2,7 @@
 * @Author: Ed_Strickland
 * @Date:   2016-03-18 13:50:32
 * @Last Modified by:   Ed_Strickland
-* @Last Modified time: 2016-04-15 02:46:15
+* @Last Modified time: 2016-04-16 07:16:51
 */
 
 #content{
@@ -344,7 +344,7 @@
 .personal-center-message{
   margin-left:auto;
   margin-right:auto;
-  height:70px;
+  height:73px;
   width:600px;
   border:1px solid #C8C8C8;
   margin-top:-1px;
@@ -371,7 +371,7 @@
 }
 .personal-center-message-message{
   height:70px;
-  padding-top: 22px;
+  padding-top: 15px;
   padding-left: 23px;
 }
 .personal-center-message-agreement{
@@ -418,7 +418,7 @@
 text-shadow: initial;
 text-align: left;
 color: #8b8d90;
-padding-top: 3px;
+margin-top: 10px;
 }
 
 
