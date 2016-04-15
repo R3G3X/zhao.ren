@@ -281,12 +281,13 @@ ul.action li{
 	height:100px;
 }
 #project-comment-reply-content>textarea{
-	padding:5px;
+	padding:10px;
 	border:none;
 	outline:none;
 	height:100%;
 	width:100%;
 	resize:none;
+	font-size:15px;
 }
 #project-comment-reply-btn{
 	margin-top:0px;
