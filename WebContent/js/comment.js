@@ -7,13 +7,11 @@
                 {"msg":$("#project-comment-reply-content>textarea").val(),
                 "pid":$("#pid").val()},
                 function(data, status, xhr){
-                	//alert(data.status);
-                	alert("评论成功！")
+                	alert("评论成功！");
                     location.reload();
                 })
 	        .error(function(data,status,e){
-	        	//alert(data.status);
-	        	alert("请先登录！")
+	        	alert("请先登录！");
 	        })
  	})
  })
