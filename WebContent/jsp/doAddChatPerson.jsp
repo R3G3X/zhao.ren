@@ -11,6 +11,7 @@
 		boolean success = true;
 		int to = Integer.parseInt(request.getParameter("to"));
 		db.add_chat_person(id, to);
+		db.add_chat_person(to, id);
 		response.setStatus(200);
 	} else {
 		response.setStatus(401);
