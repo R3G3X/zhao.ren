@@ -165,6 +165,7 @@
   border:0;
   background-color:transparent;
   height:69%;
+  outline:none;
 }
 #alert{
   float:right;

@@ -263,11 +263,19 @@ ul.action li{
 }
 
 #project-comment-reply{
-	width:100%;
+	width:66%;
+	margin-left:17%;
 }
 #project-comment-reply-title{
+	margin-top:10px;
 	height:40px;
 	line-height:40px;
 }
-#project-comment-reply-content{}
+#project-comment-reply-content>{
+	width:100%;
+}
+#project-comment-reply-content>textarea{
+	outline:none;
+	width:100%;
+}
 #project-comment-reply-btn{}

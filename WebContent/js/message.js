@@ -63,7 +63,7 @@ function start (client){
 			substr = substr.substring(substr.indexOf("\n")+1,substr.length);
 		}
 		$("."+i+":last").text(substr);
-		$(".message-box:last").height($(".message-box:last").children().outerHeight()+10);
+		$(".message-box:last").height($(".message-box:last").children().outerHeight()+20);
 
 		index = 0;
 		setTimeout("changeHight("+div+")",5);
