@@ -72,13 +72,13 @@
         style="width: 1140px" id="comments">
 
 
-
+<a name="comment"></a>
         <div id="project-comment">
-
+          <input id="pid" type="hidden" value="<%=pid%>">
           <div id="project-comment-title">
             <p>评论</p>
           </div>
-          <div id="project-comment-reply" name="comment">
+          <div id="project-comment-reply">
             <div id="project-comment-reply-title">
               <p>文明上网理性发言</p>
             </div>
