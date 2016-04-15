@@ -87,6 +87,7 @@ function send(fromClient, toClient, message){
 }
 
 $(document).ready(function(){
+
 	var username=$.cookie("zhao_ren_token");
 	var target=$(".item-activated>.id").text();
 	if(username !=null && username!="")
@@ -155,9 +156,31 @@ $(document).ready(function(){
 		$("#btn-chat").removeClass("hidden");
 		$("#chatroom").addClass("hidden");
 	})
+	$("#user-message>a").click(function(){
+		var innerhtml = "";
+		innerhtml += "<li class=\"chatroom-left-userlist-item item-activated\">"
+							 + "<a class=\"id\"></a>"
+							 + "<input class=\"userId\" type=\"hidden\" value=\""+$("#userId").val()+"\"/>"
+							 + "<a class=\"btn-delete\">×</a>"
+							 + "</li>";
+		$(".item-activated").removeClass("item-activated").addClass("item-deactivated");
+		$("#chatroom-left-userlist").append(innerhtml);
+		$(".item-activated>.id").text($("#user-username").text());
 
+		innerhtml = "<div id=\"target-message-"+$("#userId").val()+"\" class=\"target-message\"></div>";
+		$("#chatroom-right").append(innerhtml);
 
+		$.post("../../jsp/doAddChatPerson.jsp",
+                {"to":$("#userId").val()},
+                function(data, status, xhr){
+                	alert("a");
+                    // location.reload();
+                })
+    .error(function(data,status,e){
+        $("#check-status").html("<font color='red'>用户名或密码错误</font>");
+    });
 
+	})
 
 	function msgSend(){
 		var username=$.cookie("zhao_ren_token");
