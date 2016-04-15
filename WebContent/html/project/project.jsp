@@ -114,14 +114,16 @@
             </div>
           </div>
 
-          <div>
-          	<div>
+          <div id="project-comment-reply" name="comment">
+          	<div id="project-comment-reply-title">
           		<p>发表回复</p>
           	</div>
-          	<div><textarea name="comment"></textarea></div>
-          	<div><a href="">评论</a></div>
-            
-            
+          	<div id="project-comment-reply-content">
+          		<textarea></textarea>
+          	</div>
+          	<div id="project-comment-reply-btn">
+          		<a href="">评论</a>
+          	</div>
           </div>
 
         </div>
