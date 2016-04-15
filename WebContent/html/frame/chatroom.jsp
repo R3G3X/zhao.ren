@@ -1,7 +1,7 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
   pageEncoding="UTF-8"%>
 <!-- CHATROOM -->
-<a id="btn-chat">私信聊天</a>
+<a id="btn-chat" class="hidden">私信聊天</a>
 
 <div id="chatroom" class="hidden">
   <div id="chatroom-left">

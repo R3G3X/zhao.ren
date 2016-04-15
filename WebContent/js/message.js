@@ -29,11 +29,11 @@ function start (client){
 			}
 			index ++;
 			time = json.timestamp;
-			if(time - preTime > 300000){
+			if(time - preTime > 30000){
 				innerhtml =	"<div id=\"receive-time\"><p>"+getTime(time)+"</p></div>";
 				preTime = new Date().getTime();
 			}
-			$("#target-message-"+$(".item-activated>a").text()).append(innerhtml);
+			$("#target-message-"+$(".item-activated>.id").text()).append(innerhtml);
 
 
 			if(json.toClientId){
@@ -89,6 +89,8 @@ function send(fromClient, toClient, message){
 $(document).ready(function(){
 	var username=$.cookie("zhao_ren_token");
 	var target=$(".item-activated>.id").text();
+	if(username !=null && username!="")
+		$("#btn-chat").removeClass("hidden");
 	$("#target-message-"+target).removeClass("hidden");
 		$("#toName").text(target);
 	start(username);
@@ -158,11 +160,16 @@ $(document).ready(function(){
 
 
 	function msgSend(){
-		if($("#message").val() != "" && $("#message").val() != null)
-			send(username,target,$("#message").val());
-		else
-			$("#message").attr("placeholder","消息不能为空")
-		$("#message").val("");
+		var username=$.cookie("zhao_ren_token");
+		if(username !=null && username!=""){
+			if($("#message").val() != "" && $("#message").val() != null)
+				send(username,target,$("#message").val());
+			else
+				$("#message").attr("placeholder","消息不能为空");
+			$("#message").val("");
+		}else{
+			alert("请登录");
+		}
 	}
 })
 

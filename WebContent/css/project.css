@@ -205,3 +205,59 @@ ul.action li{
 .comment-send-section{
 	padding-top:6px;
 }
+
+#project-comment{}
+#project-comment-title{}
+.preject-comment-item{
+}
+.project-comment-img{
+	padding:20px;
+	float:left;
+	width:140px;
+	min-height:260px;
+	background-color:#EEEEEE;
+	text-align:center;
+}
+.project-comment-img>img{
+	height:100px;
+	width:100px;
+	padding:3px;
+	background-color:#FBFBFB;
+	border:1px solid #c8c8c8;
+	margin-bottom:20px;
+}
+.project-comment-username{}
+.project-comment-content{
+	border-left:none;
+	min-height:150px;
+	width:696px;
+	min-width:;
+	float:left;
+}
+.project-comment-content-title>p{
+	margin:0px;
+}
+
+.project-comment-content-time{
+	float:right;
+	margin:0px;
+	height:40px;
+	line-height:40px;
+	margin-right:10px;
+	color:#B3B3B3;
+}
+.project-comment-comment{
+	margin:0px;
+	min-height:220px;
+}
+.project-comment-comment>p{
+	width:100%;
+	margin:0px;
+	padding:20px;
+}
+.project-comment-content-reply{
+	float:right;
+	height:40px;
+	line-height:40px;
+	margin-right:10px;
+}

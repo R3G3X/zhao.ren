@@ -10,6 +10,7 @@
 
 <link href="../../css/project.css" rel="stylesheet" />
 <script src="<%=request.getContextPath()%>/js/markdown.js"></script>
+<script src="<%=request.getContextPath()%>/js/comment.js"></script>
 
 </head>
 <body>
@@ -63,88 +64,57 @@
     </div>
     <div class="grey-3">
       <div class="container white box-border-bottom"  style="width:1140px" id="comments">
-      
-      	<table width="100%" border="0" cellspacing="2" cellpadding="0">
-              <tr>
-                <td height="16" bgcolor="E7E7E7"><strong>&nbsp;最新评论</strong></td>
-              </tr>
-            </table>
-            <div class="comment-section">
-            <table width="100%" border="0" cellspacing="5" cellpadding="0">
-              <tr>
-                <td width="49%" height="16">网友:[JF:ReviewName] [[JF:ReviewIP]] 认为：</td>
-                  <td width="51%">&nbsp;</td>
-              </tr>
-              <tr>
-                <td height="16" colspan="2">[JF:Content]
-                <div class="time_slot">1楼2016-04-10 18:31<a href="#"> 回复</a></div><hr size=1 class="line"></td>
-              </tr>
-            <tr>
-                <td width="49%" height="16">网友:[JF:ReviewName] [[JF:ReviewIP]] 认为：</td>
-                  <td width="51%">&nbsp;</td>
-              </tr>
-              <tr>
-                <td height="16" colspan="2">[JF:Content]
-                <div class="time_slot">2楼2016-04-10 18:31<a href="#"> 回复</a></div><hr size=1 class="line"></td>
-              </tr>
-              <tr>
-                <td width="49%" height="16">网友:[JF:ReviewName] [[JF:ReviewIP]] 认为：</td>
-                  <td width="51%">&nbsp;</td>
-              </tr>
-              <tr>
-                <td height="16" colspan="2">[JF:Content]
-                <div class="time_slot">3楼2016-04-10 18:31<a href="#"> 回复</a></div><hr size=1 class="line"></td>
-              </tr>
-              <tr>
-                <td width="49%" height="16">网友:[JF:ReviewName] [[JF:ReviewIP]] 认为：</td>
-                  <td width="51%">&nbsp;</td>
-              </tr>
-              <tr>
-                <td height="16" colspan="2">[JF:Content]
-                <div class="time_slot">3楼2016-04-10 18:31<a href="#"> 回复</a></div><hr size=1 class="line"></td>
-              </tr>
-              <tr>
-                <td width="49%" height="16">网友:[JF:ReviewName] [[JF:ReviewIP]] 认为：</td>
-                  <td width="51%">&nbsp;</td>
-              </tr>
-              <tr>
-                <td height="16" colspan="2">[JF:Content]
-                <div class="time_slot">3楼2016-04-10 18:31<a href="#"> 回复</a></div><hr size=1 class="line"></td>
-              </tr>
-              <tr>
-                <td width="49%" height="16">网友:[JF:ReviewName] [[JF:ReviewIP]] 认为：</td>
-                  <td width="51%">&nbsp;</td>
-              </tr>
-              <tr>
-                <td height="16" colspan="2">[JF:Content]
-                <div class="time_slot">3楼2016-04-10 18:31<a href="#"> 回复</a></div><hr size=1 class="line"></td>
-              </tr>
-               <tr>
-                <td width="49%" height="16">网友:[JF:ReviewName] [[JF:ReviewIP]] 认为：</td>
-                  <td width="51%">&nbsp;</td>
-              </tr>
-              <tr>
-                <td height="16" colspan="2">[JF:Content]
-                <div class="time_slot">3楼2016-04-10 18:31<a href="#"> 回复</a></div><hr size=1 class="line"></td>
-              </tr>
-            </table>
-            </div>
-            <div class="comment-send-section">
-            <form method="" action="#">
-            <div class="comment-demo">
-            <textarea id="demo-message" name="demo-message" placeholder="Enter your comments!" rows="6"></textarea>
-            </div>
-            <div class="comment-demo">
-            <ul class="action">
-            <li><input class="comment-send" value="评论" type="submit"></input></li>
-            <li><input class="reset-comment" value="清空" type="Reset"></li>
-            </ul>
-            </form>
-            </div>
-      </div>
-    </div>
-    
-  </div>
+
+
+
+      	<div id="project-comment">
+
+    			<div id="project-comment-title">
+    				<p>评论</p>
+    			</div>
+
+    			<div class="project-comment-item" style="border:1px solid #c8c8c8; margin-top:-1px" id="1">
+    				<div class="clearfix">
+    					<div class="project-comment-img">
+	    					<img src="../../avatar/3.jpg">
+	    					<a class="project-comment-username" href="#">payonxp</a>
+	    				</div>
+	    				<div class="project-comment-content">
+	    					<div class="project-comment-comment">
+	    						<p>我日这不是我的项目吗</p>
+	    					</div>
+	    					<a href="#comment" class="project-comment-content-reply">回复</a>
+	    					<p class="project-comment-content-time">2016-04-10</p>
+	    				</div>
+    				</div>
+      		</div>
+      		
+
+      		<div class="project-comment-item" style="border:1px solid #c8c8c8; margin-top:-1px" id="1">
+    				<div class="clearfix">
+    					<div class="project-comment-img">
+	    					<img src="../../avatar/3.jpg">
+	    					<a class="project-comment-username" href="#">payonxp</a>
+	    				</div>
+	    				<div class="project-comment-content">
+	    					<div class="project-comment-comment">
+	    						<p>我日这不是我的项目吗</p>
+	    					</div>
+	    					<a href="#comment" class="project-comment-content-reply">回复</a>
+	    					<p class="project-comment-content-time">2016-04-10</p>
+	    				</div>
+    				</div>
+      		</div>
+
+					<div>
+						<textarea name="comment"></textarea>
+						<a href="">评论</a>
+					</div>
+
+      	</div>
+    	
+    	</div>
+  	</div>
   <!-- PUT-YOUR-CODE-ABOVE -->
   </div>
   <!-- END-OF-CONTENT -->
