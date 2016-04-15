@@ -93,7 +93,7 @@ $(document).ready(function(){
 	if(username !=null && username!="")
 		$("#btn-chat").removeClass("hidden");
 	$("#target-message-"+target).removeClass("hidden");
-		$("#toName").text(target);
+		$("#toName").text($(".item-activated>.id").text());
 	start(username);
 
 	$("#btn-send").click(function(){
@@ -128,7 +128,7 @@ $(document).ready(function(){
 		var to = $("#userID").val();
 		var flag = 0;
 		var a = $(".userId[value='"+to+"']");
-		if(a)
+		if(a.length>0)
 			flag = 1;
 		if(flag == 0){
 			var innerhtml = "";
@@ -156,12 +156,11 @@ $(document).ready(function(){
 			var a;
 			$(".userId[value='"+to+"']").parent().addClass("item-activated");
 			$(".target-message").addClass("hidden");
-
+		}
 			target=to;
 
 			$("#target-message-"+target).removeClass("hidden");
-			$("#toName").text(target);
-		}
+			$("#toName").text($(".item-activated>.id").text());
 		$("#btn-chat").addClass("hidden");
 		$("#chatroom").removeClass("hidden");
 	})
