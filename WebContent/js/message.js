@@ -55,7 +55,7 @@ function start (client){
                   	 "</div>";
 			}
 		}
-		div = $(".item-activated>a").text();
+		div = $(".item-activated>.id").text();
 		$("#target-message-"+div).append(innerhtml);
 		substr = messageGet;
 		for(var i = 0; i < index - 1; i++){
