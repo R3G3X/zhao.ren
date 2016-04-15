@@ -1,4 +1,5 @@
  $(document).ready(function(){
+  $(".project-comment-img").outerHeight($(this).parent().children(".project-comment-content").outerHeight());
  	$(".project-comment-content-reply").click(function(){
  		$("#project-comment-reply-content>textarea").val("回复"+$(this).attr("id")+"楼:");
  	})

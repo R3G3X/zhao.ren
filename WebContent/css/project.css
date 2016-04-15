@@ -2,7 +2,7 @@
 * @Author: Ed_Strickland
 * @Date:   2016-03-17 13:10:49
 * @Last Modified by:   Ed_Strickland
-* @Last Modified time: 2016-03-21 13:16:42
+* @Last Modified time: 2016-04-16 03:52:39
 */
 #markdown{
   min-height:420px;
@@ -214,7 +214,7 @@ ul.action li{
 	padding:20px;
 	float:left;
 	width:140px;
-	min-height:260px;
+	height:100%px;
 	background-color:#EEEEEE;
 	text-align:center;
 }
@@ -251,6 +251,7 @@ ul.action li{
 	min-height:220px;
 }
 .project-comment-comment>p{
+  word-wrap:break-word;
 	width:100%;
 	margin:0px;
 	padding:20px;

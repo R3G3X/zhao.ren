@@ -29,6 +29,9 @@
             <div id="user-box">
               <a id="pic-edit" href="#"><img src="<%=ava_path%>"
                 class="img-circle big-avatar" /></a>
+              <div id="user-message">
+                <a>私信</a>
+              </div>
             </div>
             <div id="comment">
               <input id="courseId" type="hidden" value="courseId" />
