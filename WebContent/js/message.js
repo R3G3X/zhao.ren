@@ -63,7 +63,7 @@ function start (client){
 			substr = substr.substring(substr.indexOf("\n")+1,substr.length);
 		}
 		$("#target-message-"+div+" ."+i+":last").text(substr);
-		$("#target-message-"+div+" .message-box:last").height($("#target-message-"+div+" .message-box:last").children().outerHeight()+20);
+		$("#target-message-"+div+" .message-box:last").height($("#target-message-"+div+" .message-box:last").children().outerHeight()+25);
 
 		index = 0;
 		setTimeout("changeHight("+div+")",5);
@@ -124,32 +124,42 @@ $(document).ready(function(){
 		$("#btn-chat").removeClass("hidden");
 		$("#chatroom").addClass("hidden");
 	})
-	$("#user-message>a").click(function(){
-		var to = $("#userId").val();
+	$("#user-Message>a").click(function(){
+		var to = $("#userID").val();
 		var flag = 0;
+		if($(".chatroom-left-userlist-item>input").val() == to)
+			flag = 1;
 		if(flag == 0){
 			var innerhtml = "";
 			innerhtml += "<li class=\"chatroom-left-userlist-item item-activated\">"
 								 + "<a class=\"id\"></a>"
-								 + "<input class=\"userId\" type=\"hidden\" value=\""+$("#userId").val()+"\"/>"
+								 + "<input class=\"userId\" type=\"hidden\" value=\""+to+"\"/>"
 								 + "<a class=\"btn-delete\">×</a>"
 								 + "</li>";
 			$(".item-activated").removeClass("item-activated").addClass("item-deactivated");
 			$("#chatroom-left-userlist").append(innerhtml);
 			$(".item-activated>.id").text($("#user-username").text());
 			$(".target-message").addClass("hidden");
-			innerhtml = "<div id=\"target-message-"+$("#userId").val()+"\" class=\"target-message\"></div>";
+			innerhtml = "<div id=\"target-message-"+to+"\" class=\"target-message\"></div>";
 			$("#message-input").before(innerhtml);
 
 			$.post("../../jsp/doAddChatPerson.jsp",
-	                {"to":$("#userId").val()},
+	                {"to":$("#userID").val()},
 	                function(data, status, xhr){
 	                    // location.reload();
 	                })
 	    .error(function(data,status,e){
 	    });
 		}else{
+			$(".item-activated").removeClass("item-activated").addClass("item-deactivated");
+			var a;
+			// alert($("#userId[value='1']").attr("id"));
+			$(".target-message").addClass("hidden");
 
+			target=to;
+
+			$("#target-message-"+target).removeClass("hidden");
+			$("#toName").text(target);
 		}
 	})
 
@@ -161,7 +171,7 @@ $(document).ready(function(){
 		target=$(this).next().val();
 
 		$("#target-message-"+target).removeClass("hidden");
-		$("#toName").text(target);
+		$("#toName").text($(this).text());
 	})
 
 	$(document).on("click",".btn-delete", function(){
