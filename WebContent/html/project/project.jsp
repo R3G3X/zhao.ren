@@ -55,8 +55,7 @@
         style="width: 1140px" id="markdown"></div>
     </div>
     <script type="text/javascript">
-        content="<%=pret.getString("detail")%>
-					";
+        content="<%=pret.getString("detail")%>";
 					document.getElementById("markdown").innerHTML = markdown
 							.toHTML(content);
 				</script>
