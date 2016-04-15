@@ -116,7 +116,55 @@ $(document).ready(function(){
 			$("#message").attr("placeholder","")
 		}
   });
-	$(".btn-delete").click(function(){
+	$("#btn-chat").click(function(){
+		$(this).addClass("hidden");
+		$("#chatroom").removeClass("hidden");
+	})
+	$("#btn-minimize").click(function(){
+		$("#btn-chat").removeClass("hidden");
+		$("#chatroom").addClass("hidden");
+	})
+	$("#user-message>a").click(function(){
+		var to = $("#userId").val();
+		var flag = 0;
+		if(flag == 0){
+			var innerhtml = "";
+			innerhtml += "<li class=\"chatroom-left-userlist-item item-activated\">"
+								 + "<a class=\"id\"></a>"
+								 + "<input class=\"userId\" type=\"hidden\" value=\""+$("#userId").val()+"\"/>"
+								 + "<a class=\"btn-delete\">×</a>"
+								 + "</li>";
+			$(".item-activated").removeClass("item-activated").addClass("item-deactivated");
+			$("#chatroom-left-userlist").append(innerhtml);
+			$(".item-activated>.id").text($("#user-username").text());
+			$(".target-message").addClass("hidden");
+			innerhtml = "<div id=\"target-message-"+$("#userId").val()+"\" class=\"target-message\"></div>";
+			$("#message-input").before(innerhtml);
+
+			$.post("../../jsp/doAddChatPerson.jsp",
+	                {"to":$("#userId").val()},
+	                function(data, status, xhr){
+	                    // location.reload();
+	                })
+	    .error(function(data,status,e){
+	    });
+		}else{
+
+		}
+	})
+
+	$(document).on("click", ".id", function(){
+		$(".item-activated").removeClass("item-activated").addClass("item-deactivated");
+		$(this).parent().removeClass("item-deactivated").addClass("item-activated");
+		$(".target-message").addClass("hidden");
+
+		target=$(this).next().val();
+
+		$("#target-message-"+target).removeClass("hidden");
+		$("#toName").text(target);
+	})
+
+	$(document).on("click",".btn-delete", function(){
 		$(".item-activated").removeClass("item-activated").addClass("item-deactivated");
 		$(".target-message").addClass("hidden");
 		if($(this).parent().siblings().length != 0){
@@ -138,58 +186,14 @@ $(document).ready(function(){
 		$.post("../../jsp/doDeleteChatPerson.jsp",
                 {"target":$(this).prev("input").val()},
                 function(data, status, xhr){
-                	alert("a");
                     // location.reload();
                 })
     .error(function(data,status,e){
     });
 		$(this).parent().remove();
 	})
-	$("#btn-chat").click(function(){
-		$(this).addClass("hidden");
-		$("#chatroom").removeClass("hidden");
-	})
-	$("#btn-minimize").click(function(){
-		$("#btn-chat").removeClass("hidden");
-		$("#chatroom").addClass("hidden");
-	})
-	$("#user-message>a").click(function(){
-		var innerhtml = "";
-		innerhtml += "<li class=\"chatroom-left-userlist-item item-activated\">"
-							 + "<a class=\"id\"></a>"
-							 + "<input class=\"userId\" type=\"hidden\" value=\""+$("#userId").val()+"\"/>"
-							 + "<a class=\"btn-delete\">×</a>"
-							 + "</li>";
-		$(".item-activated").removeClass("item-activated").addClass("item-deactivated");
-		$("#chatroom-left-userlist").append(innerhtml);
-		$(".item-activated>.id").text($("#user-username").text());
-
-		innerhtml = "<div id=\"target-message-"+$("#userId").val()+"\" class=\"target-message\"></div>";
-		$("#chatroom-right").append(innerhtml);
-
-		$.post("../../jsp/doAddChatPerson.jsp",
-                {"to":$("#userId").val()},
-                function(data, status, xhr){
-                    // location.reload();
-                })
-    .error(function(data,status,e){
-    });
-
-	})
-
-	$(document).on("click", ".id", function(){
-		$(".item-activated").removeClass("item-activated").addClass("item-deactivated");
-		$(this).parent().removeClass("item-deactivated").addClass("item-activated");
-		$(".target-message").addClass("hidden");
-
-		target=$(this).next().val();
-
-		$("#target-message-"+target).removeClass("hidden");
-		$("#toName").text(target);
-	})
 
 	function msgSend(){
-		alert(target);
 		var username=$.cookie("zhao_ren_token");
 		if(username !=null && username!=""){
 			if($("#message").val() != "" && $("#message").val() != null)
