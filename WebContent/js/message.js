@@ -59,11 +59,11 @@ function start (client){
 		$("#target-message-"+div).append(innerhtml);
 		substr = messageGet;
 		for(var i = 0; i < index - 1; i++){
-			$("."+i+":last").text(substr.substring(0,substr.indexOf("\n")));
+			$("#target-message-"+div+" ."+i+":last").text(substr.substring(0,substr.indexOf("\n")));
 			substr = substr.substring(substr.indexOf("\n")+1,substr.length);
 		}
-		$("."+i+":last").text(substr);
-		$(".message-box:last").height($(".message-box:last").children().outerHeight()+20);
+		$("#target-message-"+div+" ."+i+":last").text(substr);
+		$("#target-message-"+div+" .message-box:last").height($("#target-message-"+div+" .message-box:last").children().outerHeight()+20);
 
 		index = 0;
 		setTimeout("changeHight("+div+")",5);
