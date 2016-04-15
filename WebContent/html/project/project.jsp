@@ -67,17 +67,13 @@
       </h4>
       <%@ include file="/jsp/project_info_member.jsp"%>
     </div>
+    <a name="comment"></a>
     <div class="grey-3">
       <div class="container white box-border-bottom"
         style="width: 1140px" id="comments">
 
-
-<a name="comment"></a>
         <div id="project-comment">
           <input id="pid" type="hidden" value="<%=pid%>">
-          <div id="project-comment-title">
-            <p>评论</p>
-          </div>
           <div id="project-comment-reply">
             <div id="project-comment-reply-title">
               <p>文明上网理性发言</p>
