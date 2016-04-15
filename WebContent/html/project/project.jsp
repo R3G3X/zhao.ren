@@ -115,8 +115,13 @@
           </div>
 
           <div>
-            <textarea name="comment"></textarea>
-            <a href="">评论</a>
+          	<div>
+          		<p>发表回复</p>
+          	</div>
+          	<div><textarea name="comment"></textarea></div>
+          	<div><a href="">评论</a></div>
+            
+            
           </div>
 
         </div>

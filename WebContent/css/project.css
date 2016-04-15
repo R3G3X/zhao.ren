@@ -261,3 +261,13 @@ ul.action li{
 	line-height:40px;
 	margin-right:10px;
 }
+
+#project-comment-reply{
+	width:100%;
+}
+#project-comment-reply-title{
+	height:40px;
+	line-height:40px;
+}
+#project-comment-reply-content{}
+#project-comment-reply-btn{}
