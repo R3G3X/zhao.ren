@@ -8,15 +8,22 @@
 	boolean success = true;
 	try {
 		int pid = Integer.parseInt(request.getParameter("pid"));
-		success = db.join_project(id, pid);
+		String msg = request.getParameter("msg");
+		int pre_id = 0;
+		int f1 = msg.indexOf(':');
+		if (f1 != -1) {
+            String s = msg.substring(0, f1);
+            
+		}
+		success = db.project_add_comment(id, pid, msg, pre_id);
 	} catch (Exception e) {
 		e.printStackTrace();
 		success = false;
 	}
 	if (success) {
-		out.print("<script>alert(\"发表成功！\")</script>");
+		response.setStatus(200);
 	} else {
-		out.print("<script>alert('发表失败！可能的原因: \\n应该不可能吧')</script>");
+		response.setStatus(400);
 	}
 %>
 
