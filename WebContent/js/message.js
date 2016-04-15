@@ -153,7 +153,7 @@ $(document).ready(function(){
 		}else{
 			$(".item-activated").removeClass("item-activated").addClass("item-deactivated");
 			var a;
-			// alert($("#userId[value='1']").attr("id"));
+			$(".userId[value='"+to+"']").parent().addClass("item-activated");
 			$(".target-message").addClass("hidden");
 
 			target=to;
