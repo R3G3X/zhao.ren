@@ -6,6 +6,7 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <title>需要登录</title>
+<%response.setStatus(401); %>
 </head>
 <script language="javascript">
           alert("清先登录！");

@@ -12,8 +12,8 @@
 		int pre_id = 0;
 		int f1 = msg.indexOf(':');
 		if (f1 != -1) {
-            String s = msg.substring(0, f1);
-            
+			String s = msg.substring(0, f1);
+
 		}
 		success = db.project_add_comment(id, pid, msg, pre_id);
 	} catch (Exception e) {
