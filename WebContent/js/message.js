@@ -161,6 +161,7 @@ $(document).ready(function(){
 			$("#target-message-"+target).removeClass("hidden");
 			$("#toName").text(target);
 		}
+		$("#chatroom").removeClass("hidden");
 	})
 
 	$(document).on("click", ".id", function(){
