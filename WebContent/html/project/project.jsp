@@ -55,7 +55,8 @@
         style="width: 1140px" id="markdown"></div>
     </div>
     <script type="text/javascript">
-        content="<%=pret.getString("detail")%>";
+        content="<%=pret.getString("detail")%>
+					";
 					document.getElementById("markdown").innerHTML = markdown
 							.toHTML(content);
 				</script>
@@ -78,41 +79,24 @@
           <div id="project-comment-title">
             <p>评论</p>
           </div>
+          <%@ include file="/jsp/project_comment.jsp"%>
 
-          <div class="project-comment-item"
-            style="border: 1px solid #c8c8c8; margin-top: -1px" id="1">
-            <div class="clearfix">
-              <div class="project-comment-img">
-                <img src="../../avatar/3.jpg"> <a
-                  class="project-comment-username" href="#">payonxp</a>
-              </div>
-              <div class="project-comment-content">
-                <div class="project-comment-comment">
-                  <p>我日这不是我的项目吗</p>
-                </div>
-                <a href="#comment" class="project-comment-content-reply">回复</a>
-                <p class="project-comment-content-time">2016-04-10</p>
-              </div>
-            </div>
-          </div>
-
-
-          <div class="project-comment-item"
-            style="border: 1px solid #c8c8c8; margin-top: -1px" id="1">
-            <div class="clearfix">
-              <div class="project-comment-img">
-                <img src="../../avatar/3.jpg"> <a
-                  class="project-comment-username" href="#">payonxp</a>
-              </div>
-              <div class="project-comment-content">
-                <div class="project-comment-comment">
-                  <p>我日这不是我的项目吗</p>
-                </div>
-                <a href="#comment" class="project-comment-content-reply">回复</a>
-                <p class="project-comment-content-time">2016-04-10</p>
-              </div>
-            </div>
-          </div>
+<!--           <div class="project-comment-item" -->
+<!--             style="border: 1px solid #c8c8c8; margin-top: -1px" id="1"> -->
+<!--             <div class="clearfix"> -->
+<!--               <div class="project-comment-img"> -->
+<!--                 <img src="../../avatar/3.jpg"> <a -->
+<!--                   class="project-comment-username" href="#">payonxp</a> -->
+<!--               </div> -->
+<!--               <div class="project-comment-content"> -->
+<!--                 <div class="project-comment-comment"> -->
+<!--                   <p>我日这不是我的项目吗</p> -->
+<!--                 </div> -->
+<!--                 <a href="#comment" class="project-comment-content-reply">回复</a> -->
+<!--                 <p class="project-comment-content-time">2016-04-10</p> -->
+<!--               </div> -->
+<!--             </div> -->
+<!--           </div> -->
 
           <div>
           	<div>
