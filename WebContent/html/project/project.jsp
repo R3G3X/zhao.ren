@@ -87,7 +87,7 @@
                 <textarea></textarea>
               </div>
               <div id="project-comment-reply-btn" class="clearfix">
-                <a href="">评论</a>
+                <a href="#">评论</a>
               </div>
             </div>
           </div>

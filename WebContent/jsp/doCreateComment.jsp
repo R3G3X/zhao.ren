@@ -1,3 +1,5 @@
+<%@page import="java.util.regex.Matcher"%>
+<%@page import="java.util.regex.Pattern"%>
 <%@page import="zhao_ren_db.db_connector"%>
 <%@ page language="java" contentType="text/html; charset=UTF-8"
   pageEncoding="UTF-8"%>
@@ -10,10 +12,14 @@
 		int pid = Integer.parseInt(request.getParameter("pid"));
 		String msg = request.getParameter("msg");
 		int pre_id = 0;
-		int f1 = msg.indexOf(':');
-		if (f1 != -1) {
-			String s = msg.substring(0, f1);
-
+		Pattern p = Pattern.compile("回复[0,9]{1,10}楼:.*");
+		Matcher matcher = p.matcher(msg);
+		boolean b = matcher.matches();
+		if (b) {
+			int begin = msg.indexOf("回复");
+			int end = msg.indexOf("楼");
+			String s = msg.substring(begin + 2, end);
+			pre_id = Integer.parseInt(s);
 		}
 		success = db.project_add_comment(id, pid, msg, pre_id);
 	} catch (Exception e) {
