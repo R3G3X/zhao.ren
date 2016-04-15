@@ -61,6 +61,89 @@
       <h4 class="project-join-title">团队成员[需要人数:<%=pret.getString("require_num")%>]</h4>
       <%@ include file="/jsp/project_info_member.jsp"%>
     </div>
+    <div class="grey-3">
+      <div class="container white box-border-bottom"  style="width:1140px" id="comments">
+      
+      	<table width="100%" border="0" cellspacing="2" cellpadding="0">
+              <tr>
+                <td height="16" bgcolor="E7E7E7"><strong>&nbsp;最新评论</strong></td>
+              </tr>
+            </table>
+            <div class="comment-section">
+            <table width="100%" border="0" cellspacing="5" cellpadding="0">
+              <tr>
+                <td width="49%" height="16">网友:[JF:ReviewName] [[JF:ReviewIP]] 认为：</td>
+                  <td width="51%">&nbsp;</td>
+              </tr>
+              <tr>
+                <td height="16" colspan="2">[JF:Content]
+                <div class="time_slot">1楼2016-04-10 18:31<a href="#"> 回复</a></div><hr size=1 class="line"></td>
+              </tr>
+            <tr>
+                <td width="49%" height="16">网友:[JF:ReviewName] [[JF:ReviewIP]] 认为：</td>
+                  <td width="51%">&nbsp;</td>
+              </tr>
+              <tr>
+                <td height="16" colspan="2">[JF:Content]
+                <div class="time_slot">2楼2016-04-10 18:31<a href="#"> 回复</a></div><hr size=1 class="line"></td>
+              </tr>
+              <tr>
+                <td width="49%" height="16">网友:[JF:ReviewName] [[JF:ReviewIP]] 认为：</td>
+                  <td width="51%">&nbsp;</td>
+              </tr>
+              <tr>
+                <td height="16" colspan="2">[JF:Content]
+                <div class="time_slot">3楼2016-04-10 18:31<a href="#"> 回复</a></div><hr size=1 class="line"></td>
+              </tr>
+              <tr>
+                <td width="49%" height="16">网友:[JF:ReviewName] [[JF:ReviewIP]] 认为：</td>
+                  <td width="51%">&nbsp;</td>
+              </tr>
+              <tr>
+                <td height="16" colspan="2">[JF:Content]
+                <div class="time_slot">3楼2016-04-10 18:31<a href="#"> 回复</a></div><hr size=1 class="line"></td>
+              </tr>
+              <tr>
+                <td width="49%" height="16">网友:[JF:ReviewName] [[JF:ReviewIP]] 认为：</td>
+                  <td width="51%">&nbsp;</td>
+              </tr>
+              <tr>
+                <td height="16" colspan="2">[JF:Content]
+                <div class="time_slot">3楼2016-04-10 18:31<a href="#"> 回复</a></div><hr size=1 class="line"></td>
+              </tr>
+              <tr>
+                <td width="49%" height="16">网友:[JF:ReviewName] [[JF:ReviewIP]] 认为：</td>
+                  <td width="51%">&nbsp;</td>
+              </tr>
+              <tr>
+                <td height="16" colspan="2">[JF:Content]
+                <div class="time_slot">3楼2016-04-10 18:31<a href="#"> 回复</a></div><hr size=1 class="line"></td>
+              </tr>
+               <tr>
+                <td width="49%" height="16">网友:[JF:ReviewName] [[JF:ReviewIP]] 认为：</td>
+                  <td width="51%">&nbsp;</td>
+              </tr>
+              <tr>
+                <td height="16" colspan="2">[JF:Content]
+                <div class="time_slot">3楼2016-04-10 18:31<a href="#"> 回复</a></div><hr size=1 class="line"></td>
+              </tr>
+            </table>
+            </div>
+            <div class="comment-send-section">
+            <form method="" action="#">
+            <div class="comment-demo">
+            <textarea id="demo-message" name="demo-message" placeholder="Enter your comments!" rows="6"></textarea>
+            </div>
+            <div class="comment-demo">
+            <ul class="action">
+            <li><input class="comment-send" value="评论" type="submit"></input></li>
+            <li><input class="reset-comment" value="清空" type="Reset"></li>
+            </ul>
+            </form>
+            </div>
+      </div>
+    </div>
+    
   </div>
   <!-- PUT-YOUR-CODE-ABOVE -->
   </div>
