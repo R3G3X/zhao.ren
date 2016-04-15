@@ -22,25 +22,26 @@
   <div id="container-content">
     <!-- PUT-YOUR-CODE-BELOW -->
     <div class="grey-2">
-      <div class="container grey-3 box-border-top project-title-box" style="width:1140px">
-        <div class="project-title clearfix" style="padding-top:70px;">
+      <div class="container grey-3 box-border-top project-title-box"
+        style="width: 1140px">
+        <div class="project-title clearfix" style="padding-top: 70px;">
           <h2 class="project-title-title"><%=pret.getString("name")%></h2>
           <a class="project-title-status"><%=pret.getString("isFinshed").equals("0") ? "组队中" : "已完成"%></a>
         </div>
         <div class="clearfix project-title-require">
-          <p >
+          <p>
             <a class="project-title-require-item with-right-border">项目简介:
-              <%=pret.getString("intro")%></a>
-            </a>
+              <%=pret.getString("intro")%></a> </a>
           </p>
-          <p >
+          <p>
             <a class="project-title-require-item with-right-border">创建时间:
               <%=pret.getString("create_time")%></a> <a
               class="project-title-require-item">周期: <%=pret.getString("round_time")%>
               天
             </a>
           </p>
-          <div class="project-title-join  <%=pret.getString("isFinshed").equals("0") ? "" : "hidden"%>">
+          <div
+            class="project-title-join  <%=pret.getString("isFinshed").equals("0") ? "" : "hidden"%>">
             <a
               href="<%=request.getContextPath()%>/jsp/doJoinProject.jsp?pid=<%=pret.getInt("id")%>">加入他们</a>
           </div>
@@ -50,7 +51,8 @@
     </div>
 
     <div class="grey-3">
-      <div class="container white box-border-bottom"  style="width:1140px" id="markdown"></div>
+      <div class="container white box-border-bottom"
+        style="width: 1140px" id="markdown"></div>
     </div>
     <script type="text/javascript">
         content="<%=pret.getString("detail")%>";
@@ -58,8 +60,11 @@
 							.toHTML(content);
 				</script>
     <div
-      class="container grey-3 box-border-top project-title-box clearfix project-user" style="width:1140px">
-      <h4 class="project-join-title">团队成员[需要人数:<%=pret.getString("require_num")%>]</h4>
+      class="container grey-3 box-border-top project-title-box clearfix project-user"
+      style="width: 1140px">
+      <h4 class="project-join-title">
+        团队成员[需要人数:<%=pret.getString("require_num")%>]
+      </h4>
       <%@ include file="/jsp/project_info_member.jsp"%>
     </div>
     <div class="grey-3">
@@ -116,7 +121,7 @@
     	</div>
   	</div>
   <!-- PUT-YOUR-CODE-ABOVE -->
-  </div>
+
   <!-- END-OF-CONTENT -->
   <!-- BOTTOM -->
   <jsp:include page="../../html/frame/frame_bottom.jsp"></jsp:include>
