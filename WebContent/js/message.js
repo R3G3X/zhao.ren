@@ -63,7 +63,7 @@ function start (client){
 			substr = substr.substring(substr.indexOf("\n")+1,substr.length);
 		}
 		$("#target-message-"+div+" ."+i+":last").text(substr);
-		$("#target-message-"+div+" .message-box:last").height($("#target-message-"+div+" .message-box:last").children().outerHeight()+20);
+		$("#target-message-"+div+" .message-box:last").height($("#target-message-"+div+" .message-box:last").children().outerHeight()+21);
 
 		index = 0;
 		setTimeout("changeHight("+div+")",5);
@@ -183,7 +183,7 @@ $(document).ready(function(){
 			$("#toName").text("");
 			$("#target-message").removeClass("hidden");
 		}
-		$.post("../../jsp/doDeleteChatPerson.jsp",
+		$.post(getRootPath()+"/jsp/doDeleteChatPerson.jsp",
                 {"target":$(this).prev("input").val()},
                 function(data, status, xhr){
                     // location.reload();

@@ -10,21 +10,7 @@
     </div>
     <div id="chatroom-left-content">
       <ul id="chatroom-left-userlist">
-        <li class="chatroom-left-userlist-item item-activated">
-          <a class="id">1</a>
-          <input class="userId" type="hidden" value="1">
-          <a class="btn-delete">×</a>
-        </li>
-        <li class="chatroom-left-userlist-item item-deactivated">
-          <a class="id">2</a>
-          <input class="userId" type="hidden" value="2">
-          <a class="btn-delete">×</a>
-        </li>
-        <li class="chatroom-left-userlist-item item-deactivated">
-          <a class="id">9</a>
-          <input class="userId" type="hidden" value="9">
-          <a class="btn-delete">×</a>
-        </li>
+      <%@ include file="/jsp/chat_list.jsp"%>
       </ul>
     </div>
   </div>
