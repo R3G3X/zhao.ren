@@ -11,6 +11,7 @@
                     location.reload();
                 })
 	        .error(function(data,status,e){
+	        	alert("请先登录!");
 	        })
  	})
  })
