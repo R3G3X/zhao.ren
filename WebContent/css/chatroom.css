@@ -2,7 +2,7 @@
 * @Author: Ed_Strickland
 * @Date:   2016-04-15 04:48:52
 * @Last Modified by:   Ed_Strickland
-* @Last Modified time: 2016-04-15 05:33:41
+* @Last Modified time: 2016-04-15 06:35:14
 */
 /*
 * @Author: Ed_Strickland
@@ -79,6 +79,7 @@
   height:40px;
   line-height:40px;
   width:40px;
+  border-left:1px solid #CBCBCB;
 }
 .target-message{
   height:67%;
@@ -114,3 +115,37 @@
 .toMessage>p{}
 #receive-time{}
 #receive-time>p{}
+
+
+#msg-box{
+  min-height:40px;
+  width:100%;
+}
+#asdf{
+  margin-right:20px;
+}
+#msg{
+  padding: 5px 11px;
+  max-width: 400px;
+  min-height: 21px;
+  background: #d7e9ff;
+  border: 1px solid #000;
+  border-radius: 1px;
+  line-height: 21px;
+  font-size: 12px;
+  float: right;
+  position: relative;
+  word-wrap: break-word;
+  _zoom: 1!important;
+}
+#msg:after{
+  position:absolute;
+  background-image: url(../html/frame/test.png);
+  width:20px;
+  height:20px;
+  top: 7px;
+  right: -7px;
+  width: 7px;
+  height: 8px;
+  content: '';
+}
