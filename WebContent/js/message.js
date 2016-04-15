@@ -33,7 +33,7 @@ function start (client){
 				innerhtml =	"<div id=\"receive-time\"><p>"+getTime(time)+"</p></div>";
 				preTime = new Date().getTime();
 			}
-			$("#target-message-"+$(".item-activated>.id").text()).append(innerhtml);
+			$("#target-message-"+$(".item-activated>input").val()).append(innerhtml);
 
 
 			if(json.toClientId){
@@ -55,7 +55,7 @@ function start (client){
                   	 "</div>";
 			}
 		}
-		div = $(".item-activated>.id").text();
+		div = $(".item-activated>input").val();
 		$("#target-message-"+div).append(innerhtml);
 		substr = messageGet;
 		for(var i = 0; i < index - 1; i++){
@@ -89,7 +89,7 @@ function send(fromClient, toClient, message){
 $(document).ready(function(){
 
 	var username=$.cookie("zhao_ren_token");
-	var target=$(".item-activated>.id").text();
+	var target=$(".item-activated>input").val();
 	if(username !=null && username!="")
 		$("#btn-chat").removeClass("hidden");
 	$("#target-message-"+target).removeClass("hidden");
@@ -116,17 +116,6 @@ $(document).ready(function(){
 			$("#message").attr("placeholder","")
 		}
   });
-
-	$(".id").click(function(){
-		$(".item-activated").removeClass("item-activated").addClass("item-deactivated");
-		$(this).parent().removeClass("item-deactivated").addClass("item-activated");
-		$(".target-message").addClass("hidden");
-
-		target=$(this).text();
-
-		$("#target-message-"+target).removeClass("hidden");
-		$("#toName").text(target);
-	})
 	$(".btn-delete").click(function(){
 		$(".item-activated").removeClass("item-activated").addClass("item-deactivated");
 		$(".target-message").addClass("hidden");
@@ -147,7 +136,7 @@ $(document).ready(function(){
 			$("#target-message").removeClass("hidden");
 		}
 		$.post("../../jsp/doDeleteChatPerson.jsp",
-                {"target":$(this).prev("input")val()},
+                {"target":$(this).prev("input").val()},
                 function(data, status, xhr){
                 	alert("a");
                     // location.reload();
@@ -181,7 +170,6 @@ $(document).ready(function(){
 		$.post("../../jsp/doAddChatPerson.jsp",
                 {"to":$("#userId").val()},
                 function(data, status, xhr){
-                	alert("a");
                     // location.reload();
                 })
     .error(function(data,status,e){
@@ -189,7 +177,19 @@ $(document).ready(function(){
 
 	})
 
+	$(document).on("click", ".id", function(){
+		$(".item-activated").removeClass("item-activated").addClass("item-deactivated");
+		$(this).parent().removeClass("item-deactivated").addClass("item-activated");
+		$(".target-message").addClass("hidden");
+
+		target=$(this).next().val();
+
+		$("#target-message-"+target).removeClass("hidden");
+		$("#toName").text(target);
+	})
+
 	function msgSend(){
+		alert(target);
 		var username=$.cookie("zhao_ren_token");
 		if(username !=null && username!=""){
 			if($("#message").val() != "" && $("#message").val() != null)
