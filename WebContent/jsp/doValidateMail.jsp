@@ -2,44 +2,32 @@
 <%@ page import="javax.mail.internet.*,javax.activation.*"%>
 <%@ page import="javax.servlet.http.*,javax.servlet.*" %>
 <%
-   String result;
-   // 收件人的电子邮件
-   String to = "502597562@qq.com";
-
-   // 发件人的电子邮件
-   String from = "user@kaitohh.com";
-
-   // 假设你是从本地主机发送电子邮件
-   String host = "kaitohh.com";
-
-   // 获取系统属性对象
-   Properties properties = System.getProperties();
-
-   // 设置邮件服务器
-   properties.setProperty("kaitohh.com", host);
-   properties.setProperty("mail.password", "zhao.ren.user");
-   // 获取默认的Session对象。
-   Session mailSession = Session.getDefaultInstance(properties);
-
-   try{
-      // 创建一个默认的MimeMessage对象。
-      MimeMessage message = new MimeMessage(mailSession);
-      // 设置 From: 头部的header字段
-      message.setFrom(new InternetAddress(from));
-      // 设置 To: 头部的header字段
-      message.addRecipient(Message.RecipientType.TO,
-                               new InternetAddress(to));
-      // 设置 Subject: header字段
-      message.setSubject("This is the Subject Line!");
-      // 现在设置的实际消息
-      message.setText("This is actual message");
-      // 发送消息
-      Transport.send(message);
-      result = "Sent message successfully....";
-   }catch (MessagingException mex) {
-      mex.printStackTrace();
-      result = "Error: unable to send message....";
-   }
+        // 配置文件对象  
+        Properties props = new Properties();  
+        // 邮箱服务地址  
+        props.put( "mail.smtp.host ", "kaitohh.com ");       
+        // 是否进行验证  
+        props.put("mail.smtp.auth", "true");  
+        // 创建一个会话  
+        Session s = Session.getInstance(props);  
+        // 打开调试，会打印与邮箱服务器回话的内容  
+        s.setDebug(true);  
+        Message message = new MimeMessage(s);  
+        // 如果发送人没有写对，那么会出现 javamail 550 Invalid User  
+        // 如果发送人写的和使用的帐号不一致，则会出现 553 Mail from must equal authorized user  
+        InternetAddress from = new InternetAddress("user@kaitohh.com");  
+        from.setPersonal(MimeUtility.encodeText("zhao.ren用户验证"));  
+        message.setFrom(from);  
+        InternetAddress to = new InternetAddress("502597562@qq.com");  
+        message.setRecipient(Message.RecipientType.TO, to);  
+        message.setSubject(MimeUtility.encodeText("[zhao.ren]请验证你的账户"));  
+        message.setText("您好，欢迎您注册zhao.ren，请点击以下链接验证您的账户 http://www.baidu.com");
+        message.setSentDate(new Date());  
+        Transport transport = s.getTransport("smtp");  
+        // 具体你使用邮箱的smtp地址和端口，应该到邮箱里面查看，如果使用了SSL，网易的端口应该是 465/994  
+        transport.connect("kaitohh.com", 25, "user@kaitohh.com", "zhao.ren.user");  
+        transport.sendMessage(message, message.getAllRecipients());  
+        transport.close();  
 %>
 <html>
 <head>
@@ -51,7 +39,7 @@
 </center>
 <p align="center">
 <% 
-   out.println("Result: " + result + "\n");
+   //out.println("Result: " + result + "\n");
 %>
 </p>
 </body>
