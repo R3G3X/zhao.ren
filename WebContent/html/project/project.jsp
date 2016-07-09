@@ -76,7 +76,7 @@
           <input id="pid" type="hidden" value="<%=pid%>">
           <div id="project-comment-reply">
             <div id="project-comment-reply-title">
-              <p>文明上网理性发言</p>
+              <p>文明上网&nbsp;&nbsp;&nbsp;&nbsp;理性发言</p>
             </div>
             <div id="project-comment-reply-box">
               <div id="project-comment-reply-content">

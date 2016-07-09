@@ -6,13 +6,14 @@ $(document).ready(function(){
 	
 	
 	$("#registerBtn").click(function(){
-		$("#login-header").addClass("hidden");
-		$("#register-header").removeClass("hidden");
-		$("#login-submit").addClass("hidden");
-		$("#register-submit").removeClass("hidden");
-		$("#registerBtn").addClass("hidden");
-		$("#loginBtn").removeClass("hidden");
-		$("#check-status").html("");
+		// $("#login-header").addClass("hidden");
+		// $("#register-header").removeClass("hidden");
+		// $("#login-submit").addClass("hidden");
+		// $("#register-submit").removeClass("hidden");
+		// $("#registerBtn").addClass("hidden");
+		// $("#loginBtn").removeClass("hidden");
+		// $("#check-status").html("");
+		location.href=getRootPath()+"/register.jsp";
 	})
 	$("#loginBtn").click(function(){
 		$("#login-header").removeClass("hidden");

@@ -20,7 +20,7 @@
 <!-- END-OF-MODAL-LOGIN -->
 
 <!-- MODAL-REGISTER -->
-<div id="modal-register" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+<!-- <div id="modal-register" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
   <div class="modal-body">
     <div id="mod-body" class="white">
       <h4 style="margin-left:15px;margin-top:13px;color:#6A6A6A">注册到ZHAO.REN</h4>
@@ -31,13 +31,13 @@
           <input id="usernameR" class="input-box" type="text" placeholder="USERNAME">
           <input id="passwordR" class="input-box" type="password" placeholder="PASSWORD">
         </div>
-        <a id="register-submit">注册</a>
+        <a id="register-submit">注册</a> -->
         <!-- <a id="register">没有账号？</a> -->
         <!-- <a id="find-pass">找回密码</a> -->
-      </div>
+<!--       </div>
     </div>
   </div>
-</div>
+</div> -->
 <!-- END-OF-MODAL-REGISTER -->
 
 

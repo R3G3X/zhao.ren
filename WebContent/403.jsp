@@ -9,7 +9,7 @@
 <%response.setStatus(401); %>
 </head>
 <script language="javascript">
-          alert("清先登录！");
+          alert("请先登录！");
           top.location='index.jsp';
    </script>
 <body>

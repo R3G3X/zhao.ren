@@ -17,7 +17,6 @@
 	<!-- NAVBAR -->
 	<%@ include file="/html/frame/frame_navbar.jsp"%>
 	<!-- END-OF-NAVBAR -->
-
 	<!-- CONTENT -->
 
 	<div id="container-content" class="grey-3">
@@ -32,7 +31,7 @@
 			</div>
 			<!-- END-OF-TITLE -->
 			<!-- SLIDE -->
-			<div class="white" style="height: 366px;">
+			<div class="white" style="height: 369px;">
 				<div class="shadow">
 					<div id="showcase"
 						style="background: url(<%=request.getContextPath()%>/img/background-img.jpg) no-repeat fixed center center/cover;">

@@ -36,6 +36,7 @@
   border:1px solid #CBCBCB;
   background-color:#fff;
   box-shadow:0px 0px 5px #959595;
+  z-index:100000;
 }
 #chatroom-left{
   float:left;

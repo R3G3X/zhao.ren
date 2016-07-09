@@ -22,8 +22,8 @@
       <a id="btn-minimize">—</a>
     </div>
     <%@ include file="/jsp/chat_msg.jsp"%>
-<!--     <div id="target-message" class="target-message hidden"> -->
-<!--     </div> -->
+      <div id="target-message" class="target-message hidden">
+      </div>
 <!--     <div id="target-message-1" class="target-message"> -->
 <!--     </div> -->
 <!--     <div id="target-message-2" class="target-message hidden"> -->

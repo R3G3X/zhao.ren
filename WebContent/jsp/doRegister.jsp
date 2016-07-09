@@ -9,16 +9,8 @@
 	db_connector db = new db_connector();
 	String username = request.getParameter("username");
 	String passwd = request.getParameter("password");
-	if (db.register(username, passwd)) {
-		Cookie cookie = new Cookie("zhao_ren_token", db.whois(username));
-		cookie.setMaxAge(3600);
-		cookie.setPath("/");
-		response.addCookie(cookie);
-		session.setAttribute("zhao_ren_token", db.whois(username));
-		response.setStatus(200);
-	} else {
-		response.setStatus(400);
-	}
+	String email = request.getParameter("email");
+	db.register(username, passwd,email);
 %>
 </head>
 <body>

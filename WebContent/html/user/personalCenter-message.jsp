@@ -23,7 +23,7 @@
     <div class="grey-3">
       <div class="container clearfix">
         <div class="white shadow">
-          <div id="content" class="clearfix" style="padding-top:70px;">
+          <div id="content" class="clearfix">
             <!-- CONTENT -->
             <div class="personal-center clearfix">
               <%@ include file="/html/frame/personalCenter-right.jsp"%>

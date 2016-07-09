@@ -19,7 +19,7 @@
   left:0;
   right:0;
   margin:auto;
-  margin-top:10px;
+  margin-top:0px;
   margin-bottom:10px;
   width:800px;
   /*min-height:560px;*/
@@ -420,6 +420,3 @@ text-align: left;
 color: #8b8d90;
 margin-top: 10px;
 }
-
-
-

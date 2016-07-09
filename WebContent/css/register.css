@@ -1,0 +1,37 @@
+.register-box{}
+.register-title{
+	padding-top:20px;
+	font-size:20px;
+	text-align:center;
+	text-shadow:1px 1px 2px #646464
+}
+.register-info-box{
+	padding-left:250px;
+	padding-top:px;
+}
+.check-statusR{}
+#usernameR{
+	width:300px;
+	margin-bottom:10px;
+}
+#passwordR{
+	width:300px;
+	margin-bottom:10px;
+}
+#pass-confirmR{
+	width:300px;
+	margin-bottom:10px;
+}
+#emailR{
+	width:300px;
+	margin-bottom:10px;
+}
+#register-submitR{
+	text-align:center;
+	color:#9B9B9B;
+}
+#register-submitR:hover{
+	cursor:pointer;
+	color:#000000;
+	text-decoration:none;
+}

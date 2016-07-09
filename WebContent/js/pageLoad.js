@@ -1,6 +1,8 @@
   $(document).ready(function(){
-    $("#container-content").css("min-height",$(window).height()-$("#bottom").height());
+    $("#container-content").css("min-height",$(window).height()-$("#bottom").height()-$(".select-type").height()-$(".navbar").height());
     $("#content").css("min-height",$(window).height()-$("#bottom").height()-50);
+    $(".register-box").parent().css("min-height",$(window).height()-$("#bottom").height()-$(".select-type").height()-$(".navbar").height());
+
     var t = $(window).scrollTop();
     $(window).scrollTop(0);
     $("img").each(function(){
