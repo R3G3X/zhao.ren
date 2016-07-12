@@ -23,5 +23,5 @@ $(document).ready(function(){
     var cycle = $("#cycle>.sort-list-item-active").attr("id");
     var loc ="projectlist.jsp?pages=1&s="+loc+"&method="+method+"&crew="+crew+"&cycle="+cycle;
     location.href = loc;
-  }"?"?"????"{}
+  }
 })

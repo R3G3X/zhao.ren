@@ -88,7 +88,7 @@
       <ul class="select-type-list">
         <li class="select-type-list-item">
           <div id="title-line-d"></div>
-          <a class="select-item" href="../../../zhao.ren/html/projectlist/projectlist.jsp?pages=1&s=&method=visits,id&crew=1000&cycle=1001">所有项目</a>
+          <a class="select-item" href="<%=request.getContextPath()%>/html/projectlist/projectlist.jsp?pages=1&s=&method=visits,id&crew=1000&cycle=1001">所有项目</a>
         </li>
         <li class="select-type-list-item">
           <div id="title-line-d"></div>

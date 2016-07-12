@@ -81,17 +81,17 @@ $(document).ready(function(){
 
     function goTo(a){
         var loc = encodeURIComponent(encodeURIComponent(a));
-            loc ="../../../zhao.ren/html/projectlist/projectlist.jsp?pages=1&s="+loc;
+            loc =getRootPath()+"/html/projectlist/projectlist.jsp?pages=1&s="+loc;
             loc = loc +"&method=visits,id&crew=1000&cycle=1001";
         document.location = loc;
     }
     function goToCycle(a){
-        var loc ="../../../zhao.ren/html/projectlist/projectlist.jsp?pages=1&s=";
+        var loc =getRootPath()+"/html/projectlist/projectlist.jsp?pages=1&s=";
         loc = loc +"&method=visits,id&crew=1000&cycle="+a;
         document.location = loc;
     }
     function goToCrew(a){
-        var loc ="../../../zhao.ren/html/projectlist/projectlist.jsp?pages=1&s=";
+        var loc =getRootPath()+"/html/projectlist/projectlist.jsp?pages=1&s=";
         loc = loc +"&method=visits,id&crew="+a+"&cycle=1001";
         document.location = loc;
     }
