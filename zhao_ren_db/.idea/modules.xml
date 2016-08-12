@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/zhao.ren.iml" filepath="$PROJECT_DIR$/zhao.ren.iml" />
+      <module fileurl="file://$PROJECT_DIR$/zhao_ren_db.iml" filepath="$PROJECT_DIR$/zhao_ren_db.iml" />
     </modules>
   </component>
 </project>
