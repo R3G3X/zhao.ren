@@ -37,14 +37,29 @@ public class db_connector {
 		String sql = "SELECT password FROM user WHERE username = \'" + username + "\';";
 		String passDb = getSingleQuery(sql);
 		String passCur = Hash.encode(username, password);
-		return passDb.equals(passCur);
+		sql = "select status from user where username = '"+ username+"'";
+		String status = getSingleQuery(sql);
+		if(status.equals("0") && passDb.equals(passCur))
+			return true;
+		else
+			return false;
 	}
 
-	public boolean register(String username, String password) throws Exception {
+	public boolean register(String username, String password, String email) throws Exception {
 		String code = Hash.encode(username, password);
 		String sql = String.format(
-				"INSERT INTO user(username,password,avatar) VALUES (\"%s\",\"%s\",concat((floor(rand()*8)+1),'.jpg'))",
-				username, code);
+				"INSERT INTO user(username,password,email,avatar,status) VALUES (\"%s\",\"%s\",\"%s\",concat((floor(rand()*8)+1),'.jpg'),\"%d\")",
+				username, code, email, 1);
+		System.out.println(sql);
+		return update(sql) == 1;
+	}
+
+	public String mail(String username, String password) throws Exception{
+		return Hash.encode(username,password);
+	}
+
+	public boolean confirm(String username, String Hash) throws Exception{
+		String sql = String.format("update user set status = 0 where username = '%s' and password = '%s'",username,Hash);
 		return update(sql) == 1;
 	}
 
@@ -65,6 +80,7 @@ public class db_connector {
 		else
 			return "";
 	}
+
 
 	ResultSet query(String sql) throws SQLException {
 		Statement statement = conn.createStatement();
@@ -122,15 +138,15 @@ public class db_connector {
 		return query(sql);
 	}
 
-	public ResultSet project_list(int pages, String words) throws SQLException {
+	public ResultSet project_list(int pages, String words, String method, String crew, String cycle) throws SQLException {
 		String[] word = words.split(" ");
 		String sql = String.format(
-				"SELECT * FROM project WHERE isFinshed = 0 AND (name LIKE \"%%%s%%\" OR intro LIKE \"%%%s%%\")",
+				"SELECT * FROM project WHERE isFinshed = 0 AND ((name LIKE \"%%%s%%\" OR intro LIKE \"%%%s%%\")",
 				word[0], word[0]);
 		for (int i = 1; i < word.length; i++) {
 			sql += String.format(" OR (name LIKE \"%%%s%%\" OR intro LIKE \"%%%s%%\")", word[i], word[i]);
 		}
-		sql += String.format(" ORDER BY id DESC LIMIT %d,%d;", (pages - 1) * NUMBER_PER_PAGE, NUMBER_PER_PAGE);
+		sql += String.format(") AND ((require_num < "+ crew +")) AND ((round_time < "+ cycle +")) ORDER BY "+ method +" DESC LIMIT %d,%d;", (pages - 1) * NUMBER_PER_PAGE, NUMBER_PER_PAGE);
 		System.out.println(sql);
 		return query(sql);
 	}
@@ -140,10 +156,10 @@ public class db_connector {
 		return (int) Math.ceil(Integer.parseInt(getSingleQuery(sql)) / 1.0 / NUMBER_PER_PAGE);
 	}
 
-	public int all_pages(String words) throws SQLException {
+	public int all_pages(String words, String crew, String cycle) throws SQLException {
 		String sql = String.format(
-				"SELECT COUNT(id) FROM project WHERE isFinshed = 0 AND (name LIKE \"%%%s%%\" OR intro LIKE \"%%%s%%\");",
-				words, words);
+				"SELECT COUNT(id) FROM project WHERE isFinshed = 0 AND ((name LIKE \"%%%s%%\" OR intro LIKE \"%%%s%%\")) AND ((require_num < \"s\")) AND ((round_time < \"s\")) ;",
+				words, words,crew,cycle);
 		return (int) Math.ceil(Integer.parseInt(getSingleQuery(sql)) / 1.0 / NUMBER_PER_PAGE);
 	}
 
@@ -178,13 +194,13 @@ public class db_connector {
 	}
 
 	public ResultSet user_space(int id) throws SQLException {
-		String sql = "SELECT *,curdate()-time+1 as diff FROM zhao_ren.user_space WHERE user_id = " + id
+		String sql = "SELECT *,DATEDIFF(curdate(),time) as diff FROM zhao_ren.user_space WHERE user_id = " + id
 				+ " ORDER BY diff LIMIT 0,15;";
 		return query(sql);
 	}
 
 	public boolean user_edit(int id, String username, String oldpass, String password, String realname, String intro,
-			String tech_intro, String phone, String email, String major) throws SQLException {
+							 String tech_intro, String phone, String email, String major) throws SQLException {
 		boolean changed = true;
 		if (oldpass.equals("") && password.equals("")) {
 			password = getSingleQuery("SELECT password FROM user WHERE id = " + id);
@@ -386,7 +402,7 @@ public class db_connector {
 	}
 
 	public boolean project_info_edit(int id, int pid, String name, String intro, int require_num, int round_time,
-			String detail) {
+									 String detail) {
 		try {
 			if (require_num <= 1 || founder_of_project(pid) != id) return false;
 			String sql = String.format(
@@ -477,6 +493,7 @@ public class db_connector {
 
 	public static void main(String[] args) throws Exception {
 		db_connector db = new db_connector();
+		db.project_list(1, "c++", "visits,id", "100000", "10000");
 
 	}
 }
