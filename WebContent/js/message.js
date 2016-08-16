@@ -102,7 +102,14 @@ $(document).ready(function(){
 
 	$('#message').keydown(function(e){
     if(e.keyCode==13 && !e.ctrlKey){
-    	var selectText = document.selection.createRange();
+		var selectText=document.selection.createRange();
+		// if (window.getSelection) {
+		// 	selectText =window.getSelection();
+		// } else if (document.getSelection) {
+		// 	selectText =document.getSelection();
+		// } else if (document.selection) {
+		// 	selectText =document.selection.createRange();
+		// }
 			if(selectText){
 		  	if(selectText.text.length > 0)
   				selectText.text += "\r\n";
@@ -112,9 +119,9 @@ $(document).ready(function(){
 			}
     }else if(e.keyCode == 13 && e.ctrlKey){
 			msgSend();
-		}else{
-			$("#message").attr("placeholder","")
-		}
+	}else{
+		$("#message").attr("placeholder","")
+	}
   });
 	$("#btn-chat").click(function(){
 		$(this).addClass("hidden");
@@ -208,7 +215,8 @@ $(document).ready(function(){
 	function msgSend(){
 		var username=$.cookie("zhao_ren_token");
 		if(username !=null && username!=""){
-			if($("#message").val() != "" && $("#message").val() != null)
+			var str = $.trim($("#message").val());
+			if(str != "" && str != null)
 				send(username,target,$("#message").val());
 			else
 				$("#message").attr("placeholder","消息不能为空");
