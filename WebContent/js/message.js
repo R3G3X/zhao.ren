@@ -102,11 +102,21 @@ $(document).ready(function(){
 
 	$('#message').keydown(function(e){
     if(e.keyCode==13 && !e.ctrlKey){
+		event.returnValue = false;
 		msgSend();
 		$("#message").val("");
     }else if(e.keyCode == 13 && e.ctrlKey){
-    	var str = $("#message").val().toString();
-		$("#message").val(str + "\r");
+		var e = document.getElementById("message");
+		if(document.selection){
+			var range = document.selection.createRange();
+			range.text = "\r";
+		}
+		if(document.getSelection)
+		{
+			var start = e.selectionStart;
+			var end = e.selectionEnd;
+			e.value = e.value.substr(0, start) +"\r" + e.value.substring(end, e.value.length);
+		}
 	}else{
 		$("#message").attr("placeholder","")
 	}
@@ -207,8 +217,10 @@ $(document).ready(function(){
 			if(str != "" && str != null){
 				send(username,target,$("#message").val());
 				$("#message").val("");
-			}else
+			}else{
+				$("#message").val("");
 				$("#message").attr("placeholder","消息不能为空");
+			}
 		}else{
 			alert("请登录");
 		}

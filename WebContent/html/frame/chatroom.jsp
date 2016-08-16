@@ -33,7 +33,7 @@
     <div id="message-input">
       <textarea id="message"></textarea>
       <a id="btn-send">发送</a>
-      <p id="alert">ctrl + enter 发送</p>
+      <p id="alert">ctrl + enter 回车</p>
     </div>
   </div>
 </div>
