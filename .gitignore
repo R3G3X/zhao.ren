@@ -6,7 +6,18 @@
 # Package Files # 
 *.war
 *.ear
+workspace.xml
 
 # virtual machine crash logs, see http://www.java.com/en/download/help/error_hotspot.xml
 hs_err_pid*
 /build/
+.DS_Store
+.idea/.DS_Store
+.idea/artifacts/
+WebContent/.DS_Store
+node_modules/.DS_Store
+node_modules/ws/.DS_Store
+zhao_ren_db/.DS_Store
+zhao_ren_db/bin/.DS_Store
+zhao_ren_db/bin/zhao_ren_db/
+zhao_ren_db/src/.DS_Store
