@@ -118,11 +118,11 @@ $(document).ready(function(){
   });
 	$("#btn-chat").click(function(){
 		$(this).addClass("hidden");
-		$("#chatroom").removeClass("hidden");
+		$("#chatroom").css("visibility","visible");
 	})
 	$("#btn-minimize").click(function(){
 		$("#btn-chat").removeClass("hidden");
-		$("#chatroom").addClass("hidden");
+		$("#chatroom").css("visibility","hidden");
 	})
 	$("#user-Message>a").click(function(){
 		var to = $("#userID").val();
@@ -162,7 +162,7 @@ $(document).ready(function(){
 			$("#target-message-"+target).removeClass("hidden");
 			$("#toName").text($(".item-activated>.id").text());
 		$("#btn-chat").addClass("hidden");
-		$("#chatroom").removeClass("hidden");
+		$("#chatroom").css("visibility","hidden");
 	})
 
 	$(document).on("click", ".id", function(){

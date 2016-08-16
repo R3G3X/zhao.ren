@@ -3,7 +3,7 @@
 <!-- CHATROOM -->
 <a id="btn-chat" class="hidden">私信聊天</a>
 
-<div id="chatroom" class="hidden">
+<div id="chatroom" style="visibility:hidden;">
   <div id="chatroom-left">
     <div id="chatroom-left-title">
       <p>私信聊天</p>
