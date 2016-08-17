@@ -23,7 +23,7 @@ wss.on('connection', function(ws) {
 				for (var i=0;i<offlineMsg[clientId].length;i++) {
 					ws.send(JSON.stringify(offlineMsg[clientId][i]));
 				}
-				offlineMsg[clientId] = null;
+				delete offlineMsg[clientId];
 			}
 			console.log(Object.keys(clientList));
 		} else if (data.cmd == 'msg') {
@@ -36,7 +36,7 @@ wss.on('connection', function(ws) {
 					break;
 				}
 			}
-//			var w = clientList[fromClientId];
+
 			var w = ws;
 			if (!w) {
 				console.log("ws empty");
@@ -48,12 +48,12 @@ wss.on('connection', function(ws) {
 				timestamp: Date.parse(new Date())
 			}));
 			if (clientList[toClientId]) {
-				console.log('send msg to client');	
-				w = clientList[toClientId];		
+				console.log('send msg to client');
+				w = clientList[toClientId];
 				w.send(JSON.stringify({
 				fromClientId: fromClientId,
 				msg: data.msg,
-				timestamp: Date.parse(new Date()) 
+				timestamp: Date.parse(new Date())
 				}));
 
 			} else {
@@ -65,7 +65,7 @@ wss.on('connection', function(ws) {
 					msg: data.msg,
 					timestamp: Date.parse(new Date())
 				});
-			} 
+			}
 
 		}
 	});
@@ -74,11 +74,10 @@ wss.on('connection', function(ws) {
 		var clients = Object.keys(clientList);
 		for (var i=0;i<clients.length;i++) {
 			if (clientList[clients[i]] == ws) {
-				clientList[clients[i]] = null;
+				delete clientList[clients[i]];
 				console.log(clients[i] + ' disconnect');
 			}
 		}
 	});
 
 });
-
