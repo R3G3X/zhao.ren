@@ -43,7 +43,7 @@
 	div += "<ul id=\"crew\" class=\"sort-list\"><li id=\"1000\" class=\"sort-list-item";
 	if (crew.equals("1000")){
 		div += " sort-list-item-active\"><a>全部人数</a></li><li id=\"3\" class=\"sort-list-item\"><a>2人</a></li><li id=\"5\" class=\"sort-list-item\"><a>5人以下</a></li><li id=\"10\" class=\"sort-list-item\"><a>10人以下</a></li></ul>";
-	}else if(crew.equals("3")){
+	}else if(crew.equals("2")){
 		div += "\"><a>全部人数</a></li><li id=\"3\" class=\"sort-list-item sort-list-item-active\"><a>2人</a></li><li id=\"5\" class=\"sort-list-item\"><a>5人以下</a></li><li id=\"10\" class=\"sort-list-item\"><a>10人以下</a></li></ul>";
 	}else if(crew.equals("5")){
 		div += "\"><a>全部人数</a></li><li id=\"3\" class=\"sort-list-item\"><a>2人</a></li><li id=\"5\" class=\"sort-list-item sort-list-item-active\"><a>5人以下</a></li><li id=\"10\" class=\"sort-list-item\"><a>10人以下</a></li></ul>";

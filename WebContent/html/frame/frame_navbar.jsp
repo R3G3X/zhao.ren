@@ -114,7 +114,7 @@
           <div id="title-line-d"></div>
           <a class="select-item">开发人数</a>
           <ul id="crew" class="select-type-secondary-list white hidden">
-            <li class="select-type-secondary-list-item"><a>2</a></li>
+            <li class="select-type-secondary-list-item"><a>3</a></li>
             <li class="select-type-secondary-list-item"><a>5</a></li>
             <li class="select-type-secondary-list-item"><a>10</a></li>
           </ul>

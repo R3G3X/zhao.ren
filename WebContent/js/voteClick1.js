@@ -21,7 +21,7 @@ $(document).ready(function(){
                 })
           .error(function(data,status,e){
               if(data.status == 403){
-                  alert("您已投过票")；
+                  alert("您已投过票");
             }
           })
           return;
@@ -45,7 +45,7 @@ $(document).ready(function(){
                   })
             .error(function(data,status,e){
               if(data.status == 403){
-                  alert("您已投过票")；
+                  alert("您已投过票");
             }
           })
           return;
