@@ -101,27 +101,35 @@ $(document).ready(function(){
 	})
 
 	$('#message').keydown(function(e){
-    if(e.keyCode==13 && !e.ctrlKey){
-			e.returnValue = false;
-		msgSend();
-		$("#message").val("");
-    }else if(e.keyCode == 13 && e.ctrlKey){
-			e.returnValue = false;
-		var obj = document.getElementById("message");
-		if(document.selection){
-			var range = document.selection.createRange();
-			range.text = "\r";
+		var theEvent = window.event || e;
+		if(e.keyCode==13 && !e.ctrlKey){
+			// if(event.returnValue)
+			// 	event.returnValue = false;
+			// else
+			theEvent.returnValue = false;
+			theEvent.preventDefault();
+			msgSend();
+		}else if(e.keyCode == 13 && e.ctrlKey){
+			// if(event.returnValue)
+			// 	event.returnValue = false;
+			// else
+			theEvent.returnValue = false;
+			theEvent.preventDefault();
+			var obj = document.getElementById("message");
+			if(document.selection){
+				var range = document.selection.createRange();
+				range.text = "\r";
+			}
+			if(document.getSelection)
+			{
+				var start = obj.selectionStart;
+				var end = obj.selectionEnd;
+				obj.value = obj.value.substr(0, start) +"\r" + obj.value.substring(end, obj.value.length);
+			}
+		}else{
+			$("#message").attr("placeholder","")
 		}
-		if(document.getSelection)
-		{
-			var start = obj.selectionStart;
-			var end = obj.selectionEnd;
-			obj.value = obj.value.substr(0, start) +"\r" + obj.value.substring(end, obj.value.length);
-		}
-	}else{
-		$("#message").attr("placeholder","")
-	}
-  });
+	  });
 	$("#btn-chat").click(function(){
 		$(this).addClass("hidden");
 		$("#chatroom").css("visibility","visible");
