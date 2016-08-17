@@ -101,7 +101,7 @@ $(document).ready(function(){
 	})
 
 	$('#message').keydown(function(e){
-		var theEvent = window.event || e;
+		var theEvent = event || e;
 		if(e.keyCode==13 && !e.ctrlKey){
 			// if(event.returnValue)
 			// 	event.returnValue = false;
