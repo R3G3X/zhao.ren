@@ -107,16 +107,16 @@ $(document).ready(function(){
 		$("#message").val("");
     }else if(e.keyCode == 13 && e.ctrlKey){
 			e.returnValue = false;
-		var e = document.getElementById("message");
+		var obj = document.getElementById("message");
 		if(document.selection){
 			var range = document.selection.createRange();
 			range.text = "\r";
 		}
 		if(document.getSelection)
 		{
-			var start = e.selectionStart;
-			var end = e.selectionEnd;
-			e.value = e.value.substr(0, start) +"\r" + e.value.substring(end, e.value.length);
+			var start = obj.selectionStart;
+			var end = obj.selectionEnd;
+			obj.value = obj.value.substr(0, start) +"\r" + obj.value.substring(end, obj.value.length);
 		}
 	}else{
 		$("#message").attr("placeholder","")
