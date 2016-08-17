@@ -102,10 +102,11 @@ $(document).ready(function(){
 
 	$('#message').keydown(function(e){
     if(e.keyCode==13 && !e.ctrlKey){
-		event.returnValue = false;
+			event.returnValue = false;
 		msgSend();
 		$("#message").val("");
     }else if(e.keyCode == 13 && e.ctrlKey){
+			event.returnValue = false;
 		var e = document.getElementById("message");
 		if(document.selection){
 			var range = document.selection.createRange();
