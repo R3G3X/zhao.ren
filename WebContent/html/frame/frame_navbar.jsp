@@ -24,7 +24,7 @@
     <img src="<%=request.getContextPath()%>/avatar/1.jpg" alt="">
   </div>
 
-  <nav class="navbar navbar-inverse navbar-fixed-top grey-1" role="navigation">
+  <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
     <!-- NAVBAR-HEADER -->
     <div class="navbar-header">
       <!-- FOR-SMALLER -->
@@ -42,7 +42,7 @@
     </div>
     <!-- END-OF-NAVBAR-HEADER -->
 
-    <div class="collapse navbar-collapse" id="example-navbar-collapse">
+    <div class="collapse navbar-collapse grey-0" id="example-navbar-collapse">
       <!-- NAVBAR-LEFT -->
       <ul class="nav navbar-nav navbar-left">
 
@@ -57,7 +57,7 @@
 
       <!-- NAVBAR-RIGHT -->
 
-      <ul class="nav navbar-nav navbar-right">
+      <ul class="nav navbar-nav navbar-right" style="margin-right:150px;">
         <li><a id="project-add-btn" class="hidden"
                href="<%=request.getContextPath()%>/html/project/projectCreate.jsp"><span
                 class="glyphicon glyphicon-edit" aria-hidden="true">
