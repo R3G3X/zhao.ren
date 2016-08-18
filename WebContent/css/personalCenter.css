@@ -365,19 +365,19 @@
 }
 .personal-center-message-item{
   float:left;
-  height:69px;
+  height:71px;
   width:380px;
   border-right:1px solid #C8C8C8;
 }
 .personal-center-message-message{
-  height:70px;
+  height:72px;
   padding-top: 15px;
   padding-left: 23px;
 }
 .personal-center-message-agreement{
   float:left;
   width:148px;
-  height:70px;
+  height:71px;
   line-height:70px;
   text-align:center;
 }
