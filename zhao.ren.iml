@@ -39,5 +39,6 @@
         <SOURCES />
       </library>
     </orderEntry>
+    <orderEntry type="library" name="zhao_ren_db" level="application" />
   </component>
 </module>
