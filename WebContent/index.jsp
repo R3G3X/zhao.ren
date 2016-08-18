@@ -31,7 +31,7 @@
 			</div>
 			<!-- END-OF-TITLE -->
 			<!-- SLIDE -->
-			<div class="white" style="height: 369px;">
+			<div class="white" style="height: 371px;">
 				<div class="shadow">
 					<div id="showcase"
 						style="background: url(<%=request.getContextPath()%>/img/background-img.jpg) no-repeat fixed center center/cover;">

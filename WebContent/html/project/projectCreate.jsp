@@ -44,21 +44,12 @@
   <!-- NAVBAR -->
   <%@ include file="/html/frame/frame_navbar.jsp"%>
   <!-- END-OF-NAVBAR -->
-  <!-- 项目名称
-技术需求
-人数需求
-开发周期
-项目简介
-详细介绍 -->
-
-
-
 
   <!-- CONTENT -->
   <div id="container-content">
     <!-- PUT-YOUR-CODE-BELOW -->
     <div class="grey-3" style="min-height: 830px;">
-      <div class="container white shadow" style="min-height: 830px;padding:70px;width:1140px;">
+      <div class="container white shadow" style="min-height: 830px;padding:70px;padding-top:20px;padding-bottom:50px;width:1140px;">
         <div class="project-create">
           <div class="project-create-box">
             <h3>创建项目</h3>

@@ -10,7 +10,9 @@
   padding-right:150px;
   padding-top:70px;
   padding-bottom:120px;
-  text-shadow:1px 1px 1px #A5A5A5;
+}
+#markdown h1,h2,h3,h4,h5,h6{
+	text-shadow: 1px 1px 1px #c2c2c2;
 }
 #markdown img{
   width:100%;
@@ -214,7 +216,7 @@ ul.action li{
 	padding:20px;
 	float:left;
 	width:140px;
-	height:100%px;
+	height:100px;
 	background-color:#EEEEEE;
 	text-align:center;
 }
@@ -231,7 +233,6 @@ ul.action li{
 	border-left:none;
 	min-height:150px;
 	width:696px;
-	min-width:;
 	float:left;
 }
 .project-comment-content-title>p{
