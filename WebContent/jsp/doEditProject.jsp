@@ -1,6 +1,6 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
   pageEncoding="UTF-8"%>
-<%@ include file="/jsp/doLogin_required.jsp"%>
+<%@ include file="doLogin_required.jsp"%>
 <%
 	//int id, int pid, String name, String intro, int require_num, int round_time,
 	//String detail
@@ -10,11 +10,13 @@
 	String time = request.getParameter("time");
 	String intro = request.getParameter("intro");
 	String detail = request.getParameter("detail");
+	String techs = request.getParameter("techs");
 	detail = detail.replace("\n", "\\\\n");
 	detail = detail.replace("\"", "\\\\\\\"");
 	try {
 		if (db.project_info_edit(id, Integer.parseInt(pid), name, intro, Integer.parseInt(num),
 				Integer.parseInt(time), detail)) {
+			db.add_project_tech(Integer.valueOf(pid), techs);
 			response.setStatus(200);
 		} else {
 			response.setStatus(400);

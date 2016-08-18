@@ -40,5 +40,6 @@
       </library>
     </orderEntry>
     <orderEntry type="library" name="zhao_ren_db" level="application" />
+    <orderEntry type="library" name="servlet-api" level="application" />
   </component>
 </module>
