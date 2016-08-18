@@ -382,3 +382,7 @@
 .select-item:hover{
   cursor:pointer;
 }
+#logo{
+  height:60px;
+  margin-top:-5px
+}

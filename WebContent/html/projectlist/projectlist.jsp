@@ -28,7 +28,7 @@
 							<div id="search-box-inside">
 								<input id="search-box-input" type="text" name="" value="">
 							</div>
-							<div id="search-box-btn" href="" title="">搜 索</div>
+							<div id="search-box-btn" href="" title="" style="font-size:18px">搜 索</div>
 						</div>
 
 						<div id="description">

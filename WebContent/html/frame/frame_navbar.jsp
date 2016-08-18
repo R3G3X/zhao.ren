@@ -37,7 +37,7 @@
         </button>
         <!-- END-OF-FOR-SMALLER -->
         <a class="navbar-brand" id="logo"
-          href="<%=request.getContextPath()%>/index.jsp"><span>ZHAO.REN</span></a>
+          href="<%=request.getContextPath()%>/index.jsp"><img id="logo" src="<%=request.getContextPath()%>/img/logo.png" alt=""></a>
       </div>
       <!-- END-OF-NAVBAR-HEADER -->
 

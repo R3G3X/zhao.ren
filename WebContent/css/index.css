@@ -3,15 +3,19 @@
   margin-bottom:50px
 }
 #title-title{
+  font-family: "Microsoft YaHei"
   margin-bottom:0px;
   font-weight:bolder;
   text-shadow:1px 1px 5px #d5d5d5;
 }
 .content-item p{
-  text-shadow:2px 2px 3px #d5d5d5;
+  font-family: "Microsoft YaHei"
+  /*text-shadow:2px 2px 3px #d5d5d5;*/
 }
 .content-item h3{
-  text-shadow:2px 2px 3px #d5d5d5;
+  font-weight:bold;
+  font-family: "Microsoft YaHei"
+  /*text-shadow:2px 2px 3px #d5d5d5;*/
 }
 #content{
   padding-bottom:50px;

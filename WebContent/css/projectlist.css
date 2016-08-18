@@ -109,11 +109,12 @@
   padding-right:20px;
   padding-top:15px;
   border-bottom:1px solid #B8B8B8;
+  font-family: "Microsoft YaHei"
 }
 .project-list-info:hover{cursor:pointer;}
 .project-list-info>h3{
   margin:0px;
-  margin-bottom:5px;
+  margin-bottom:10px;
   line-height:1em;
   font-weight:bold;
   cursor:default;
