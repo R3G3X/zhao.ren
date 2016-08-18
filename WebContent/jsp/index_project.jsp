@@ -9,7 +9,7 @@
 	<div class="clearfix">
 		<div class="white clearfix">
 			<div id="content" class="clearfix index-content">
-				<h3 id="title-title">热门项目</h3>
+				<h3 id="title-title" style="font-family:Microsoft YaHei;margin-bottom:0px">热门项目</h3>
 				<%
 					ResultSet ret = db.index_project_qry();
 					while (ret.next()) {
