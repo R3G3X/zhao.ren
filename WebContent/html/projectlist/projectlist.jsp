@@ -25,8 +25,14 @@
 							id="numPerPage" /> <input type="hidden" id="target-course" />
 
 						<div id="search-box" class="clearfix">
-							<input id="search-box-input" type="text" name="" value="">
-							<div id="search-box-btn" href="" title="">搜索</div>
+							<div id="search-box-inside">
+								<input id="search-box-input" type="text" name="" value="">
+							</div>
+							<div id="search-box-btn" href="" title="">搜 索</div>
+						</div>
+
+						<div id="description">
+							按“;”生成标签  双击标签删除
 						</div>
 
 						<div id="content-width" class="clearfix">

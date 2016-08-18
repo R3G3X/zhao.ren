@@ -6,9 +6,11 @@
 */
 
 #preview{
-  text-shadow:1px 1px 1px #A5A5A5;
+  text-shadow:1px 1px 1px #d2d2d2;
   border:1px solid #E7E7E7;
   margin-bottom:60px;
+  padding: 5px;
+  min-height:100px;
 }
 #preview img{
   width:100%;
@@ -42,7 +44,7 @@ h6{
   text-align:center;
   font-weight:bold;
   margin-bottom:50px;
-  text-shadow:1px 1px 1px #A5A5A5;
+  text-shadow:1px 1px 1px #d2d2d2;
 }
 .project-create-info{
   margin-top:20px;
@@ -53,7 +55,6 @@ h6{
 }
 .project-create-info-view{
   margin-top:20px;
-  margin-bottom:;
   color:#4C4C4C;
   font-size:15px;
   font-weight:bold;
@@ -119,8 +120,4 @@ h6{
   margin-left:auto;
   margin-right:auto;
   margin-top:20px;
-}
-#preview{
-  padding: 5px;
-  min-height:100px;
 }
