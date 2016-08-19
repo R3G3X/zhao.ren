@@ -7,6 +7,7 @@ $(document).ready(function() {
 			"num" : $("#projectMenRequired").val(),
 			"time" : $("#projectDevelopTime").val(),
 			"intro" : $("#projectDescribe").val(),
+			"techs" : $("#projectTech").val(),
 			"detail" : $("#projectDescribeInDetails").val(),
 		}, function(data, status, xhr) {
 			alert("添加成功");
@@ -23,6 +24,7 @@ $(document).ready(function() {
 			"num" : $("#projectMenRequired").val(),
 			"time" : $("#projectDevelopTime").val(),
 			"intro" : $("#projectDescribe").val(),
+			"techs" : $("#projectTech").val(),
 			"detail" : $("#projectDescribeInDetails").val(),
 		}, function(data, status, xhr) {
 			alert("修改成功");

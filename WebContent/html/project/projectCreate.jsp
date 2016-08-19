@@ -53,11 +53,9 @@
         <div class="project-create">
           <div class="project-create-box">
             <h3>创建项目</h3>
-            <p class="project-create-info-grey">*项目类型（BETA中不提供此项选择）</p>
             <p class="project-create-info">*项目名称</p>
             <input class="project-create-input-short" type="text"
               id="projectname" value="" />
-            <p class="project-create-info-grey">*技术需求（BETA中不提供此项选择）</p>
             <!-- 						<div>
 							<a href="#" class="project-create-info-skill"><span id="0"
 								class="require label label-default">JAVA</span></a> <a href="#"
@@ -80,6 +78,8 @@
             <p class="project-create-info">*项目简介</p>
             <input class="project-create-input-short" type="text"
               id="projectDescribe" value="" />
+            <p class="project-create-info">技术需求(输入','生成标签)</p>
+            <input class="project-create-input-short" type="text"  id="projectTech" value="" />
             <p class="project-create-info">详细介绍（方便队友更方便地了解你的需求）[支持Markdown语法]</p>
             <textarea class="project-create-input-long"
               oninput="this.editor.update()"
@@ -88,21 +88,21 @@
             <p class="project-create-info-view">详细介绍预览</p>
             <div id="preview"></div>
             <script type="text/javascript">
-													function Editor(input,
-															preview) {
-														this.update = function() {
-															preview.innerHTML = markdown
-																	.toHTML(input.value);
-														};
-														input.editor = this;
-														this.update();
-													}
-													new Editor(
-															document
-																	.getElementById("projectDescribeInDetails"),
-															document
-																	.getElementById("preview"));
-												</script>
+                function Editor(input,
+                        preview) {
+                    this.update = function() {
+                        preview.innerHTML = markdown
+                                .toHTML(input.value);
+                    };
+                    input.editor = this;
+                    this.update();
+                }
+                new Editor(
+                        document
+                                .getElementById("projectDescribeInDetails"),
+                        document
+                                .getElementById("preview"));
+            </script>
           </div>
           <div class="project-create-btn-div">
             <a class="project-create-btn project-create-post"
