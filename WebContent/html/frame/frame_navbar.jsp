@@ -57,7 +57,7 @@
 
       <!-- NAVBAR-RIGHT -->
 
-      <ul class="nav navbar-nav navbar-right" style="margin-right:150px;">
+      <ul class="nav navbar-nav navbar-right" style="margin-right:6%;">
         <li><a id="project-add-btn" class="hidden"
                href="<%=request.getContextPath()%>/html/project/projectCreate.jsp"><span
                 class="glyphicon glyphicon-edit" aria-hidden="true">
