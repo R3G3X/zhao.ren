@@ -173,10 +173,10 @@ $(document).ready(function(){
 		}
 			target=to;
 
-			$("#target-message-"+target).removeClass("hidden");
-			$("#toName").text($(".item-activated>.id").text());
+		$("#target-message-"+target).removeClass("hidden");
+		$("#toName").text($(".item-activated>.id").text());
 		$("#btn-chat").addClass("hidden");
-		$("#chatroom").css("visibility","hidden");
+		$("#chatroom").css("visibility","visible");
 	})
 
 	$(document).on("click", ".id", function(){

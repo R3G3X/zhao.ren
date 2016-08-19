@@ -13,7 +13,7 @@ $(document).ready(function(){
         count --;
         return;
       }
-      if ($("#search-box-input").val().length > 10){
+      if ($("#search-box-input").val().length > 15){
         alert("标签太长");
         count --;
         return;
