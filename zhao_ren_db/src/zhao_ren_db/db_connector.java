@@ -132,6 +132,17 @@ public class db_connector {
         return query(sql);
     }
 
+    public String project_tech(int id) throws SQLException {
+        String sql = "SELECT * FROM project_tech WHERE project_id = " + id;
+        String techs = "";
+        ResultSet set = query(sql);
+        while (set.next()) {
+            techs += "," + set.getString("tech");
+        }
+        techs = techs.substring(1);
+        return techs;
+    }
+
     public ResultSet project_list(int pages) throws SQLException {
         String sql = String.format("SELECT * FROM project WHERE isFinshed = 0 ORDER BY id DESC LIMIT %d,%d",
                 (pages - 1) * NUMBER_PER_PAGE, NUMBER_PER_PAGE);
@@ -494,7 +505,7 @@ public class db_connector {
     }
 
     public boolean add_project_tech(int id, String tech) {
-        if (tech == null||tech.equals("")) return true;
+        if (tech == null || tech.equals("")) return true;
         String[] techs = tech.split(",");
         try {
             update("DELETE FROM project_tech WHERE project_id=" + id);
@@ -518,6 +529,6 @@ public class db_connector {
     public static void main(String[] args) throws Exception {
         db_connector db = new db_connector();
         //db.project_list(1, "c++", "visits,id", "100000", "10000");
-        db.add_project_tech(34, "c++,PhP,jsp");
+        System.out.println(db.project_tech(34));
     }
 }

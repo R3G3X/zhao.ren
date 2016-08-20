@@ -11,6 +11,7 @@
 	String time = "";
 	String intro = "";
 	String detail = "";
+	String techs = "";
 	int pid = -1;
 	ResultSet pret = null;
 	try {
@@ -26,6 +27,7 @@
 		time = pret.getString("round_time");
 		intro = pret.getString("intro");
 		detail = pret.getString("detail");
+		techs = db.project_tech(pid);
 		db.add_visits(pid);
 	}
 %>
