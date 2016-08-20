@@ -1,6 +1,3 @@
-/**
- * Created by zhao.ren on 2016/4/13.
- */
 var WebSocketServer = require('ws').Server;
 var wss = new WebSocketServer({port:8000});
 var mysql = require('mysql');
@@ -35,33 +32,46 @@ wss.on('connection', function(ws) {
 			var clientId = data.clientId;
 			clientList[clientId] = ws;
 			ws.clientId = clientId;
-			
-			conn.query(
-				'select * from user_chat where user_id = "' + clientId 
-+ '" or from_id = "' + clientId + '" limit 10;', function(err, result) {
-				if (err) {
-					console.log(err);
-				}
-				for(var num in result) {
-					var history = result[num];
-				  var jsonData = {
-						msg: history.content,
-						timestamp: history.time
+			var peerList = [];
+			conn.query('select user_id from user_chat_list where to_id = "'+clientId+'"',
+				function(err, result) {
+					console.log(result);
+					if (err) {
+						console.log(err);
 					}
-					if (clientId == history.user_id){
-						jsonData.fromClientId = history.from_id;
-					} else {
-						jsonData.toClientId = history.user_id;
+					for(var num in result) {
+						peerList.push(result[num].user_id);
+					};
+					for (var i=0;i<peerList.length;i++) {
+						conn.query(
+							'select * from user_chat where user_id = "' + clientId
+							+ '" and from_id = "' + peerList[i] + '" or user_id = "' + peerList[i]
+							+ '" and from_id = "' + clientId
+							+ '" order by time DESC limit 10;', function(err, result) {
+								if (err) {
+									console.log(err);
+								}
+								for(var num in result) {
+									var history = result[result.length-1-num];
+									var jsonData = {
+										msg: history.content,
+										timestamp: history.time
+									};
+									if (clientId == history.user_id){
+										jsonData.fromClientId = history.from_id;
+									} else {
+										jsonData.toClientId = history.user_id;
+									}
+									try {
+										ws.send(JSON.stringify(jsonData));
+									} catch (error) {
+										console.log(error);
+									}
+									console.log(jsonData);
+								}
+							});
 					}
-					try {
-						ws.send(JSON.stringify(jsonData));
-					} catch (error) {
-						console.log(error);
-					}
-					console.log(jsonData);
-				}
-			});
-
+				});
 			console.log(Object.keys(clientList));
 		} else if (data.cmd == 'msg') {
 			var toClientId = data.toClientId;
@@ -109,13 +119,8 @@ wss.on('connection', function(ws) {
 	});
 
 	ws.on("close", function(e) {
-		var clients = Object.keys(clientList);
-		for (var i=0;i<clients.length;i++) {
-			if (clientList[clients[i]] == ws) {
-				delete clientList[clients[i]];
-				console.log(clients[i] + ' disconnect');
-			}
-		}
+		console.log(ws.clientId + ' disconnect');
+		delete clientList[ws.clientId];
 	});
 });
 
