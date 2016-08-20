@@ -19,13 +19,13 @@
   	String ava_path = request.getContextPath() + "/avatar/" + info.getString("avatar");
   %>
   <!-- CONTENT -->
-  <div id="container-content">
+  <div id="container-content" class="grey-2">
     <!-- PUT-YOUR-CODE-BELOW -->
     <!-- BASICS -->
-    <div class="grey-2">
+    <div>
       <div class="container">
         <div class="white shadow">
-          <div class="clearfix box" style="background: url(../../img/background-img.jpg) no-repeat fixed center center/cover;padding-top:70px;">
+          <div class="clearfix box" style="background: url(../../img/background-img.jpg) no-repeat fixed center center/cover;padding-top:10px;">
             <div id="user-box">
               <a id="pic-edit" href="#"><img src="<%=ava_path%>"
                 class="img-circle big-avatar" /></a>

@@ -22,11 +22,11 @@
   <%
     t2 = "";
   %>
-  <div id="container-content">
-    <div class="grey-3">
+  <div id="container-content"  class="grey-3">
+    <div>
       <div class="container clearfix">
         <div class="white shadow">
-          <div id="content" class="clearfix">
+          <div id="content" style="padding-top:73px" class="clearfix">
             <!-- CONTENT -->
             <div class="personal-center clearfix">
               <%@ include file="/html/frame/personalCenter-right.jsp"%>
