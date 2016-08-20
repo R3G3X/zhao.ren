@@ -21,9 +21,13 @@ wss.on('connection', function(ws) {
 		var data = JSON.parse(m);
 
 		if (!data.cmd) {
-			ws.send(JSON.stringify({
-				error: 'cmdError'
-			}));
+			try {
+				ws.send(JSON.stringify({
+					error: 'cmdError'
+				}));
+			} catch(error) {
+				console.log(error);
+			}
 		} else if (data.cmd == 'login') {
 			if (!data.clientId) {
 				return;
@@ -49,7 +53,11 @@ wss.on('connection', function(ws) {
 					} else {
 						jsonData.toClientId = history.user_id;
 					}
-					ws.send(JSON.stringify(jsonData));
+					try {
+						ws.send(JSON.stringify(jsonData));
+					} catch (error) {
+						console.log(error);
+					}
 					console.log(jsonData);
 				}
 			});
@@ -66,11 +74,15 @@ wss.on('connection', function(ws) {
 				return;
 			}
 			var time = new Date().getTime();
-			w.send(JSON.stringify({
-				toClientId: toClientId,
-				msg: data.msg,
-				timestamp: time
-			}));
+			try{
+				w.send(JSON.stringify({
+					toClientId: toClientId,
+					msg: data.msg,
+					timestamp: time
+				}));
+			} catch(error) {
+				console.log(error);
+			}
 			conn.query(
 				'insert into user_chat(user_id, from_id, content, time) values('+toClientId+','+fromClientId+',"'+data.msg +'",from_unixtime('+time+'/1000));'
 				
@@ -83,12 +95,15 @@ wss.on('connection', function(ws) {
 			if (clientList[toClientId]) {
 				console.log('send msg to client');	
 				w = clientList[toClientId];		
-				w.send(JSON.stringify({
-					fromClientId: fromClientId,
-					msg: data.msg,
-					timestamp: Date.parse(new Date()) 
-				}));
-
+				try{
+					w.send(JSON.stringify({
+						fromClientId: fromClientId,
+						msg: data.msg,
+						timestamp: Date.parse(new Date()) 
+					}));
+				} catch (error) {
+					console.log(error);
+				}
 			}  
 		}
 	});
@@ -97,11 +112,10 @@ wss.on('connection', function(ws) {
 		var clients = Object.keys(clientList);
 		for (var i=0;i<clients.length;i++) {
 			if (clientList[clients[i]] == ws) {
-				clientList[clients[i]] = null;
+				delete clientList[clients[i]];
 				console.log(clients[i] + ' disconnect');
 			}
 		}
 	});
-
 });
 
