@@ -121,3 +121,28 @@ h6{
   margin-right:auto;
   margin-top:20px;
 }
+.tag-name{
+  margin-left:4px;
+  padding:2px;
+  float:left;
+  border:1px solid #989898;
+  background-color:#989898;
+  color:#fff;
+  line-height:100%;
+  margin-top:15px;
+  margin-bottom:15px;
+  moz-user-select: -moz-none;
+  -moz-user-select: none;
+  -o-user-select:none;
+  -khtml-user-select:none; /* you could also put this in a class */
+  -webkit-user-select:none;/* and add the CSS class here instead */
+  -ms-user-select:none;
+  user-select:none;
+}
+.clicked{
+  border:2px solid #D31919;
+  margin-top:14px;
+}
+.tag-name:hover{
+  cursor:default;
+}

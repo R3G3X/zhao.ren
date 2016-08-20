@@ -30,11 +30,6 @@
 							</div>
 							<div id="search-box-btn" href="" title="" style="font-size:18px">搜 索</div>
 						</div>
-
-						<div id="description">
-							按“;”生成标签  双击标签删除
-						</div>
-
 						<div id="content-width" class="clearfix">
 							<%@ include file="/jsp/project_list.jsp"%>
 						</div>
