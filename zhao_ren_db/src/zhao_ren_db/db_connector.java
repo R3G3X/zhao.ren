@@ -150,14 +150,40 @@ public class db_connector {
     }
 
     public ResultSet project_list(int pages, String words, String method, String crew, String cycle) throws SQLException {
-        String[] word = words.split(" ");
-        String sql = String.format(
-                "SELECT * FROM project WHERE isFinshed = 0 AND ((name LIKE \"%%%s%%\" OR intro LIKE \"%%%s%%\")",
-                word[0], word[0]);
+        int t = words.indexOf("[T]");
+        int w = words.indexOf("[W]");
+        String[] tech = null;
+        String[] word = null;
+        if (t == -1) {              // only words
+            word = words.split(" ");
+        } else if (w == -1) {       // only techs
+            words = words.substring(t + 3);
+            word = ("").split(" ");
+            tech = words.split(",");
+        } else {                    // both
+            String wo = words.substring(w + 3);
+            String te = words.substring(t + 3, w - 1);
+            word = wo.split(" ");
+            tech = te.split(",");
+        }
+        String sql =
+                "SELECT * " +
+                        "FROM project LEFT JOIN project_tech ON project.id = project_tech.project_id " +
+                        "WHERE isFinshed = 0 ";
+        if (t != -1) {
+            sql += String.format("AND (tech=\"%s\"", tech[0]);
+            for (int i = 1; i < tech.length; i++) {
+                sql += String.format(" OR tech=\"%s\"", tech[i]);
+            }
+            sql += ") ";
+        }
+        sql += String.format("AND ((name LIKE \"%%%s%%\" OR intro LIKE \"%%%s%%\")", word[0], word[0]);
         for (int i = 1; i < word.length; i++) {
             sql += String.format(" OR (name LIKE \"%%%s%%\" OR intro LIKE \"%%%s%%\")", word[i], word[i]);
         }
-        sql += String.format(") AND ((require_num <= " + crew + ")) AND ((round_time <= " + cycle + ")) ORDER BY " + method + " DESC LIMIT %d,%d;", (pages - 1) * NUMBER_PER_PAGE, NUMBER_PER_PAGE);
+        sql += String.format(") AND ((require_num <= " + crew + ")) AND ((round_time <= " + cycle + ")) " +
+                "GROUP BY id " +
+                "ORDER BY " + method + " DESC LIMIT %d,%d;", (pages - 1) * NUMBER_PER_PAGE, NUMBER_PER_PAGE);
         System.out.println(sql);
         return query(sql);
     }
@@ -526,9 +552,9 @@ public class db_connector {
         return true;
     }
 
+
     public static void main(String[] args) throws Exception {
         db_connector db = new db_connector();
-        //db.project_list(1, "c++", "visits,id", "100000", "10000");
-        System.out.println(db.project_tech(34));
+        db.project_list(1, "12 34", "visits,id", "1000", "5000");
     }
 }
