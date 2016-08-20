@@ -82,7 +82,9 @@
                     <input class="project-create-input-short" type="text"
                            id="projectDescribe" value=""/>
                     <p class="project-create-info">技术需求(输入','生成标签)</p>
-                    <input class="project-create-input-short" type="text" id="projectTech" value=""/>
+                    <div id="search-box-inside">
+                        <input class="project-create-input-short" id="search-box-input" type="text" name="" value="">
+                    </div>
                     <p class="project-create-info">详细介绍（方便队友更方便地了解你的需求）[支持Markdown语法]</p>
                     <textarea class="project-create-input-long"
                               oninput="this.editor.update()"
