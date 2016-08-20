@@ -9,6 +9,7 @@
 	String par = request.getParameter("pages");
 	keyword = request.getParameter("s");
 	String method = request.getParameter("method");
+	String tryMethod = '"'+ request.getParameter("method") + '"';
 	String crew = request.getParameter("crew");
 	String cycle = request.getParameter("cycle");
 	if (par != null) {
@@ -20,7 +21,7 @@
 	}
 	ResultSet set;
 	int all_pages;
-	if (keyword != null) {
+	if (keyword != null && keyword != "") {
 		//java.net.URLDncoder.decode(keyword,"utf-8");
 		//keyword = keyword.replace("\\\\u", "\\u");
 		String decode = URLDecoder.decode(keyword, "UTF-8");
@@ -42,13 +43,13 @@
 	}
 	div += "<ul id=\"crew\" class=\"sort-list\"><li id=\"1000\" class=\"sort-list-item";
 	if (crew.equals("1000")){
-		div += " sort-list-item-active\"><a>全部人数</a></li><li id=\"3\" class=\"sort-list-item\"><a>2人</a></li><li id=\"5\" class=\"sort-list-item\"><a>5人以下</a></li><li id=\"10\" class=\"sort-list-item\"><a>10人以下</a></li></ul>";
+		div += " sort-list-item-active\"><a>全部人数</a></li><li id=\"2\" class=\"sort-list-item\"><a>2人</a></li><li id=\"5\" class=\"sort-list-item\"><a>5人以下</a></li><li id=\"10\" class=\"sort-list-item\"><a>10人以下</a></li></ul>";
 	}else if(crew.equals("2")){
-		div += "\"><a>全部人数</a></li><li id=\"3\" class=\"sort-list-item sort-list-item-active\"><a>2人</a></li><li id=\"5\" class=\"sort-list-item\"><a>5人以下</a></li><li id=\"10\" class=\"sort-list-item\"><a>10人以下</a></li></ul>";
+		div += "\"><a>全部人数</a></li><li id=\"2\" class=\"sort-list-item sort-list-item-active\"><a>2人</a></li><li id=\"5\" class=\"sort-list-item\"><a>5人以下</a></li><li id=\"10\" class=\"sort-list-item\"><a>10人以下</a></li></ul>";
 	}else if(crew.equals("5")){
-		div += "\"><a>全部人数</a></li><li id=\"3\" class=\"sort-list-item\"><a>2人</a></li><li id=\"5\" class=\"sort-list-item sort-list-item-active\"><a>5人以下</a></li><li id=\"10\" class=\"sort-list-item\"><a>10人以下</a></li></ul>";
+		div += "\"><a>全部人数</a></li><li id=\"2\" class=\"sort-list-item\"><a>2人</a></li><li id=\"5\" class=\"sort-list-item sort-list-item-active\"><a>5人以下</a></li><li id=\"10\" class=\"sort-list-item\"><a>10人以下</a></li></ul>";
 	}else if(crew.equals("10")){
-		div += "\"><a>全部人数</a></li><li id=\"3\" class=\"sort-list-item\"><a>2人</a></li><li id=\"5\" class=\"sort-list-item\"><a>5人以下</a></li><li id=\"10\" class=\"sort-list-item sort-list-item-active\"><a>10人以下</a></li></ul>";
+		div += "\"><a>全部人数</a></li><li id=\"2\" class=\"sort-list-item\"><a>2人</a></li><li id=\"5\" class=\"sort-list-item\"><a>5人以下</a></li><li id=\"10\" class=\"sort-list-item sort-list-item-active\"><a>10人以下</a></li></ul>";
 	}
 	div += "<ul id=\"cycle\" class=\"sort-list\"><li id=\"1001\" class=\"sort-list-item";
 	if (cycle.equals("1001")){

@@ -42,8 +42,10 @@
 					<script type="text/javascript">
 						var pages = <%=pages%>
 						var allPages = <%=all_pages%>
-						var keyword = "";
 						var keyword = '<%=keyword%>';
+						var tryMethod = <%=tryMethod%>;
+						var crew = <%=crew%>;
+						var cycle = <%=cycle%>;
 						keyword = encodeURIComponent(keyword);
 						// alert(keyword);
 						// alert(pages);
@@ -53,17 +55,17 @@
 							if (allPages-Math.floor(pages/10)>8){
 								for(var i = 1; i <= 10;i++){
 									if (i==pages){
-										innerHTML += '<a type="button" class="btn-page activated" id='+ (Mathw.floor(pages/10) *10 + i) +' href="?pages='+ Math.floor(pages/10) *10 + i +'&s='+keyword+'">'+ Math.floor(pages/10) *10 + i+'</a>'
+										innerHTML += '<a type="button" class="btn-page activated" id='+ (Math.floor(pages/10) *10 + i) +' href="?pages='+ Math.floor(pages/10) *10 + i +'&s='+keyword+'&method='+tryMethod+'&crew='+crew+'&cycle='+cycle+'">'+ Math.floor(pages/10) *10 + i+'</a>'
 									}else{
-										innerHTML += '<a type="button" class="btn-page" id='+ (Math.floor(pages/10) *10 + i) +' href="?pages='+ Math.floor(pages/10) *10 + i +'&s='+keyword+'">'+ Math.floor(pages/10) *10 + i+'method='+method+'crew='+crew+'cycle='+cycle+'</a>'
+										innerHTML += '<a type="button" class="btn-page" id='+ (Math.floor(pages/10) *10 + i) +' href="?pages='+ Math.floor(pages/10) *10 + i +'&s='+keyword+'&method='+tryMethod+'&crew='+crew+'&cycle='+cycle+'">'+ Math.floor(pages/10) *10 + i+'method='+method+'crew='+crew+'cycle='+cycle+'</a>'
 									}
 								}
 							}else{
 								for(var i = 1; i <= allPages-Math.floor(pages/10);i++){
 									if (i==pages){
-										innerHTML += '<a type="button" class="btn-page activated" id='+ (Math.floor(pages/10) *10 + i) +' href="?pages='+ Math.floor(pages/10) *10 + i +'&s='+keyword+'">'+ Math.floor(pages/10) *10 + i+'</a>'
+										innerHTML += '<a type="button" class="btn-page activated" id='+ (Math.floor(pages/10) *10 + i) +' href="?pages='+ Math.floor(pages/10) *10 + i +'&s='+keyword+'&method='+tryMethod+'&crew='+crew+'&cycle='+cycle+'">'+ Math.floor(pages/10) *10 + i+'</a>'
 									}else{
-										innerHTML += '<a type="button" class="btn-page" id='+ (Math.floor(pages/10) *10 + i) +' href="?pages='+ Math.floor(pages/10) *10 + i +'&s='+keyword+'">'+ Math.floor(pages/10) *10 + i+'</a>'
+										innerHTML += '<a type="button" class="btn-page" id='+ (Math.floor(pages/10) *10 + i) +' href="?pages='+ Math.floor(pages/10) *10 + i +'&s='+keyword+'&method='+tryMethod+'&crew='+crew+'&cycle='+cycle+'">'+ Math.floor(pages/10) *10 + i+'</a>'
 									}
 								}
 							}

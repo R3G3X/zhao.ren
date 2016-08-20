@@ -62,7 +62,7 @@ $(document).ready(function(){
     }
     var str = ',' + $(this).text().toString() + ',';
     variable = variable.replace(str, ',');
-    count --;
+    count1 --;
     $(this).remove();
   })
   $(document).on("click",".tag-name",function(){
