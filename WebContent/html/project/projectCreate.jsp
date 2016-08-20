@@ -22,9 +22,7 @@
             if (name != null && name != "" &&
                     numb != null && numb != "" &&
                     time != null && time != "" &&
-                    intro != null && intro != "" &&
-                    detail != null && detail != ""
-            ) {
+                    intro != null && intro != "") {
                 $(".project-create-box>h3").text("修改项目信息");
                 $(".project-create-post").removeClass("project-create-post").addClass("project-save-post");
             } else {
@@ -36,7 +34,21 @@
             $("#projectDevelopTime").val(time);
             $("#projectDescribe").val(intro);
             $("#projectDescribeInDetails").val(detail);
-            $("#projectTech").val(techs);
+            var pos = techs.indexOf(",");
+            while(techs.length > 0 && pos> 0){
+                var str = techs.substr(0, pos);
+                var prependElm  = "<div class=\"tag-name\">"+str+"</div>";
+                $("#search-box-inside").prepend(prependElm);
+                techs = techs.substr(pos + 1, techs.length);
+                pos = techs.indexOf(",");
+            }
+            if (techs.length > 0){
+                var prependElm  = "<div class=\"tag-name\">"+techs+"</div>";
+                $("#search-box-inside").prepend(prependElm);
+            }
+
+
+
             $("#preview").html(markdown.toHTML($("#projectDescribeInDetails").val()));
         })
     </script>
@@ -84,6 +96,7 @@
                     <p class="project-create-info">技术需求(输入','生成标签)</p>
                     <div id="search-box-inside">
                         <input class="project-create-input-short" id="search-box-input" type="text" name="" value="">
+                        <iunput id="variable" type="hidden"></iunput>
                     </div>
                     <p class="project-create-info">详细介绍（方便队友更方便地了解你的需求）[支持Markdown语法]</p>
                     <textarea class="project-create-input-long"

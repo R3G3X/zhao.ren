@@ -52,16 +52,14 @@
 	}
 	div += "<ul id=\"cycle\" class=\"sort-list\"><li id=\"1001\" class=\"sort-list-item";
 	if (cycle.equals("1001")){
-		div +=" sort-list-item-active\"><a>全部周期</a></li><li id=\"7\" class=\"sort-list-item\"><a>7天</a></li><li id=\"15\" class=\"sort-list-item\"><a>15天</a></li><li id=\"20\" class=\"sort-list-item\"><a>20天</a></li></ul>";
+		div +=" sort-list-item-active\"><a>全部周期</a></li><li id=\"7\" class=\"sort-list-item\"><a>7天</a></li><li id=\"15\" class=\"sort-list-item\"><a>15天</a></li><li id=\"20\" class=\"sort-list-item\"><a>20天</a></li></ul></div>";
 	}else if(cycle.equals("7")){
-		div +="\"><a>全部周期</a></li><li id=\"7\" class=\"sort-list-item sort-list-item-active\"><a>7天</a></li><li id=\"15\" class=\"sort-list-item\"><a>15天</a></li><li id=\"20\" class=\"sort-list-item\"><a>20天</a></li></ul>";
+		div +="\"><a>全部周期</a></li><li id=\"7\" class=\"sort-list-item sort-list-item-active\"><a>7天</a></li><li id=\"15\" class=\"sort-list-item\"><a>15天</a></li><li id=\"20\" class=\"sort-list-item\"><a>20天</a></li></ul></div>";
 	}else if(cycle.equals("15")){
-		div +="\"><a>全部周期</a></li><li id=\"7\" class=\"sort-list-item\"><a>7天</a></li><li id=\"15\" class=\"sort-list-item sort-list-item-active\"><a>15天</a></li><li id=\"20\" class=\"sort-list-item\"><a>20天</a></li></ul>";
+		div +="\"><a>全部周期</a></li><li id=\"7\" class=\"sort-list-item\"><a>7天</a></li><li id=\"15\" class=\"sort-list-item sort-list-item-active\"><a>15天</a></li><li id=\"20\" class=\"sort-list-item\"><a>20天</a></li></ul></div>";
 	}else if(cycle.equals("20")){
-		div +="\"><a>全部周期</a></li><li id=\"7\" class=\"sort-list-item\"><a>7天</a></li><li id=\"15\" class=\"sort-list-item\"><a>15天</a></li><li id=\"20\" class=\"sort-list-item sort-list-item-active\"><a>20天</a></li></ul>";
+		div +="\"><a>全部周期</a></li><li id=\"7\" class=\"sort-list-item\"><a>7天</a></li><li id=\"15\" class=\"sort-list-item\"><a>15天</a></li><li id=\"20\" class=\"sort-list-item sort-list-item-active\"><a>20天</a></li></ul></div>";
 	}
-	div += "<ul id=\"cycle\" class=\"sort-list\"><li id=\"1001\" class=\"sort-list-item";
-	div +="\"><a>全部技术</a></li><li id=\"c++\" class=\"sort-list-item\"><a>c++</a></li><li id=\"java\" class=\"sort-list-item\"><a>java</a></li><li id=\"c#\" class=\"sort-list-item sort-list-item-active\"><a>c#</a></li><li id=\"else\" class=\"sort-list-item\"><a>...</a></li></ul></div>";
 	String base = request.getContextPath();
 	if (set.next()){
 		div += "<div class=\"project-list-box\" id = \"" + set.getString("id") + "\">";

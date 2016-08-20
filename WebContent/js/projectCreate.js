@@ -1,5 +1,7 @@
 $(document).ready(function() {
-	var variable =",";
+	var variable = "," + $("#variable").val().toString() + ",";
+	if (variable == ",,")
+		variable = ",";
 	var totalWidth = 0;
 	var count1 = 0;
 	$('#search-box-input').keydown(function(e){
@@ -33,6 +35,7 @@ $(document).ready(function() {
 			var temp = $("#search-box-input").val();
 			var prependElm  = "<div class=\"tag-name\">"+temp+"</div>";
 			$("#search-box-inside").prepend(prependElm);
+			// var width = $(".tag-name").slice(0,1).width() + 10;
 			// var width = $(".tag-name").slice(0,1).width() + 10;
 			// totalWidth += width;
 			// width = $("#search-box-input").width() - width;
@@ -76,8 +79,7 @@ $(document).ready(function() {
 	var count = 0;
 	$(".project-create-post").click(function() {
 		variable = variable.substring(0,variable.length-1);
-		variable = variable.substring(0,0) + variable.substring(0+1,variable.length);
-		alert(variable);
+		variable = variable.substring(0+1,variable.length);
 		$("#check-project-status").html("<font color='red'>添加中...</font>");
 		$.post(getRootPath() + "/jsp/doCreateProject.jsp", {
 			"name" : $("#projectname").val(),

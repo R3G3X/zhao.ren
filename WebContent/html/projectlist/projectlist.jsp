@@ -15,7 +15,7 @@
 	<%@ include file="/html/frame/frame_navbar.jsp"%>
 	<!-- END-OF-NAVBAR -->
 
-	<div id="container-content">
+	<div id="container-content" class="grey-3">
 		<div class="grey-3">
 			<div class="container clearfix">
 				<div class="white shadow">
@@ -27,9 +27,11 @@
 						<div id="search-box" class="clearfix">
 							<div id="search-box-inside">
 								<input id="search-box-input" type="text" name="" value="">
+								<input id="variable" type="hidden">
 							</div>
 							<div id="search-box-btn" href="" title="" style="font-size:18px">搜 索</div>
 						</div>
+						<p id="description">输入","生成标签 双击标签以删除</p>
 						<div id="content-width" class="clearfix">
 							<%@ include file="/jsp/project_list.jsp"%>
 						</div>
@@ -77,7 +79,49 @@
 							}else{
 								$("#pre").removeClass("hidden");
 							}
-							$("#search-box-input").val(decodeURIComponent(decodeURIComponent(keyword)));
+							var search = decodeURIComponent(decodeURIComponent(keyword));
+							var techsPos = search.indexOf("[T]");
+							var wordsPos = search.indexOf("[W]");
+							if (techsPos == 0){
+								if (wordsPos > 0){
+									var techs = search.substr(3,wordsPos-3);
+									var words = search.substr(wordsPos + 3, search.length);
+								}else{
+									var techs = search.substr(3,wordsPos);
+									var words = "";
+								}
+							}else{
+								var techs = "";
+								var words = search;
+							}
+							$("#variable").val(techs);
+							var len = 0;
+							var width = 0;
+							var pos = techs.indexOf(",");
+							while(techs.length > 0 && pos> 0){
+								var str = techs.substr(0, pos);
+								var prependElm  = "<div class=\"tag-name\">"+str+"</div>";
+								$("#search-box-inside").prepend(prependElm);
+								len += $(".tag-name").slice(0,1).width() + 10;
+								techs = techs.substr(pos + 1, techs.length);
+								pos = techs.indexOf(",");
+							}
+							if (techs.length > 0){
+								var prependElm  = "<div class=\"tag-name\">"+techs+"</div>";
+								$("#search-box-inside").prepend(prependElm);
+								width = $(".tag-name").slice(0,1).width() + 10;
+								len += width;
+								$("#search-box-input").width() - width;
+							}
+							width = $("#search-box-input").width() - width;
+							if (len >= 500){
+								$("#search-box-inside").height($("#search-box-input").height() + Math.floor((len + 2) / 514) * 52);
+								width = 502;
+								$("#search-box-input").width(width)
+							}else{
+								$("#search-box-input").width(width);
+							}
+							$("#search-box-input").val(words);
 						})
 
 					</script>
