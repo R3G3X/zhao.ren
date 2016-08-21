@@ -11,6 +11,13 @@ var conn = mysql.createConnection({
 conn.connect();
 
 var clientList = {};
+var sendJson = function(ws, msg) {
+	try {
+		ws.send(JSON.stringify(msg));
+	} catch (error) {
+		console.log(error);
+	}
+}
 
 wss.on('connection', function(ws) {
 	ws.on('message', function(m){
@@ -18,13 +25,7 @@ wss.on('connection', function(ws) {
 		var data = JSON.parse(m);
 
 		if (!data.cmd) {
-			try {
-				ws.send(JSON.stringify({
-					error: 'cmdError'
-				}));
-			} catch(error) {
-				console.log(error);
-			}
+			sendJson(ws, {error: 'cmdError'});
 		} else if (data.cmd == 'login') {
 			if (!data.clientId) {
 				return;
@@ -62,12 +63,7 @@ wss.on('connection', function(ws) {
 									} else {
 										jsonData.toClientId = history.user_id;
 									}
-									try {
-										ws.send(JSON.stringify(jsonData));
-									} catch (error) {
-										console.log(error);
-									}
-									console.log(jsonData);
+									sendJson(ws, jsonData);
 								}
 							});
 					}
@@ -79,42 +75,28 @@ wss.on('connection', function(ws) {
 			var fromClientId = ws.clientId;
 
 			var w = ws;
-			if (!w) {
-				console.log("ws empty");
-				return;
-			}
 			var time = new Date().getTime();
-			try{
-				w.send(JSON.stringify({
-					toClientId: toClientId,
-					msg: data.msg,
-					timestamp: time
-				}));
-			} catch(error) {
-				console.log(error);
-			}
+			sendJson(w, {
+				toClientId: toClientId,
+				msg: data.msg,
+				timestamp: time
+			});
 			conn.query(
-				'insert into user_chat(user_id, from_id, content, time) values('+toClientId+','+fromClientId+',"'+data.msg +'",from_unixtime('+time+'/1000));'
-				
+				'insert into user_chat(user_id, from_id, content, time) values('+
+				toClientId+','+fromClientId+',"'+data.msg +'",from_unixtime('+time+'/1000));'
 			, function (err) {
 					if (err) {
 						console.log(err);
 						throw err;
 					}
 				});
-			if (clientList[toClientId]) {
-				console.log('send msg to client');	
-				w = clientList[toClientId];		
-				try{
-					w.send(JSON.stringify({
-						fromClientId: fromClientId,
-						msg: data.msg,
-						timestamp: Date.parse(new Date()) 
-					}));
-				} catch (error) {
-					console.log(error);
-				}
-			}  
+			console.log('send msg to client');
+			w = clientList[toClientId];
+			sendJson(w, {
+				fromClientId: fromClientId,
+				msg: data.msg,
+				timestamp: Date.parse(new Date())
+			});
 		}
 	});
 
@@ -123,4 +105,3 @@ wss.on('connection', function(ws) {
 		delete clientList[ws.clientId];
 	});
 });
-
