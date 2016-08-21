@@ -30,8 +30,8 @@
       <file leaf-file-name="db_connector.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/zhao_ren_db/db_connector.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="203">
-              <caret line="554" column="0" selection-start-line="554" selection-start-column="0" selection-end-line="554" selection-end-column="0" />
+            <state relative-caret-position="847">
+              <caret line="147" column="64" selection-start-line="147" selection-start-column="64" selection-end-line="147" selection-end-column="64" />
               <folding>
                 <element signature="method#db_connector#0;class#db_connector#0" expanded="false" />
                 <element signature="method#login#0;class#db_connector#0" expanded="false" />
@@ -49,7 +49,6 @@
                 <element signature="method#processing_count#0;class#db_connector#0" expanded="false" />
                 <element signature="method#project_as_founder#0;class#db_connector#0" expanded="false" />
                 <element signature="method#project_as_member#0;class#db_connector#0" expanded="false" />
-                <element signature="method#project_list#0;class#db_connector#0" expanded="false" />
                 <element signature="method#all_pages#0;class#db_connector#0" expanded="false" />
                 <element signature="method#all_pages#1;class#db_connector#0" expanded="false" />
                 <element signature="method#whois#0;class#db_connector#0" expanded="false" />
@@ -114,8 +113,8 @@
     <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="326" />
-    <option name="y" value="118" />
+    <option name="x" value="487" />
+    <option name="y" value="236" />
     <option name="width" value="1331" />
     <option name="height" value="839" />
   </component>
@@ -144,7 +143,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -162,10 +160,6 @@
               <option name="myItemId" value="zhao_ren_db" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
             </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="zhao_ren_db" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
           </PATH>
         </subPane>
       </pane>
@@ -179,6 +173,7 @@
           </PATH>
         </subPane>
       </pane>
+      <pane id="PackagesPane" />
       <pane id="Scratches" />
     </panes>
   </component>
@@ -662,12 +657,15 @@
       <workItem from="1471534896843" duration="101000" />
       <workItem from="1471668299239" duration="16000" />
       <workItem from="1471668355180" duration="388000" />
-      <workItem from="1471677388963" duration="3993000" />
+      <workItem from="1471677388963" duration="5847000" />
+      <workItem from="1471758754942" duration="15000" />
+      <workItem from="1471760473165" duration="1832000" />
+      <workItem from="1471763052265" duration="853000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="12247000" />
+    <option name="totallyTimeSpent" value="16801000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -679,24 +677,23 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="326" y="118" width="1331" height="839" extended-state="0" />
+    <frame x="487" y="236" width="1331" height="839" extended-state="1" />
     <editor active="false" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32931727" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32931727" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32987013" sideWeight="0.5026296" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32931727" sideWeight="0.4973704" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32931727" sideWeight="0.4973704" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32931727" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.19937937" sideWeight="0.58882236" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.19937937" sideWeight="0.56626505" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.19937937" sideWeight="0.41117764" order="5" side_tool="true" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.19937937" sideWeight="0.43373495" order="5" side_tool="true" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24192336" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -705,6 +702,7 @@
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32931727" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
@@ -722,7 +720,7 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="2" />
+      <option name="time" value="3" />
     </breakpoint-manager>
     <watches-manager />
   </component>
@@ -752,7 +750,6 @@
             <element signature="method#processing_count#0;class#db_connector#0" expanded="false" />
             <element signature="method#project_as_founder#0;class#db_connector#0" expanded="false" />
             <element signature="method#project_as_member#0;class#db_connector#0" expanded="false" />
-            <element signature="method#project_list#0;class#db_connector#0" expanded="false" />
             <element signature="method#all_pages#0;class#db_connector#0" expanded="false" />
             <element signature="method#all_pages#1;class#db_connector#0" expanded="false" />
             <element signature="method#whois#0;class#db_connector#0" expanded="false" />
@@ -816,7 +813,6 @@
             <element signature="method#processing_count#0;class#db_connector#0" expanded="false" />
             <element signature="method#project_as_founder#0;class#db_connector#0" expanded="false" />
             <element signature="method#project_as_member#0;class#db_connector#0" expanded="false" />
-            <element signature="method#project_list#0;class#db_connector#0" expanded="false" />
             <element signature="method#all_pages#0;class#db_connector#0" expanded="false" />
             <element signature="method#all_pages#1;class#db_connector#0" expanded="false" />
             <element signature="method#whois#0;class#db_connector#0" expanded="false" />
@@ -880,7 +876,6 @@
             <element signature="method#processing_count#0;class#db_connector#0" expanded="false" />
             <element signature="method#project_as_founder#0;class#db_connector#0" expanded="false" />
             <element signature="method#project_as_member#0;class#db_connector#0" expanded="false" />
-            <element signature="method#project_list#0;class#db_connector#0" expanded="false" />
             <element signature="method#all_pages#0;class#db_connector#0" expanded="false" />
             <element signature="method#all_pages#1;class#db_connector#0" expanded="false" />
             <element signature="method#whois#0;class#db_connector#0" expanded="false" />
@@ -944,7 +939,6 @@
             <element signature="method#processing_count#0;class#db_connector#0" expanded="false" />
             <element signature="method#project_as_founder#0;class#db_connector#0" expanded="false" />
             <element signature="method#project_as_member#0;class#db_connector#0" expanded="false" />
-            <element signature="method#project_list#0;class#db_connector#0" expanded="false" />
             <element signature="method#all_pages#0;class#db_connector#0" expanded="false" />
             <element signature="method#all_pages#1;class#db_connector#0" expanded="false" />
             <element signature="method#whois#0;class#db_connector#0" expanded="false" />
@@ -1008,7 +1002,6 @@
             <element signature="method#processing_count#0;class#db_connector#0" expanded="false" />
             <element signature="method#project_as_founder#0;class#db_connector#0" expanded="false" />
             <element signature="method#project_as_member#0;class#db_connector#0" expanded="false" />
-            <element signature="method#project_list#0;class#db_connector#0" expanded="false" />
             <element signature="method#all_pages#0;class#db_connector#0" expanded="false" />
             <element signature="method#all_pages#1;class#db_connector#0" expanded="false" />
             <element signature="method#whois#0;class#db_connector#0" expanded="false" />
@@ -1072,7 +1065,6 @@
             <element signature="method#processing_count#0;class#db_connector#0" expanded="false" />
             <element signature="method#project_as_founder#0;class#db_connector#0" expanded="false" />
             <element signature="method#project_as_member#0;class#db_connector#0" expanded="false" />
-            <element signature="method#project_list#0;class#db_connector#0" expanded="false" />
             <element signature="method#all_pages#0;class#db_connector#0" expanded="false" />
             <element signature="method#all_pages#1;class#db_connector#0" expanded="false" />
             <element signature="method#whois#0;class#db_connector#0" expanded="false" />
@@ -1136,7 +1128,6 @@
             <element signature="method#processing_count#0;class#db_connector#0" expanded="false" />
             <element signature="method#project_as_founder#0;class#db_connector#0" expanded="false" />
             <element signature="method#project_as_member#0;class#db_connector#0" expanded="false" />
-            <element signature="method#project_list#0;class#db_connector#0" expanded="false" />
             <element signature="method#all_pages#0;class#db_connector#0" expanded="false" />
             <element signature="method#all_pages#1;class#db_connector#0" expanded="false" />
             <element signature="method#whois#0;class#db_connector#0" expanded="false" />
@@ -1200,7 +1191,6 @@
             <element signature="method#processing_count#0;class#db_connector#0" expanded="false" />
             <element signature="method#project_as_founder#0;class#db_connector#0" expanded="false" />
             <element signature="method#project_as_member#0;class#db_connector#0" expanded="false" />
-            <element signature="method#project_list#0;class#db_connector#0" expanded="false" />
             <element signature="method#all_pages#0;class#db_connector#0" expanded="false" />
             <element signature="method#all_pages#1;class#db_connector#0" expanded="false" />
             <element signature="method#whois#0;class#db_connector#0" expanded="false" />
@@ -1245,8 +1235,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/zhao_ren_db/db_connector.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="203">
-          <caret line="554" column="0" selection-start-line="554" selection-start-column="0" selection-end-line="554" selection-end-column="0" />
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="method#db_connector#0;class#db_connector#0" expanded="false" />
             <element signature="method#login#0;class#db_connector#0" expanded="false" />
@@ -1264,7 +1254,195 @@
             <element signature="method#processing_count#0;class#db_connector#0" expanded="false" />
             <element signature="method#project_as_founder#0;class#db_connector#0" expanded="false" />
             <element signature="method#project_as_member#0;class#db_connector#0" expanded="false" />
-            <element signature="method#project_list#0;class#db_connector#0" expanded="false" />
+            <element signature="method#all_pages#0;class#db_connector#0" expanded="false" />
+            <element signature="method#all_pages#1;class#db_connector#0" expanded="false" />
+            <element signature="method#whois#0;class#db_connector#0" expanded="false" />
+            <element signature="method#add_visits#0;class#db_connector#0" expanded="false" />
+            <element signature="method#add_project#0;class#db_connector#0" expanded="false" />
+            <element signature="method#user_space#0;class#db_connector#0" expanded="false" />
+            <element signature="method#user_edit#0;class#db_connector#0" expanded="false" />
+            <element signature="method#username#0;class#db_connector#0" expanded="false" />
+            <element signature="method#message_pid#0;class#db_connector#0" expanded="false" />
+            <element signature="method#user_message#0;class#db_connector#0" expanded="false" />
+            <element signature="method#project_name#0;class#db_connector#0" expanded="false" />
+            <element signature="method#hasRead#0;class#db_connector#0" expanded="false" />
+            <element signature="method#needConfirm#0;class#db_connector#0" expanded="false" />
+            <element signature="method#whose_message#0;class#db_connector#0" expanded="false" />
+            <element signature="method#taken_message#0;class#db_connector#0" expanded="false" />
+            <element signature="method#processing_msg#0;class#db_connector#0" expanded="false" />
+            <element signature="method#founder_of_project#0;class#db_connector#0" expanded="false" />
+            <element signature="method#join_project#0;class#db_connector#0" expanded="false" />
+            <element signature="method#user_href#0;class#db_connector#0" expanded="false" />
+            <element signature="method#project_href#0;class#db_connector#0" expanded="false" />
+            <element signature="method#project_requirednum#0;class#db_connector#0" expanded="false" />
+            <element signature="method#project_add_person#0;class#db_connector#0" expanded="false" />
+            <element signature="method#project_deny_person#0;class#db_connector#0" expanded="false" />
+            <element signature="method#add_message#0;class#db_connector#0" expanded="false" />
+            <element signature="method#project_leave#0;class#db_connector#0" expanded="false" />
+            <element signature="method#project_finsh#0;class#db_connector#0" expanded="false" />
+            <element signature="method#unread_message_count#0;class#db_connector#0" expanded="false" />
+            <element signature="method#project_of#0;class#db_connector#0" expanded="false" />
+            <element signature="method#project_info_edit#0;class#db_connector#0" expanded="false" />
+            <element signature="method#member_of_project#0;class#db_connector#0" expanded="false" />
+            <element signature="method#close#0;class#db_connector#0" expanded="false" />
+            <element signature="method#project_comment#0;class#db_connector#0" expanded="false" />
+            <element signature="method#project_add_comment#0;class#db_connector#0" expanded="false" />
+            <element signature="method#add_chat_person#0;class#db_connector#0" expanded="false" />
+            <element signature="method#delete_chat_person#0;class#db_connector#0" expanded="false" />
+            <element signature="method#get_chat_info_person#0;class#db_connector#0" expanded="false" />
+            <element signature="method#get_all_chat_person#0;class#db_connector#0" expanded="false" />
+            <element signature="method#add_project_tech#0;class#db_connector#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/zhao_ren_db/db_connector.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="method#db_connector#0;class#db_connector#0" expanded="false" />
+            <element signature="method#login#0;class#db_connector#0" expanded="false" />
+            <element signature="method#register#0;class#db_connector#0" expanded="false" />
+            <element signature="method#mail#0;class#db_connector#0" expanded="false" />
+            <element signature="method#confirm#0;class#db_connector#0" expanded="false" />
+            <element signature="method#index_project_qry#0;class#db_connector#0" expanded="false" />
+            <element signature="method#count_project_num#0;class#db_connector#0" expanded="false" />
+            <element signature="method#getSingleQuery#0;class#db_connector#0" expanded="false" />
+            <element signature="method#query#0;class#db_connector#0" expanded="false" />
+            <element signature="method#update#0;class#db_connector#0" expanded="false" />
+            <element signature="method#userInfo#0;class#db_connector#0" expanded="false" />
+            <element signature="method#finished_count#0;class#db_connector#0" expanded="false" />
+            <element signature="method#ongoing_count#0;class#db_connector#0" expanded="false" />
+            <element signature="method#processing_count#0;class#db_connector#0" expanded="false" />
+            <element signature="method#project_as_founder#0;class#db_connector#0" expanded="false" />
+            <element signature="method#project_as_member#0;class#db_connector#0" expanded="false" />
+            <element signature="method#all_pages#0;class#db_connector#0" expanded="false" />
+            <element signature="method#all_pages#1;class#db_connector#0" expanded="false" />
+            <element signature="method#whois#0;class#db_connector#0" expanded="false" />
+            <element signature="method#add_visits#0;class#db_connector#0" expanded="false" />
+            <element signature="method#add_project#0;class#db_connector#0" expanded="false" />
+            <element signature="method#user_space#0;class#db_connector#0" expanded="false" />
+            <element signature="method#user_edit#0;class#db_connector#0" expanded="false" />
+            <element signature="method#username#0;class#db_connector#0" expanded="false" />
+            <element signature="method#message_pid#0;class#db_connector#0" expanded="false" />
+            <element signature="method#user_message#0;class#db_connector#0" expanded="false" />
+            <element signature="method#project_name#0;class#db_connector#0" expanded="false" />
+            <element signature="method#hasRead#0;class#db_connector#0" expanded="false" />
+            <element signature="method#needConfirm#0;class#db_connector#0" expanded="false" />
+            <element signature="method#whose_message#0;class#db_connector#0" expanded="false" />
+            <element signature="method#taken_message#0;class#db_connector#0" expanded="false" />
+            <element signature="method#processing_msg#0;class#db_connector#0" expanded="false" />
+            <element signature="method#founder_of_project#0;class#db_connector#0" expanded="false" />
+            <element signature="method#join_project#0;class#db_connector#0" expanded="false" />
+            <element signature="method#user_href#0;class#db_connector#0" expanded="false" />
+            <element signature="method#project_href#0;class#db_connector#0" expanded="false" />
+            <element signature="method#project_requirednum#0;class#db_connector#0" expanded="false" />
+            <element signature="method#project_add_person#0;class#db_connector#0" expanded="false" />
+            <element signature="method#project_deny_person#0;class#db_connector#0" expanded="false" />
+            <element signature="method#add_message#0;class#db_connector#0" expanded="false" />
+            <element signature="method#project_leave#0;class#db_connector#0" expanded="false" />
+            <element signature="method#project_finsh#0;class#db_connector#0" expanded="false" />
+            <element signature="method#unread_message_count#0;class#db_connector#0" expanded="false" />
+            <element signature="method#project_of#0;class#db_connector#0" expanded="false" />
+            <element signature="method#project_info_edit#0;class#db_connector#0" expanded="false" />
+            <element signature="method#member_of_project#0;class#db_connector#0" expanded="false" />
+            <element signature="method#close#0;class#db_connector#0" expanded="false" />
+            <element signature="method#project_comment#0;class#db_connector#0" expanded="false" />
+            <element signature="method#project_add_comment#0;class#db_connector#0" expanded="false" />
+            <element signature="method#add_chat_person#0;class#db_connector#0" expanded="false" />
+            <element signature="method#delete_chat_person#0;class#db_connector#0" expanded="false" />
+            <element signature="method#get_chat_info_person#0;class#db_connector#0" expanded="false" />
+            <element signature="method#get_all_chat_person#0;class#db_connector#0" expanded="false" />
+            <element signature="method#add_project_tech#0;class#db_connector#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/zhao_ren_db/db_connector.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="method#db_connector#0;class#db_connector#0" expanded="false" />
+            <element signature="method#login#0;class#db_connector#0" expanded="false" />
+            <element signature="method#register#0;class#db_connector#0" expanded="false" />
+            <element signature="method#mail#0;class#db_connector#0" expanded="false" />
+            <element signature="method#confirm#0;class#db_connector#0" expanded="false" />
+            <element signature="method#index_project_qry#0;class#db_connector#0" expanded="false" />
+            <element signature="method#count_project_num#0;class#db_connector#0" expanded="false" />
+            <element signature="method#getSingleQuery#0;class#db_connector#0" expanded="false" />
+            <element signature="method#query#0;class#db_connector#0" expanded="false" />
+            <element signature="method#update#0;class#db_connector#0" expanded="false" />
+            <element signature="method#userInfo#0;class#db_connector#0" expanded="false" />
+            <element signature="method#finished_count#0;class#db_connector#0" expanded="false" />
+            <element signature="method#ongoing_count#0;class#db_connector#0" expanded="false" />
+            <element signature="method#processing_count#0;class#db_connector#0" expanded="false" />
+            <element signature="method#project_as_founder#0;class#db_connector#0" expanded="false" />
+            <element signature="method#project_as_member#0;class#db_connector#0" expanded="false" />
+            <element signature="method#all_pages#0;class#db_connector#0" expanded="false" />
+            <element signature="method#all_pages#1;class#db_connector#0" expanded="false" />
+            <element signature="method#whois#0;class#db_connector#0" expanded="false" />
+            <element signature="method#add_visits#0;class#db_connector#0" expanded="false" />
+            <element signature="method#add_project#0;class#db_connector#0" expanded="false" />
+            <element signature="method#user_space#0;class#db_connector#0" expanded="false" />
+            <element signature="method#user_edit#0;class#db_connector#0" expanded="false" />
+            <element signature="method#username#0;class#db_connector#0" expanded="false" />
+            <element signature="method#message_pid#0;class#db_connector#0" expanded="false" />
+            <element signature="method#user_message#0;class#db_connector#0" expanded="false" />
+            <element signature="method#project_name#0;class#db_connector#0" expanded="false" />
+            <element signature="method#hasRead#0;class#db_connector#0" expanded="false" />
+            <element signature="method#needConfirm#0;class#db_connector#0" expanded="false" />
+            <element signature="method#whose_message#0;class#db_connector#0" expanded="false" />
+            <element signature="method#taken_message#0;class#db_connector#0" expanded="false" />
+            <element signature="method#processing_msg#0;class#db_connector#0" expanded="false" />
+            <element signature="method#founder_of_project#0;class#db_connector#0" expanded="false" />
+            <element signature="method#join_project#0;class#db_connector#0" expanded="false" />
+            <element signature="method#user_href#0;class#db_connector#0" expanded="false" />
+            <element signature="method#project_href#0;class#db_connector#0" expanded="false" />
+            <element signature="method#project_requirednum#0;class#db_connector#0" expanded="false" />
+            <element signature="method#project_add_person#0;class#db_connector#0" expanded="false" />
+            <element signature="method#project_deny_person#0;class#db_connector#0" expanded="false" />
+            <element signature="method#add_message#0;class#db_connector#0" expanded="false" />
+            <element signature="method#project_leave#0;class#db_connector#0" expanded="false" />
+            <element signature="method#project_finsh#0;class#db_connector#0" expanded="false" />
+            <element signature="method#unread_message_count#0;class#db_connector#0" expanded="false" />
+            <element signature="method#project_of#0;class#db_connector#0" expanded="false" />
+            <element signature="method#project_info_edit#0;class#db_connector#0" expanded="false" />
+            <element signature="method#member_of_project#0;class#db_connector#0" expanded="false" />
+            <element signature="method#close#0;class#db_connector#0" expanded="false" />
+            <element signature="method#project_comment#0;class#db_connector#0" expanded="false" />
+            <element signature="method#project_add_comment#0;class#db_connector#0" expanded="false" />
+            <element signature="method#add_chat_person#0;class#db_connector#0" expanded="false" />
+            <element signature="method#delete_chat_person#0;class#db_connector#0" expanded="false" />
+            <element signature="method#get_chat_info_person#0;class#db_connector#0" expanded="false" />
+            <element signature="method#get_all_chat_person#0;class#db_connector#0" expanded="false" />
+            <element signature="method#add_project_tech#0;class#db_connector#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/zhao_ren_db/db_connector.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="847">
+          <caret line="147" column="64" selection-start-line="147" selection-start-column="64" selection-end-line="147" selection-end-column="64" />
+          <folding>
+            <element signature="method#db_connector#0;class#db_connector#0" expanded="false" />
+            <element signature="method#login#0;class#db_connector#0" expanded="false" />
+            <element signature="method#register#0;class#db_connector#0" expanded="false" />
+            <element signature="method#mail#0;class#db_connector#0" expanded="false" />
+            <element signature="method#confirm#0;class#db_connector#0" expanded="false" />
+            <element signature="method#index_project_qry#0;class#db_connector#0" expanded="false" />
+            <element signature="method#count_project_num#0;class#db_connector#0" expanded="false" />
+            <element signature="method#getSingleQuery#0;class#db_connector#0" expanded="false" />
+            <element signature="method#query#0;class#db_connector#0" expanded="false" />
+            <element signature="method#update#0;class#db_connector#0" expanded="false" />
+            <element signature="method#userInfo#0;class#db_connector#0" expanded="false" />
+            <element signature="method#finished_count#0;class#db_connector#0" expanded="false" />
+            <element signature="method#ongoing_count#0;class#db_connector#0" expanded="false" />
+            <element signature="method#processing_count#0;class#db_connector#0" expanded="false" />
+            <element signature="method#project_as_founder#0;class#db_connector#0" expanded="false" />
+            <element signature="method#project_as_member#0;class#db_connector#0" expanded="false" />
             <element signature="method#all_pages#0;class#db_connector#0" expanded="false" />
             <element signature="method#all_pages#1;class#db_connector#0" expanded="false" />
             <element signature="method#whois#0;class#db_connector#0" expanded="false" />

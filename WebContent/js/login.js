@@ -139,15 +139,21 @@ $(document).ready(function(){
     $(".select-type-secondary-list-item").click(function(){
         var parent_id = $(this).parent().attr("id");
         if(parent_id == "cycle"){
-            goToCycle($(this).children().text());
+            goToCycle($(this).children(".cycleTime").text());
         }else if(parent_id == "crew"){
-            goToCrew($(this).children().text());
-        }else{
-            goTo($(this).children().text());
+            goToCrew($(this).children(".crewNum").text());
         }
     })
     $("#message").click(function(){
         $(this).focus();
+    })
+    $(".select-type-secondary-list-item").hover(function(){
+        $(".hover").children(".hoverItem").remove();
+        $(".hover").removeClass("hover");
+        $(this).addClass("hover")
+        $(this).prepend("<a class='hoverItem'>► </a>");
+    },function(){
+        $(".hover").children(".hoverItem").remove();
     })
 })
 

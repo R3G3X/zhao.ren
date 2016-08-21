@@ -35,6 +35,7 @@
             $("#projectDescribe").val(intro);
             $("#projectDescribeInDetails").val(detail);
             var pos = techs.indexOf(",");
+            $("#variable").val(techs);
             while(techs.length > 0 && pos> 0){
                 var str = techs.substr(0, pos);
                 var prependElm  = "<div class=\"tag-name\">"+str+"</div>";
