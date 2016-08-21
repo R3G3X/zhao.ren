@@ -64,6 +64,13 @@ wss.on('connection', function(ws) {
 										jsonData.toClientId = history.user_id;
 									}
 									sendJson(ws, jsonData);
+
+									if (clientId == history.user_id 
+										&& clientId == history.from_id) {
+										delete jsonData.fromClientId;
+										jsonData.toClientId = history.user_id;
+										sendJson(ws, jsonData);
+									}
 								}
 							});
 					}
