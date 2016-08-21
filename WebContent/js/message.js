@@ -56,7 +56,9 @@ function start (client){
                   	 "</div>";
 			}
 		}
-		div = $(".item-activated>input").val();
+		div = clientFrom;
+		$(".target-message").removeClass("hidden");
+		$(".target-message").css("visibility","hidden");
 		$("#target-message-"+div).append(innerhtml);
 		substr = messageGet;
 		for(var i = 0; i < index - 1; i++){
@@ -65,7 +67,8 @@ function start (client){
 		}
 		$("#target-message-"+div+" ."+i+":last").text(substr);
 		$("#target-message-"+div+" .message-box:last").height($("#target-message-"+div+" .message-box:last").children().outerHeight()+25);
-
+		$(".target-message").addClass("hidden");
+		$(".target-message").css("visibility","");
 		index = 0;
 		setTimeout("changeHight("+div+")",5);
 	};
@@ -134,6 +137,7 @@ $(document).ready(function(){
 	$("#btn-chat").click(function(){
 		$(this).addClass("hidden");
 		$("#chatroom").css("visibility","visible");
+		$(".target-message").slice(0,1).removeClass("hidden");
 	})
 	$("#btn-minimize").click(function(){
 		$("#btn-chat").removeClass("hidden");
