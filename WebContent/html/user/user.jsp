@@ -89,7 +89,6 @@
                 <div id="left-content">
                     <h3 style="font-weight: bold;">最近动态</h3>
                     <div id="recent-move">
-
                         <%--<%@ include file="/jsp/user_space.jsp" %>--%>
                         <%--传js: /jsp/user_space.jsp?page=1 其中page为第几页--%>
                     </div>
