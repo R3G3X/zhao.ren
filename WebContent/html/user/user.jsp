@@ -9,7 +9,7 @@
     <%@ include file="/jsp/user_info.jsp" %>
 
     <link href="../../css/user.css" rel="stylesheet"/>
-    <script type="text/javascript" src="js/userspace.js"></script>
+    <script type="text/javascript" src="../../js/userspace.js"></script>
 </head>
 <body>
 <!-- NAVBAR -->
