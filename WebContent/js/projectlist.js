@@ -96,7 +96,7 @@ $(document).ready(function(){
   })
   function Search(){
     var loc = "";
-    var words = $('#search-box-input').val();
+    var words = encodeURIComponent(encodeURIComponent($('#search-box-input').val();
     variable = variable.substring(0,variable.length-1);
     variable = variable.substring(0+1,variable.length);
     if (variable != null && variable != ""){
