@@ -26,7 +26,7 @@
 		//keyword = keyword.replace("\\\\u", "\\u");
 		String decode = URLDecoder.decode(keyword, "UTF-8");
 		set = db.project_list(pages, decode,method,crew,cycle);
-		all_pages = db.all_pages(decode, crew, cycle);
+		all_pages = db.all_pages(pages, decode,method,crew,cycle);
 	} else {
 		keyword = "";
 		set = db.project_list(pages);

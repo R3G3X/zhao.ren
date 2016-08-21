@@ -162,13 +162,13 @@ public class db_connector {
             tech = words.split(",");
         } else {                    // both
             String wo = words.substring(w + 3);
-            String te = words.substring(t + 3, w - 1);
+            String te = words.substring(t + 3, w);
             word = wo.split(" ");
             tech = te.split(",");
         }
+        String pre = "SELECT COUNT(*) ";
         String sql =
-                "SELECT * " +
-                        "FROM project LEFT JOIN project_tech ON project.id = project_tech.project_id " +
+                "FROM project LEFT JOIN project_tech ON project.id = project_tech.project_id " +
                         "WHERE isFinshed = 0 ";
         if (t != -1) {
             sql += String.format("AND (tech=\"%s\"", tech[0]);
@@ -181,9 +181,12 @@ public class db_connector {
         for (int i = 1; i < word.length; i++) {
             sql += String.format(" OR (name LIKE \"%%%s%%\" OR intro LIKE \"%%%s%%\")", word[i], word[i]);
         }
-        sql += String.format(") AND ((require_num <= " + crew + ")) AND ((round_time <= " + cycle + ")) " +
+        sql += ") AND ((require_num <= " + crew + ")) AND ((round_time <= " + cycle + ")) " +
                 "GROUP BY id " +
-                "ORDER BY " + method + " DESC LIMIT %d,%d;", (pages - 1) * NUMBER_PER_PAGE, NUMBER_PER_PAGE);
+                "ORDER BY " + method;
+        int all_pages = Integer.valueOf(getSingleQuery(pre + sql));
+        pre = "SELECT * ";
+        sql = pre + sql + String.format(" DESC LIMIT %d,%d;", (pages - 1) * NUMBER_PER_PAGE, NUMBER_PER_PAGE);
         System.out.println(sql);
         return query(sql);
     }
@@ -193,11 +196,43 @@ public class db_connector {
         return (int) Math.ceil(Integer.parseInt(getSingleQuery(sql)) / 1.0 / NUMBER_PER_PAGE);
     }
 
-    public int all_pages(String words, String crew, String cycle) throws SQLException {
-        String sql = String.format(
-                "SELECT COUNT(id) FROM project WHERE isFinshed = 0 AND ((name LIKE \"%%%s%%\" OR intro LIKE \"%%%s%%\")) AND ((require_num < \"s\")) AND ((round_time < \"s\")) ;",
-                words, words, crew, cycle);
-        return (int) Math.ceil(Integer.parseInt(getSingleQuery(sql)) / 1.0 / NUMBER_PER_PAGE);
+    public int all_pages(int pages, String words, String method, String crew, String cycle) throws SQLException {
+        int t = words.indexOf("[T]");
+        int w = words.indexOf("[W]");
+        String[] tech = null;
+        String[] word = null;
+        if (t == -1) {              // only words
+            word = words.split(" ");
+        } else if (w == -1) {       // only techs
+            words = words.substring(t + 3);
+            word = ("").split(" ");
+            tech = words.split(",");
+        } else {                    // both
+            String wo = words.substring(w + 3);
+            String te = words.substring(t + 3, w);
+            word = wo.split(" ");
+            tech = te.split(",");
+        }
+        String pre = "SELECT COUNT(*) ";
+        String sql =
+                "FROM project LEFT JOIN project_tech ON project.id = project_tech.project_id " +
+                        "WHERE isFinshed = 0 ";
+        if (t != -1) {
+            sql += String.format("AND (tech=\"%s\"", tech[0]);
+            for (int i = 1; i < tech.length; i++) {
+                sql += String.format(" OR tech=\"%s\"", tech[i]);
+            }
+            sql += ") ";
+        }
+        sql += String.format("AND ((name LIKE \"%%%s%%\" OR intro LIKE \"%%%s%%\")", word[0], word[0]);
+        for (int i = 1; i < word.length; i++) {
+            sql += String.format(" OR (name LIKE \"%%%s%%\" OR intro LIKE \"%%%s%%\")", word[i], word[i]);
+        }
+        sql += ") AND ((require_num <= " + crew + ")) AND ((round_time <= " + cycle + ")) " +
+                "GROUP BY id " +
+                "ORDER BY " + method;
+        int all_pages = Integer.valueOf(getSingleQuery(pre + sql));
+        return (int) Math.ceil(all_pages / 1.0 / NUMBER_PER_PAGE);
     }
 
     public String whois(String username) throws SQLException {
@@ -555,7 +590,6 @@ public class db_connector {
 
     public static void main(String[] args) throws Exception {
         db_connector db = new db_connector();
-        int a = db.all_pages();
-        System.out.println(a);
+        db.project_list(1,"[T]C++,PHP[W]12 45 3","visits,id","1000","1000");
     }
 }

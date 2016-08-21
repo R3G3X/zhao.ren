@@ -30,8 +30,8 @@
       <file leaf-file-name="db_connector.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/zhao_ren_db/db_connector.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-58">
-              <caret line="195" column="15" selection-start-line="195" selection-start-column="15" selection-end-line="195" selection-end-column="15" />
+            <state relative-caret-position="122">
+              <caret line="198" column="112" selection-start-line="198" selection-start-column="112" selection-end-line="198" selection-end-column="112" />
               <folding>
                 <element signature="method#db_connector#0;class#db_connector#0" expanded="false" />
                 <element signature="method#login#0;class#db_connector#0" expanded="false" />
@@ -50,6 +50,7 @@
                 <element signature="method#project_as_founder#0;class#db_connector#0" expanded="false" />
                 <element signature="method#project_as_member#0;class#db_connector#0" expanded="false" />
                 <element signature="method#all_pages#0;class#db_connector#0" expanded="false" />
+                <element signature="method#all_pages#1;class#db_connector#0" expanded="false" />
                 <element signature="method#whois#0;class#db_connector#0" expanded="false" />
                 <element signature="method#add_visits#0;class#db_connector#0" expanded="false" />
                 <element signature="method#add_project#0;class#db_connector#0" expanded="false" />
@@ -112,8 +113,8 @@
     <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="95" />
-    <option name="y" value="25" />
+    <option name="x" value="596" />
+    <option name="y" value="214" />
     <option name="width" value="1331" />
     <option name="height" value="839" />
   </component>
@@ -658,12 +659,12 @@
       <workItem from="1471668355180" duration="388000" />
       <workItem from="1471677388963" duration="5847000" />
       <workItem from="1471758754942" duration="15000" />
-      <workItem from="1471760473165" duration="487000" />
+      <workItem from="1471760473165" duration="1814000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="14603000" />
+    <option name="totallyTimeSpent" value="15930000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -675,23 +676,24 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="95" y="25" width="1331" height="839" extended-state="0" />
+    <frame x="596" y="214" width="1331" height="839" extended-state="0" />
     <editor active="false" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32931727" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32931727" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32987013" sideWeight="0.5026296" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32931727" sideWeight="0.4973704" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32931727" sideWeight="0.4973704" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32931727" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.19937937" sideWeight="0.57563585" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.19937937" sideWeight="0.5728543" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.19937937" sideWeight="0.42436412" order="5" side_tool="true" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.19937937" sideWeight="0.42714572" order="5" side_tool="true" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24192336" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -700,7 +702,6 @@
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32931727" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
@@ -718,7 +719,7 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="2" />
+      <option name="time" value="3" />
     </breakpoint-manager>
     <watches-manager />
   </component>
@@ -749,6 +750,7 @@
             <element signature="method#project_as_founder#0;class#db_connector#0" expanded="false" />
             <element signature="method#project_as_member#0;class#db_connector#0" expanded="false" />
             <element signature="method#all_pages#0;class#db_connector#0" expanded="false" />
+            <element signature="method#all_pages#1;class#db_connector#0" expanded="false" />
             <element signature="method#whois#0;class#db_connector#0" expanded="false" />
             <element signature="method#add_visits#0;class#db_connector#0" expanded="false" />
             <element signature="method#add_project#0;class#db_connector#0" expanded="false" />
@@ -811,6 +813,7 @@
             <element signature="method#project_as_founder#0;class#db_connector#0" expanded="false" />
             <element signature="method#project_as_member#0;class#db_connector#0" expanded="false" />
             <element signature="method#all_pages#0;class#db_connector#0" expanded="false" />
+            <element signature="method#all_pages#1;class#db_connector#0" expanded="false" />
             <element signature="method#whois#0;class#db_connector#0" expanded="false" />
             <element signature="method#add_visits#0;class#db_connector#0" expanded="false" />
             <element signature="method#add_project#0;class#db_connector#0" expanded="false" />
@@ -873,6 +876,7 @@
             <element signature="method#project_as_founder#0;class#db_connector#0" expanded="false" />
             <element signature="method#project_as_member#0;class#db_connector#0" expanded="false" />
             <element signature="method#all_pages#0;class#db_connector#0" expanded="false" />
+            <element signature="method#all_pages#1;class#db_connector#0" expanded="false" />
             <element signature="method#whois#0;class#db_connector#0" expanded="false" />
             <element signature="method#add_visits#0;class#db_connector#0" expanded="false" />
             <element signature="method#add_project#0;class#db_connector#0" expanded="false" />
@@ -935,6 +939,7 @@
             <element signature="method#project_as_founder#0;class#db_connector#0" expanded="false" />
             <element signature="method#project_as_member#0;class#db_connector#0" expanded="false" />
             <element signature="method#all_pages#0;class#db_connector#0" expanded="false" />
+            <element signature="method#all_pages#1;class#db_connector#0" expanded="false" />
             <element signature="method#whois#0;class#db_connector#0" expanded="false" />
             <element signature="method#add_visits#0;class#db_connector#0" expanded="false" />
             <element signature="method#add_project#0;class#db_connector#0" expanded="false" />
@@ -997,6 +1002,7 @@
             <element signature="method#project_as_founder#0;class#db_connector#0" expanded="false" />
             <element signature="method#project_as_member#0;class#db_connector#0" expanded="false" />
             <element signature="method#all_pages#0;class#db_connector#0" expanded="false" />
+            <element signature="method#all_pages#1;class#db_connector#0" expanded="false" />
             <element signature="method#whois#0;class#db_connector#0" expanded="false" />
             <element signature="method#add_visits#0;class#db_connector#0" expanded="false" />
             <element signature="method#add_project#0;class#db_connector#0" expanded="false" />
@@ -1059,6 +1065,7 @@
             <element signature="method#project_as_founder#0;class#db_connector#0" expanded="false" />
             <element signature="method#project_as_member#0;class#db_connector#0" expanded="false" />
             <element signature="method#all_pages#0;class#db_connector#0" expanded="false" />
+            <element signature="method#all_pages#1;class#db_connector#0" expanded="false" />
             <element signature="method#whois#0;class#db_connector#0" expanded="false" />
             <element signature="method#add_visits#0;class#db_connector#0" expanded="false" />
             <element signature="method#add_project#0;class#db_connector#0" expanded="false" />
@@ -1121,6 +1128,7 @@
             <element signature="method#project_as_founder#0;class#db_connector#0" expanded="false" />
             <element signature="method#project_as_member#0;class#db_connector#0" expanded="false" />
             <element signature="method#all_pages#0;class#db_connector#0" expanded="false" />
+            <element signature="method#all_pages#1;class#db_connector#0" expanded="false" />
             <element signature="method#whois#0;class#db_connector#0" expanded="false" />
             <element signature="method#add_visits#0;class#db_connector#0" expanded="false" />
             <element signature="method#add_project#0;class#db_connector#0" expanded="false" />
@@ -1183,6 +1191,7 @@
             <element signature="method#project_as_founder#0;class#db_connector#0" expanded="false" />
             <element signature="method#project_as_member#0;class#db_connector#0" expanded="false" />
             <element signature="method#all_pages#0;class#db_connector#0" expanded="false" />
+            <element signature="method#all_pages#1;class#db_connector#0" expanded="false" />
             <element signature="method#whois#0;class#db_connector#0" expanded="false" />
             <element signature="method#add_visits#0;class#db_connector#0" expanded="false" />
             <element signature="method#add_project#0;class#db_connector#0" expanded="false" />
@@ -1245,6 +1254,7 @@
             <element signature="method#project_as_founder#0;class#db_connector#0" expanded="false" />
             <element signature="method#project_as_member#0;class#db_connector#0" expanded="false" />
             <element signature="method#all_pages#0;class#db_connector#0" expanded="false" />
+            <element signature="method#all_pages#1;class#db_connector#0" expanded="false" />
             <element signature="method#whois#0;class#db_connector#0" expanded="false" />
             <element signature="method#add_visits#0;class#db_connector#0" expanded="false" />
             <element signature="method#add_project#0;class#db_connector#0" expanded="false" />
@@ -1307,6 +1317,7 @@
             <element signature="method#project_as_founder#0;class#db_connector#0" expanded="false" />
             <element signature="method#project_as_member#0;class#db_connector#0" expanded="false" />
             <element signature="method#all_pages#0;class#db_connector#0" expanded="false" />
+            <element signature="method#all_pages#1;class#db_connector#0" expanded="false" />
             <element signature="method#whois#0;class#db_connector#0" expanded="false" />
             <element signature="method#add_visits#0;class#db_connector#0" expanded="false" />
             <element signature="method#add_project#0;class#db_connector#0" expanded="false" />
@@ -1349,8 +1360,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/zhao_ren_db/db_connector.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-58">
-          <caret line="195" column="15" selection-start-line="195" selection-start-column="15" selection-end-line="195" selection-end-column="15" />
+        <state relative-caret-position="122">
+          <caret line="198" column="112" selection-start-line="198" selection-start-column="112" selection-end-line="198" selection-end-column="112" />
           <folding>
             <element signature="method#db_connector#0;class#db_connector#0" expanded="false" />
             <element signature="method#login#0;class#db_connector#0" expanded="false" />
@@ -1369,6 +1380,7 @@
             <element signature="method#project_as_founder#0;class#db_connector#0" expanded="false" />
             <element signature="method#project_as_member#0;class#db_connector#0" expanded="false" />
             <element signature="method#all_pages#0;class#db_connector#0" expanded="false" />
+            <element signature="method#all_pages#1;class#db_connector#0" expanded="false" />
             <element signature="method#whois#0;class#db_connector#0" expanded="false" />
             <element signature="method#add_visits#0;class#db_connector#0" expanded="false" />
             <element signature="method#add_project#0;class#db_connector#0" expanded="false" />
