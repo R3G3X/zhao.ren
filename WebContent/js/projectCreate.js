@@ -2,6 +2,9 @@ $(document).ready(function() {
 	var variable = "," + $("#variable").val().toString() + ",";
 	if (variable == ",,")
 		variable = ",";
+	console.log($("#variable").val());
+	console.log(variable);
+	alert(variable);
 	var totalWidth = 0;
 	var count1 = 0;
 	$('#search-box-input').keydown(function(e){
@@ -112,7 +115,7 @@ $(document).ready(function() {
 			"detail" : $("#projectDescribeInDetails").val(),
 		}, function(data, status, xhr) {
 			alert("修改成功");
-			location.href="../user/personalCenter-project.jsp";
+			// location.href="../user/personalCenter-project.jsp";
 		}).error(function(data, status, e) {
 			$("#check-project-status").html("<font color='red'>修改失败！请检查信息是否有误</font>");
 		})
