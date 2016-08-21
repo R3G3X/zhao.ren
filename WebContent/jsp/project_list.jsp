@@ -22,14 +22,10 @@
     ResultSet set;
     int all_pages;
     if (keyword == null) keyword = "";
-    //java.net.URLDncoder.decode(keyword,"utf-8");
-    //keyword = keyword.replace("\\\\u", "\\u");
     String decode = URLDecoder.decode(keyword, "UTF-8");
     set = db.project_list(pages, decode, method, crew, cycle);
     all_pages = db.all_pages(pages, decode, method, crew, cycle);
 
-
-    //int all_pages = db.all_pages(keyword);
     String div = "<div class=\"sort-list-wrapper\"><ul id=\"method\" class=\"sort-list\"><li id=\"visits,id\" class=\"sort-list-item";
     if (method.equals("visits,id")) {
         div += " sort-list-item-active\"><a>综合排序</a></li><li id=\"visits\" class=\"sort-list-item\"><a>最多点击</a></li><li id=\"id\" class=\"sort-list-item\"><a>最新发布</a></li></ul>";
