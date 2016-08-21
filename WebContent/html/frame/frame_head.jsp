@@ -27,8 +27,6 @@
 <script src="<%=request.getContextPath()%>/js/modal.js"></script>
 <script src="<%=request.getContextPath()%>/js/pageLoad.js"></script>
 <script src="<%=request.getContextPath()%>/js/message.js"></script>
-<%--
 <%@ page errorPage="/index.jsp"%>
 <%@ page isErrorPage="true"%>
---%>
 

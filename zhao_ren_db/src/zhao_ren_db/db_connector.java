@@ -238,9 +238,11 @@ public class db_connector {
         return Integer.valueOf(pid);
     }
 
-    public ResultSet user_space(int id) throws SQLException {
+    public ResultSet user_space(int id, int page) throws SQLException {
         String sql = "SELECT *,DATEDIFF(curdate(),time) as diff FROM zhao_ren.user_space WHERE user_id = " + id
-                + " ORDER BY diff LIMIT 0,15;";
+                + " ORDER BY diff LIMIT ";
+        sql += String.format("%d,%d", 6 * (page - 1), 6);
+        System.out.println(sql);
         return query(sql);
     }
 
@@ -563,5 +565,6 @@ public class db_connector {
         db_connector db = new db_connector();
         db.project_list(1, "", "visits,id", "1000", "1000");
         System.out.println(db.all_pages(1, "", "visits,id", "1000", "1000"));
+        db.user_space(1,2);
     }
 }
