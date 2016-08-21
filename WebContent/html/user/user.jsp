@@ -112,7 +112,7 @@
 </div>
 <!-- COMMENT -->
 <!-- PUT-YOUR-CODE-ABOVE -->
-</div>
+
 <!-- END-OF-CONTENT -->
 <!-- BOTTOM -->
 <jsp:include page="../../html/frame/frame_bottom.jsp"></jsp:include>

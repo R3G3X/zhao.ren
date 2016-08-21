@@ -45,7 +45,7 @@
                     <h2>想找项目做？想和其他人一起合作？欢迎使用"找点人"项目平台</h2>
                     <p>
                         <a id="find-project" role="button" target=""
-                           href="html/projectlist/projectlist.jsp">我要找项目</a>
+                           href="html/projectlist/projectlist.jsp?pages=1&s=&method=visits,id&crew=1000&cycle=1001">我要找项目</a>
                     </p>
                 </div>
             </div>
