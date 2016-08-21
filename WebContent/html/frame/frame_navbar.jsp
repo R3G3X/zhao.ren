@@ -92,31 +92,20 @@
         </li>
         <li class="select-type-list-item">
           <div id="title-line-d"></div>
-          <a class="select-item">开发技术</a>
-          <ul id="tech" class="select-type-secondary-list white hidden">
-            <li class="select-type-secondary-list-item"><a>java</a></li>
-            <li class="select-type-secondary-list-item"><a>c++</a></li>
-            <li class="select-type-secondary-list-item"><a>c#</a></li>
-            <li class="select-type-secondary-list-item"><a>j2ee</a></li>
-            <li class="select-type-secondary-list-item"><a>objective c</a></li>
-          </ul>
-        </li>
-        <li class="select-type-list-item">
-          <div id="title-line-d"></div>
           <a class="select-item">开发周期(天)</a>
           <ul id="cycle" class="select-type-secondary-list white hidden">
-            <li class="select-type-secondary-list-item"><a>7</a></li>
-            <li class="select-type-secondary-list-item"><a>15</a></li>
-            <li class="select-type-secondary-list-item"><a>20</a></li>
+            <li class="select-type-secondary-list-item"><a class="cycleTime">7</a></li>
+            <li class="select-type-secondary-list-item"><a class="cycleTime">15</a></li>
+            <li class="select-type-secondary-list-item"><a class="cycleTime">20</a></li>
           </ul>
         </li>
         <li class="select-type-list-item">
           <div id="title-line-d"></div>
           <a class="select-item">开发人数</a>
           <ul id="crew" class="select-type-secondary-list white hidden">
-            <li class="select-type-secondary-list-item"><a>2</a></li>
-            <li class="select-type-secondary-list-item"><a>5</a></li>
-            <li class="select-type-secondary-list-item"><a>10</a></li>
+            <li class="select-type-secondary-list-item"><a class="crewNum">2</a> 人</li>
+            <li class="select-type-secondary-list-item"><a class="crewNum">5</a> 人</li>
+            <li class="select-type-secondary-list-item"><a class="crewNum">10</a> 人</li>
           </ul>
         </li>
       </ul>

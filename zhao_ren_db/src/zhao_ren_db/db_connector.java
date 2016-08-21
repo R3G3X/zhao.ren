@@ -189,7 +189,7 @@ public class db_connector {
     }
 
     public int all_pages() throws SQLException {
-        String sql = "SELECT COUNT(id) FROM project;";
+        String sql = "SELECT COUNT(id) FROM project WHERE isFinshed = 0;";
         return (int) Math.ceil(Integer.parseInt(getSingleQuery(sql)) / 1.0 / NUMBER_PER_PAGE);
     }
 
@@ -555,6 +555,7 @@ public class db_connector {
 
     public static void main(String[] args) throws Exception {
         db_connector db = new db_connector();
-        db.project_list(1, "12 34", "visits,id", "1000", "5000");
+        int a = db.all_pages();
+        System.out.println(a);
     }
 }

@@ -51,7 +51,7 @@
 						// alert(pages);
 						// alert(allPages);
 						$(document).ready(function(){
-							var innerHTML = '<a type="button" class="btn-page" id="pre" href="?s='+keyword+'&pages=<%=pages - 1 > 0 ? pages - 1 : pages%>">上一页</a>';
+							var innerHTML = '<a type="button" class="btn-page" id="pre" href="?s='+keyword+'&pages=<%=pages - 1 > 0 ? pages - 1 : pages%>&method='+tryMethod+'&crew='+crew+'&cycle='+cycle+'">上一页</a>';
 							if (allPages-Math.floor(pages/10)>8){
 								for(var i = 1; i <= 10;i++){
 									if (i==pages){
@@ -69,7 +69,7 @@
 									}
 								}
 							}
-							innerHTML += '<a type="button" class="btn-page" id="next" href="?s='+keyword+'&pages=<%=pages + 1%>">下一页</a>'
+							innerHTML += '<a type="button" class="btn-page" id="next" href="?s='+keyword+'&pages=<%=pages + 1%>&method='+tryMethod+'&crew='+crew+'&cycle='+cycle+'">下一页</a>'
 							$("#htarget").html(innerHTML);
 							if(pages>=allPages){
 								$("#next").addClass("hidden");
