@@ -89,7 +89,7 @@
 									var techs = search.substr(3,wordsPos-3);
 									var words = search.substr(wordsPos + 3, search.length);
 								}else{
-									var techs = search.substr(3,wordsPos);
+									var techs = search.substr(3,search.length);
 									var words = "";
 								}
 							}else{
