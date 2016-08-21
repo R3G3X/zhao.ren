@@ -7,7 +7,7 @@
 <%@ include file="/html/frame/frame_head.jsp"%>
 <link href="../../css/projectlist.css" rel="stylesheet" />
 <%@ include file="/jsp/frame.jsp"%>
-<script type="text/javascript" src="../../js/projectlist.js"></script>
+
 <title>全部项目</title>
 </head>
 <body>
@@ -126,6 +126,7 @@
 						})
 
 					</script>
+					<script type="text/javascript" src="../../js/projectlist.js"></script>
 				</div>
 			</div>
 		</div>
