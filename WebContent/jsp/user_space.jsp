@@ -3,7 +3,10 @@
          pageEncoding="UTF-8" %>
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<%@ include file="doLogin_required.jsp"%>
+<%@ include file="user_info.jsp" %>
 <%
+    String ava_path = request.getContextPath() + "/avatar/" + info.getString("avatar");
     int pages = Integer.valueOf(request.getParameter("page"));
     ResultSet sret = db.user_space(id, pages);
     String[] msg = {"加入了", "结束了", "完成了"};
