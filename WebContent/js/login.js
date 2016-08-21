@@ -80,6 +80,8 @@ $(document).ready(function(){
     }
 
     function goTo(a){
+        
+        
         var loc = encodeURIComponent(encodeURIComponent(a));
             loc =getRootPath()+"/html/projectlist/projectlist.jsp?pages=1&s="+loc;
             loc = loc +"&method=visits,id&crew=1000&cycle=1001";

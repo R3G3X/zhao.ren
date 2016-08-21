@@ -1,4 +1,5 @@
 var socketServer = "ws://kaitohh.com:8000";
+// var socketServer = "ws://localhost:8000";
 websocket = new WebSocket(socketServer);
 var preTime = 0;
 var temp;
