@@ -13,11 +13,13 @@
 	String techs = request.getParameter("techs");
 	detail = detail.replace("\n", "\\\\n");
 	detail = detail.replace("\"", "\\\\\\\"");
+	System.out.println(techs);
 	try {
-		if (db.project_info_edit(id, Integer.parseInt(pid), name, intro, Integer.parseInt(num),
-				Integer.parseInt(time), detail)) {
-			db.add_project_tech(Integer.valueOf(pid), techs);
-			response.setStatus(200);
+		if (db.project_info_edit(id, Integer.parseInt(pid), name, intro, Integer.parseInt(num), Integer.parseInt(time), detail)) {
+			if (db.add_project_tech(Integer.valueOf(pid), techs))
+					response.setStatus(200);
+			else
+				response.setStatus(400);
 		} else {
 			response.setStatus(400);
 		}
