@@ -9,9 +9,6 @@ $(document).ready(function(){
         alert("错误！");
     })
 
-
-
-
     $(document).scroll(function(){
         if($(window).scrollTop() == $(document).height() - $(window).height()){
             $("#scroll-target").css("visibility","visible");
