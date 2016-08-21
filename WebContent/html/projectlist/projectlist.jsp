@@ -104,18 +104,17 @@
 								var str = techs.substr(0, pos);
 								var prependElm  = "<div class=\"tag-name\">"+str+"</div>";
 								$("#search-box-inside").prepend(prependElm);
-								len += $(".tag-name").slice(0,1).width() + 10;
+								width += $(".tag-name").slice(0,1).width() + 10;
 								techs = techs.substr(pos + 1, techs.length);
 								pos = techs.indexOf(",");
 							}
 							if (techs.length > 0){
 								var prependElm  = "<div class=\"tag-name\">"+techs+"</div>";
 								$("#search-box-inside").prepend(prependElm);
-								width = $(".tag-name").slice(0,1).width() + 10;
+								width += $(".tag-name").slice(0,1).width() + 10;
 								len += width;
-								$("#search-box-input").width() - width;
 							}
-							width = $("#search-box-input").width() - width;
+							width = $("#search-box-input").width() - width ;
 							if (len >= 500){
 								$("#search-box-inside").height($("#search-box-input").height() + Math.floor((len + 2) / 514) * 52);
 								width = 502;

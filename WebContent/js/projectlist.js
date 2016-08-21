@@ -96,7 +96,7 @@ $(document).ready(function(){
   })
   function Search(){
     var loc = "";
-    var words = encodeURIComponent(encodeURIComponent($('#search-box-input').val()));
+    var words = encodeURIComponent(encodeURIComponent($('#search-box-input').val();
     variable = variable.substring(0,variable.length-1);
     variable = variable.substring(0+1,variable.length);
     if (variable != null && variable != ""){
@@ -109,7 +109,7 @@ $(document).ready(function(){
     }else{
       loc = words;
     }
-
+    loc = encodeURIComponent(encodeURIComponent(loc));
     var method = $("#method>.sort-list-item-active").attr("id");
     var crew = $("#crew>.sort-list-item-active").attr("id");
     var cycle = $("#cycle>.sort-list-item-active").attr("id");
