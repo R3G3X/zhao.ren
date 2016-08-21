@@ -4,7 +4,6 @@
 <html lang="en">
 <head>
 <meta charset="utf-8">
-<%@ include file="/jsp/frame.jsp"%>
 <%@ include file="/html/frame/frame_head.jsp"%>
 <%@ include file="/jsp/project_info.jsp"%>
 

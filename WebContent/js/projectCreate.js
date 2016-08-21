@@ -6,6 +6,7 @@ $(document).ready(function() {
 	var count1 = 0;
 	$('#search-box-input').keydown(function(e){
 		var theEvent = e || event;
+		var theEvent = e || event;
 		if(e.keyCode ==188 && !e.shiftKey){
 			theEvent.returnValue = false;
 			theEvent.preventDefault();
@@ -52,6 +53,7 @@ $(document).ready(function() {
 		}
 	})
 	$(document).on("dblclick",".tag-name",function(){
+		$("#variable").val()
 		// var width = $(this).width() + 10;
 		// width = $("#search-box-input").width() + width;
 		// // if ((totalWidth - width) / 514 < totalWidth / 514){
@@ -63,6 +65,7 @@ $(document).ready(function() {
 		// }
 		var str = ',' + $(this).text().toString() + ',';
 		variable = variable.replace(str, ',');
+		alert(variable);
 		count --;
 		$(this).remove();
 	})
