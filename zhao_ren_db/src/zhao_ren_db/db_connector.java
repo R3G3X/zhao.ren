@@ -559,7 +559,13 @@ public class db_connector {
         }
         return true;
     }
-
+    protected void finalize(){
+        try {
+            conn.close();
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
+    }
 
     public static void main(String[] args) throws Exception {
         db_connector db = new db_connector();
