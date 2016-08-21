@@ -307,3 +307,15 @@
 .detail-group-box:hover{
   border:1px solid #555555;
 }
+#scroll-target{
+  width:100%;
+  text-align:center;
+}
+#scroll-target>img{
+  margin-left:auto;
+  margin-right:auto;
+  width:25px;
+}
+#scroll-target>p{
+  color:#B8B8B8;
+}

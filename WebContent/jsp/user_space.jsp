@@ -27,6 +27,7 @@
         doc += sret.getInt("diff") + "天</a><a class=\"move-detail-time\"> at ";
         doc += sret.getString("time");
         doc += "</a></div></div></div>";
+        out.print(doc);
     }
     if(cnt!=0){
         response.setStatus(200);
