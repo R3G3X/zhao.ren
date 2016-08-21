@@ -22,9 +22,10 @@
     ResultSet set;
     int all_pages;
     if (keyword == null) keyword = "";
-    //java.net.URLDncoder.decode(keyword,"utf-8");
-    //keyword = keyword.replace("\\\\u", "\\u");
+//    java.net.URLDncoder.decode(keyword,"utf-8");
+//    keyword = keyword.replace("\\\\u", "\\u");
     String decode = URLDecoder.decode(keyword, "UTF-8");
+//	decode = URLDecoder.decode(decode, "UTF-8");
     set = db.project_list(pages, decode, method, crew, cycle);
     all_pages = db.all_pages(pages, decode, method, crew, cycle);
 
