@@ -99,6 +99,8 @@ $(document).ready(function() {
 		})
 	})
 	$(".project-save-post").click(function() {
+		variable = variable.substring(0,variable.length-1);
+		variable = variable.substring(0+1,variable.length);
 		$("#check-project-status").html("<font color='red'>添加中...</font>");
 		$.post(getRootPath() + "/jsp/doEditProject.jsp", {
 			"pid" : id,
