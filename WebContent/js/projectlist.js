@@ -21,7 +21,7 @@ $(document).ready(function(){
         count1 --;
         return;
       }
-      if (count1 > 5){
+      if (count1 > 3){
         alert("标签太多");
         count1 --;
         return;
