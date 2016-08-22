@@ -83,6 +83,10 @@ $(document).ready(function() {
 	})
 	var count = 0;
 	$(".project-create-post").click(function() {
+		if (checkTextValid($("#projectname").val())){
+			alert("项目名称中包含特殊字符");
+			return;
+		}
 		variable = variable.substring(0,variable.length-1);
 		variable = variable.substring(0+1,variable.length);
 		$("#check-project-status").html("<font color='red'>添加中...</font>");
@@ -100,6 +104,15 @@ $(document).ready(function() {
 			$("#check-project-status").html("<font color='red'>添加失败！请检查信息是否有误</font>");
 		})
 	})
+
+	function checkTextValid(form) {
+		var txt=new RegExp("[ ,\\`,\\~,\\!,\\@,\#,\\$,\\%,\\^,\\+,\\*,\\&,\\\\,\\/,\\?,\\|,\\:,\\.,\\<,\\>,\\{,\\},\\(,\\),\\',\\;,\\=,\"]");
+		if (txt.test(form)){
+				return true;
+		}
+		return false;
+	}
+
 	$(".project-save-post").click(function() {
 		variable = variable.substring(0,variable.length-1);
 		variable = variable.substring(0+1,variable.length);
