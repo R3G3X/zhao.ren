@@ -187,6 +187,9 @@ public class db_connector {
         for (int i = 1; i < word.length; i++) {
             sql += String.format(" OR (name LIKE \"%%%s%%\" OR intro LIKE \"%%%s%%\")", word[i], word[i]);
         }
+        if (method.contains(",")) {
+            method = "visits/log(datediff(curtime(),create_time)+1.01)";
+        }
         sql += ") AND ((require_num <= " + crew + ")) AND ((round_time <= " + cycle + ")) " +
                 "GROUP BY id " +
                 "ORDER BY " + method;
@@ -559,7 +562,8 @@ public class db_connector {
         }
         return true;
     }
-    protected void finalize(){
+
+    protected void finalize() {
         try {
             conn.close();
         } catch (SQLException e) {
@@ -569,6 +573,6 @@ public class db_connector {
 
     public static void main(String[] args) throws Exception {
         db_connector db = new db_connector();
-        System.out.println(db.login("Bob","123456"));
+        db.project_list(1,"","id,visits","10000","10000");
     }
 }
