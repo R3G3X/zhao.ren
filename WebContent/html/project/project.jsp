@@ -87,8 +87,10 @@
         团队成员[需要人数:<%=pret.getString("require_num")%>]
       </h4>
       <%@ include file="/jsp/project_info_member.jsp"%>
+
+        <a name="comment"></a>
     </div>
-    <a name="comment"></a>
+
     <div class="grey-3">
       <div class="container white box-border-bottom"
         style="width: 1140px" id="comments">
