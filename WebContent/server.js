@@ -116,11 +116,13 @@ wss.on('connection', function(ws) {
 
 	ws.on("close", function(e) {
 		console.log(ws.clientId + ' disconnect');
-		ws.conn.end(function(err) {
-			if (err) {
-				console.log(err);
-			}
-			delete clientList[ws.clientId];
-		});
+		if (ws.conn) {
+			ws.conn.end(function(err) {
+				if (err) {
+					console.log(err);
+				}
+				delete clientList[ws.clientId];
+			});
+		}
 	});
 });
