@@ -20,7 +20,7 @@
     String ava_path = request.getContextPath() + "/avatar/" + info.getString("avatar");
 %>
 <!-- CONTENT -->
-<div id="container-content" class="grey-2">
+<div id="container-content" class="grey-3">
     <!-- PUT-YOUR-CODE-BELOW -->
     <!-- BASICS -->
     <div>

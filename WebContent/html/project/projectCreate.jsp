@@ -61,9 +61,9 @@
 <!-- END-OF-NAVBAR -->
 
 <!-- CONTENT -->
-<div id="container-content">
+<div id="container-content" class="grey-3" >
     <!-- PUT-YOUR-CODE-BELOW -->
-    <div class="grey-3" style="min-height: 830px;">
+    <divstyle="min-height: 830px;">
         <div class="container white shadow"
              style="min-height: 830px;padding:70px;padding-top:20px;padding-bottom:50px;width:1140px;">
             <div class="project-create">

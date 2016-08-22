@@ -19,9 +19,9 @@
   <!-- END-OF-NAVBAR -->
 
   <!-- CONTENT -->
-  <div id="container-content">
+  <div id="container-content" class="grey-3">
     <!-- PUT-YOUR-CODE-BELOW -->
-    <div class="grey-2">
+    <div>
       <div class="container grey-3 box-border-top project-title-box"
         style="width: 1140px">
         <div class="project-title clearfix" style="padding-top: 70px;">

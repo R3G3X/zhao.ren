@@ -16,7 +16,7 @@
 	<!-- END-OF-NAVBAR -->
 
 	<div id="container-content" class="grey-3">
-		<div class="grey-3">
+		<div>
 			<div class="container clearfix">
 				<div class="white shadow">
 					<div id="content" class="clearfix">
