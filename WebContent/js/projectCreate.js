@@ -67,7 +67,6 @@ $(document).ready(function() {
 		// }
 		var str = ',' + $(this).text().toString() + ',';
 		variable = variable.replace(str, ',');
-		alert(variable);
 		count --;
 		$(this).remove();
 	})
