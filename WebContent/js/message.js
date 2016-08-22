@@ -208,9 +208,10 @@ $(document).ready(function(){
 		$("#toName").text($(this).text());
 	})
 	$("#chatroom").hover(function(){
-		$("body").css({overflow:"hidden"});
-	},function(){
-		$("body").css({overflow:"scroll"});
+		var a = $(document).scrollTop();
+		$(document).scroll(function(){
+			$(document).scrollTop(a);
+		})
 	})
 	$(document).on("click",".btn-delete", function(){
 		$(".item-activated").removeClass("item-activated").addClass("item-deactivated");
