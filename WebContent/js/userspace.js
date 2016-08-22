@@ -6,7 +6,7 @@ $(document).ready(function(){
             $("#recent-move").html($("#recent-move").html()+data);
         }
     ).error(function(){
-        alert("错误！");
+        //alert("错误！");
     })
 
     $(document).scroll(function(){

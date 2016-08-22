@@ -49,7 +49,7 @@ public class db_connector {
         String code = Hash.encode(username, password);
         String sql = String.format(
                 "INSERT INTO user(username,password,email,avatar,status) VALUES (\"%s\",\"%s\",\"%s\",concat((floor(rand()*8)+1),'.jpg'),\"%d\")",
-                username, code, email, 1);
+                username, code, email, 0);
         System.out.println(sql);
         return update(sql) == 1;
     }
@@ -569,8 +569,6 @@ public class db_connector {
 
     public static void main(String[] args) throws Exception {
         db_connector db = new db_connector();
-        db.project_list(1, "", "visits,id", "1000", "1000");
-        System.out.println(db.all_pages(1, "", "visits,id", "1000", "1000"));
-        db.user_space(1,2);
+        System.out.println(db.login("Bob","123456"));
     }
 }

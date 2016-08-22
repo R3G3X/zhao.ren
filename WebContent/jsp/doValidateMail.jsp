@@ -8,7 +8,7 @@
         String password = request.getParameter("password");
         String email = request.getParameter("email");
         password = db.mail(username,password);
-        String url = "http://localhost:8080/zhao.ren/jsp/doValidate.jsp?username="+ username + "&password=" + password;
+        String url = "http://localhost:8080/jsp/doValidate.jsp?username="+ username + "&password=" + password;
         // 配置文件对象  
         String body = "<!DOCTYPE html><html><head><meta charset=\"utf-8\"></head><body><div style=\"margin-top:50px;width:50%;margin-left:25%;height:600px;border:1px solid #6C6C6C;\"><div style=\"width:100%;height:10%;background-color:#6C6C6C;color:#fff;\"><p style=\"margin:0px;line-height:100%;height:100%;padding-top:2.5%;padding-left:3%;font-size:20px;font-weight:bold;\">欢迎加入 zhao.ren</p></div><div style=\"width:100%;height:71.6%;text-align:center;padding-top:50px\"><p>请点击以下链接完成注册</p><p>"+url+"</p></div><div style=\"width:100%;height:10%;background-color:#6C6C6C;color:#fff;\"><p style=\"margin:0px;line-height:100%;height:100%;padding-top:3%;padding-left:0%;text-align:center\">by ZHAO.REN</p></div></div></body></html>";
         Properties props = new Properties();  
