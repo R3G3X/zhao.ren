@@ -9,7 +9,7 @@
     <%@ include file="/jsp/user_info.jsp" %>
 
     <link href="../../css/user.css" rel="stylesheet"/>
-    <script type="text/javascript" src="../../js/userspace.js"></script>
+    <script type="text/javascript" src="<%=request.getContextPath()%>/js/userspace.js"></script>
 </head>
 <body>
 <!-- NAVBAR -->
@@ -20,7 +20,7 @@
     String ava_path = request.getContextPath() + "/avatar/" + info.getString("avatar");
 %>
 <!-- CONTENT -->
-<div id="container-content" class="grey-2">
+<div id="container-content" class="grey-3">
     <!-- PUT-YOUR-CODE-BELOW -->
     <!-- BASICS -->
     <div>
@@ -89,9 +89,12 @@
                 <div id="left-content">
                     <h3 style="font-weight: bold;">最近动态</h3>
                     <div id="recent-move">
-                        <button id="switch">切换页面</button>
                         <%--<%@ include file="/jsp/user_space.jsp" %>--%>
                         <%--传js: /jsp/user_space.jsp?page=1 其中page为第几页--%>
+                    </div>
+                    <div id="scroll-target">
+                        <img src="<%=request.getContextPath()%>/img/loading.gif">
+                        <p></p>
                     </div>
                 </div>
                 <div id="right-content">

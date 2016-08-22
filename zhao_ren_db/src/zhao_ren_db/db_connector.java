@@ -49,7 +49,7 @@ public class db_connector {
         String code = Hash.encode(username, password);
         String sql = String.format(
                 "INSERT INTO user(username,password,email,avatar,status) VALUES (\"%s\",\"%s\",\"%s\",concat((floor(rand()*8)+1),'.jpg'),\"%d\")",
-                username, code, email, 1);
+                username, code, email, 0);
         System.out.println(sql);
         return update(sql) == 1;
     }
@@ -186,6 +186,9 @@ public class db_connector {
         sql += String.format("AND ((name LIKE \"%%%s%%\" OR intro LIKE \"%%%s%%\")", word[0], word[0]);
         for (int i = 1; i < word.length; i++) {
             sql += String.format(" OR (name LIKE \"%%%s%%\" OR intro LIKE \"%%%s%%\")", word[i], word[i]);
+        }
+        if (method.contains(",")) {
+            method = "visits/log(datediff(curtime(),create_time)+1.01)";
         }
         sql += ") AND ((require_num <= " + crew + ")) AND ((round_time <= " + cycle + ")) " +
                 "GROUP BY id " +
@@ -560,11 +563,16 @@ public class db_connector {
         return true;
     }
 
+    protected void finalize() {
+        try {
+            conn.close();
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
+    }
 
     public static void main(String[] args) throws Exception {
         db_connector db = new db_connector();
-        db.project_list(1, "", "visits,id", "1000", "1000");
-        System.out.println(db.all_pages(1, "", "visits,id", "1000", "1000"));
-        db.user_space(1,2);
+        db.project_list(1,"","id,visits","10000","10000");
     }
 }

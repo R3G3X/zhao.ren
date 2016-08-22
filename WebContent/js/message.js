@@ -56,16 +56,31 @@ function start (client){
                   	 "</div>";
 			}
 		}
-		div = $(".item-activated>input").val();
-		$("#target-message-"+div).append(innerhtml);
-		substr = messageGet;
-		for(var i = 0; i < index - 1; i++){
-			$("#target-message-"+div+" ."+i+":last").text(substr.substring(0,substr.indexOf("\n")));
-			substr = substr.substring(substr.indexOf("\n")+1,substr.length);
-		}
-		$("#target-message-"+div+" ."+i+":last").text(substr);
-		$("#target-message-"+div+" .message-box:last").height($("#target-message-"+div+" .message-box:last").children().outerHeight()+25);
+		div = clientFrom;
+		if($("#target-message-"+div).hasClass("hidden")){
+			$("#target-message-"+div).removeClass("hidden");
+			$("#target-message-"+div).css("visibility","hidden");
+			$("#target-message-"+div).append(innerhtml);
+			substr = messageGet;
+			for(var i = 0; i < index - 1; i++){
+				$("#target-message-"+div+" ."+i+":last").text(substr.substring(0,substr.indexOf("\n")));
+				substr = substr.substring(substr.indexOf("\n")+1,substr.length);
+			}
+			$("#target-message-"+div+" ."+i+":last").text(substr);
+			$("#target-message-"+div+" .message-box:last").height($("#target-message-"+div+" .message-box:last").children().outerHeight()+25);
 
+			$(".target-message").addClass("hidden");
+			$(".target-message").css("visibility","");
+		}else{
+			$("#target-message-"+div).append(innerhtml);
+			substr = messageGet;
+			for(var i = 0; i < index - 1; i++){
+				$("#target-message-"+div+" ."+i+":last").text(substr.substring(0,substr.indexOf("\n")));
+				substr = substr.substring(substr.indexOf("\n")+1,substr.length);
+			}
+			$("#target-message-"+div+" ."+i+":last").text(substr);
+			$("#target-message-"+div+" .message-box:last").height($("#target-message-"+div+" .message-box:last").children().outerHeight()+25);
+		}
 		index = 0;
 		setTimeout("changeHight("+div+")",5);
 	};
@@ -102,7 +117,7 @@ $(document).ready(function(){
 	})
 
 	$('#message').keydown(function(e){
-		var theEvent = event || e;
+		var theEvent = e|| event;
 		if(e.keyCode==13 && !e.ctrlKey){
 			// if(event.returnValue)
 			// 	event.returnValue = false;
@@ -134,6 +149,8 @@ $(document).ready(function(){
 	$("#btn-chat").click(function(){
 		$(this).addClass("hidden");
 		$("#chatroom").css("visibility","visible");
+		var target=$(".item-activated>input").val();
+		$("#target-message-"+target).removeClass("hidden");
 	})
 	$("#btn-minimize").click(function(){
 		$("#btn-chat").removeClass("hidden");
@@ -190,7 +207,14 @@ $(document).ready(function(){
 		$("#target-message-"+target).removeClass("hidden");
 		$("#toName").text($(this).text());
 	})
-
+	$("#chatroom").hover(function(){
+		var a = $(document).scrollTop();
+		$(document).scroll(function(){
+			$(document).scrollTop(a);
+		})
+	},function(){
+		$(document).unbind("scroll");
+	})
 	$(document).on("click",".btn-delete", function(){
 		$(".item-activated").removeClass("item-activated").addClass("item-deactivated");
 		$(".target-message").addClass("hidden");
@@ -219,6 +243,8 @@ $(document).ready(function(){
     });
 		$(this).parent().remove();
 	})
+
+
 
 	function msgSend(){
 		var username=$.cookie("zhao_ren_token");

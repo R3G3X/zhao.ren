@@ -13,9 +13,11 @@
 }
 #markdown h1,h2,h3,h4,h5,h6{
 	text-shadow: 1px 1px 1px #c2c2c2;
+	font-family: "Microsoft YaHei"
 }
 #markdown p{
 	font-size:16px;
+	font-family: "Microsoft YaHei"
 }
 #markdown img{
   width:100%;

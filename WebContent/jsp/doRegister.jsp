@@ -11,6 +11,7 @@
 	String passwd = request.getParameter("password");
 	String email = request.getParameter("email");
 	db.register(username, passwd,email);
+	db.close();
 %>
 </head>
 <body>
