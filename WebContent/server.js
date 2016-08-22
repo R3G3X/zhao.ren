@@ -40,7 +40,7 @@ wss.on('connection', function(ws) {
 				clientList[clientId] = ws;
 				ws.clientId = clientId;
 				var peerList = [];
-				conn.query('select user_id from user_chat_list where to_id = "'+clientId+'"',
+				ws.conn.query('select user_id from user_chat_list where to_id = "'+clientId+'"',
 					function(err, result) {
 						console.log(result);
 						if (err) {
@@ -50,7 +50,7 @@ wss.on('connection', function(ws) {
 							peerList.push(result[num].user_id);
 						};
 						for (var i=0;i<peerList.length;i++) {
-							conn.query(
+							ws.conn.query(
 								'select * from user_chat where user_id = "' + clientId
 								+ '" and from_id = "' + peerList[i] + '" or user_id = "' + peerList[i]
 								+ '" and from_id = "' + clientId
@@ -95,7 +95,7 @@ wss.on('connection', function(ws) {
 				msg: data.msg,
 				timestamp: time
 			});
-			conn.query(
+			ws.conn.query(
 				'insert into user_chat(user_id, from_id, content, time) values('+
 				toClientId+','+fromClientId+',"'+data.msg +'",from_unixtime('+time+'/1000));'
 			, function (err) {
