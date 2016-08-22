@@ -1,7 +1,8 @@
 $(document).ready(function(){
     var pages = 1;
     $.post(getRootPath() + "/jsp/user_space.jsp", {
-            "page" : 1
+            "page" : 1,
+            "id" : $("#userID").val()
         }, function(data, status, xhr) {
             $("#recent-move").html($("#recent-move").html()+data);
         }
@@ -14,7 +15,8 @@ $(document).ready(function(){
             $("#scroll-target").css("visibility","visible");
             pages ++;
             $.post(getRootPath() + "/jsp/user_space.jsp", {
-                    "page" : pages
+                    "page" : pages,
+                    "id" : $("#userID").val()
                 }, function(data, status, xhr) {
                     $("#recent-move").html($("#recent-move").html()+data);
                     $("#scroll-target").css("visibility","hidden");

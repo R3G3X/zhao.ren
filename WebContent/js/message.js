@@ -106,12 +106,12 @@ $(document).ready(function(){
 
 	var username=$.cookie("zhao_ren_token");
 	var target=$(".item-activated>input").val();
-	if(username !=null && username!="")
+	if(username !=null && username!="") {
 		$("#btn-chat").removeClass("hidden");
-	$("#target-message-"+target).removeClass("hidden");
+		$("#target-message-" + target).removeClass("hidden");
 		$("#toName").text($(".item-activated>.id").text());
-	start(username);
-
+		start(username);
+	}
 	$("#btn-send").click(function(){
 		msgSend();
 	})

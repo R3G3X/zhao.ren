@@ -7,7 +7,8 @@
 <%
     String ava_path = request.getContextPath() + "/avatar/" + info.getString("avatar");
     int pages = Integer.valueOf(request.getParameter("page"));
-    ResultSet sret = db.user_space(id, pages);
+    int uid = Integer.valueOf(request.getParameter("id"));
+    ResultSet sret = db.user_space(uid, pages);
     String[] msg = {"加入了", "结束了", "完成了"};
     int cnt = 0;
     while (sret.next()) {
