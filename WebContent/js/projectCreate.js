@@ -25,7 +25,7 @@ $(document).ready(function() {
 				return;
 			}
 			if (count1 > 5){
-				alert("标签太多");
+				alert("标签太多")
 				count1 --;
 				return;
 			}
@@ -105,7 +105,7 @@ $(document).ready(function() {
 	})
 
 	function checkTextValid(form) {
-		var txt=new RegExp("[\\`,\\~,\\!,\\@,\#,\\$,\\%,\\^,\\+,\\*,\\&,\\\\,\\/,\\?,\\|,\\:,\\.,\\<,\\>,\\{,\\},\\;,\\=]");
+		var txt=new RegExp("[ ,\\`,\\~,\\!,\\@,\#,\\$,\\%,\\^,\\+,\\*,\\&,\\\\,\\/,\\?,\\|,\\:,\\.,\\<,\\>,\\{,\\},\\(,\\),\\',\\;,\\=,\"]");
 		if (txt.test(form)){
 				return true;
 		}
