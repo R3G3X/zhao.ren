@@ -11,6 +11,24 @@
 <link href="../../css/project.css" rel="stylesheet" />
 <script src="<%=request.getContextPath()%>/js/markdown.js"></script>
 <script src="<%=request.getContextPath()%>/js/comment.js"></script>
+  <script type="text/javascript">
+    var techs = "<%=techs%>";
+    $(document).ready(function () {
+      var pos = techs.indexOf(",");
+      $("#variable").val(techs);
+      while(techs.length > 0 && pos> 0){
+        var str = techs.substr(0, pos);
+        var prependElm  = "<div class=\"tag-name\">"+str+"</div>";
+        $("#tag-box").prepend(prependElm);
+        techs = techs.substr(pos + 1, techs.length);
+        pos = techs.indexOf(",");
+      }
+      if (techs.length > 0){
+        var prependElm  = "<div class=\"tag-name\">"+techs+"</div>";
+        $("#tag-box").prepend(prependElm);
+      }
+    })
+  </script>
 
 </head>
 <body>
@@ -40,6 +58,9 @@
               天
             </a>
           </p>
+          <div id="tag-box">
+            <iunput id="variable" type="hidden"></iunput>
+          </div>
           <div
             class="project-title-join  <%=pret.getString("isFinshed").equals("0") ? "" : "hidden"%>">
             <a
