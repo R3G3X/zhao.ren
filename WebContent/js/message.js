@@ -57,18 +57,30 @@ function start (client){
 			}
 		}
 		div = clientFrom;
-		$(".target-message").removeClass("hidden");
-		$(".target-message").css("visibility","hidden");
-		$("#target-message-"+div).append(innerhtml);
-		substr = messageGet;
-		for(var i = 0; i < index - 1; i++){
-			$("#target-message-"+div+" ."+i+":last").text(substr.substring(0,substr.indexOf("\n")));
-			substr = substr.substring(substr.indexOf("\n")+1,substr.length);
+		if($("#target-message-"+div).hasClass("hidden")){
+			$("#target-message-"+div).removeClass("hidden");
+			$("#target-message-"+div).css("visibility","hidden");
+			$("#target-message-"+div).append(innerhtml);
+			substr = messageGet;
+			for(var i = 0; i < index - 1; i++){
+				$("#target-message-"+div+" ."+i+":last").text(substr.substring(0,substr.indexOf("\n")));
+				substr = substr.substring(substr.indexOf("\n")+1,substr.length);
+			}
+			$("#target-message-"+div+" ."+i+":last").text(substr);
+			$("#target-message-"+div+" .message-box:last").height($("#target-message-"+div+" .message-box:last").children().outerHeight()+25);
+
+			$(".target-message").addClass("hidden");
+			$(".target-message").css("visibility","");
+		}else{
+			$("#target-message-"+div).append(innerhtml);
+			substr = messageGet;
+			for(var i = 0; i < index - 1; i++){
+				$("#target-message-"+div+" ."+i+":last").text(substr.substring(0,substr.indexOf("\n")));
+				substr = substr.substring(substr.indexOf("\n")+1,substr.length);
+			}
+			$("#target-message-"+div+" ."+i+":last").text(substr);
+			$("#target-message-"+div+" .message-box:last").height($("#target-message-"+div+" .message-box:last").children().outerHeight()+25);
 		}
-		$("#target-message-"+div+" ."+i+":last").text(substr);
-		$("#target-message-"+div+" .message-box:last").height($("#target-message-"+div+" .message-box:last").children().outerHeight()+25);
-		$(".target-message").addClass("hidden");
-		$(".target-message").css("visibility","");
 		index = 0;
 		setTimeout("changeHight("+div+")",5);
 	};
@@ -105,7 +117,7 @@ $(document).ready(function(){
 	})
 
 	$('#message').keydown(function(e){
-		var theEvent = event || e;
+		var theEvent = e|| event;
 		if(e.keyCode==13 && !e.ctrlKey){
 			// if(event.returnValue)
 			// 	event.returnValue = false;
