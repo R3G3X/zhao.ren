@@ -149,13 +149,13 @@ $(document).ready(function(){
 	$("#btn-chat").click(function(){
 		$(this).addClass("hidden");
 		$("#chatroom").css("visibility","visible");
-		$(".target-message").slice(0,1).removeClass("hidden");
+		var target=$(".item-activated>input").val();
+		$("#target-message-"+target).removeClass("hidden");
 	})
 	$("#btn-minimize").click(function(){
 		$("#btn-chat").removeClass("hidden");
 		$("#chatroom").css("visibility","hidden");
 	})
-
 	$("#user-Message>a").click(function(){
 		var to = $("#userID").val();
 		var flag = 0;
@@ -207,7 +207,7 @@ $(document).ready(function(){
 		$("#target-message-"+target).removeClass("hidden");
 		$("#toName").text($(this).text());
 	})
-	$(document).on("scroll","#chatroom",function(){
+	$(document).on("scroll",".target-message",function(){
 		$("body").css({overflow:"hidden"});
 	})
 	$(document).on("click",".btn-delete", function(){
