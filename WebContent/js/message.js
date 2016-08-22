@@ -212,6 +212,8 @@ $(document).ready(function(){
 		$(document).scroll(function(){
 			$(document).scrollTop(a);
 		})
+	},function(){
+		$(document).unbind("scroll");
 	})
 	$(document).on("click",".btn-delete", function(){
 		$(".item-activated").removeClass("item-activated").addClass("item-deactivated");

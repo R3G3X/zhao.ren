@@ -31,6 +31,10 @@ wss.on('connection', function(ws) {
 				return;
 			}
 			var clientId = data.clientId;
+			if (clientList[clientId]) {
+				clientList[clientId].close();
+				delete clientList[clientId];
+			}
 			clientList[clientId] = ws;
 			ws.clientId = clientId;
 			var peerList = [];
