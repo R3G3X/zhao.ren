@@ -155,6 +155,7 @@ $(document).ready(function(){
 		$("#btn-chat").removeClass("hidden");
 		$("#chatroom").css("visibility","hidden");
 	})
+
 	$("#user-Message>a").click(function(){
 		var to = $("#userID").val();
 		var flag = 0;
@@ -206,7 +207,9 @@ $(document).ready(function(){
 		$("#target-message-"+target).removeClass("hidden");
 		$("#toName").text($(this).text());
 	})
-
+	$(document).on("scroll","#chatroom",function(){
+		$("body").css({overflow:"hidden"});
+	})
 	$(document).on("click",".btn-delete", function(){
 		$(".item-activated").removeClass("item-activated").addClass("item-deactivated");
 		$(".target-message").addClass("hidden");
@@ -235,6 +238,8 @@ $(document).ready(function(){
     });
 		$(this).parent().remove();
 	})
+
+
 
 	function msgSend(){
 		var username=$.cookie("zhao_ren_token");
