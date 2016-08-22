@@ -207,8 +207,10 @@ $(document).ready(function(){
 		$("#target-message-"+target).removeClass("hidden");
 		$("#toName").text($(this).text());
 	})
-	$(document).on("scroll",".target-message",function(){
+	$("#chatroom").hover(function(){
 		$("body").css({overflow:"hidden"});
+	},function(){
+		$("body").css({overflow:"scroll"});
 	})
 	$(document).on("click",".btn-delete", function(){
 		$(".item-activated").removeClass("item-activated").addClass("item-deactivated");
