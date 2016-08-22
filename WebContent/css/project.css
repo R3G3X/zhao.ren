@@ -5,11 +5,16 @@
 * @Last Modified time: 2016-04-16 03:52:39
 */
 #markdown{
+	font-family: "Microsoft YaHei"
+	text-shadow: none;
   min-height:420px;
   padding-left:150px;
   padding-right:150px;
   padding-top:70px;
   padding-bottom:120px;
+}
+#markdown code{
+	#markdown
 }
 #markdown h1,h2,h3,h4,h5,h6{
 	text-shadow: 1px 1px 1px #c2c2c2;
@@ -23,7 +28,7 @@
   width:100%;
 }
 #comments{
-	 min-height:420px;
+	min-height:420px;
   padding-left:150px;
   padding-right:150px;
   padding-top:70px;
