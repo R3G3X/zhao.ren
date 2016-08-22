@@ -25,64 +25,71 @@
   </div>
 
   <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
-    <!-- NAVBAR-HEADER -->
-    <div class="navbar-header">
-      <!-- FOR-SMALLER -->
-      <button type="button" class="navbar-toggle" data-toggle="collapse"
-              data-target="#example-navbar-collapse">
-        <span class="sr-only">切换导航</span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-      </button>
-      <!-- END-OF-FOR-SMALLER -->
-      <a class="navbar-brand" id="logo"
-         href="<%=request.getContextPath()%>/index.jsp"><img id="logo" src="<%=request.getContextPath()%>/img/logo.png" alt=""></a>
-    </div>
-    <!-- END-OF-NAVBAR-HEADER -->
+    <div class="grey-1">
+      <div class="container">
+        <!-- NAVBAR-HEADER -->
+        <div class="navbar-header">
+          <!-- FOR-SMALLER -->
+          <button type="button" class="navbar-toggle" data-toggle="collapse"
+                  data-target="#example-navbar-collapse">
+            <span class="sr-only">切换导航</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <!-- END-OF-FOR-SMALLER -->
+          <a class="navbar-brand" id="logo"
+             href="<%=request.getContextPath()%>/index.jsp"><img id="logo" src="<%=request.getContextPath()%>/img/logo.png" alt=""></a>
+        </div>
+        <!-- END-OF-NAVBAR-HEADER -->
 
-    <div class="collapse navbar-collapse grey-0" id="example-navbar-collapse">
-      <!-- NAVBAR-LEFT -->
-      <ul class="nav navbar-nav navbar-left">
+        <div class="collapse navbar-collapse grey-0" id="example-navbar-collapse">
+          <!-- NAVBAR-LEFT -->
+          <ul class="nav navbar-nav navbar-left">
 
-        <li>
-          <div id="project-search-holder" class="clearfix">
-            <input id="project-search" type="text" />
-            <a id="project-list-btn"><span class="glyphicon glyphicon-search" aria-hidden="true"></span></a>
-          </div>
-        </li>
-      </ul>
-      <!-- END-OF-NAVBAR-LEFT -->
+            <li>
+              <div id="project-search-holder" class="clearfix">
+                <input id="project-search" type="text" />
+                <a id="project-list-btn"><span class="glyphicon glyphicon-search" aria-hidden="true"></span></a>
+              </div>
+            </li>
+          </ul>
+          <!-- END-OF-NAVBAR-LEFT -->
 
-      <!-- NAVBAR-RIGHT -->
+          <!-- NAVBAR-RIGHT -->
 
-      <ul class="nav navbar-nav navbar-right" style="margin-right:6%;">
-        <li><a id="project-add-btn" class="hidden"
-               href="<%=request.getContextPath()%>/html/project/projectCreate.jsp"><span
-                class="glyphicon glyphicon-edit" aria-hidden="true">
+          <ul class="nav navbar-nav navbar-right" style="margin-right:1%;">
+            <li><a id="project-add-btn" class="hidden"
+                   href="<%=request.getContextPath()%>/html/project/projectCreate.jsp"><span
+                    class="glyphicon glyphicon-edit" aria-hidden="true">
                 </span>创建项目</a></li>
-        <li><a id="personal-center-btn" class="hidden"
-               href="<%=request.getContextPath()%>/html/user/personalCenter-message.jsp"><span
-                class="glyphicon glyphicon-user" aria-hidden="true"> </span>个人中心
-          <%=new_msg%></a></li>
-        <li><a id="user-btn" class="hidden"
-               href="<%=request.getContextPath()%>/html/user/user.jsp"><span
-                class="glyphicon glyphicon-home" aria-hidden="true">
+            <li><a id="personal-center-btn" class="hidden"
+                   href="<%=request.getContextPath()%>/html/user/personalCenter-message.jsp"><span
+                    class="glyphicon glyphicon-user" aria-hidden="true"> </span>个人中心
+              <%=new_msg%></a></li>
+            <li><a id="user-btn" class="hidden"
+                   href="<%=request.getContextPath()%>/html/user/user.jsp"><span
+                    class="glyphicon glyphicon-home" aria-hidden="true">
                 </span>我的主页</a></li>
-        <li id="login"><a id="login-btn" type="button"
-                          data-toggle="modal" data-target="#modal-login"><span
-                class="glyphicon glyphicon-log-in" aria-hidden="true"></span></a></li>
-        <li><img id="avatar" class="img-circle hidden hidden-xs"
-                 src="<%=avatar_path%>"></li>
+            <li id="login"><a id="login-btn" type="button"
+                              data-toggle="modal" data-target="#modal-login"><span
+                    class="glyphicon glyphicon-log-in" aria-hidden="true"></span></a></li>
+            <li><img id="avatar" class="img-circle hidden hidden-xs"
+                     src="<%=avatar_path%>"></li>
 
 
-        <li><a id="logout" href="#" class="hidden"><span
-                class="glyphicon glyphicon-log-out" aria-hidden="true"></span></a></li>
-      </ul>
-      <!-- END-OF-NAVBAR-RIGHT -->
+            <li><a id="logout" href="#" class="hidden"><span
+                    class="glyphicon glyphicon-log-out" aria-hidden="true"></span></a></li>
+          </ul>
+          <!-- END-OF-NAVBAR-RIGHT -->
+        </div>
     </div>
+
+
+
   </nav>
+</div>
   <div class="container">
     <div class="select-type white">
       <ul class="select-type-list">
