@@ -28,6 +28,7 @@
 				}
 			}
 		}
+		db.close();
 		response.sendRedirect(request.getContextPath() + "/403.jsp");
 	}
 %>

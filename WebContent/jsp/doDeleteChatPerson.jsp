@@ -16,5 +16,6 @@
 	} else {
 		response.setStatus(401);
 	}
+	db.close();
 %>
 

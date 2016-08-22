@@ -13,6 +13,7 @@
 	} else {
 		out.print("<script>alert('结束该项目!也许你不是项目的创建者')</script>");
 	}
+	db.close();
 %>
 <script language="JavaScript">
 	window.location = "../html/user/personalCenter-project.jsp";

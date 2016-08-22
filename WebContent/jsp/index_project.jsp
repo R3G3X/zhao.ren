@@ -18,6 +18,7 @@
 								ret.getString("id"),ret.getString("name"), ret.getString("intro"), ret.getString("people"));
 						out.print(div);
 					}
+					db.close();
 				%>
 			</div>
 		</div>

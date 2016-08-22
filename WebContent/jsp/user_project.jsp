@@ -15,7 +15,8 @@
 	while(ret.next()){
 		String doc = String.format("<li><a class=\"recommend-name\" href=\"../project/project.jsp?id=%s\">%s</a><a class=\"recommend-status\">他加入的</a></li>", ret.getString("project_id"),ret.getString("name"));
 		out.print(doc);
-	}	
+	}
+	db.close();
 %>
 </head>
 <body>

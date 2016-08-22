@@ -27,6 +27,7 @@
         } else {
             response.setStatus(400);
         }
+        db.close();
     %>
 
 </head>

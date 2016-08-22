@@ -108,5 +108,5 @@
         div += "<p style=\"text-align:center; font-size:30px; font-weight: bold; color:#C5C5C5;width: 100%; margin-left:-15px; margin-top: 40px;\">啊呀，什么都没有呢╮(╯▽╰)╭</p>";
         out.print(div);
     }
-
+    db.close();
 %>

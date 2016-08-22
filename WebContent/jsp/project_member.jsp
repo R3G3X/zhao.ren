@@ -28,4 +28,5 @@
 			out.print(doc);
 		}
 	}
+	db.close();
 %>

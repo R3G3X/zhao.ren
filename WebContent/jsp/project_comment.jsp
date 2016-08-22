@@ -29,4 +29,5 @@
 	if (ccidd == 0) {
 		out.print("<p style=\"text-align:center;color:#A0A0A0;margin-top:30px;margin-bottom:200px\" >还没有评论哦╮(╯▽╰)╭快来抢沙发吧</p>");
 	}
+	db.close();
 %>

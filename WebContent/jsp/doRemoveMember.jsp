@@ -12,6 +12,7 @@
 	} else {
 		out.print("<script>alert('移除失败！可能的原因:\\n您不能移除您自己')</script>");
 	}
+	db.close();
 %>
 <script language="JavaScript">
   window.location = "../html/user/personalCenter-project.jsp";
